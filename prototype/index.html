@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>David Svezhintsev - Creative Developer</title>
+    <meta
+      name="description"
+      content="David Svezhintsev's personal website: A creative journey through code, games, and existential musings. Indie game developer, designer, and philosophical storyteller."
+    />
+    <link rel="canonical" href="https://davidsvez.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="David Svezhintsev - Creative Developer" />
+    <meta property="og:title" content="David Svezhintsev - Creative Developer" />
+    <meta
+      property="og:description"
+      content="David Svezhintsev's personal website: A creative journey through code, games, and existential musings. Indie game developer, designer, and philosophical storyteller."
+    />
+    <meta property="og:url" content="https://davidsvez.com/" />
+    <meta property="og:image" content="https://davidsvez.com/assets/social-cover.jpg" />
+    <meta property="og:image:alt" content="David Svezhintsev - Creative Developer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="David Svezhintsev - Creative Developer" />
+    <meta
+      name="twitter:description"
+      content="David Svezhintsev's personal website: A creative journey through code, games, and existential musings. Indie game developer, designer, and philosophical storyteller."
+    />
+    <meta name="twitter:image" content="https://davidsvez.com/assets/social-cover.jpg" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon_2gyS6VcfqH9mnET_OQfwI.ico?v=20260809-1"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/favicon_2gyS6VcfqH9mnET_OQfwI.ico?v=20260809-1"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "David Svezhintsev - Creative Developer",
+        "url": "https://davidsvez.com/",
+        "description": "David Svezhintsev's personal website: A creative journey through code, games, and existential musings. Indie game developer, designer, and philosophical storyteller."
+      }
+    </script>
+    <base href="/" />
+    <script>
+      if (new URLSearchParams(location.search).get("anim") === "off") {
+        document.documentElement.dataset.anim = "off";
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css?v=20260809-21" />
+  </head>
+  <body data-view="grid">
+    <canvas id="glyph-noise" aria-hidden="true"></canvas>
+    <canvas id="cursor-glitch" aria-hidden="true"></canvas>
+    <span id="glyph-cursor" class="glyph-cursor" aria-hidden="true">↖</span>
+
+    <main id="site" class="site-shell">
+      <header class="site-header">
+        <div class="identity-row">
+          <div>
+            <p class="eyebrow">DAVIDSVEZ.COM / CREATIVE DEVELOPER</p>
+            <a class="home-link" data-home-link href="?view=grid" aria-label="Reset to portfolio home">
+              <h1>DAVID SVEZHINTSEV</h1>
+            </a>
+          </div>
+          <div class="system-status signal-player" id="system-status" aria-label="Background music player">
+            <button
+              class="signal-player__toggle"
+              id="signal-player-toggle"
+              type="button"
+              data-static-control
+              aria-label="Play background music"
+              aria-pressed="false"
+            ><span id="signal-player-icon" aria-hidden="true">[▶]</span></button>
+            <a
+              class="signal-player__track"
+              href="https://www.youtube.com/watch?v=Y0mFlukSXck"
+              target="_blank"
+              rel="noreferrer"
+              data-static-control
+            ><span
+              class="signal-player__track-text"
+              data-track="ARIGTO / NO DATACENTER VAST ENOUGH TO COMPUTE PRAYERS FOR THEIR ABSOLUTION"
+            >ARIGTO / NO DATACENTER VAST ENOUGH TO COMPUTE PRAYERS FOR THEIR ABSOLUTION</span></a>
+          </div>
+        </div>
+
+        <div id="header-transmission" class="header-transmission" aria-label="Live site transmission">
+          <span id="header-transmission-text"></span>
+        </div>
+
+        <nav class="view-row site-nav" aria-label="Primary navigation">
+          <div class="site-nav__pages">
+            <button type="button" data-page-button="home" aria-pressed="true"><svg class="pixel-icon" aria-hidden="true"><use href="assets/icons/hackernoon-pixel.svg#home"></use></svg><span class="control-label">[HOME]</span></button>
+            <button type="button" data-page-button="blog" aria-pressed="false"><svg class="pixel-icon" aria-hidden="true"><use href="assets/icons/hackernoon-pixel.svg#blog"></use></svg><span class="control-label">[BLOG]</span></button>
+            <button type="button" data-page-button="contact" aria-pressed="false"><svg class="pixel-icon" aria-hidden="true"><use href="assets/icons/hackernoon-pixel.svg#contact"></use></svg><span class="control-label">[CONTACT]</span></button>
+          </div>
+          <div class="view-row__controls" data-home-controls>
+            <span>VIEW:</span>
+            <button type="button" data-view-button="grid" aria-pressed="true"><span class="control-label">[GRID]</span></button>
+            <button type="button" data-view-button="list" aria-pressed="false"><span class="control-label">[LIST]</span></button>
+            <button type="button" data-view-button="os" aria-pressed="false"><span class="control-label">[OS]</span></button>
+          </div>
+        </nav>
+      </header>
+
+      <div class="background-audio-host" aria-hidden="true">
+        <div id="background-audio-player"></div>
+      </div>
+
+      <section id="workspace" class="workspace" data-page-panel="home" aria-label="Portfolio workspace">
+        <article
+          class="window window--welcome"
+          data-window
+          data-os-window="ego"
+          data-grid-column="1 / span 7"
+          style="--os-x: 3%; --os-y: 33px; --os-w: 48%; --os-h: 330px"
+        >
+          <div class="window__titlebar" data-drag-handle>
+            <h2>EGO.EXE</h2>
+            <div class="window__controls">
+              <span class="window__status">[ACTIVE]</span>
+              <span class="window__escape-hint os-window__close" aria-hidden="true">[ESC]</span>
+              <button class="os-window__close" type="button" data-close-os-window aria-label="Close EGO.EXE">[╳]</button>
+            </div>
+          </div>
+          <div class="window__body terminal-buffer" aria-label="Ego text transmission">
+            <span id="ego-stream" class="terminal-buffer__output"></span>
+          </div>
+        </article>
+
+        <button
+          type="button"
+          id="grid-logo-slot"
+          class="grid-logo-slot"
+          data-open-project="site-reel"
+          aria-label="Open reel"
+        ></button>
+
+        <article
+          class="window window--index"
+          data-window
+          data-os-window="index"
+          data-grid-column="8 / span 5"
+          style="--os-x: 57%; --os-y: 88px; --os-w: 38%; --os-h: 429px"
+        >
+          <div class="window__titlebar" data-drag-handle>
+            <h2>PROJECT_INDEX.DIR</h2>
+            <div class="window__controls">
+              <span class="window__status">02 ITEMS</span>
+              <span class="window__escape-hint os-window__close" aria-hidden="true">[ESC]</span>
+              <button class="os-window__close" type="button" data-close-os-window aria-label="Close PROJECT_INDEX.DIR">[╳]</button>
+            </div>
+          </div>
+          <div class="window__body">
+            <div id="project-index-list"></div>
+            <div id="project-tree-list" aria-label="Complete project tree"></div>
+          </div>
+        </article>
+
+        <article
+          class="window window--monitor"
+          data-window
+          data-os-window="monitor"
+          data-grid-column="1 / span 12"
+          style="--os-x: 3%; --os-y: 385px; --os-w: 94%; --os-h: 660px"
+        >
+          <div class="window__titlebar" data-drag-handle>
+            <h2 data-homepage-title>ABOUT_ME/</h2>
+            <div class="window__controls">
+              <span class="window__status" data-homepage-status>04 PLACES / 27 PHOTOS</span>
+              <span class="window__escape-hint os-window__close" aria-hidden="true">[ESC]</span>
+              <button class="os-window__close" type="button" data-close-os-window aria-label="Close ABOUT_ME/">[╳]</button>
+            </div>
+          </div>
+          <div class="window__body homepage-window__body" aria-label="Homepage content">
+            <div class="content-block-grid homepage-content-grid" data-homepage-blocks></div>
+          </div>
+        </article>
+
+        <article
+          class="window window--media"
+          data-window
+          data-os-window="shadow"
+          style="--os-x: 68%; --os-y: 484px; --os-w: 27%; --os-h: 264px"
+        >
+          <div class="window__titlebar" data-drag-handle>
+            <h2>SHADOW.EXE</h2>
+            <div class="window__controls">
+              <span class="window__status">[ACTIVE]</span>
+              <span class="window__escape-hint os-window__close" aria-hidden="true">[ESC]</span>
+              <button class="os-window__close" type="button" data-close-os-window aria-label="Close SHADOW.EXE">[╳]</button>
+            </div>
+          </div>
+          <div class="window__body terminal-buffer" aria-label="Shadow text transmission">
+            <span id="shadow-stream" class="terminal-buffer__output"></span>
+          </div>
+        </article>
+
+        <div id="shortcut-rack" class="shortcut-rack" aria-label="Project shortcuts"></div>
+      </section>
+
+      <section id="blog-page" class="content-page" data-page-panel="blog" aria-labelledby="blog-title" hidden>
+        <div class="content-page__heading">
+          <p class="eyebrow">DAVIDSVEZ.COM / WRITTEN TRANSMISSIONS</p>
+          <h2 id="blog-title">BLOG.INDEX</h2>
+        </div>
+        <div id="blog-index" class="blog-index"></div>
+      </section>
+
+      <section id="reveal-benchmark-page" class="content-page" data-page-panel="reveal-benchmark" aria-labelledby="reveal-benchmark-title" hidden>
+        <div class="content-page__heading">
+          <p class="eyebrow">DAVIDSVEZ.COM / MEDIA REVEAL STRESS TEST</p>
+          <h2 id="reveal-benchmark-title">REVEAL.BENCHMARK</h2>
+          <p>6 IMAGES / ANIMATIONS ON / BOOT OPTIONAL</p>
+        </div>
+        <div id="reveal-benchmark-grid" class="content-block-grid reveal-benchmark-grid"></div>
+      </section>
+
+      <section id="contact-page" class="content-page contact-page" data-page-panel="contact" aria-labelledby="contact-title" hidden>
+        <div class="content-page__heading">
+          <p class="eyebrow">DAVIDSVEZ.COM / OPEN CHANNEL</p>
+          <h2 id="contact-title" data-contact-heading>CONTACT</h2>
+          <p data-contact-intro>Tell me what you are making, breaking, or trying to understand.</p>
+        </div>
+        <div class="contact-grid">
+          <aside class="contact-info" aria-label="Contact information">
+            <p><span>STATUS</span><strong data-contact-availability>AVAILABLE FOR SELECT PROJECTS</strong></p>
+            <p><span>LOCATION</span><strong data-contact-location>OKLAHOMA / REMOTE</strong></p>
+          </aside>
+          <form
+            id="contact-form"
+            class="contact-form"
+            name="contact"
+            method="POST"
+            action="/?page=contact&amp;sent=1"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="subject" data-remove-prefix value="New portfolio inquiry from %{formName} (%{submissionId})" />
+            <p class="form-honeypot" aria-hidden="true"><label>LEAVE EMPTY<input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+            <label>NAME<input name="name" autocomplete="name" required /></label>
+            <label>EMAIL<input name="email" type="email" autocomplete="email" required /></label>
+            <label>PROJECT TYPE
+              <select name="project-type" required>
+                <option value="">SELECT ONE</option>
+                <option>WEBSITE</option><option>FILM</option><option>GAME</option><option>EXPERIMENT</option><option>APP</option><option>OTHER</option>
+              </select>
+            </label>
+            <label>MESSAGE<textarea name="message" rows="9" required></textarea></label>
+            <div class="contact-form__footer">
+              <button type="submit"><svg class="pixel-icon" aria-hidden="true"><use href="assets/icons/hackernoon-pixel.svg#send"></use></svg><span>[SEND MESSAGE]</span></button>
+              <p id="contact-form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="manifest-descent" class="legacy-manifest" aria-label="Recovered manifest transmission" hidden>
+        <pre id="manifest-path-text" class="legacy-manifest__path" aria-live="polite"></pre>
+        <pre id="manifest-tease-text" class="legacy-manifest__tease" aria-live="polite"></pre>
+      </section>
+
+      <aside id="cheat-dimension" class="cheat-dimension" aria-label="Offscreen easter egg" hidden>
+        <button id="easter-egg-file" class="easter-egg-file" type="button">
+          <span aria-hidden="true">[?]</span>
+          <span class="control-label">EASTER.EGG</span>
+        </button>
+        <section id="offscreen-egg" class="offscreen-egg" hidden>
+          <pre id="easter-path-text" class="offscreen-egg__path" aria-live="polite"></pre>
+          <div id="offscreen-content" class="content-block-grid"></div>
+          <p id="offscreen-signature-age" class="legacy-signature"></p>
+        </section>
+      </aside>
+
+      <footer class="site-footer">
+        <span>DEPARTURE MONO / 11PX LATTICE</span>
+        <a href="https://pixeliconlibrary.com/license/" target="_blank" rel="noreferrer">PIXEL ICONS: HACKERNOON / CC BY 4.0</a>
+        <div class="cheat-code-control">
+          <button id="cheat-code-toggle" type="button" aria-pressed="false" data-static-control><span class="control-label">[CHEAT CODE: OFF]</span></button>
+        </div>
+      </footer>
+
+      <section id="costco-descent" class="costco-descent" aria-label="Welcome to Costco ending" hidden>
+        <p class="costco-descent__scroll-taunt">oh wow you can scroll here now? wow huh so much responsiblity you have with that scroll, huh? wow like i wonder what you can do with that power like, save the world maybe? no? just scrolling below and to the right? oh oh okay i see you got me excited there for a sec but okay i see how it is can't save the world huh. okay. it's okay i'm not crying you're crying. just scroll already. &gt;:C</p>
+        <pre id="costco-path-text" class="costco-descent__path" aria-live="polite"></pre>
+        <div id="costco-welcome-content" class="costco-descent__welcome content-block-grid"></div>
+        <section id="manifest-footer" class="manifest-footer" aria-label="Myth manifest footer" hidden>
+          <div id="manifest-footer-myth" class="manifest-footer__myth" aria-hidden="true"></div>
+          <p id="manifest-footer-signoff" class="manifest-footer__signoff"></p>
+          <p id="manifest-signature-age" class="legacy-signature"></p>
+        </section>
+        <div class="costco-descent__footer" aria-label="Footer">[ FOOTER ] <span>for those tarantino boys out there</span></div>
+        <div id="costco-beyond-footer" class="costco-descent__beyond" hidden>
+          <div id="costco-end-content" class="content-block-grid"></div>
+          <p id="costco-signature-age" class="legacy-signature"></p>
+        </div>
+      </section>
+    </main>
+
+    <section id="boot-overlay" class="boot-overlay" aria-label="Site loading">
+      <video
+        id="boot-video"
+        class="source-media"
+        data-media-src="assets/media/boot-preview.mp4"
+        muted
+        playsinline
+        preload="auto"
+        loop
+      ></video>
+      <img
+        id="boot-still"
+        class="source-media"
+        data-media-src="assets/media/boot-first-frame.webp"
+        alt=""
+      />
+      <img class="source-media" data-connect-frame data-media-src="assets/media/boot-connect-01.webp" alt="" />
+      <img class="source-media" data-connect-frame data-media-src="assets/media/boot-connect-02.webp" alt="" />
+      <img class="source-media" data-connect-frame data-media-src="assets/media/boot-connect-03.webp" alt="" />
+      <img id="boot-logo" class="source-media" data-media-src="assets/media/logo.svg" alt="" />
+      <div id="boot-logo-stage" class="boot-logo-stage" aria-hidden="true">
+        <video
+          id="boot-logo-video"
+          data-media-src="assets/media/boot-preview.mp4"
+          muted
+          playsinline
+          preload="none"
+          loop
+        ></video>
+      </div>
+      <canvas id="boot-canvas" aria-hidden="true"></canvas>
+      <div class="boot-panel">
+        <p class="boot-panel__title">┌─ DAVIDSVEZ / VISUAL BOOT ─┐</p>
+        <p id="boot-bar" class="glyph-progress" aria-hidden="true">[                         ]</p>
+        <progress id="boot-progress" max="100" value="0">0%</progress>
+        <p id="boot-label" class="boot-panel__label" role="status" aria-live="polite">
+          WAKING UP THE DOCUMENT
+        </p>
+      </div>
+    </section>
+
+    <template id="project-window-template">
+      <article class="window project-window" data-window data-project-window>
+        <div class="window__titlebar" data-drag-handle>
+          <h2 data-project-title>PROJECT</h2>
+          <div class="window__controls">
+            <span class="window__media-count" data-fullscreen-count aria-live="polite" hidden></span>
+            <span class="window__escape-hint" aria-hidden="true">[ESC]</span>
+            <button type="button" data-close-project aria-label="Close project preview">[╳]</button>
+          </div>
+        </div>
+        <div class="project-stage">
+          <div class="project-folder" data-project-folder>
+            <section class="folder-layout" data-folder-layout>
+              <div class="project-overview" data-project-overview>
+                <h3 data-project-heading>PROJECT TITLE</h3>
+                <p data-project-description></p>
+                <dl class="project-meta">
+                  <div><dt>ROLE</dt><dd data-project-role>DESIGN / DEVELOPMENT</dd></div>
+                  <div><dt>STATE</dt><dd data-project-state>PREVIEW COMPLETE</dd></div>
+                  <div><dt>ROUTE</dt><dd data-project-route>/PROJECT/PLACEHOLDER</dd></div>
+                </dl>
+              </div>
+              <div class="content-block-grid" data-content-blocks-lead hidden></div>
+              <div class="content-block-grid" data-content-blocks hidden></div>
+              <div class="child-projects" data-project-children hidden></div>
+            </section>
+            <section class="text-layout" data-text-layout hidden>
+              <p class="eyebrow" data-text-kind>TEXT TRANSMISSION</p>
+              <h3 data-text-heading>PROJECT TITLE</h3>
+              <div class="text-layout__body" data-project-body></div>
+            </section>
+          </div>
+          <div class="project-loader" data-project-loader>
+            <p class="glyph-progress" data-project-bar>[                  ]</p>
+            <p data-project-status role="status">ASKING THE FILE WHAT IT REMEMBERS</p>
+          </div>
+          <video class="source-media" data-project-video muted autoplay playsinline preload="auto" loop></video>
+          <img class="source-media" data-project-image alt="" />
+          <canvas class="project-ascii" data-project-canvas aria-hidden="true"></canvas>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js?v=20260809-22" defer></script>
+  </body>
+</html>

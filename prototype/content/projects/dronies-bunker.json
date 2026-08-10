@@ -1,0 +1,50 @@
+{
+  "id": "dronies-bunker",
+  "parentId": "dronies",
+  "layout": "folder",
+  "windowWidth": "748px",
+  "windowHeight": "506px",
+  "textWidth": "62ch",
+  "body": "",
+  "showOverview": true,
+  "showFolderActions": true,
+  "blocks": [
+    {
+      "id": "dronies-bunker-context",
+      "type": "text",
+      "width": "full",
+      "heading": "A SHARED SPACE FOR HOLDERS",
+      "body": "Bunker was a 3D metaverse experience designed as a place for Dronies holders to meet and spend time inside the world of the project. We hired a developer to build the experience; I led the creative and art direction, connected the work to the broader brand and story, and coordinated production across the people involved.",
+      "source": "",
+      "mediaRef": "",
+      "href": "",
+      "label": "",
+      "projectId": "",
+      "alt": "",
+      "fit": "cover"
+    }
+  ],
+  "title": "METAVERSE_BUNKER.DIR",
+  "heading": "METAVERSE BUNKER",
+  "shortcutLabel": "METAVERSE_BUNKER.DIR",
+  "kind": "PROJECT / DIRECTORY",
+  "description": "A 3D metaverse hangout created for Dronies holders, extending the collection’s world into a shared community space.",
+  "thumbnail": "assets/media/project-previews/dronies-bunker.mp4",
+  "thumbnailMediaRef": "preview-dronies-bunker",
+  "thumbnailType": "video",
+  "sourceType": "image",
+  "category": "PRODUCTION",
+  "period": "2022–2023",
+  "source": "",
+  "mediaRef": "",
+  "role": "CREATIVE DIRECTION / ART DIRECTION / PRODUCTION",
+  "state": "ARCHIVE READY",
+  "route": "/PROJECT/DRONIES-BUNKER",
+  "status": [
+    "MOUNTING PROJECT",
+    "RESOLVING MEDIA REFERENCES",
+    "BUILDING ARCHIVE",
+    "OPENING DIRECTORY"
+  ],
+  "posterFrame": "assets/media/posters/preview-dronies-bunker.jpg"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "bolt-icons",
+  "parentId": "client-work",
+  "layout": "folder",
+  "windowWidth": "748px",
+  "windowHeight": "506px",
+  "textWidth": "62ch",
+  "body": "",
+  "showOverview": true,
+  "showFolderActions": true,
+  "blocks": [
+    {
+      "id": "bolt-story",
+      "type": "text",
+      "width": "full",
+      "heading": "ICONS FOR VISUAL CODE",
+      "body": "I was hired to create the icon system for Bolt, translating programming concepts into symbols that could remain distinct and readable inside a dense node-based tool. After Unity acquired Bolt from its original creator, Ludiq, the icons were carried into Unity Visual Scripting and became part of the larger Unity ecosystem. The exact icon count and original production date still need to be recovered before this becomes a full case study.",
+      "source": "",
+      "mediaRef": "",
+      "href": "",
+      "label": "",
+      "projectId": "",
+      "alt": "",
+      "fit": "cover"
+    }
+  ],
+  "title": "BOLT.UNITY",
+  "heading": "BOLT",
+  "shortcutLabel": "BOLT.UNITY",
+  "kind": "PROJECT / DIRECTORY",
+  "description": "An icon design system for Bolt visual scripting that later became part of Unity Visual Scripting and the wider Unity editor ecosystem.",
+  "thumbnail": "assets/media/project-previews/bolt-icons.mp4",
+  "thumbnailMediaRef": "preview-bolt-icons",
+  "thumbnailType": "video",
+  "sourceType": "image",
+  "category": "TOOLS",
+  "period": "",
+  "source": "",
+  "mediaRef": "",
+  "role": "ICON SYSTEM DESIGN",
+  "state": "SHIPPED / INTEGRATED INTO UNITY",
+  "route": "/PROJECT/BOLT-ICONS",
+  "status": [
+    "MOUNTING PROJECT",
+    "RESOLVING MEDIA REFERENCES",
+    "BUILDING ARCHIVE",
+    "OPENING DIRECTORY"
+  ],
+  "hidden": true,
+  "posterFrame": "assets/media/posters/preview-bolt-icons.jpg"
+}

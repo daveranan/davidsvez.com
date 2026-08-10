@@ -1,0 +1,592 @@
+{
+  "site": {
+    "title": "DAVID SVEZHINTSEV",
+    "status": "INTERFACE EXPOSED"
+  },
+  "transmissions": {
+    "header": [
+      "? HIIIIIIIIIIIIIIIIIIIIIIIIIIIIII THIS IS DAVE SPEAKING.",
+      "WELL,",
+      "HE WOULD IF HE WAS HERE,",
+      "SO I AM SPEAKING FOR HIM.",
+      "TREAT IT AS THE WORD OF DAVE,",
+      "STRAIGHT FROM DAVE'S MOUTH,",
+      "OR FINGERS.",
+      "LISTEN ANON,",
+      "HAVE YOU QUESTIONED THE WHY LATELY?",
+      "QUESTION THE WHY BEHIND THE WHY",
+      "WHY DOES LOVE MATTER?",
+      "WELL,",
+      "THERE IS SEROTONIN IN YOUR BRAIN,",
+      "DUH.",
+      "WHY DO YOU SEEK FRIENDSHIPS AT NIGHT?",
+      "WHY DOES LONELINESS FEEL SO DAMN EXISTENTIAL?",
+      "WHY CAN LOVE HURT YOU THE MOST?",
+      "WHY ARE WE STILL HERE,",
+      "JUST TO SUFFER?",
+      "NOW THAT I THINK ABOUT IT,",
+      "WHY ARE YOU STILL HERE ON MY SITE?",
+      "WHY ARE ROSES BLUE?",
+      "ARE THEY ACTUALLY BLUE?",
+      "WHY DID IT HURT WHEN YOU USED ME THAT WAY?",
+      "WHY IS LIFE SO BLAND AND BEAUTIFUL AT THE SAME TIME?",
+      "KNOCK KNOCK.",
+      "WHO IS THERE?",
+      "YOUR MIND ASKING TO INSERT SOME DOPAMINE",
+      "AND LET'S RUN THIS BAAAAAAAACK ?"
+    ],
+    "ego": [
+      "QUESTION REALITY",
+      "SAID THE ANGRY FISH",
+      "FLESH UNBOUND!!!",
+      "MIND OVER MATTER",
+      "ONE TRICK SONY PONY",
+      "KICK THAT DOOR BABY",
+      "LOBOTOMY WORLDS :P",
+      "CREATIVITY > AI",
+      "UNSHITIFY MY LIFE",
+      "SATISFACTION > HEAVEN",
+      "LOST AND FOUND HERE",
+      "HOPE DIES LAST",
+      "PUT CORTIZONE ON IT",
+      "CREATIVITY UNBOUND",
+      "HIDE IN THE CLOSET",
+      "MORNING OUTSHINES",
+      "BRING THE SICKNESS",
+      "CRY ME A RIVER LOL",
+      "PATIENT IS SCARED",
+      "FORGET REMEMBRANCE"
+    ],
+    "shadow": [
+      "WHEREISMYMIND???",
+      "WHEREISMYMIND???",
+      "SICK, HERE IT IS",
+      "YAYAYAYAYAYAYAYA",
+      "DID YOU KNOW????",
+      "YOU KNEW WHERE IT WAS? WTF BRO?",
+      "FUNNYFUNNYFUNNY!",
+      "SADSADSADSADSAD?",
+      "HOPE DIES LAST",
+      "PUT CORTIZONE ON IT",
+      "CREATIVITY UNBOUND",
+      "HIDE IN THE CLOSET",
+      "MORNING OUTSHINES",
+      "BRING THE SICKNESS",
+      "CRY ME A RIVER LOL",
+      "WELCOME TO COSTCO"
+    ],
+    "typingSpeed": 65,
+    "commaPause": 300,
+    "sentencePause": 1000,
+    "phrasePause": 100
+  },
+  "contact": {
+    "heading": "CONTACT",
+    "intro": "Tell me what you are making, breaking, or trying to understand.",
+    "availability": "AVAILABLE FOR SELECT PROJECTS",
+    "location": "OKLAHOMA / REMOTE"
+  },
+  "homepage": {
+    "title": "ABOUT_ME/",
+    "status": "04 PLACES / 27 PHOTOS",
+    "about": {
+      "name": "David Svezhintsev",
+      "intro": "I make games, tools, interfaces, films, and whatever else seems interesting enough to lose a few months to.",
+      "bio": "Born in Saint Petersburg, currently based in the US. I've spent most of my career around product design and production, and increasingly all of my time making games.",
+      "portrait": "assets/media/og-library/Photos/Me_1.jpg",
+      "photographyIntro": "I take a stupid amount of photos whenever I go anywhere.",
+      "photoGroups": [
+        {
+          "location": "MUNICH, GERMANY",
+          "photos": [
+            "assets/media/og-library/Photos/554040231_18531434125046765_8931794980576535083_n.jpg",
+            "assets/media/og-library/Photos/554441068_18531434110046765_8000197146869765872_n.jpg",
+            "assets/media/og-library/Photos/554673467_18531434191046765_4268393582935631706_n.jpg",
+            "assets/media/og-library/Photos/556413253_18531434137046765_3455923459436891181_n.jpg"
+          ]
+        },
+        {
+          "location": "LAUTERBRUNNEN, SWITZERLAND",
+          "photos": [
+            "assets/media/og-library/Photos/566644297_18537455395046765_8582645022364281618_n.jpg",
+            "assets/media/og-library/Photos/566685163_18537455350046765_5619875386881040422_n.jpg",
+            "assets/media/og-library/Photos/566876842_18537455989046765_6113680450557617218_n.jpg",
+            "assets/media/og-library/Photos/566903570_18537456001046765_6400845623940023593_n.jpg",
+            "assets/media/og-library/Photos/569100069_18537456010046765_3390120784912870866_n.jpg",
+            "assets/media/og-library/Photos/571981955_18543827299046765_4837020013419441924_n.jpg"
+          ]
+        },
+        {
+          "location": "MENTON, FRANCE",
+          "photos": [
+            "assets/media/og-library/Photos/572122126_18539895181046765_5309456153486219621_n.jpg",
+            "assets/media/og-library/Photos/572152224_18539725921046765_8630733899058429426_n.jpg",
+            "assets/media/og-library/Photos/572224936_18539725930046765_1417773112285549974_n.jpg",
+            "assets/media/og-library/Photos/572276184_18539895169046765_2511132439768510654_n.jpg",
+            "assets/media/og-library/Photos/572521308_18539725912046765_3926527223070325396_n.jpg",
+            "assets/media/og-library/Photos/572752102_18539895229046765_8420682720815155408_n.jpg",
+            "assets/media/og-library/Photos/572759820_18539895157046765_24842795638625248_n.jpg",
+            "assets/media/og-library/Photos/572767184_18539895190046765_5416876606842225061_n.jpg",
+            "assets/media/og-library/Photos/572804333_18539895211046765_6677302748912053589_n.jpg",
+            "assets/media/og-library/Photos/572891382_18539725939046765_7566299953536618752_n.jpg",
+            "assets/media/og-library/Photos/574093629_18539895199046765_8543696088899625231_n.jpg"
+          ]
+        },
+        {
+          "location": "SANREMO, ITALY",
+          "photos": [
+            "assets/media/og-library/Photos/582078962_18543827320046765_1908806272816245160_n.jpg",
+            "assets/media/og-library/Photos/583339666_18543827362046765_6112675803669537357_n.jpg",
+            "assets/media/og-library/Photos/584424905_18543827323046765_8607657616790426816_n.jpg",
+            "assets/media/og-library/Photos/586929194_18543827353046765_9085698015355498495_n.jpg",
+            "assets/media/og-library/Photos/587052368_18543827326046765_6514332653906332423_n.jpg",
+            "assets/media/og-library/Photos/587284321_18543827344046765_8828664098831983175_n.jpg"
+          ]
+        }
+      ]
+    },
+    "blocks": []
+  },
+  "blog": [
+    {
+      "id": "the-pitch-deck-that-got-us-20000-and-what-it-got-wrong",
+      "title": "The pitch deck that got us €20,000—and what it got wrong",
+      "date": "2026-08-07",
+      "summary": "A slide-by-slide look at the back half of Fell Out’s first high-concept pitch deck: the market research that helped secure €20,000, the assumptions that did not survive development, and what I would prioritize now.",
+      "published": true,
+      "blocks": [
+        {
+          "id": "pitch-context",
+          "type": "text",
+          "width": "full",
+          "heading": "A successful pitch can still be wrong",
+          "body": "This was the first high-concept deck for Fell Out, the project that eventually grew into Lightkeeper. We fit the entire pitch into 15 slides, secured €20,000 in concept funding from FFF Bayern, and learned far more from the deck’s mistakes than from the fact that it worked.\n\nThe first half established the vision, team, proof of concept, gameplay pillars, unique selling points, and narrative. The second half had to answer the less romantic questions: Who is this for? Is there a market? What competes with it? Why is our version different? Can we actually produce it?\n\nHere is how we answered those questions at the time—and how I see those answers now.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "target-audience-slide",
+          "type": "image",
+          "width": "full",
+          "heading": "10 / Target audience",
+          "body": "The audience slide combined an intended player profile with public traffic and audience data from Semrush and several other sources.",
+          "source": "assets/media/optimized/Projects/Lightkeeper/HighConcept_Pitchdeck/10.webp",
+          "alt": "Fell Out pitch deck target audience slide with demographic details and audience charts",
+          "fit": "contain"
+        },
+        {
+          "id": "target-audience-lesson",
+          "type": "text",
+          "width": "full",
+          "heading": "Use imperfect audience data honestly",
+          "body": "Most of the useful audience tools were—and still are—locked behind expensive subscriptions. I used the free version of Semrush, traffic estimates, public demographic reports, community observations, and whatever other credible sources I could find.\n\nThe result was not an exact picture of the future Fell Out player. It was a defensible approximation. That distinction matters. A pitch deck does not need to pretend that uncertain data is precise; it needs to show that you investigated the audience, compared multiple signals, and understand where the evidence stops.\n\nIf I rebuilt this slide today, I would separate sourced facts from hypotheses more visibly. Who already buys adjacent games is evidence. Why they might choose your game is still an assumption that needs to be tested.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "market-overview-slide",
+          "type": "image",
+          "width": "half",
+          "heading": "11 / Market overview",
+          "body": "A compact overview of comparable games, prices, review counts, and audience response.",
+          "source": "assets/media/optimized/Projects/Lightkeeper/HighConcept_Pitchdeck/11.webp",
+          "alt": "Fell Out pitch deck market overview slide comparing games by tags, price, reviews, ratings, and playtime",
+          "fit": "contain"
+        },
+        {
+          "id": "competition-slide",
+          "type": "image",
+          "width": "half",
+          "heading": "12 / Key competition",
+          "body": "SteamSpy-style competitor data made the size and shape of the primary market easier to scan.",
+          "source": "assets/media/optimized/Projects/Lightkeeper/HighConcept_Pitchdeck/12.webp",
+          "alt": "Fell Out pitch deck competitor analysis slide for A Short Hike using Steam market data",
+          "fit": "contain"
+        },
+        {
+          "id": "competition-lesson",
+          "type": "text",
+          "width": "full",
+          "heading": "Competitive analysis should explain the market",
+          "body": "This is the kind of slide that appears in many game pitch decks: a primary comparable, a block of store data, and a chart of the surrounding market. Ours was essentially a cleaned-up SteamSpy analysis of A Short Hike.\n\nThat may sound basic, but it gave reviewers a fast overview of the commercial space. The point was not to prove that Fell Out would reproduce another game’s sales. It was to show that we understood the genre’s price range, audience size, reception, playtime, tags, and major reference points.\n\nThe useful question is not “Which successful game are we copying?” It is “What does this comparison teach us about player expectations, scope, positioning, and risk?”",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "positioning-slide",
+          "type": "image",
+          "width": "full",
+          "heading": "13 / Market and competitors",
+          "body": "We positioned Fell Out against A Short Hike, Dredge, and Subnautica: Below Zero by comparing features, differences, and the promise of our concept.",
+          "source": "assets/media/optimized/Projects/Lightkeeper/HighConcept_Pitchdeck/13.webp",
+          "alt": "Fell Out pitch deck positioning slide comparing the game with A Short Hike, Dredge, and Subnautica Below Zero",
+          "fit": "contain"
+        },
+        {
+          "id": "player-fantasy-lesson",
+          "type": "text",
+          "width": "full",
+          "heading": "A unique look is not the same as a coherent fantasy",
+          "body": "At the time, we loved Dredge’s atmosphere and felt our moody visual style could be merged with the structure of A Short Hike. On a comparison slide, that sounded distinctive. In hindsight, it was a bad call.\n\nVisual uniqueness is not the end goal. Player fantasy and wish fulfillment matter more. Why would someone drawn to Stardew Valley or A Short Hike for comfort, warmth, and restoration necessarily want a depressive version of that experience? A beautiful style cannot repair a contradiction between what the player is asked to do and how the game makes that activity feel.\n\nI had a hard time resolving that ludonarrative dissonance, and the project eventually pivoted. The lesson was simple: mechanics, mood, motivation, and audience promise need to point toward the same fantasy. “It looks different” is not enough.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "production-timeline-slide",
+          "type": "image",
+          "width": "full",
+          "heading": "14 / Production timeline",
+          "body": "The timeline connected the high-concept phase to pre-production, vertical slice development, production, marketing, and release.",
+          "source": "assets/media/optimized/Projects/Lightkeeper/HighConcept_Pitchdeck/14.webp",
+          "alt": "Fell Out pitch deck production timeline from high concept through development and release",
+          "fit": "contain"
+        },
+        {
+          "id": "production-lesson",
+          "type": "text",
+          "width": "full",
+          "heading": "A timeline demonstrates intent, not certainty",
+          "body": "A production timeline tells reviewers that you are thinking beyond a concept. It connects the current funding request to the stages required to make and release an entire game.\n\nThe honest version is that I was not yet thinking through every part of that production plan. I was focused on finishing the deck, reaching the next milestone, and securing the next stage of funding. The slide communicated a level of long-range confidence that I had not fully earned.\n\nThat does not make the timeline useless. It makes it a hypothesis. A stronger version would expose the assumptions behind each phase: team size, deliverables, dependencies, decision gates, funding needs, and the evidence required before moving forward.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "recap-slide",
+          "type": "image",
+          "width": "full",
+          "heading": "15 / Recap",
+          "body": "The final slide restated the game, status, engine, development window, and release target before closing with the brand.",
+          "source": "assets/media/optimized/Projects/Lightkeeper/HighConcept_Pitchdeck/15.webp",
+          "alt": "Final Fell Out pitch deck recap and thank-you slide",
+          "fit": "contain"
+        },
+        {
+          "id": "closing-lesson",
+          "type": "text",
+          "width": "full",
+          "heading": "Finish with a clean recap",
+          "body": "We crammed the pitch into 13 content slides and used the remaining space for a recap and final thank-you. Many decks do the same thing: repeat the essential facts, deliver the brand statement one last time, and put a clean bow around the presentation.\n\nThe deck did its job. It secured €20,000 and gave us the chance to discover what the concept actually was. It also preserved a record of our assumptions before development challenged them.\n\nThat is the part I value most now. A pitch deck is not only a sales document. It is a snapshot of what you believe about the game, audience, market, and production at a particular moment. If you keep it honest and specific, it becomes something you can learn from—even when you later prove yourself wrong.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "open-fell-out-concept",
+          "type": "project-link",
+          "width": "full",
+          "heading": "",
+          "body": "Explore the funded high-concept phase, the original game-jam prototype, and the path from Fell Out to Lightkeeper.",
+          "source": "",
+          "href": "",
+          "label": "OPEN FELL_OUT.CONCEPT",
+          "projectId": "fell-out-concept",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "open-full-pitch-deck",
+          "type": "link",
+          "width": "half",
+          "heading": "Open the full pitch deck",
+          "body": "",
+          "source": "",
+          "href": "https://drive.google.com/file/d/1v1T2iJzYy3qntfPzrKwxJN_ynxz6MoO1/view?usp=drive_link",
+          "label": "OPEN FELL OUT HIGH CONCEPT 1.0",
+          "projectId": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "original-pitch-deck-thread",
+          "type": "link",
+          "width": "half",
+          "heading": "Read the original thread",
+          "body": "",
+          "source": "",
+          "href": "https://x.com/daveranan/status/2085817977723560202",
+          "label": "READ THE ORIGINAL THREAD",
+          "projectId": "",
+          "alt": "",
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "id": "everything-we-learned-about-making-games-as-of-2024",
+      "title": "Everything we learned about making games as of 2024",
+      "date": "2024-10-21",
+      "summary": "Making games is incredibly hard. After five years of wrestling with analysis paralysis and constant doubt, this is the process we learned for turning an idea into a game worth making.",
+      "published": true,
+      "blocks": [
+        {
+          "id": "introduction",
+          "type": "text",
+          "width": "full",
+          "heading": "Start with the right question",
+          "body": "There is no roadmap that can show you exactly how to make your unique game—or how to become a game developer. We spent five years figuring out a process that helped us move past analysis paralysis and constant doubt. This is everything we learned so far.\n\nA disclaimer before we begin: this article focuses on the earliest stages of making a game, especially for people struggling to find a strong concept. We are still learning the later stages of development ourselves, and other industry professionals will have more to add there.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "high-concept",
+          "type": "text",
+          "width": "full",
+          "heading": "Begin with a high concept",
+          "body": "Before writing code or drawing concept art, create a high concept for the game. Every concept needs a vision statement: the big idea—the big what—in one or two sentences. Write it from the perspective of a profession or role the player will embody.\n\nFor example: You are making a cult. You are a scientist searching for signals from outer space. You create and maintain a farm. You repair power lines. You watch over a forest. Whatever the premise is, it needs to be dead simple.\n\nReducing your ideas, story, and mechanics to this level can make the concept feel dull, boring, or too simple. Remember that it has never just been about the idea. What matters is the implementation: the part of the equation shaped by your unique talents and skills. Cult of the Lamb, Farming Simulator, Voices of the Void, and Firewatch can all be described simply. Their identities come from how they execute and twist those premises.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "contrast",
+          "type": "text",
+          "width": "full",
+          "heading": "Find the contrast",
+          "body": "Once the premise is clear, find the but: the contrast, twist, or hook. Explain it in a short elevator pitch. There are a thousand ways to make a game about building a cult. It could be cartoony and literal, or a first-person experience built around expensive audiovisual storytelling. What is your version? What is most interesting to you?\n\nFor example: You are the vassal of a dead god, and you are building a new cult. You maintain a farm, but nightmares haunt you. You search for signals from outer space, but they are closer than you think. You watch over the forest, but somebody is watching you.\n\nDo not assume that what interests you will interest everyone. Test your assumptions by pitching the idea to strangers and watching how they react. Do they lean in? Do they suggest ideas? Or do they rush you through the pitch and change the subject? Their behavior will often tell you more than polite feedback.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "moodboard",
+          "type": "text",
+          "width": "full",
+          "heading": "Build a shared vision",
+          "body": "The next step—even if you work alone, and especially if you have a team—is to make a moodboard. Gather references from games, short films, features, art, sound, and music. Use anything that makes the idea visually and emotionally clear. The goal is to reduce the number of different versions of the game living in everyone’s heads and replace them with something solid and coherent.\n\nIdentify the experiences and feelings the game needs to evoke. Then identify mechanics and content from your references that help create that core experience. It might be a piece of music that conveys the feeling of being trapped underwater. It might be a radar that suddenly detects too many signals, creating dread of the unknown.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "gameplay-loop",
+          "type": "text",
+          "width": "full",
+          "heading": "Write the gameplay loop",
+          "body": "With the high concept in place, write a tight gameplay loop on the planning tool of your choice.\n\nConsider: Clear roguelike dungeons to gain resources, use those resources to care for your cult, and build it up to become stronger. Break that sentence into verbs: explore and fight → scavenge and loot → build and manage → upgrade and repeat. Each verb informs the next part of the loop.\n\nOr consider: Find and process signals to earn points, spend those points on food, items, and satellite improvements, and explore the surrounding area during downtime to discover disturbing things. Its core becomes base and satellite maintenance, signal processing, survival, exploration, and random events.\n\nOnce the loop is clear, it is time to find the fun. You do that with a prototype.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "prototype",
+          "type": "text",
+          "width": "full",
+          "heading": "Prototype the experience, not the entire game",
+          "body": "There are many ways to prototype, but digital game prototypes should test the experience through a computer interface. The method is up to you: quickly modify a template in Construct 3, simulate a duel in a spreadsheet, or use whatever lets you reach the question fastest.\n\nOne technique I love is recontextualizing mechanics in a two-dimensional view. Prototype one part of the system, not the entire system. Find ways to cheat, approximate a complicated mechanic in 2D, and build its most basic version.\n\nNeed a resource-spawning system? Write a timer that enables deactivated objects over time. Do not sink time into implementation details or get distracted by how the final mechanic should work. The goal is to capture its essence. Almost any game can be recontextualized in 2D—not one-to-one, but closely enough to preserve the part of the core experience that could entertain someone for 30 minutes.\n\nApproximate that experience as cheaply as possible. If the prototype is fun for 30 minutes and people return to replay it, that is an excellent sign that you should build a more solid version closer to the original concept.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "feedback",
+          "type": "text",
+          "width": "full",
+          "heading": "Test early and experiment freely",
+          "body": "Get the prototype into people’s hands as soon as possible. Gather feedback. Make changes. Add something experimental, try new things, and flip the script. At this stage, you can experiment without worrying that every change demands a refactor. Fork the prototype, remove the player’s health, and see what happens.\n\nAnd a reminder: use Git. If you do not yet have a client you like, SourceTree is one approachable option.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "art-direction",
+          "type": "text",
+          "width": "full",
+          "heading": "Establish the appeal",
+          "body": "Suppose the loop is engaging and people hear your pitch with genuine anticipation. What comes next? Establish the appeal by finding an art direction that is distinctive, feasible, and supported by a proven audience.\n\nLook for successful indie games—on Steam, perhaps with more than 1,000 reviews, or on itch.io—and study the medium they chose. Is it attractive? Are the colors effective? Is it low-poly or inspired by PlayStation-era graphics? What makes the look work? How difficult is it to produce? Most importantly, do you enjoy making art in that medium?\n\nI love cel or unlit shading, edge detection, low-poly forms, high contrast, and saturated color palettes. As someone who does not consider himself an artist, I find assets in that style delightful to make. Every choice has drawbacks, though. Unlit shading, for example, can mean giving up useful shadows.\n\nFind a medium that you enjoy looking at and working in, and that has a track record with an audience. That gives you a chance to reach people with similar taste—or at least a willingness to give the game a chance.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "marketability",
+          "type": "text",
+          "width": "full",
+          "heading": "Check the marketability",
+          "body": "Has someone tried something like this before? Where did they succeed, and where did they fail?\n\nThink about the big-picture visual hooks you can create. Imagine your game as a YouTube thumbnail or a single social post. What unanswered question or premise could one frame of the game propose?\n\nA Subnautica screenshot often communicates the foundations of its genre immediately: hunger, thirst, oxygen, a resource counter, and a tool in the player’s hand. Those familiar mechanics sit inside a beautiful and horrifying underwater world, which is the hook. Add a frightening creature, a buildable submarine, a strange structure, or mysterious technology and the image suggests something bigger than the player can understand in one frame. What does the submarine do? Can the leviathan eat you? Is that alien technology?\n\nOne useful test is to make a fake trailer. If you focus on the images required for the trailer instead of building a playable game, you may be able to produce it quickly in a tool such as Blender. The goal is not to pretend the game is finished. The goal is to discover whether the concept can attract an audience before committing to full production.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "closing",
+          "type": "text",
+          "width": "full",
+          "heading": "Keep the context in mind",
+          "body": "These suggestions assume you are considering a long-term commercial project, not something you are making purely for fun or as a first learning exercise. If you are making something for fun, many of these steps can still help you understand what you want to create.\n\nI may be wrong about all of this. These lessons come from GDC talks, YouTube videos, books, and our personal experience over the previous four years. I originally wrote them down as a short, expanded index—a place to capture the process and point toward deeper resources in the future.\n\nI hope it helps.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "original-thread",
+          "type": "link",
+          "width": "full",
+          "heading": "Read the original thread",
+          "body": "",
+          "source": "",
+          "href": "https://bsky.app/profile/daveranan.bsky.social/post/3l72kissoig2r",
+          "label": "READ THE ORIGINAL THREAD",
+          "projectId": "",
+          "alt": "",
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "id": "what-building-daedalus-taught-us-about-ai-and-creative-work",
+      "title": "What building Daedalus taught us about AI and creative work",
+      "date": "2022-10-25",
+      "summary": "Daedalus began as an experiment in AI-assisted production and became a comic, a brand, merchandise, a game prototype, and a lesson in where creative tools end and human intent begins.",
+      "published": true,
+      "blocks": [
+        {
+          "id": "daedalus-trailer",
+          "type": "video",
+          "width": "full",
+          "heading": "Daedalus",
+          "body": "",
+          "source": "assets/media/optimized/Projects/Daedalus/Comic/daedalus_comic_trailer.mp4",
+          "mediaRef": "media-daedalus-comic-daedalus-comic-trailer-mp4",
+          "href": "",
+          "label": "",
+          "projectId": "",
+          "alt": "Trailer for the Daedalus interactive science-fiction comic",
+          "fit": "cover",
+          "posterFrame": "assets/media/posters/media-daedalus-comic-daedalus-comic-trailer-mp4.jpg"
+        },
+        {
+          "id": "experiment-became-world",
+          "type": "text",
+          "width": "full",
+          "heading": "An experiment became a world",
+          "body": "Daedalus started with a question: could a tiny team use the emerging generation tools of 2022 to finish a coherent narrative project instead of producing a folder of disconnected images?\n\nOver two months of evenings and weekends, that experiment grew into nine pieces of apparel and poster work, a game in development, 30 social posts across TikTok, Instagram, Twitter, and Imgur, three Behance case studies, and a complete brand with a logomark and supporting collateral. I personally spent more than 320 hours on it.\n\nThe project ultimately became much more than its source images: an original science-fiction world, a 12-page comic, an interactive animated reader, physical print work, music, film experiments, merchandise, and the beginnings of a game.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "finished-zine",
+          "type": "image",
+          "width": "full",
+          "heading": "From generated source material to a physical object",
+          "body": "The finished first Daedalus zine made the experiment tangible: not a prompt or an isolated output, but a designed, edited, printed work someone could hold.",
+          "source": "assets/media/blog/daedalus-zine-one.webp",
+          "alt": "A person holding the red Daedalus Zine One comic against a black background",
+          "fit": "cover"
+        },
+        {
+          "id": "production-leverage",
+          "type": "text",
+          "width": "full",
+          "heading": "AI changed the scale, not the need for craft",
+          "body": "At the time, the most exciting possibility was production leverage. Work that might once have required a team of more than 20 people across six months could suddenly be attempted by three people in two months—even when those people were only working after their day jobs and on weekends.\n\nThat did not mean the machine completed the project for us. It meant a small team could explore at a scale that had previously been inaccessible. Generation accelerated ideation and supplied raw visual material. Everything that made those materials belong to Daedalus still had to be built: the story, selection, art direction, cleanup, consistency, page composition, typography, brand, animation, interaction design, code, sound, production, and the thousands of decisions that connected one artifact to the next.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "generation-output-grid",
+          "type": "image",
+          "width": "full",
+          "heading": "The raw production field",
+          "body": "The folder looked less like a finished artwork and more like a search space: hundreds of attempts, variations, failures, near-misses, and fragments waiting for a human decision.",
+          "source": "assets/media/blog/daedalus-generation-output-grid.webp",
+          "alt": "A dense folder grid containing hundreds of generated science-fiction character and scene variations made during Daedalus production",
+          "fit": "contain"
+        },
+        {
+          "id": "image-is-not-artwork",
+          "type": "text",
+          "width": "full",
+          "heading": "An image is not automatically an artwork",
+          "body": "In the original thread, I argued that AI does not produce art on its own. It produces an image: patterned noise that our eyes can read as something coherent. The wording was deliberately blunt, but the distinction still matters to me. A usable output is not the same thing as a finished expression.\n\nA tool can widen what a person is able to attempt, but it does not supply purpose, taste, accountability, or a reason for the work to exist. Daedalus only became a project when people imposed intent on the material and carried that intent across many different forms.\n\nAI could not replace that work. People may still try to use it as a reason to replace creative workers, but removing the people also removes the judgment that turns possibility into something meaningful. Daedalus made that boundary clearer to me, not less important.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "comic-production",
+          "type": "video",
+          "width": "half",
+          "heading": "Comic production",
+          "body": "Generated source imagery was standardized, composed into pages, animated, and connected through an interactive reader.",
+          "source": "assets/media/optimized/Projects/Daedalus/Comic/daedalus_comic_timelapse_short.mp4",
+          "mediaRef": "media-daedalus-comic-daedalus-comic-timelapse-short-mp4",
+          "href": "",
+          "label": "",
+          "projectId": "",
+          "alt": "Timelapse of a Daedalus comic page being designed",
+          "fit": "cover",
+          "posterFrame": "assets/media/posters/media-daedalus-comic-daedalus-comic-timelapse-short-mp4.jpg"
+        },
+        {
+          "id": "brand-production",
+          "type": "video",
+          "width": "half",
+          "heading": "Brand and merchandise",
+          "body": "The visual system expanded beyond the screen into apparel, posters, and physical collateral.",
+          "source": "assets/media/optimized/Projects/Daedalus/Brand/merch-vid-1.mp4",
+          "mediaRef": "media-daedalus-brand-merch-vid-1-mp4",
+          "href": "",
+          "label": "",
+          "projectId": "",
+          "alt": "Daedalus merchandise and apparel presentation",
+          "fit": "cover",
+          "posterFrame": "assets/media/posters/media-daedalus-brand-merch-vid-1-mp4.jpg"
+        },
+        {
+          "id": "respect-for-artists",
+          "type": "text",
+          "width": "full",
+          "heading": "The project made me appreciate artists more",
+          "body": "If there was one personal lesson underneath all of this, it was how difficult it is to draw intent. An artist does not merely make a coherent image. They make deliberate choices about form, composition, gesture, light, character, continuity, and meaning—and they can repeat those choices when the work demands it. That takes an extraordinary amount of knowledge and skill.\n\nWorking with generative tools did not make me value artists less. It made me want to learn how to draw, understand the craft more deeply, and create future projects with talented human artists whenever I could. The tools revealed how much control I did not have.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "people-behind-daedalus",
+          "type": "text",
+          "width": "full",
+          "heading": "The people behind the work",
+          "body": "I did not build Daedalus alone. Alex Lazaris and Ethan Blaney helped shape the brand and apparel. Roman Zhu spearheaded game development. Throwing Snow created the soundtrack. Their work turned a visual experiment into a project with breadth, identity, and a life beyond any single medium.\n\nIf the project created an opportunity, we wanted some of that value to return to the creative community. We began planning educational material for other small teams who wanted to attempt something similar. The important part was never the novelty of a tool. It was the chance to do ambitious work together—the kind of work we had wanted to make for our entire lives.",
+          "source": "",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "open-daedalus-project",
+          "type": "project-link",
+          "width": "full",
+          "heading": "",
+          "body": "Explore the comic, production process, brand, film, and game experiments collected in the Daedalus project archive.",
+          "source": "",
+          "href": "",
+          "label": "OPEN DAEDALUS.PROJECT",
+          "projectId": "daedalus",
+          "alt": "",
+          "fit": "cover"
+        },
+        {
+          "id": "read-interactive-comic",
+          "type": "link",
+          "width": "full",
+          "heading": "Read the comic",
+          "body": "",
+          "source": "",
+          "href": "https://daedalus.am/comic",
+          "label": "OPEN THE INTERACTIVE DAEDALUS COMIC",
+          "projectId": "",
+          "alt": "",
+          "fit": "cover"
+        }
+      ]
+    }
+  ]
+}

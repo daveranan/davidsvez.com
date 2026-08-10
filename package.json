@@ -1,0 +1,10 @@
+{
+  "name": "davidsvez-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "content:build": "node tools/build-content-bundles.mjs",
+    "media:optimize": "node tools/optimize-media-library.mjs",
+    "studio": "node tools/studio/server.mjs"
+  }
+}

@@ -1,0 +1,21 @@
+### Windows
+# Windows thumbnail cache files
+Thumbs.db
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
+# Lossless source media is kept locally and never deployed. CMS records point at
+# the separate, publishable optimized library.
+/prototype/assets/media/og-library/
+
+# Local source material and the previous standalone site are not part of the
+# launch repository.
+/docs/
+/personalsiteOLD/

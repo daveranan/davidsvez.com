@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Studio</title>
+    <link rel="stylesheet" href="studio.css" />
+  </head>
+  <body>
+    <header class="studio-header">
+      <div><span class="muted">DAVIDSVEZ.COM / LOCAL AUTHORING</span><h1>PORTFOLIO STUDIO</h1></div>
+      <div class="actions">
+        <button id="preview" type="button">[PREVIEW SITE]</button>
+        <button id="save" type="button">[SAVE LOCAL]</button>
+        <button id="publish" type="button" class="signal">[PUBLISH → GIT]</button>
+      </div>
+    </header>
+    <div class="status-row"><span id="status">CONNECTING TO LOCAL CONTENT…</span><span id="git-status"></span></div>
+    <nav class="studio-sections" aria-label="Authoring section">
+      <button type="button" data-studio-section="projects" aria-pressed="true">[PROJECTS]</button>
+      <button type="button" data-studio-section="media" aria-pressed="false">[MEDIA]</button>
+      <button type="button" data-studio-section="homepage" aria-pressed="false">[HOMEPAGE]</button>
+      <button type="button" data-studio-section="blog" aria-pressed="false">[BLOG]</button>
+      <button type="button" data-studio-section="transmissions" aria-pressed="false">[TRANSMISSIONS]</button>
+    </nav>
+    <main id="projects-studio" class="studio-layout" data-studio-panel="projects">
+      <aside class="project-list-panel">
+        <div class="panel-title"><span>PROJECTS.DIR</span><button id="add-project" type="button">[+ NEW]</button></div>
+        <ol id="project-list"></ol>
+      </aside>
+      <form id="project-form" class="editor-panel">
+        <div class="panel-title"><span id="editor-title">PROJECT.ENTRY</span><button id="delete-project" type="button">[DELETE]</button></div>
+        <div class="field-grid">
+          <label>ID / SLUG<input name="id" required pattern="[a-z0-9-]+" /></label>
+          <label>FOLDER TITLE<input name="title" required /></label>
+          <label>DISPLAY HEADING<input name="heading" required /></label>
+          <label>SHORTCUT LABEL<input name="shortcutLabel" /></label>
+          <label>PARENT FOLDER<select name="parentId"><option value="">ROOT / PROJECT_INDEX.DIR</option></select></label>
+          <label>OPEN LAYOUT<select name="layout"><option value="folder">FOLDER / CHILD ICONS</option><option value="media-fullscreen">FULLSCREEN IMAGE OR VIDEO</option><option value="text-window">SCROLLABLE TEXT WINDOW</option></select></label>
+          <label class="toggle"><input name="showOverview" type="checkbox" />SHOW DEFAULT OVERVIEW / META</label>
+          <label class="toggle"><input name="showFolderActions" type="checkbox" />SHOW DEFAULT FOLDER ACTIONS</label>
+          <label class="toggle"><input name="hidden" type="checkbox" />HIDE FROM SITE NAVIGATION</label>
+          <label>MINIMUM WINDOW WIDTH<input name="windowWidth" placeholder="748px" /></label>
+          <label>MINIMUM WINDOW HEIGHT<input name="windowHeight" placeholder="506px" /></label>
+          <label>TEXT MAX WIDTH<input name="textWidth" placeholder="62ch" /></label>
+          <label>PIPELINE LABEL<input name="kind" required /></label>
+          <label>MEDIA TYPE<select name="sourceType"><option value="image">IMAGE</option><option value="video">VIDEO</option></select></label>
+          <label>PROJECT CATEGORY<select name="category"><option value="GAME">GAME</option><option value="PRODUCTION">PRODUCTION</option><option value="TOOLS">TOOLS</option><option value="NARRATIVE">NARRATIVE</option><option value="DESIGN">DESIGN</option><option value="GAME JAM">GAME JAM</option><option value="WEBSITE">WEBSITE</option><option value="FILM">FILM</option><option value="EXPERIMENT">EXPERIMENT</option><option value="APP">APP</option></select></label>
+          <label>PROJECT PERIOD<input name="period" placeholder="2023–2024" /></label>
+          <label class="wide">DESCRIPTION<textarea name="description" rows="4" required></textarea></label>
+          <label class="wide">TEXT WINDOW BODY<textarea name="body" rows="10" placeholder="Used by SCROLLABLE TEXT WINDOW. Line breaks are preserved."></textarea></label>
+          <label>THUMBNAIL TYPE<select name="thumbnailType"><option value="image">IMAGE</option><option value="video">VIDEO</option></select></label>
+          <label class="wide">GRID THUMBNAIL / OPTIONAL<div class="media-row"><input name="thumbnail" placeholder="Empty uses the folder icon" /><input id="thumbnail-file" type="file" accept="image/*,video/*" /><button id="upload-thumbnail" type="button">[COPY MEDIA]</button></div></label>
+          <label class="wide">THUMBNAIL MEDIA ID<input name="thumbnailMediaRef" list="media-id-list" placeholder="Reusable media record" /></label>
+          <label class="wide">MEDIA SOURCE<div class="media-row"><input name="source" /><input id="media-file" type="file" accept="image/*,video/*" /><button id="upload-media" type="button">[COPY FILE]</button></div></label>
+          <label class="wide">FULLSCREEN MEDIA ID<input name="mediaRef" list="media-id-list" placeholder="Reusable media record" /></label>
+          <label>ROLE<input name="role" /></label>
+          <label>STATE<input name="state" /></label>
+          <label class="wide">LOADING MESSAGES / ONE PER LINE<textarea name="status" rows="5"></textarea></label>
+        </div>
+        <section class="block-editor">
+          <div class="panel-title"><span>CONTENT.BLOCKS</span><button id="add-block" type="button">[+ BLOCK]</button></div>
+          <p class="muted block-editor__help">ORDERED SIX-COLUMN STREAM. BLOCKS CAN REUSE A CANONICAL MEDIA ID OR USE A DIRECT/EXTERNAL SOURCE.</p>
+          <div id="content-block-editor"></div>
+        </section>
+      </form>
+      <section class="site-settings-panel">
+        <div class="panel-title">SITE.SETTINGS</div>
+        <label>SITE TITLE<input id="site-title" /></label>
+        <label>READY STATUS<input id="site-status" /></label>
+        <label>CONTACT HEADING<input id="contact-heading" /></label>
+        <label>CONTACT INTRO<textarea id="contact-intro" rows="5"></textarea></label>
+        <label>AVAILABILITY<input id="contact-availability" /></label>
+        <label>LOCATION<input id="contact-location" /></label>
+        <p class="muted">SAVE writes the site and project content databases. PUBLISH commits only content and project media, then pushes the current branch.</p>
+      </section>
+    </main>
+    <main id="media-studio" class="studio-layout" data-studio-panel="media" hidden>
+      <aside class="project-list-panel">
+        <div class="panel-title"><span>MEDIA.REGISTRY</span><button id="add-media" type="button">[+ NEW]</button></div>
+        <ol id="media-list"></ol>
+      </aside>
+      <form id="media-form" class="editor-panel">
+        <div class="panel-title"><span id="media-editor-title">MEDIA.RECORD</span><button id="delete-media" type="button">[DELETE]</button></div>
+        <div class="field-grid">
+          <label>ID<input name="id" required pattern="[a-z0-9-]+" /></label>
+          <label>TYPE<select name="type"><option value="image">IMAGE</option><option value="video">VIDEO</option><option value="youtube">YOUTUBE</option><option value="pdf">PDF</option><option value="link">LINK</option></select></label>
+          <label class="wide">TITLE<input name="title" required /></label>
+          <label class="wide">LOCAL SOURCE PATH<input name="sourcePath" /></label>
+          <label class="wide">EXTERNAL URL<input name="externalUrl" /></label>
+          <label>PROJECT ID<input name="projectId" /></label>
+          <label>SECTION ID<input name="sectionId" /></label>
+          <label class="wide">CAPTION<textarea name="caption" rows="4"></textarea></label>
+          <label class="wide">ALT TEXT<input name="alt" /></label>
+          <label class="wide">CREDITS<input name="credits" /></label>
+          <label class="wide">POSTER FRAME<input name="posterFrame" /></label>
+          <label>FILE SIZE / BYTES<input name="fileSize" type="number" min="0" /></label>
+          <label class="toggle"><input name="fullscreenEligible" type="checkbox" />FULLSCREEN ELIGIBLE</label>
+        </div>
+      </form>
+      <section class="site-settings-panel">
+        <div class="panel-title">CANONICAL MEDIA</div>
+        <p class="muted">PROJECT BLOCKS, ARCHIVE FILE NODES, THUMBNAILS AND FULLSCREEN WINDOWS CAN ALL REFERENCE THE SAME MEDIA ID.</p>
+      </section>
+    </main>
+    <main id="homepage-studio" class="studio-layout studio-layout--transmissions" data-studio-panel="homepage" hidden>
+      <form id="homepage-form" class="editor-panel transmission-editor">
+        <div class="panel-title"><span>CHARACTER_MONITOR.EXE / HOMEPAGE</span><span>GRID CONTENT</span></div>
+        <div class="field-grid">
+          <label class="wide">WINDOW TITLE<input id="homepage-title" required /></label>
+          <label class="wide">TITLEBAR STATUS<input id="homepage-status" /></label>
+        </div>
+        <section class="block-editor">
+          <div class="panel-title"><span>HOMEPAGE.CONTENT.BLOCKS</span><button id="add-homepage-block" type="button">[+ BLOCK]</button></div>
+          <p class="muted block-editor__help">USES THE SAME ORDERED FULL / HALF / THIRD TEXT, IMAGE, VIDEO, AND YOUTUBE GRID AS PROJECT FOLDERS.</p>
+          <div id="homepage-content-block-editor"></div>
+        </section>
+      </form>
+    </main>
+    <main id="blog-studio" class="studio-layout studio-layout--blog" data-studio-panel="blog" hidden>
+      <aside class="project-list-panel">
+        <div class="panel-title"><span>BLOG.INDEX</span><button id="add-blog-post" type="button">[+ NEW]</button></div>
+        <ol id="blog-list"></ol>
+      </aside>
+      <form id="blog-form" class="editor-panel">
+        <div class="panel-title"><span id="blog-editor-title">BLOG.ENTRY</span><button id="delete-blog-post" type="button">[DELETE]</button></div>
+        <div class="field-grid">
+          <label>ID / SLUG<input name="id" required pattern="[a-z0-9-]+" /></label>
+          <label>PUBLICATION DATE<input name="date" type="date" required /></label>
+          <label class="wide">TITLE<input name="title" required /></label>
+          <label class="wide">SUMMARY<textarea name="summary" rows="5" required></textarea></label>
+          <label class="toggle wide"><input name="published" type="checkbox" />PUBLISHED</label>
+        </div>
+        <section class="block-editor">
+          <div class="panel-title"><span>POST.CONTENT.BLOCKS</span><button id="add-blog-block" type="button">[+ BLOCK]</button></div>
+          <p class="muted block-editor__help">USES THE SAME ORDERED FULL / HALF / THIRD TEXT, IMAGE, VIDEO, AND YOUTUBE BLOCKS AS PROJECT FOLDERS.</p>
+          <div id="blog-content-block-editor"></div>
+        </section>
+      </form>
+      <section class="site-settings-panel">
+        <div class="panel-title">BLOG.WORKFLOW</div>
+        <p class="muted">DRAFT POSTS STAY IN LOCAL CONTENT BUT DO NOT RENDER ON THE PUBLIC BLOG. MEDIA IS COPIED INTO THE SAME STATIC ASSET DIRECTORY.</p>
+      </section>
+    </main>
+    <main id="transmissions-studio" class="studio-layout studio-layout--transmissions" data-studio-panel="transmissions" hidden>
+      <section class="editor-panel transmission-editor">
+        <div class="panel-title"><span>LIVE.TRANSMISSIONS</span><span>ONE PHRASE PER LINE</span></div>
+        <div class="field-grid">
+          <label class="wide">HEADER / MARQUEE LINES<textarea id="transmission-header" rows="12"></textarea><small class="muted">TRAILING SPACES ARE PRESERVED AND BECOME VISIBLE GAPS IN THE TRANSMISSION.</small></label>
+          <label class="wide">EGO.EXE LINES<textarea id="transmission-ego" rows="16"></textarea></label>
+          <label class="wide">SHADOW.EXE LINES<textarea id="transmission-shadow" rows="16"></textarea></label>
+          <label>CHARACTER SPEED / MS<input id="transmission-typing-speed" type="number" min="10" max="500" step="1" /></label>
+          <label>COMMA PAUSE / MS<input id="transmission-comma-pause" type="number" min="0" max="5000" step="10" /></label>
+          <label>SENTENCE / HEADER-LINE PAUSE / MS<input id="transmission-sentence-pause" type="number" min="0" max="10000" step="50" /></label>
+          <label>ELLIPSIS / SIDE-PHRASE PAUSE / MS<input id="transmission-phrase-pause" type="number" min="0" max="5000" step="10" /></label>
+        </div>
+        <p class="muted transmission-help">CADENCE MATCHES THE OLD SITE: 65MS CHARACTERS, 300MS COMMAS, 1000MS HEADER SENTENCES. EGO/SHADOW INSERT A TIGHT “...” BETWEEN EACH AUTHORED LINE AND HOLD IT FOR 100MS.</p>
+      </section>
+    </main>
+    <datalist id="media-id-list"></datalist>
+    <script src="studio.js" defer></script>
+  </body>
+</html>

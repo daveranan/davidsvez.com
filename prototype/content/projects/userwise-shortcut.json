@@ -1,0 +1,50 @@
+{
+  "id": "userwise-shortcut",
+  "parentId": "client-work",
+  "layout": "folder",
+  "windowWidth": "748px",
+  "windowHeight": "506px",
+  "textWidth": "62ch",
+  "body": "",
+  "showOverview": true,
+  "showFolderActions": true,
+  "blocks": [
+    {
+      "id": "userwise-target",
+      "type": "project-link",
+      "width": "full",
+      "heading": "",
+      "body": "",
+      "source": "",
+      "mediaRef": "",
+      "href": "",
+      "label": "OPEN USERWISE.PRODUCT/",
+      "projectId": "userwise",
+      "alt": "",
+      "fit": "cover"
+    }
+  ],
+  "title": "USERWISE.LNK",
+  "heading": "USERWISE.LNK",
+  "shortcutLabel": "USERWISE.LNK",
+  "kind": "PROJECT / DIRECTORY",
+  "description": "Shortcut to the UserWise product case study.",
+  "thumbnail": "assets/media/project-previews/userwise-shortcut.mp4",
+  "thumbnailMediaRef": "preview-userwise-shortcut",
+  "thumbnailType": "video",
+  "sourceType": "image",
+  "category": "DESIGN",
+  "period": "",
+  "source": "",
+  "mediaRef": "",
+  "role": "DESIGN / DEVELOPMENT",
+  "state": "ARCHIVE READY",
+  "route": "/PROJECT/USERWISE-SHORTCUT",
+  "status": [
+    "MOUNTING PROJECT",
+    "RESOLVING MEDIA REFERENCES",
+    "BUILDING ARCHIVE",
+    "OPENING DIRECTORY"
+  ],
+  "posterFrame": "assets/media/posters/preview-userwise-shortcut.jpg"
+}

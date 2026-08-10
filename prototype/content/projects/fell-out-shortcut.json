@@ -1,0 +1,50 @@
+{
+  "id": "fell-out-shortcut",
+  "parentId": "game-jams",
+  "layout": "folder",
+  "windowWidth": "748px",
+  "windowHeight": "506px",
+  "textWidth": "62ch",
+  "body": "",
+  "showOverview": true,
+  "showFolderActions": true,
+  "blocks": [
+    {
+      "id": "fell-out-target",
+      "type": "project-link",
+      "width": "full",
+      "heading": "",
+      "body": "",
+      "source": "",
+      "mediaRef": "",
+      "href": "",
+      "label": "OPEN FELL_OUT.GAMEJAM/",
+      "projectId": "fell-out-gamejam",
+      "alt": "",
+      "fit": "cover"
+    }
+  ],
+  "title": "FELL_OUT.LNK",
+  "heading": "FELL OUT.LNK",
+  "shortcutLabel": "FELL_OUT.LNK",
+  "kind": "PROJECT / DIRECTORY",
+  "description": "Shortcut to the original Fell Out game-jam page inside Lightkeeper history.",
+  "thumbnail": "assets/media/project-previews/fell-out-shortcut.mp4",
+  "thumbnailMediaRef": "preview-fell-out-shortcut",
+  "thumbnailType": "video",
+  "sourceType": "image",
+  "category": "GAME JAM",
+  "period": "2023",
+  "source": "",
+  "mediaRef": "",
+  "role": "DESIGN / DEVELOPMENT",
+  "state": "ARCHIVE READY",
+  "route": "/PROJECT/FELL-OUT-SHORTCUT",
+  "status": [
+    "MOUNTING PROJECT",
+    "RESOLVING MEDIA REFERENCES",
+    "BUILDING ARCHIVE",
+    "OPENING DIRECTORY"
+  ],
+  "posterFrame": "assets/media/posters/preview-fell-out-shortcut.jpg"
+}
