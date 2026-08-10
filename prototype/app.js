@@ -17,6 +17,7 @@ const state = {
   projectOrigins: new WeakMap(),
   mediaLifecycles: new WeakMap(),
   projectTreeLifecycles: new WeakMap(),
+  expandedProjectFolders: new Set(),
   page: "home",
   viewTransitioning: false,
   viewTransitionToken: 0,
@@ -669,6 +670,8 @@ const osEasterEggOrder = [
   "costco-outro",
 ];
 
+const projectDirectoryIds = new Set(["prototypes", "game-jams", "apps", "client-work", "visual-lab"]);
+
 function projectConfig(projectId) {
   return projectPageCache.get(projectId) || projectIndexData[projectId] || systemProjectData[projectId];
 }
@@ -679,13 +682,12 @@ function projectChildren(parentId = null) {
     return projects.filter((project) => (project.parentId || null) === parentId);
   }
 
-  const categoryIds = new Set(["prototypes", "game-jams", "apps", "client-work", "visual-lab"]);
   const rootProjects = projects.filter((project) => (project.parentId || null) === null);
   const featuredProjects = projects.filter((project) => project.showOnRoot === true);
   return [
-    ...rootProjects.filter((project) => !categoryIds.has(project.id)),
+    ...rootProjects.filter((project) => !projectDirectoryIds.has(project.id)),
     ...featuredProjects,
-    ...rootProjects.filter((project) => categoryIds.has(project.id)),
+    ...rootProjects.filter((project) => projectDirectoryIds.has(project.id)),
   ];
 }
 
@@ -795,11 +797,12 @@ function projectLabel(project) {
 
 function createProjectVisual(project, variant = "tile") {
   if (project.thumbnail) {
-    const thumbnail = document.createElement(project.thumbnailType === "video" ? "video" : "img");
+    const usesTreePoster = variant === "tree" && project.thumbnailType === "video" && project.posterFrame;
+    const thumbnail = document.createElement(usesTreePoster || project.thumbnailType !== "video" ? "img" : "video");
     thumbnail.className = `project-thumbnail project-thumbnail--${variant}`;
     thumbnail.setAttribute("aria-hidden", "true");
     thumbnail.tabIndex = -1;
-    setDeferredMediaSource(thumbnail, project.thumbnail, project.posterFrame || "");
+    setDeferredMediaSource(thumbnail, usesTreePoster ? project.posterFrame : project.thumbnail, usesTreePoster ? "" : project.posterFrame || "");
     if (thumbnail instanceof HTMLVideoElement) {
       thumbnail.muted = true;
       thumbnail.loop = true;
@@ -820,11 +823,12 @@ function createProjectVisual(project, variant = "tile") {
   }
 
   if (project.layout === "media-fullscreen" && project.source) {
-    const media = document.createElement(project.sourceType === "video" ? "video" : "img");
+    const usesTreePoster = variant === "tree" && project.sourceType === "video" && project.posterFrame;
+    const media = document.createElement(usesTreePoster || project.sourceType !== "video" ? "img" : "video");
     media.className = `project-thumbnail project-thumbnail--${variant}`;
     media.setAttribute("aria-hidden", "true");
     media.tabIndex = -1;
-    setDeferredMediaSource(media, project.source, project.posterFrame || "");
+    setDeferredMediaSource(media, usesTreePoster ? project.posterFrame : project.source, usesTreePoster ? "" : project.posterFrame || "");
     if (media instanceof HTMLVideoElement) {
       media.muted = true;
       media.loop = true;
@@ -1049,6 +1053,7 @@ function installBackgroundAudioPlayer() {
 
 function renderProjectNavigation() {
   const projects = projectChildren(null);
+  const directoryCount = projects.filter((project) => projectDirectoryIds.has(project.id)).length;
   const index = $("#project-index-list");
   const tree = $("#project-tree-list");
   const shortcuts = $("#shortcut-rack");
@@ -1058,10 +1063,22 @@ function renderProjectNavigation() {
   tree.replaceChildren();
   shortcuts.replaceChildren();
 
+  let directoryHeadingAppended = false;
   projects.forEach((project) => {
+    const isDirectory = projectDirectoryIds.has(project.id);
+    if (isDirectory && !directoryHeadingAppended) {
+      const directoryHeading = document.createElement("div");
+      directoryHeading.className = "project-index__section-heading";
+      directoryHeading.setAttribute("role", "heading");
+      directoryHeading.setAttribute("aria-level", "3");
+      directoryHeading.textContent = `DIRECTORIES / ${directoryCount}`;
+      index.append(directoryHeading);
+      directoryHeadingAppended = true;
+    }
+
     const labelText = projectLabel(project);
     const row = document.createElement("button");
-    row.className = "project-tile";
+    row.className = `project-tile${isDirectory ? " project-tile--directory" : ""}`;
     row.type = "button";
     row.dataset.openProject = project.id;
     row.setAttribute("aria-label", `Open ${labelText}`);
@@ -1157,41 +1174,89 @@ function renderProjectNavigation() {
 }
 
 function renderProjectTree(container) {
+  state.projectTreeLifecycles.get(container)?.disconnect();
+  state.projectTreeLifecycles.delete(container);
+  state.mediaLifecycles.get(container)?.observer?.disconnect();
+  container.replaceChildren();
+
   const root = document.createElement("div");
   root.className = "project-tree__root";
-  root.textContent = `PROJECT_INDEX.DIR / ${String(Object.keys(projectData).length).padStart(2, "0")} ITEMS`;
+  const rootLabel = document.createElement("span");
+  rootLabel.textContent = `PROJECT_INDEX.DIR / ${String(Object.keys(projectData).length).padStart(2, "0")} ITEMS`;
+  const rootHint = document.createElement("span");
+  rootHint.className = "project-tree__hint";
+  rootHint.textContent = "CLICK FOLDERS TO UNFOLD / [OPEN] LOADS PROJECT";
+  root.append(rootLabel, rootHint);
   container.append(root);
 
   const entries = [];
-  const walk = (parentId = null, ancestorLast = []) => {
-    const children = visibleProjectChildren(parentId);
-    children.forEach((project, index) => {
-      const isLast = index === children.length - 1;
-      entries.push({ project, isLast, ancestorLast });
-      walk(project.id, [...ancestorLast, isLast]);
+  const walk = (parentId = null, depth = 0, ancestors = []) => {
+    visibleProjectChildren(parentId).forEach((project) => {
+      const hasChildren = projectHasChildren(project.id);
+      entries.push({ project, depth, hasChildren, ancestors });
+      if (hasChildren) walk(project.id, depth + 1, [...ancestors, project.id]);
+    });
+  };
+  walk();
+
+  const renderedEntries = [];
+  const syncTreeVisibility = () => {
+    renderedEntries.forEach(({ entry, row, open, closedIcon, openedIcon }) => {
+      const visible = entry.ancestors.every((ancestorId) => state.expandedProjectFolders.has(ancestorId));
+      row.hidden = !visible;
+      if (!entry.hasChildren) return;
+      const expanded = state.expandedProjectFolders.has(entry.project.id);
+      open.setAttribute("aria-label", `${expanded ? "Collapse" : "Expand"} ${projectLabel(entry.project)}`);
+      open.setAttribute("aria-expanded", String(expanded));
+      closedIcon.toggleAttribute("hidden", expanded);
+      openedIcon.toggleAttribute("hidden", !expanded);
     });
   };
 
-  walk();
-
-  const createRow = ({ project, isLast, ancestorLast }, animate = false) => {
+  const createRow = (entry) => {
+    const { project, depth, hasChildren, ancestors } = entry;
     const labelText = projectLabel(project);
-    const row = document.createElement("button");
-    row.type = "button";
-    row.className = `project-tree__row${animate ? " project-tree__row--entering" : ""}`;
-    if (animate) {
-      row.addEventListener("animationend", () => row.classList.remove("project-tree__row--entering"), { once: true });
+    const expanded = hasChildren && state.expandedProjectFolders.has(project.id);
+    const row = document.createElement("div");
+    row.className = "project-tree__row";
+    row.style.setProperty("--tree-depth", depth);
+    row.dataset.depth = String(depth);
+    row.hidden = ancestors.some((ancestorId) => !state.expandedProjectFolders.has(ancestorId));
+
+    const open = document.createElement("button");
+    open.type = "button";
+    open.className = "project-tree__open";
+    open.title = labelText;
+    if (hasChildren) {
+      open.classList.add("project-tree__folder-toggle");
+      open.setAttribute("aria-label", `${expanded ? "Collapse" : "Expand"} ${labelText}`);
+      open.setAttribute("aria-expanded", String(expanded));
+      open.addEventListener("click", () => {
+        if (state.expandedProjectFolders.has(project.id)) state.expandedProjectFolders.delete(project.id);
+        else state.expandedProjectFolders.add(project.id);
+        syncTreeVisibility();
+      });
+    } else {
+      open.classList.add("project-tree__open--file");
+      open.dataset.openProject = project.id;
+      open.setAttribute("aria-label", `Open ${labelText}`);
     }
-    row.dataset.openProject = project.id;
-    row.setAttribute("aria-label", `Open ${labelText}`);
-    row.title = labelText;
 
-    const branch = document.createElement("span");
-    branch.className = "project-tree__branch";
-    branch.setAttribute("aria-hidden", "true");
-    branch.textContent = `${ancestorLast.map((last) => (last ? "   " : "│  ")).join("")}${isLast ? "└─" : "├─"}`;
-
-    const visual = createProjectVisual(project, "tree");
+    let visual;
+    let closedIcon = null;
+    let openedIcon = null;
+    if (hasChildren) {
+      visual = document.createElement("span");
+      visual.className = "project-glyph project-glyph--tree project-pixel";
+      visual.setAttribute("aria-hidden", "true");
+      closedIcon = createPixelIcon("folder");
+      openedIcon = createPixelIcon("folder-open");
+      closedIcon.toggleAttribute("hidden", expanded);
+      openedIcon.toggleAttribute("hidden", !expanded);
+      visual.append(closedIcon, openedIcon);
+    } else {
+      visual = createProjectVisual(project, "tree");
+    }
     if (visual instanceof HTMLVideoElement) {
       visual.dataset.mediaPlayback = "hover";
       const playPreview = () => {
@@ -1200,15 +1265,14 @@ function renderProjectTree(container) {
       };
       const pausePreview = () => {
         visual.pause();
-        if (Number.isFinite(visual.duration) && visual.duration > 0) {
-          visual.currentTime = Math.min(0.12, visual.duration / 2);
-        }
+        if (Number.isFinite(visual.duration) && visual.duration > 0) visual.currentTime = Math.min(0.12, visual.duration / 2);
       };
-      row.addEventListener("pointerenter", playPreview);
-      row.addEventListener("focus", playPreview);
-      row.addEventListener("pointerleave", pausePreview);
-      row.addEventListener("blur", pausePreview);
+      open.addEventListener("pointerenter", playPreview);
+      open.addEventListener("focus", playPreview);
+      open.addEventListener("pointerleave", pausePreview);
+      open.addEventListener("blur", pausePreview);
     }
+
     const identity = document.createElement("span");
     identity.className = "project-tree__identity";
     const heading = document.createElement("strong");
@@ -1220,86 +1284,37 @@ function renderProjectTree(container) {
 
     const main = document.createElement("span");
     main.className = "project-tree__main";
-    main.append(branch, visual, identity);
+    main.append(visual, identity);
 
     const layout = document.createElement("span");
     layout.className = "project-tree__layout";
-    const layoutIcon = project.layout === "folder"
-      ? "folder"
-      : project.sourceType === "video"
-        ? "video"
-        : "image";
+    const layoutIcon = hasChildren ? "folder" : project.sourceType === "video" ? "video" : "image";
     layout.append(
       createPixelIcon(layoutIcon, "pixel-icon pixel-icon--meta"),
-      document.createTextNode(`${project.layout} / ${project.sourceType}`.toUpperCase()),
+      document.createTextNode(`${hasChildren ? "folder" : project.layout} / ${project.sourceType}`.toUpperCase()),
     );
     const category = document.createElement("span");
     category.className = "project-tree__category";
     category.textContent = project.category || "EXPERIMENT";
-    row.append(main, layout, category);
+    open.append(main, layout, category);
+    row.append(open);
+    if (hasChildren) {
+      const folderOpen = document.createElement("button");
+      folderOpen.type = "button";
+      folderOpen.className = "project-tree__folder-open";
+      folderOpen.dataset.openProject = project.id;
+      folderOpen.setAttribute("aria-label", `Open ${labelText} project`);
+      folderOpen.textContent = "[OPEN]";
+      row.append(folderOpen);
+    }
+    renderedEntries.push({ entry, row, open, closedIcon, openedIcon });
     return row;
   };
 
-  const sentinel = document.createElement("div");
-  sentinel.className = "project-tree__sentinel";
-  sentinel.setAttribute("aria-hidden", "true");
-  let rendered = 0;
-  let appending = false;
-
-  const appendBatch = (size, animate = true) => {
-    if (rendered >= entries.length) return;
-    sentinel.remove();
-    const fragment = document.createDocumentFragment();
-    const media = [];
-    const end = Math.min(rendered + size, entries.length);
-    while (rendered < end) {
-      const row = createRow(entries[rendered], animate);
-      media.push(...$$('[data-media-src]', row));
-      fragment.append(row);
-      rendered += 1;
-    }
-    container.append(fragment);
-
-    if (rendered < entries.length) {
-      sentinel.textContent = `├─ ${String(entries.length - rendered).padStart(3, "0")} ITEMS BUFFERED`;
-      container.append(sentinel);
-    }
-
-    if (animate && media.length) {
-      const lifecycle = state.mediaLifecycles.get(container);
-      if (lifecycle?.observer) {
-        media.forEach((element) => lifecycle.observer.observe(element));
-        lifecycle.elements.push(...media);
-      } else if (!("IntersectionObserver" in window)) {
-        media.forEach(attachDeferredMedia);
-      } else {
-        installDeferredMedia(container);
-      }
-    }
-  };
-
-  // The tree is still hidden in grid mode while navigation is built, so its
-  // bounding box is not useful here. One viewport of rows naturally leaves
-  // roughly five buffered entries below the list's persistent header.
-  const initialCount = Math.max(10, Math.ceil(window.innerHeight / 55));
-  appendBatch(initialCount, false);
-
-  if (!("IntersectionObserver" in window)) {
-    appendBatch(entries.length, false);
-    return;
-  }
-
-  const observer = new IntersectionObserver((observations) => {
-    if (appending || !observations.some((entry) => entry.isIntersecting)) return;
-    appending = true;
-    requestAnimationFrame(() => {
-      appendBatch(5);
-      appending = false;
-      if (rendered >= entries.length) observer.disconnect();
-    });
-  }, { rootMargin: "0px 0px 220px 0px", threshold: 0.01 });
-  observer.observe(sentinel);
-  state.projectTreeLifecycles.set(container, observer);
+  const fragment = document.createDocumentFragment();
+  entries.forEach((entry) => fragment.append(createRow(entry)));
+  container.append(fragment);
+  installDeferredMedia(container);
 }
 
 function hash2d(x, y, seed = 0) {

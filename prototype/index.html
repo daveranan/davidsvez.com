@@ -47,12 +47,15 @@
       }
     </script>
     <base href="/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400..700&amp;display=swap" rel="stylesheet" />
     <script>
       if (new URLSearchParams(location.search).get("anim") === "off") {
         document.documentElement.dataset.anim = "off";
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260809-23" />
+    <link rel="stylesheet" href="styles.css?v=20260810-24" />
   </head>
   <body data-view="grid">
     <canvas id="glyph-noise" aria-hidden="true"></canvas>
@@ -205,11 +208,7 @@
         <div id="shortcut-rack" class="shortcut-rack" aria-label="Project shortcuts"></div>
       </section>
 
-      <section id="blog-page" class="content-page" data-page-panel="blog" aria-labelledby="blog-title" hidden>
-        <div class="content-page__heading">
-          <p class="eyebrow">DAVIDSVEZ.COM / WRITTEN TRANSMISSIONS</p>
-          <h2 id="blog-title">BLOG.INDEX</h2>
-        </div>
+      <section id="blog-page" class="content-page" data-page-panel="blog" aria-label="Blog" hidden>
         <div id="blog-index" class="blog-index"></div>
       </section>
 

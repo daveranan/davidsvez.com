@@ -58,7 +58,7 @@ Navigation, project folders, media labels, and the contact action use a small ve
 
 The seeded `NESTED.DEMO → IMAGE.CHAMBER → FULLSCREEN.SIGNAL` path demonstrates two folder levels followed by an image project using the fullscreen takeover layout. It is ordinary Studio content and can be edited or deleted.
 
-Fullscreen image and video leaves use real source thumbnails in folder shelves. List view replaces the root shelf with a recursive tree containing every project, its hierarchy, layout, media type, description, and author-selected category. Categories are `WEBSITE`, `FILM`, `GAME`, `EXPERIMENT`, or `APP`; hierarchy indentation never shifts the aligned type and category columns.
+Fullscreen image and video leaves use real source thumbnails in folder shelves. List view replaces the root shelf with a collapsible tree: clicking a folder row unfolds it, its explicit `[OPEN]` action loads the folder project, and clicking a media leaf opens that file. Folders use open/closed icons while unfolded media leaves use source thumbnails. Rows retain hierarchy, layout, media type, description, and author-selected category. Categories are `WEBSITE`, `FILM`, `GAME`, `EXPERIMENT`, or `APP`; hierarchy indentation never shifts the aligned type and category columns.
 
 Then open `http://localhost:4173/`.
 
