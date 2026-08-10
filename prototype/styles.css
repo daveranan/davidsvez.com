@@ -784,9 +784,11 @@ body[data-page="reveal-benchmark"] .content-page__heading {
   user-select: none;
   touch-action: none;
   cursor: grab;
+  min-width: 0;
 }
 
 .window__titlebar h2 {
+  flex: 1 1 auto;
   min-width: 0;
   overflow: hidden;
   font-size: 22px;
@@ -847,6 +849,7 @@ body[data-view="os"] .os-window__close {
   position: relative;
   z-index: 2;
   flex: 1 1 auto;
+  min-width: 0;
   min-height: 0;
   max-height: none;
   padding: 22px;
@@ -3455,6 +3458,7 @@ body[data-view="grid"] .project-tile__meta {
 body[data-view="grid"] .window--monitor {
   --grid-column: 1 / -1;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto auto;
   grid-row: 3;
   align-self: start;
@@ -3567,6 +3571,10 @@ body[data-view="list"] .window__body {
 
   .site-nav button {
     padding-inline: 0;
+  }
+
+  .site-nav__pages {
+    justify-content: center;
   }
 
   .view-row__controls {

@@ -128,15 +128,64 @@ let contactData = {
   location: "OKLAHOMA / REMOTE",
 };
 let homepageData = {
-  title: "INNDER_CHILD_UNLOCKED.TXT",
-  status: "04 PLACES / 27 PHOTOS",
+  title: "INNER_CHILD_UNLOCKED.TXT",
+  status: "04 PLACES / 28 PHOTOS",
   about: {
     name: "David Svezhintsev",
     intro: "I make games, tools, interfaces, films, and whatever else seems interesting enough to lose a few months to.",
     bio: "Born in Saint Petersburg, currently based in the US. I've spent most of my career around product design and production, and increasingly all of my time making games.",
     portrait: "assets/media/optimized/Photos/Me_1.jpg",
     photographyIntro: "I take a stupid amount of photos whenever I go anywhere.",
-    photoGroups: [],
+    photoGroups: [
+      {
+        location: "MUNICH / GERMANY",
+        photos: [
+          "assets/media/optimized/Photos/554040231_18531434125046765_8931794980576535083_n.jpg",
+          "assets/media/optimized/Photos/554441068_18531434110046765_8000197146869765872_n.jpg",
+          "assets/media/optimized/Photos/554673467_18531434191046765_4268393582935631706_n.jpg",
+          "assets/media/optimized/Photos/556413253_18531434137046765_3455923459436891181_n.jpg",
+        ],
+      },
+      {
+        location: "ALPS / TRANSIT",
+        photos: [
+          "assets/media/optimized/Photos/566644297_18537455395046765_8582645022364281618_n.jpg",
+          "assets/media/optimized/Photos/566685163_18537455350046765_5619875386881040422_n.jpg",
+          "assets/media/optimized/Photos/566876842_18537455989046765_6113680450557617218_n.jpg",
+          "assets/media/optimized/Photos/566903570_18537456001046765_6400845623940023593_n.jpg",
+          "assets/media/optimized/Photos/569100069_18537456010046765_3390120784912870866_n.jpg",
+        ],
+      },
+      {
+        location: "LAKE COMO / ITALY / I",
+        photos: [
+          "assets/media/optimized/Photos/572122126_18539895181046765_5309456153486219621_n.jpg",
+          "assets/media/optimized/Photos/572152224_18539725921046765_8630733899058429426_n.jpg",
+          "assets/media/optimized/Photos/572224936_18539725930046765_1417773112285549974_n.jpg",
+          "assets/media/optimized/Photos/572276184_18539895169046765_2511132439768510654_n.jpg",
+          "assets/media/optimized/Photos/572521308_18539725912046765_3926527223070325396_n.jpg",
+          "assets/media/optimized/Photos/572752102_18539895229046765_8420682720815155408_n.jpg",
+          "assets/media/optimized/Photos/572759820_18539895157046765_24842795638625248_n.jpg",
+          "assets/media/optimized/Photos/572767184_18539895190046765_5416876606842225061_n.jpg",
+          "assets/media/optimized/Photos/572804333_18539895211046765_6677302748912053589_n.jpg",
+          "assets/media/optimized/Photos/572891382_18539725939046765_7566299953536618752_n.jpg",
+          "assets/media/optimized/Photos/574093629_18539895199046765_8543696088899625231_n.jpg",
+        ],
+      },
+      {
+        location: "LAKE COMO / ITALY / II",
+        photos: [
+          "assets/media/optimized/Photos/571981955_18543827299046765_4837020013419441924_n.jpg",
+          "assets/media/optimized/Photos/582078962_18543827320046765_1908806272816245160_n.jpg",
+          "assets/media/optimized/Photos/583339666_18543827362046765_6112675803669537357_n.jpg",
+          "assets/media/optimized/Photos/584424905_18543827323046765_8607657616790426816_n.jpg",
+          "assets/media/optimized/Photos/586929194_18543827353046765_9085698015355498495_n.jpg",
+          "assets/media/optimized/Photos/587052368_18543827326046765_6514332653906332423_n.jpg",
+          "assets/media/optimized/Photos/587284321_18543827344046765_8828664098831983175_n.jpg",
+          "assets/media/optimized/Photos/587292956_18543827341046765_2284240041782548255_n.jpg",
+        ],
+      },
+    ],
   },
   blocks: [
     {
@@ -4117,7 +4166,7 @@ function renderHomepage() {
   const container = $("[data-homepage-blocks]");
   if (!container) return;
 
-  if (title) title.textContent = homepageData.title || "INNDER_CHILD_UNLOCKED.TXT";
+  if (title) title.textContent = homepageData.title || "INNER_CHILD_UNLOCKED.TXT";
   if (status) status.textContent = homepageData.status || "";
   if (homepageData.about) {
     renderAboutHomepage(container, homepageData.about);
