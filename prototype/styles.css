@@ -3334,10 +3334,13 @@ body[data-view="grid"] .grid-logo-slot {
 body[data-view="grid"] .window--index {
   --grid-column: 1 / -1;
   grid-row: 1;
+  max-height: none;
 }
 
 body[data-view="grid"] .window--index .window__body {
+  flex: 0 0 auto;
   padding: 11px 22px 33px;
+  overflow: visible;
 }
 
 body[data-view="grid"] .window--index #project-index-list {
@@ -3558,7 +3561,7 @@ body[data-view="list"] .window__body {
     width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 0;
+    gap: 11px;
     padding-inline: 0;
   }
 
@@ -3725,15 +3728,14 @@ body[data-view="list"] .window__body {
 
   .project-window:not([data-layout="media-fullscreen"]) {
     position: fixed !important;
-    left: 11px !important;
-    right: 11px !important;
-    top: var(--mobile-project-top, 110px) !important;
-    bottom: 11px !important;
+    inset: 0 !important;
     z-index: 9000;
-    width: auto !important;
+    width: 100% !important;
+    max-width: 100%;
     min-height: 0;
-    height: auto;
+    height: 100dvh;
     max-height: none;
+    box-shadow: none;
   }
 
   .project-stage {
@@ -3743,8 +3745,28 @@ body[data-view="list"] .window__body {
 
   .project-folder {
     align-content: start;
+    min-width: 0;
+    overflow-x: hidden;
     overflow-y: auto;
     padding: 44px 22px;
+  }
+
+  .folder-layout,
+  .text-layout,
+  .project-overview,
+  .content-block-grid,
+  .child-projects {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .child-projects {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .child-project {
+    max-width: 100%;
   }
 
   .project-folder h3 {
