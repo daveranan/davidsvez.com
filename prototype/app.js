@@ -134,7 +134,7 @@ let homepageData = {
     name: "David Svezhintsev",
     intro: "I make games, tools, interfaces, films, and whatever else seems interesting enough to lose a few months to.",
     bio: "Born in Saint Petersburg, currently based in the US. I've spent most of my career around product design and production, and increasingly all of my time making games.",
-    portrait: "assets/media/og-library/Photos/Me_1.jpg",
+    portrait: "assets/media/optimized/Photos/Me_1.jpg",
     photographyIntro: "I take a stupid amount of photos whenever I go anywhere.",
     photoGroups: [],
   },
