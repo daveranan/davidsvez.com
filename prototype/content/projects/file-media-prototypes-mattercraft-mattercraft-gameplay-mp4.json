@@ -1,6 +1,7 @@
 {
   "id": "file-media-prototypes-mattercraft-mattercraft-gameplay-mp4",
   "parentId": "mattercraft-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

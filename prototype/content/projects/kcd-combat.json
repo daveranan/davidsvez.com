@@ -1,6 +1,7 @@
 {
   "id": "kcd-combat",
   "parentId": "prototypes",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

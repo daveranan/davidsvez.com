@@ -1,6 +1,7 @@
 {
   "id": "file-media-graphics-marathon-glyph-only-mov",
   "parentId": "marathon-tau-ceti-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

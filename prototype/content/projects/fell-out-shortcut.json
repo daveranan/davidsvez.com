@@ -1,6 +1,7 @@
 {
   "id": "fell-out-shortcut",
   "parentId": "game-jams",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

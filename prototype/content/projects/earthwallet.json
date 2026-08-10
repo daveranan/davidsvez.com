@@ -1,6 +1,7 @@
 {
   "id": "earthwallet",
   "parentId": "client-work",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

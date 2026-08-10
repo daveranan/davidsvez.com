@@ -148,6 +148,7 @@ const externalMedia = [
   ["youtube-project-sunshine", "youtube", "Little to the Left of Sunshine", "https://www.youtube.com/watch?v=H6Dubeaqhvo", "project-sunshine"],
   ["youtube-project-hypno", "youtube", "Hypnothermia — Intro", "https://www.youtube.com/watch?v=WIsTilxePUg", "project-hypno"],
   ["youtube-lightkeeper-vertical-slice", "youtube", "Lightkeeper Gameplay Walkthrough", "https://www.youtube.com/watch?v=_ROPRah7oxQ", "vertical-slice-2026"],
+  ["media-kern-pitch-deck-project-kern-high-concept-1-0-pdf", "pdf", "Project KERN — High Concept 1.0", "https://drive.google.com/file/d/1tMx0zhFlLu8bCI2OJvy9vV8ew3_BSYiG/view?usp=drive_link", "kern"],
 ];
 for (const [id, type, title, externalUrl, projectId] of externalMedia) {
   const item = { id, type, title, caption: "", alt: title, sourcePath: "", externalUrl, projectId, sectionId: "external", credits: "", posterFrame: "", fullscreenEligible: true, fileSize: 0 };
@@ -161,7 +162,7 @@ const block = (id, type, width, heading = "", body = "", extra = {}) => ({ id, t
 const text = (id, heading, body, width = "full") => block(id, "text", width, heading, body);
 const visual = (id, path, width = "full", heading = "", body = "", fit = "cover") => block(id, typeFor(path), width, heading, body, { mediaRef: ref(path), fit });
 const youtube = (id, mediaRef, heading = "", body = "") => block(id, "youtube", "full", heading, body, { mediaRef });
-const link = (id, heading, label, href, body = "", width = "full") => block(id, "link", width, heading, body, { href, label });
+const link = (id, heading, label, href, body = "", width = "full", mediaRef = "") => block(id, "link", width, heading, body, { href, label, mediaRef });
 const projectLink = (id, projectId, label, body = "") => block(id, "project-link", "full", "", body, { projectId, label });
 
 const projects = [];
@@ -214,6 +215,7 @@ add("kern", "KERN.GAME", "An investigative science-fiction game about entering a
   ...["kern-government-research-seal.png", "kern-logo-eye-globe.png", "kern-wordmark-split-layout.png"].map((name, i) => visual(`kern-brand-${i + 1}`, `KERN/Branding/${name}`, "third", "", "", "contain")),
   ...["Psycho_Hazard_Poster.jpg", "kern_groundcorp_poster.jpg", "kern_callnumber_poster.jpg"].map((name, i) => visual(`kern-poster-${i + 1}`, `KERN/Graphics/${name}`, "third", "", "", "contain")),
   ...["1.png", "6.png", "11.png"].map((name, i) => visual(`kern-deck-${i + 1}`, `KERN/pitch_deck/${name}`, "third", "", "", "contain")),
+  link("kern-concept-deck", "KERN HIGH CONCEPT", "OPEN KERN HIGH CONCEPT PDF ↗", "https://drive.google.com/file/d/1tMx0zhFlLu8bCI2OJvy9vV8ew3_BSYiG/view?usp=drive_link", "", "full", "media-kern-pitch-deck-project-kern-high-concept-1-0-pdf"),
   text("kern-questions", "CURRENT QUESTIONS", "How much uncertainty can an investigation support? How should tools overlap? What persists after an encounter? This section remains intentionally open while the design changes."),
 ] });
 
@@ -328,16 +330,17 @@ const visualPages = [
 for (const [id, title, thumbnail, description] of visualPages) add(id, `${title}.DIR`, description, { parentId: "visual-lab", category: "DESIGN", thumbnail, blocks: [visual(`${id}-hero`, thumbnail, "full", title), text(`${id}-context`, "CONTEXT", description), ...(id === "worlds-apart" ? [youtube("worlds-process", "youtube-worlds-apart", "PROCESS TIMELAPSE"), link("worlds-history", "", "OPEN HISTORICAL POST ↗", "https://dribbble.com/shots/19895408-Worlds-Apart-Inc-Transdimensional-Architecture-Firm")] : []), ...(id === "vrx-iiv" ? [link("vrx-history", "", "OPEN HISTORICAL POST ↗", "https://dribbble.com/shots/19905406-VRX-IIV-Virtual-Reality-Meta-Spaces")] : []), ...(id === "figmagram" ? [link("figma-history", "", "OPEN HISTORICAL POST ↗", "https://dribbble.com/shots/15198563-Figmagram")] : [])] });
 
 const existingIds = new Set(projects.map((project) => project.id));
-const archiveOwners = [...new Set(media.filter((item) => item.sourcePath).map((item) => item.projectId))].filter((id) => existingIds.has(id));
+const artifactMedia = media.filter((item) => item.sourcePath || (item.type === "pdf" && item.externalUrl));
+const archiveOwners = [...new Set(artifactMedia.map((item) => item.projectId))].filter((id) => existingIds.has(id));
 for (const owner of archiveOwners) {
   const archiveId = `${owner}-archive`;
   add(archiveId, "ARCHIVE.DIR", "Every local image, video and document assigned to this project.", { parentId: owner, category: projects.find((p) => p.id === owner)?.category || "EXPERIMENT", showOverview: false });
-  for (const item of media.filter((candidate) => candidate.sourcePath && candidate.projectId === owner)) {
+  for (const item of artifactMedia.filter((candidate) => candidate.projectId === owner)) {
     const isPdf = item.type === "pdf";
     add(`file-${item.id}`, `${item.title.toUpperCase().replaceAll(" ", "_")}.${isPdf ? "PDF" : item.type === "video" ? "VIDEO" : "IMAGE"}`, item.credits || item.caption || `${item.type.toUpperCase()} archive artifact.`, {
       parentId: archiveId, layout: isPdf ? "text-window" : "media-fullscreen", category: projects.find((p) => p.id === owner)?.category || "EXPERIMENT",
       sourceType: item.type === "video" ? "video" : "image", mediaRef: item.id, thumbnail: "", showOverview: false, showFolderActions: false,
-      blocks: isPdf ? [link(`${slug(item.title)}-open`, item.title, "OPEN PDF ↗", item.sourcePath, `Local source document — ${(item.fileSize / 1048576).toFixed(1)} MB. Replace with a hosted document link when ready.`)] : [],
+      blocks: isPdf ? [link(`${slug(item.title)}-open`, item.title, "OPEN PDF ↗", item.externalUrl || item.sourcePath, item.externalUrl ? "Hosted source document." : `Local source document — ${(item.fileSize / 1048576).toFixed(1)} MB.`, "full", item.id)] : [],
     });
   }
 }

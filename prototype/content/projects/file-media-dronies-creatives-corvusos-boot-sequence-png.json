@@ -1,6 +1,7 @@
 {
   "id": "file-media-dronies-creatives-corvusos-boot-sequence-png",
   "parentId": "dronies-creatives-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

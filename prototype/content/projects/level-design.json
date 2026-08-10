@@ -1,6 +1,7 @@
 {
   "id": "level-design",
   "parentId": "prototypes",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

@@ -1,6 +1,7 @@
 {
   "id": "dronies-creatives",
   "parentId": "dronies",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

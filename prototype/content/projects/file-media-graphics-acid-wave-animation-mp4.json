@@ -1,6 +1,7 @@
 {
   "id": "file-media-graphics-acid-wave-animation-mp4",
   "parentId": "acid-wave-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

@@ -1,6 +1,7 @@
 {
   "id": "file-media-graphics-3dpractice-movingonexpress-webp",
   "parentId": "moving-on-express-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

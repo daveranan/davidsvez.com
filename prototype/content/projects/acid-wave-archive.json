@@ -1,6 +1,7 @@
 {
   "id": "acid-wave-archive",
   "parentId": "acid-wave",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

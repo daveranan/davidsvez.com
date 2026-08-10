@@ -2,7 +2,6 @@
   "id": "clipper",
   "parentId": "apps",
   "showOnRoot": false,
-  "hidden": false,
   "layout": "folder",
   "windowWidth": "900px",
   "windowHeight": "620px",

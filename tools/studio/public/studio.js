@@ -156,7 +156,7 @@ function createBlockCard(block = {}, index = 0) {
       </div>
     </div>
     <div class="block-card__fields">
-      <label>TYPE<select data-block-field="type"><option value="text">TEXT</option><option value="signal">SIGNAL / METRICS</option><option value="image">IMAGE</option><option value="video">VIDEO</option><option value="youtube">YOUTUBE</option><option value="link">EXTERNAL LINK</option><option value="project-link">PROJECT LINK</option></select></label>
+      <label>TYPE<select data-block-field="type"><option value="text">TEXT</option><option value="signal">SIGNAL / METRICS</option><option value="image">IMAGE</option><option value="video">VIDEO</option><option value="youtube">YOUTUBE</option><option value="vimeo">VIMEO</option><option value="link">EXTERNAL LINK</option><option value="project-link">PROJECT LINK</option></select></label>
       <label>WIDTH<select data-block-field="width"><option value="full">FULL / 6 OF 6</option><option value="half">HALF / 3 OF 6</option><option value="third">THIRD / 2 OF 6</option></select></label>
       <label>MEDIA FIT<select data-block-field="fit"><option value="cover">COVER</option><option value="contain">CONTAIN</option></select></label>
       <label class="wide">HEADING<input data-block-field="heading" /></label>

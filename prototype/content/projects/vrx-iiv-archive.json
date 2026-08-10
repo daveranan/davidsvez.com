@@ -1,6 +1,7 @@
 {
   "id": "vrx-iiv-archive",
   "parentId": "vrx-iiv",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

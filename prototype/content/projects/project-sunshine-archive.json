@@ -1,6 +1,7 @@
 {
   "id": "project-sunshine-archive",
   "parentId": "project-sunshine",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

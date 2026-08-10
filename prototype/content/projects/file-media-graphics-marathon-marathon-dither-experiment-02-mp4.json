@@ -1,6 +1,7 @@
 {
   "id": "file-media-graphics-marathon-marathon-dither-experiment-02-mp4",
   "parentId": "marathon-tau-ceti-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

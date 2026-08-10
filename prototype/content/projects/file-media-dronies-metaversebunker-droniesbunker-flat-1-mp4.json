@@ -1,6 +1,7 @@
 {
   "id": "file-media-dronies-metaversebunker-droniesbunker-flat-1-mp4",
   "parentId": "dronies-bunker-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

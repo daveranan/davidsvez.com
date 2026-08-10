@@ -1,6 +1,7 @@
 {
   "id": "file-media-daedalus-film-intro-daedalus-concept-mp4",
   "parentId": "daedalus-film-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

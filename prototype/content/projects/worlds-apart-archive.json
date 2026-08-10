@@ -1,6 +1,7 @@
 {
   "id": "worlds-apart-archive",
   "parentId": "worlds-apart",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

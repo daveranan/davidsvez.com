@@ -1,6 +1,7 @@
 {
   "id": "file-media-graphics-3dpractice-sony-ps-f5-turntable-blender-webp",
   "parentId": "visual-3d-practice-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

@@ -1,6 +1,7 @@
 {
   "id": "bolt-icons",
   "parentId": "client-work",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",
@@ -46,6 +47,5 @@
     "BUILDING ARCHIVE",
     "OPENING DIRECTORY"
   ],
-  "hidden": true,
   "posterFrame": "assets/media/posters/preview-bolt-icons.jpg"
 }

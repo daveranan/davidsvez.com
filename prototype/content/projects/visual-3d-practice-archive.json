@@ -1,6 +1,7 @@
 {
   "id": "visual-3d-practice-archive",
   "parentId": "visual-3d-practice",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

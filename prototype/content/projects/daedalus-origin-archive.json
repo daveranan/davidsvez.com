@@ -1,6 +1,7 @@
 {
   "id": "daedalus-origin-archive",
   "parentId": "daedalus-origin",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

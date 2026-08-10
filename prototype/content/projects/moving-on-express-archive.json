@@ -1,6 +1,7 @@
 {
   "id": "moving-on-express-archive",
   "parentId": "moving-on-express",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

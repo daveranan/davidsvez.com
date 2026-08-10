@@ -119,7 +119,7 @@ function normalizeBlock(block, index, projectId) {
   const type = String(block.type || "text").trim();
   const width = String(block.width || "full").trim();
   const fit = String(block.fit || "cover").trim();
-  if (!["text", "image", "video", "youtube", "link", "project-link"].includes(type)) {
+  if (!["text", "signal", "image", "video", "youtube", "vimeo", "link", "project-link"].includes(type)) {
     throw new Error(`${projectId}/${id}: unsupported block type ${type}`);
   }
   if (!["full", "half", "third"].includes(width)) {
@@ -133,7 +133,7 @@ function normalizeBlock(block, index, projectId) {
   const source = type === "youtube" && rawSource
     ? normalizeYouTubeSource(rawSource, `${projectId}/${id}`)
     : rawSource.replaceAll("\\", "/").replace(/^\/+/, "");
-  if (["image", "video", "youtube"].includes(type) && !source && !mediaRef) {
+  if (["image", "video", "youtube", "vimeo"].includes(type) && !source && !mediaRef) {
     throw new Error(`${projectId}/${id}: media blocks need a source or media reference`);
   }
   return {
@@ -176,7 +176,7 @@ function normalizeProject(project, index) {
     normalizeBlock(block, blockIndex, id),
   );
   const category = String(project.category || "EXPERIMENT").trim().toUpperCase();
-  const categories = ["WEBSITE", "FILM", "GAME", "PRODUCTION", "TOOLS", "NARRATIVE", "DESIGN", "GAME JAM", "EXPERIMENT", "APP"];
+  const categories = ["WEBSITE", "FILM", "GAME", "PRODUCTION", "TOOLS", "NARRATIVE", "DESIGN", "GAME JAM", "EXPERIMENT", "PROTOTYPE", "APP"];
   if (!categories.includes(category)) {
     throw new Error(`${id}: unknown project category ${category}`);
   }
@@ -225,7 +225,7 @@ function normalizeMediaItem(item, index) {
   const id = String(item.id || "").trim().toLowerCase();
   if (!/^[a-z0-9][a-z0-9-]*$/.test(id)) throw new Error(`Media item ${index + 1} needs a lowercase id`);
   const type = String(item.type || "").trim().toLowerCase();
-  if (!["image", "video", "youtube", "pdf", "link"].includes(type)) throw new Error(`${id}: unsupported media type ${type}`);
+  if (!["image", "video", "youtube", "vimeo", "pdf", "link"].includes(type)) throw new Error(`${id}: unsupported media type ${type}`);
   const sourcePath = String(item.sourcePath || "").replaceAll("\\", "/").replace(/^\/+/, "");
   const externalUrl = String(item.externalUrl || "").trim();
   if (!sourcePath && !externalUrl) throw new Error(`${id}: media needs a local source path or external URL`);

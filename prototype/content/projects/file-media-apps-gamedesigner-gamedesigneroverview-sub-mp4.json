@@ -1,6 +1,7 @@
 {
   "id": "file-media-apps-gamedesigner-gamedesigneroverview-sub-mp4",
   "parentId": "game-designer-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

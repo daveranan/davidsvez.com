@@ -1,6 +1,7 @@
 {
   "id": "earthwallet-archive",
   "parentId": "earthwallet",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

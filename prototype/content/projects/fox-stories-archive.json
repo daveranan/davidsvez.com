@@ -1,6 +1,7 @@
 {
   "id": "fox-stories-archive",
   "parentId": "fox-stories",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

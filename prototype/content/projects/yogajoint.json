@@ -1,6 +1,7 @@
 {
   "id": "yogajoint",
   "parentId": "client-work",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",
@@ -60,6 +61,5 @@
     "BUILDING ARCHIVE",
     "OPENING DIRECTORY"
   ],
-  "hidden": false,
   "posterFrame": "assets/media/posters/preview-yogajoint.jpg"
 }

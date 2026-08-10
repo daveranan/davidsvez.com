@@ -1,6 +1,7 @@
 {
   "id": "midi-clip-builder",
   "parentId": "apps",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

@@ -1,6 +1,7 @@
 {
   "id": "daedalus-comic-archive",
   "parentId": "daedalus-comic",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

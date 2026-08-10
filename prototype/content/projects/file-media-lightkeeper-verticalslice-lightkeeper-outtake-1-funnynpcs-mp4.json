@@ -1,6 +1,7 @@
 {
   "id": "file-media-lightkeeper-verticalslice-lightkeeper-outtake-1-funnynpcs-mp4",
   "parentId": "vertical-slice-2026-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

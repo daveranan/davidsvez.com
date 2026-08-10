@@ -1,6 +1,7 @@
 {
   "id": "file-media-graphics-earthwallet-brand-webp",
   "parentId": "earthwallet-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

@@ -1,6 +1,7 @@
 {
   "id": "kcd-combat-archive",
   "parentId": "kcd-combat",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

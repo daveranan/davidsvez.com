@@ -1,6 +1,7 @@
 {
   "id": "brand-bits",
   "parentId": "visual-lab",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

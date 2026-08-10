@@ -1,6 +1,7 @@
 {
   "id": "game-designer-archive",
   "parentId": "game-designer",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

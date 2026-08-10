@@ -2,6 +2,7 @@
   {
     "id": "lightkeeper",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -16,7 +17,7 @@
         "width": "full",
         "heading": "LIGHTKEEPER",
         "body": "",
-        "source": "",
+        "source": "assets/media/optimized/Projects/Lightkeeper/VerticalSlice/lightkeeper_15s_still_graphics.mp4",
         "mediaRef": "media-lightkeeper-verticalslice-lightkeeper-15s-still-graphics-mp4",
         "href": "",
         "label": "",
@@ -44,7 +45,7 @@
         "width": "full",
         "heading": "VERTICAL SLICE GAMEPLAY WALKTHROUGH",
         "body": "",
-        "source": "",
+        "source": "https://www.youtube.com/watch?v=_ROPRah7oxQ",
         "mediaRef": "youtube-lightkeeper-vertical-slice",
         "href": "",
         "label": "",
@@ -335,7 +336,6 @@
       {
         "id": "lk-pitch-deck-pdf",
         "type": "link",
-        "variant": "external-card",
         "width": "full",
         "heading": "FELL OUT HIGH CONCEPT",
         "body": "",
@@ -350,7 +350,6 @@
       {
         "id": "lk-concept-deck",
         "type": "link",
-        "variant": "external-card",
         "width": "full",
         "heading": "LIGHTKEEPER CONCEPT",
         "body": "",
@@ -445,6 +444,7 @@
   {
     "id": "kern",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -708,12 +708,11 @@
       {
         "id": "kern-concept-deck",
         "type": "link",
-        "variant": "external-card",
         "width": "full",
         "heading": "KERN HIGH CONCEPT",
         "body": "",
         "source": "",
-        "mediaRef": "",
+        "mediaRef": "media-kern-pitch-deck-project-kern-high-concept-1-0-pdf",
         "href": "https://drive.google.com/file/d/1tMx0zhFlLu8bCI2OJvy9vV8ew3_BSYiG/view?usp=drive_link",
         "label": "KERN HIGH CONCEPT",
         "projectId": "",
@@ -761,6 +760,7 @@
   {
     "id": "dronies",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -781,8 +781,7 @@
         "label": "",
         "projectId": "",
         "alt": "Dronies project breakdown",
-        "fit": "cover",
-        "posterFrame": ""
+        "fit": "cover"
       },
       {
         "id": "dronies-journey",
@@ -1133,6 +1132,7 @@
   {
     "id": "flax-editor",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -1336,6 +1336,7 @@
   {
     "id": "daedalus",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -1346,12 +1347,54 @@
     "blocks": [
       {
         "id": "daedalus-hero",
-        "type": "video",
+        "type": "youtube",
         "width": "full",
-        "heading": "DAEDALUS",
+        "heading": "DAEDALUS ALPHA - 7-MINUTE SHORT FILM",
         "body": "",
         "source": "",
-        "mediaRef": "media-daedalus-comic-daedalus-comic-trailer-mp4",
+        "mediaRef": "youtube-daedalus-alpha-film",
+        "href": "",
+        "label": "",
+        "projectId": "",
+        "alt": "",
+        "fit": "cover"
+      },
+      {
+        "id": "daedalus-film-story",
+        "type": "text",
+        "width": "full",
+        "heading": "I DIRECTED A FILM",
+        "body": "Daedalus Alpha is a seven-minute live-action short about a scientist confronting an apparent superintelligence - and the possibility that the intelligence speaking back may not be humanity's creation at all. I developed the concept over several months, then produced, directed and edited the film. The call sheet lists a 12-person production: nine unique crew members, including me, and three cast. We shot overnight from roughly 8 PM to 8 AM. It was one of the best creative experiences of my life, and a crash course in how much coordination, trust and stamina it takes to turn a written idea into a finished film.",
+        "source": "",
+        "mediaRef": "",
+        "href": "",
+        "label": "",
+        "projectId": "",
+        "alt": "",
+        "fit": "cover"
+      },
+      {
+        "id": "daedalus-film-link",
+        "type": "project-link",
+        "width": "half",
+        "heading": "",
+        "body": "",
+        "source": "",
+        "mediaRef": "",
+        "href": "",
+        "label": "OPEN FILM/",
+        "projectId": "daedalus-film",
+        "alt": "",
+        "fit": "cover"
+      },
+      {
+        "id": "daedalus-alpha-bts",
+        "type": "youtube",
+        "width": "half",
+        "heading": "THE 8 PM TO 8 AM SHOOT",
+        "body": "",
+        "source": "",
+        "mediaRef": "youtube-daedalus-alpha-bts",
         "href": "",
         "label": "",
         "projectId": "",
@@ -1651,55 +1694,13 @@
         "projectId": "",
         "alt": "",
         "fit": "cover"
-      },
-      {
-        "id": "daedalus-film-link",
-        "type": "project-link",
-        "width": "full",
-        "heading": "",
-        "body": "",
-        "source": "",
-        "mediaRef": "",
-        "href": "",
-        "label": "OPEN FILM/",
-        "projectId": "daedalus-film",
-        "alt": "",
-        "fit": "cover"
-      },
-      {
-        "id": "daedalus-alpha-film",
-        "type": "youtube",
-        "width": "full",
-        "heading": "DAEDALUS ALPHA",
-        "body": "",
-        "source": "",
-        "mediaRef": "youtube-daedalus-alpha-film",
-        "href": "",
-        "label": "",
-        "projectId": "",
-        "alt": "",
-        "fit": "cover"
-      },
-      {
-        "id": "daedalus-alpha-bts",
-        "type": "youtube",
-        "width": "full",
-        "heading": "BEHIND THE SCENES",
-        "body": "",
-        "source": "",
-        "mediaRef": "youtube-daedalus-alpha-bts",
-        "href": "",
-        "label": "",
-        "projectId": "",
-        "alt": "",
-        "fit": "cover"
       }
     ],
     "title": "DAEDALUS.PROJECT",
     "heading": "DAEDALUS",
     "shortcutLabel": "DAEDALUS.PROJECT",
     "kind": "PROJECT / DIRECTORY",
-    "description": "An original science-fiction world developed through a 12-page comic, interactive animated reader, website, brand, film, music and early AI-assisted image production.",
+    "description": "A science-fiction world led by a seven-minute live-action short I produced, directed and edited, then expanded through a comic, interactive reader, website, brand and music.",
     "thumbnail": "",
     "thumbnailMediaRef": "preview-daedalus",
     "thumbnailType": "video",
@@ -1720,7 +1721,8 @@
   },
   {
     "id": "userwise",
-    "parentId": null,
+    "parentId": "client-work",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -1863,7 +1865,7 @@
     "description": "A live-ops content-builder redesign shown from research and exploration through implementation workflows and final interface.",
     "thumbnail": "",
     "thumbnailMediaRef": "preview-userwise",
-    "thumbnailType": "video",
+    "thumbnailType": "image",
     "sourceType": "image",
     "category": "DESIGN",
     "period": "",
@@ -1882,6 +1884,7 @@
   {
     "id": "marathon-tau-ceti",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2015,6 +2018,7 @@
   {
     "id": "swamp-fellas",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2190,6 +2194,7 @@
   {
     "id": "bolt-icons",
     "parentId": "client-work",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2234,12 +2239,12 @@
       "RESOLVING MEDIA REFERENCES",
       "BUILDING ARCHIVE",
       "OPENING DIRECTORY"
-    ],
-    "hidden": true
+    ]
   },
   {
     "id": "lazaris",
     "parentId": "client-work",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2298,12 +2303,12 @@
       "RESOLVING MEDIA REFERENCES",
       "BUILDING ARCHIVE",
       "OPENING DIRECTORY"
-    ],
-    "hidden": false
+    ]
   },
   {
     "id": "prototypes",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2338,6 +2343,7 @@
   {
     "id": "game-jams",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2372,6 +2378,7 @@
   {
     "id": "apps",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2421,6 +2428,7 @@
   {
     "id": "client-work",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2455,6 +2463,7 @@
   {
     "id": "visual-lab",
     "parentId": null,
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2489,6 +2498,7 @@
   {
     "id": "vertical-slice-2026",
     "parentId": "lightkeeper",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2538,6 +2548,7 @@
   {
     "id": "lightkeeper-technical-test",
     "parentId": "lightkeeper",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2657,6 +2668,7 @@
   {
     "id": "fell-out-concept",
     "parentId": "lightkeeper",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2682,7 +2694,6 @@
       {
         "id": "fell-concept-deck",
         "type": "link",
-        "variant": "external-card",
         "width": "full",
         "heading": "FELL OUT HIGH CONCEPT",
         "body": "",
@@ -2813,6 +2824,7 @@
   {
     "id": "dronies-creatives",
     "parentId": "dronies",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2862,6 +2874,7 @@
   {
     "id": "dronies-bunker",
     "parentId": "dronies",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2911,6 +2924,7 @@
   {
     "id": "daedalus-origin",
     "parentId": "daedalus",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -2945,6 +2959,7 @@
   {
     "id": "daedalus-comic",
     "parentId": "daedalus",
+    "showOnRoot": true,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3022,6 +3037,7 @@
   {
     "id": "daedalus-brand",
     "parentId": "daedalus",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3056,6 +3072,7 @@
   {
     "id": "daedalus-film",
     "parentId": "daedalus",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3079,6 +3096,48 @@
         "fit": "cover"
       },
       {
+        "id": "alpha-film-context",
+        "type": "text",
+        "width": "full",
+        "heading": "A CONVERSATION WITH SUPERINTELLIGENCE",
+        "body": "Daedalus Alpha is a seven-minute science-fiction short about a scientist attempting to speak with an apparent superintelligence, and asking whether the intelligence on the other side is really ours. I developed the concept over several months and served as producer, director and editor.",
+        "source": "",
+        "mediaRef": "",
+        "href": "",
+        "label": "",
+        "projectId": "",
+        "alt": "",
+        "fit": "cover"
+      },
+      {
+        "id": "alpha-production",
+        "type": "text",
+        "width": "full",
+        "heading": "12 PEOPLE / 12 HOURS / ONE NIGHT",
+        "body": "The call sheet lists nine unique crew members, including me, and three cast. We worked through the night, from roughly 8 PM to 8 AM. I loved the intensity of it: directing performances, keeping departments aligned, protecting the idea while responding to what was actually happening on set, and then finding the final film again in the edit. It taught me more about production than any amount of planning could have.",
+        "source": "",
+        "mediaRef": "",
+        "href": "",
+        "label": "",
+        "projectId": "",
+        "alt": "",
+        "fit": "cover"
+      },
+      {
+        "id": "alpha-bts-film-page",
+        "type": "youtube",
+        "width": "full",
+        "heading": "BEHIND THE SCENES",
+        "body": "",
+        "source": "",
+        "mediaRef": "youtube-daedalus-alpha-bts",
+        "href": "",
+        "label": "",
+        "projectId": "",
+        "alt": "",
+        "fit": "cover"
+      },
+      {
         "id": "alpha-concept",
         "type": "video",
         "width": "full",
@@ -3091,13 +3150,41 @@
         "projectId": "",
         "alt": "",
         "fit": "cover"
+      },
+      {
+        "id": "alpha-white-mirror",
+        "type": "text",
+        "width": "full",
+        "heading": "WHITE MIRROR",
+        "body": "The film was made for White Mirror, an anthology initiative produced by CHAPTR and The Culture DAO around human-machine collaboration. The wider project was presented in an official Venice Production Bridge session at the 80th Venice International Film Festival in 2023, moderated by Edward Saatchi of Fable Simulation and Philipp Nastaly of CHAPTR. That public record confirms the White Mirror presentation; it does not establish that Daedalus Alpha itself screened as part of the festival.",
+        "source": "",
+        "mediaRef": "",
+        "href": "",
+        "label": "",
+        "projectId": "",
+        "alt": "",
+        "fit": "cover"
+      },
+      {
+        "id": "alpha-white-mirror-source",
+        "type": "link",
+        "width": "full",
+        "heading": "OFFICIAL VENICE PROGRAM",
+        "body": "",
+        "source": "",
+        "mediaRef": "",
+        "href": "https://static.labiennale.org/files/cinema/2023/Documenti/venice-immersive-80miac.pdf",
+        "label": "OPEN VENICE IMMERSIVE PROGRAM PDF",
+        "projectId": "",
+        "alt": "",
+        "fit": "cover"
       }
     ],
     "title": "FILM.DIR",
     "heading": "FILM",
     "shortcutLabel": "FILM.DIR",
     "kind": "PROJECT / DIRECTORY",
-    "description": "The finished Daedalus Alpha short film and early live-action concept material.",
+    "description": "A seven-minute science-fiction short I developed, produced, directed and edited with a 12-person cast and crew during an overnight shoot.",
     "thumbnail": "",
     "thumbnailMediaRef": "preview-daedalus-film",
     "thumbnailType": "video",
@@ -3106,8 +3193,8 @@
     "period": "2023",
     "source": "",
     "mediaRef": "",
-    "role": "DESIGN / DEVELOPMENT",
-    "state": "ARCHIVE READY",
+    "role": "PRODUCER / DIRECTOR / EDITOR",
+    "state": "SHIPPED",
     "route": "/PROJECT/DAEDALUS-FILM",
     "status": [
       "MOUNTING PROJECT",
@@ -3119,6 +3206,7 @@
   {
     "id": "daedalus-bts",
     "parentId": "daedalus",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3146,7 +3234,7 @@
     "heading": "BEHIND THE SCENES",
     "shortcutLabel": "BEHIND_THE_SCENES.DIR",
     "kind": "PROJECT / DIRECTORY",
-    "description": "A one-minute behind-the-scenes look at the production of Daedalus Alpha.",
+    "description": "A one-minute look inside the overnight Daedalus Alpha shoot with its nine-person crew and three cast members.",
     "thumbnail": "",
     "thumbnailMediaRef": "preview-daedalus-bts",
     "thumbnailType": "video",
@@ -3155,8 +3243,8 @@
     "period": "2023",
     "source": "",
     "mediaRef": "",
-    "role": "DESIGN / DEVELOPMENT",
-    "state": "ARCHIVE READY",
+    "role": "PRODUCER / DIRECTOR",
+    "state": "SHIPPED",
     "route": "/PROJECT/DAEDALUS-BTS",
     "status": [
       "MOUNTING PROJECT",
@@ -3358,6 +3446,7 @@
   {
     "id": "project-hypno",
     "parentId": "prototypes",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3505,6 +3594,7 @@
   {
     "id": "project-sunshine",
     "parentId": "prototypes",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3545,8 +3635,8 @@
         "id": "project-sunshine-context",
         "type": "text",
         "width": "full",
-        "heading": "WHAT THIS TESTED",
-        "body": "A one-week game concept pushed far enough to test whether the idea had somewhere interesting to go.",
+        "heading": "ONE WEEK, ONE SONG, ONE WORLD",
+        "body": "I had been carrying this world around in my head for months, then gave myself one week to make it visible. I used a single song as the spine and pushed my Blender skills through every scene I could finish in that window. The mannequins are there because character design and animation were outside both my skill set and the scope; they look a little funny, and I’m fine with that. The project is rough, specific and still one of the concept pieces I’m happiest with.",
         "source": "",
         "mediaRef": "",
         "href": "",
@@ -3560,7 +3650,7 @@
     "heading": "PROJECT SUNSHINE",
     "shortcutLabel": "PROJECT_SUNSHINE.DIR",
     "kind": "PROJECT / DIRECTORY",
-    "description": "A one-week game concept pushed far enough to test whether the idea had somewhere interesting to go.",
+    "description": "A one-week concept mock-up that turned a world I had carried for months into a sequence of Blender scenes designed around one specific song.",
     "thumbnail": "",
     "thumbnailMediaRef": "preview-project-sunshine",
     "thumbnailType": "video",
@@ -3582,6 +3672,7 @@
   {
     "id": "mighty-pebble",
     "parentId": "prototypes",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3659,6 +3750,7 @@
   {
     "id": "mattercraft",
     "parentId": "prototypes",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3722,6 +3814,7 @@
   {
     "id": "spacekeeper",
     "parentId": "prototypes",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3785,6 +3878,7 @@
   {
     "id": "fox-stories",
     "parentId": "prototypes",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3862,6 +3956,7 @@
   {
     "id": "kcd-combat",
     "parentId": "prototypes",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3925,6 +4020,7 @@
   {
     "id": "level-design",
     "parentId": "prototypes",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -3988,6 +4084,7 @@
   {
     "id": "moving-on-express",
     "parentId": "prototypes",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4149,6 +4246,7 @@
   {
     "id": "loooop",
     "parentId": "game-jams",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4226,6 +4324,7 @@
   {
     "id": "fell-out-shortcut",
     "parentId": "game-jams",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4275,6 +4374,7 @@
   {
     "id": "game-designer",
     "parentId": "apps",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4338,6 +4438,7 @@
   {
     "id": "yesterday",
     "parentId": "apps",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4415,6 +4516,7 @@
   {
     "id": "midi-clip-builder",
     "parentId": "apps",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4478,6 +4580,7 @@
   {
     "id": "sonilabs",
     "parentId": "apps",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4556,7 +4659,6 @@
     "id": "clipper",
     "parentId": "apps",
     "showOnRoot": false,
-    "hidden": false,
     "layout": "folder",
     "windowWidth": "900px",
     "windowHeight": "620px",
@@ -4634,6 +4736,7 @@
   {
     "id": "rise-above-disorder",
     "parentId": "client-work",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4739,6 +4842,7 @@
   {
     "id": "earthwallet",
     "parentId": "client-work",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4816,6 +4920,7 @@
   {
     "id": "yogajoint",
     "parentId": "client-work",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4874,12 +4979,12 @@
       "RESOLVING MEDIA REFERENCES",
       "BUILDING ARCHIVE",
       "OPENING DIRECTORY"
-    ],
-    "hidden": false
+    ]
   },
   {
     "id": "userwise-shortcut",
     "parentId": "client-work",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4929,6 +5034,7 @@
   {
     "id": "visual-3d-practice",
     "parentId": "visual-lab",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -4992,6 +5098,7 @@
   {
     "id": "mountain-graphs",
     "parentId": "visual-lab",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5055,6 +5162,7 @@
   {
     "id": "vrx-iiv",
     "parentId": "visual-lab",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5132,6 +5240,7 @@
   {
     "id": "worlds-apart",
     "parentId": "visual-lab",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5223,6 +5332,7 @@
   {
     "id": "figmagram",
     "parentId": "visual-lab",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5300,6 +5410,7 @@
   {
     "id": "acid-wave",
     "parentId": "visual-lab",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5363,6 +5474,7 @@
   {
     "id": "pill-button",
     "parentId": "visual-lab",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5426,6 +5538,7 @@
   {
     "id": "brand-bits",
     "parentId": "visual-lab",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5489,6 +5602,7 @@
   {
     "id": "game-designer-archive",
     "parentId": "game-designer",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5523,6 +5637,7 @@
   {
     "id": "file-media-apps-gamedesigner-gamedesigneroverview-sub-mp4",
     "parentId": "game-designer-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5557,6 +5672,7 @@
   {
     "id": "midi-clip-builder-archive",
     "parentId": "midi-clip-builder",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5591,6 +5707,7 @@
   {
     "id": "file-media-apps-midiclipbuilder-midi-clip-builder-mp4",
     "parentId": "midi-clip-builder-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5625,6 +5742,7 @@
   {
     "id": "sonilabs-archive",
     "parentId": "sonilabs",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5659,6 +5777,7 @@
   {
     "id": "file-media-apps-sonilabs-sonilabs-sound-library-and-assembler-png",
     "parentId": "sonilabs-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5693,6 +5812,7 @@
   {
     "id": "yesterday-archive",
     "parentId": "yesterday",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5727,6 +5847,7 @@
   {
     "id": "file-media-apps-yesterday-yesterday-daily-planner-overview-png",
     "parentId": "yesterday-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5761,6 +5882,7 @@
   {
     "id": "file-media-apps-yesterday-yesterday-screenshot-png",
     "parentId": "yesterday-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5795,6 +5917,7 @@
   {
     "id": "file-media-apps-yesterday-yesterday-settings-panel-png",
     "parentId": "yesterday-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5829,6 +5952,7 @@
   {
     "id": "daedalus-brand-archive",
     "parentId": "daedalus-brand",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5863,6 +5987,7 @@
   {
     "id": "file-media-daedalus-brand-dribbble-test-maze-mp4",
     "parentId": "daedalus-brand-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5897,6 +6022,7 @@
   {
     "id": "file-media-daedalus-brand-merch-2-mp4",
     "parentId": "daedalus-brand-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5931,6 +6057,7 @@
   {
     "id": "file-media-daedalus-brand-merch-vid-1-mp4",
     "parentId": "daedalus-brand-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5965,6 +6092,7 @@
   {
     "id": "daedalus-comic-archive",
     "parentId": "daedalus-comic",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -5999,6 +6127,7 @@
   {
     "id": "file-media-daedalus-comic-daedalus-comic-panel-three-mp4",
     "parentId": "daedalus-comic-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6033,6 +6162,7 @@
   {
     "id": "file-media-daedalus-comic-daedalus-comic-project-mp4",
     "parentId": "daedalus-comic-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6067,6 +6197,7 @@
   {
     "id": "file-media-daedalus-comic-daedalus-comic-timelapse-full-mp4",
     "parentId": "daedalus-comic-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6101,6 +6232,7 @@
   {
     "id": "file-media-daedalus-comic-daedalus-comic-timelapse-short-mp4",
     "parentId": "daedalus-comic-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6135,6 +6267,7 @@
   {
     "id": "file-media-daedalus-comic-daedalus-comic-trailer-mp4",
     "parentId": "daedalus-comic-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6169,6 +6302,7 @@
   {
     "id": "file-media-daedalus-comic-daedalus-comic-vo-page3-1-mp4",
     "parentId": "daedalus-comic-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6203,6 +6337,7 @@
   {
     "id": "file-media-daedalus-comic-daedalus-comic-vo-panel1-1-mp4",
     "parentId": "daedalus-comic-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6237,6 +6372,7 @@
   {
     "id": "file-media-daedalus-comic-daedalus-comic-website-mp4",
     "parentId": "daedalus-comic-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6271,6 +6407,7 @@
   {
     "id": "daedalus-film-archive",
     "parentId": "daedalus-film",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6305,6 +6442,7 @@
   {
     "id": "file-media-daedalus-film-intro-daedalus-concept-mp4",
     "parentId": "daedalus-film-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6339,6 +6477,7 @@
   {
     "id": "dronies-creatives-archive",
     "parentId": "dronies-creatives",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6373,6 +6512,7 @@
   {
     "id": "file-media-dronies-creatives-corvusos-boot-sequence-png",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6407,6 +6547,7 @@
   {
     "id": "file-media-dronies-creatives-corvusos-component-library-png",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6441,6 +6582,7 @@
   {
     "id": "file-media-dronies-creatives-dronie-deconstructed-tee-png",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6475,6 +6617,7 @@
   {
     "id": "file-media-dronies-creatives-dronies-corvusos-png",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6509,6 +6652,7 @@
   {
     "id": "file-media-dronies-creatives-dronies-eyes-jpg",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6543,6 +6687,7 @@
   {
     "id": "file-media-dronies-creatives-dronies-hoodie-concept-png",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6577,6 +6722,7 @@
   {
     "id": "file-media-dronies-creatives-dronies-merch-png",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6611,6 +6757,7 @@
   {
     "id": "file-media-dronies-creatives-dronies-nft-website-jpg",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6645,6 +6792,7 @@
   {
     "id": "file-media-dronies-creatives-dronies-roadmap-jpg",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6679,6 +6827,7 @@
   {
     "id": "file-media-dronies-creatives-dronies-stickers-jpg",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6713,6 +6862,7 @@
   {
     "id": "file-media-dronies-creatives-dronies-web-design-2022-png",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6747,6 +6897,7 @@
   {
     "id": "file-media-dronies-creatives-dronies-web-hero-png",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6781,6 +6932,7 @@
   {
     "id": "file-media-dronies-creatives-dronies-web-layout-png",
     "parentId": "dronies-creatives-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6815,6 +6967,7 @@
   {
     "id": "dronies-archive",
     "parentId": "dronies",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6849,6 +7002,7 @@
   {
     "id": "file-media-dronies-dronies-graphic-mp4",
     "parentId": "dronies-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6883,6 +7037,7 @@
   {
     "id": "file-media-dronies-project-breakdown-mp4",
     "parentId": "dronies-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6917,6 +7072,7 @@
   {
     "id": "dronies-bunker-archive",
     "parentId": "dronies-bunker",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6951,6 +7107,7 @@
   {
     "id": "file-media-dronies-metaversebunker-droniesbunker-flat-1-mp4",
     "parentId": "dronies-bunker-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -6985,6 +7142,7 @@
   {
     "id": "file-media-dronies-metaversebunker-droniessizzlereel-01-bumps-mp4",
     "parentId": "dronies-bunker-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7019,6 +7177,7 @@
   {
     "id": "flax-editor-archive",
     "parentId": "flax-editor",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7053,6 +7212,7 @@
   {
     "id": "file-media-flax-flax-blockout-transform-workflow-mp4",
     "parentId": "flax-editor-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7087,6 +7247,7 @@
   {
     "id": "file-media-flax-flax-colored-block-transform-demo-mp4",
     "parentId": "flax-editor-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7121,6 +7282,7 @@
   {
     "id": "file-media-flax-flax-content-browser-column-resizing-mp4",
     "parentId": "flax-editor-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7155,6 +7317,7 @@
   {
     "id": "file-media-flax-flax-panel-docking-layout-demo-mp4",
     "parentId": "flax-editor-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7189,6 +7352,7 @@
   {
     "id": "file-media-flax-flax-properties-panel-navigation-mp4",
     "parentId": "flax-editor-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7223,6 +7387,7 @@
   {
     "id": "file-media-flax-flax-scene-hierarchy-navigation-mp4",
     "parentId": "flax-editor-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7257,6 +7422,7 @@
   {
     "id": "file-media-flax-flax-transform-gizmo-axis-demo-mp4",
     "parentId": "flax-editor-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7291,6 +7457,7 @@
   {
     "id": "file-media-flax-flax-transform-mode-switching-mp4",
     "parentId": "flax-editor-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7325,6 +7492,7 @@
   {
     "id": "file-media-flax-flaxeditorscreenshot-png",
     "parentId": "flax-editor-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7359,6 +7527,7 @@
   {
     "id": "visual-3d-practice-archive",
     "parentId": "visual-3d-practice",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7393,6 +7562,7 @@
   {
     "id": "file-media-graphics-3dpractice-fujifilm-timelapse-100x-mp4",
     "parentId": "visual-3d-practice-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7427,6 +7597,7 @@
   {
     "id": "file-media-graphics-3dpractice-sony-ps-f5-turntable-blender-webp",
     "parentId": "visual-3d-practice-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7461,6 +7632,7 @@
   {
     "id": "file-media-graphics-3dpractice-sony-ps-f5-turntable-final-webp",
     "parentId": "visual-3d-practice-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7495,6 +7667,7 @@
   {
     "id": "file-media-graphics-3dpractice-street-art-jfif",
     "parentId": "visual-3d-practice-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7529,6 +7702,7 @@
   {
     "id": "file-media-graphics-3dpractice-street-artfullproc-mp4",
     "parentId": "visual-3d-practice-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7563,6 +7737,7 @@
   {
     "id": "moving-on-express-archive",
     "parentId": "moving-on-express",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7597,6 +7772,7 @@
   {
     "id": "file-media-graphics-3dpractice-movingonexpress-webp",
     "parentId": "moving-on-express-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7631,6 +7807,7 @@
   {
     "id": "acid-wave-archive",
     "parentId": "acid-wave",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7665,6 +7842,7 @@
   {
     "id": "file-media-graphics-acid-wave-animation-mp4",
     "parentId": "acid-wave-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7699,6 +7877,7 @@
   {
     "id": "earthwallet-archive",
     "parentId": "earthwallet",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7733,6 +7912,7 @@
   {
     "id": "file-media-graphics-brand-earthwallet-logo-webp",
     "parentId": "earthwallet-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7767,6 +7947,7 @@
   {
     "id": "file-media-graphics-earthwallet-brand-webp",
     "parentId": "earthwallet-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7801,6 +7982,7 @@
   {
     "id": "brand-bits-archive",
     "parentId": "brand-bits",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7835,6 +8017,7 @@
   {
     "id": "file-media-graphics-brand-wanderstar-logo-webp",
     "parentId": "brand-bits-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7869,6 +8052,7 @@
   {
     "id": "daedalus-origin-archive",
     "parentId": "daedalus-origin",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7903,6 +8087,7 @@
   {
     "id": "file-media-graphics-estafossuraya-zine-webp",
     "parentId": "daedalus-origin-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7937,6 +8122,7 @@
   {
     "id": "figmagram-archive",
     "parentId": "figmagram",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -7971,6 +8157,7 @@
   {
     "id": "file-media-graphics-figmagram-experience-more-promo-mp4",
     "parentId": "figmagram-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8005,6 +8192,7 @@
   {
     "id": "marathon-tau-ceti-archive",
     "parentId": "marathon-tau-ceti",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8039,6 +8227,7 @@
   {
     "id": "file-media-graphics-marathon-glyph-only-mov",
     "parentId": "marathon-tau-ceti-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8073,6 +8262,7 @@
   {
     "id": "file-media-graphics-marathon-marathon-dither-experiment-02-1080p-mp4",
     "parentId": "marathon-tau-ceti-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8107,6 +8297,7 @@
   {
     "id": "file-media-graphics-marathon-marathon-dither-experiment-02-mp4",
     "parentId": "marathon-tau-ceti-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8141,6 +8332,7 @@
   {
     "id": "file-media-graphics-marathon-marathon-dither-experiment-03-mp4",
     "parentId": "marathon-tau-ceti-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8175,6 +8367,7 @@
   {
     "id": "file-media-graphics-marathon-marathon-glyph-dithering-analogue-damage-test-mov",
     "parentId": "marathon-tau-ceti-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8209,6 +8402,7 @@
   {
     "id": "file-media-graphics-marathon-marathon-green-dither-pattern-study-png",
     "parentId": "marathon-tau-ceti-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8243,6 +8437,7 @@
   {
     "id": "mountain-graphs-archive",
     "parentId": "mountain-graphs",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8277,6 +8472,7 @@
   {
     "id": "file-media-graphics-mountaingraphs-beginning-01-mp4",
     "parentId": "mountain-graphs-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8311,6 +8507,7 @@
   {
     "id": "file-media-graphics-mountaingraphs-beginning-02-mp4",
     "parentId": "mountain-graphs-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8345,6 +8542,7 @@
   {
     "id": "file-media-graphics-mountaingraphs-final-03-mp4",
     "parentId": "mountain-graphs-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8379,6 +8577,7 @@
   {
     "id": "file-media-graphics-mountaingraphs-final-1-mp4",
     "parentId": "mountain-graphs-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8413,6 +8612,7 @@
   {
     "id": "file-media-graphics-mountaingraphs-final-2-mp4",
     "parentId": "mountain-graphs-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8447,6 +8647,7 @@
   {
     "id": "pill-button-archive",
     "parentId": "pill-button",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8481,6 +8682,7 @@
   {
     "id": "file-media-graphics-pill-button-mp4",
     "parentId": "pill-button-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8515,6 +8717,7 @@
   {
     "id": "file-media-graphics-pill-button-png",
     "parentId": "pill-button-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8549,6 +8752,7 @@
   {
     "id": "vrx-iiv-archive",
     "parentId": "vrx-iiv",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8583,6 +8787,7 @@
   {
     "id": "file-media-graphics-vrx-iiv-virtual-realitymeta-spaces-mp4",
     "parentId": "vrx-iiv-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8617,6 +8822,7 @@
   {
     "id": "worlds-apart-archive",
     "parentId": "worlds-apart",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8651,6 +8857,7 @@
   {
     "id": "file-media-graphics-worlds-apart-inc-transdimensionalarchitecturefirm-mp4",
     "parentId": "worlds-apart-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8685,6 +8892,7 @@
   {
     "id": "kern-archive",
     "parentId": "kern",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8719,6 +8927,7 @@
   {
     "id": "file-media-kern-branding-kern-brand-elements-sheet-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8753,6 +8962,7 @@
   {
     "id": "file-media-kern-branding-kern-government-research-seal-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8787,6 +8997,7 @@
   {
     "id": "file-media-kern-branding-kern-logo-eye-globe-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8821,6 +9032,7 @@
   {
     "id": "file-media-kern-branding-kern-logo-globe-eye-lockup-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8855,6 +9067,7 @@
   {
     "id": "file-media-kern-branding-kern-logo-globe-figure-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8889,6 +9102,7 @@
   {
     "id": "file-media-kern-branding-kern-logo-ground-unit-globe-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8923,6 +9137,7 @@
   {
     "id": "file-media-kern-branding-kern-logo-spire-arch-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8957,6 +9172,7 @@
   {
     "id": "file-media-kern-branding-kern-logo-stacked-eye-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -8991,6 +9207,7 @@
   {
     "id": "file-media-kern-branding-kern-wordmark-eye-stacked-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9025,6 +9242,7 @@
   {
     "id": "file-media-kern-branding-kern-wordmark-split-layout-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9059,6 +9277,7 @@
   {
     "id": "file-media-kern-graphics-family-detained-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9093,6 +9312,7 @@
   {
     "id": "file-media-kern-graphics-kern-callnumber-poster-jpg",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9127,6 +9347,7 @@
   {
     "id": "file-media-kern-graphics-kern-groundcorp-poster-jpg",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9161,6 +9382,7 @@
   {
     "id": "file-media-kern-graphics-kern-hanginthere-poster-jpg",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9195,6 +9417,7 @@
   {
     "id": "file-media-kern-graphics-patrols-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9229,6 +9452,7 @@
   {
     "id": "file-media-kern-graphics-psycho-hazard-poster-jpg",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9263,6 +9487,7 @@
   {
     "id": "file-media-kern-graphics-stalkers-detained-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9297,6 +9522,7 @@
   {
     "id": "file-media-kern-pitch-deck-1-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9331,6 +9557,7 @@
   {
     "id": "file-media-kern-pitch-deck-10-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9365,6 +9592,7 @@
   {
     "id": "file-media-kern-pitch-deck-11-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9399,6 +9627,7 @@
   {
     "id": "file-media-kern-pitch-deck-2-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9433,6 +9662,7 @@
   {
     "id": "file-media-kern-pitch-deck-3-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9467,6 +9697,7 @@
   {
     "id": "file-media-kern-pitch-deck-4-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9501,6 +9732,7 @@
   {
     "id": "file-media-kern-pitch-deck-5-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9535,6 +9767,7 @@
   {
     "id": "file-media-kern-pitch-deck-6-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9569,6 +9802,7 @@
   {
     "id": "file-media-kern-pitch-deck-7-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9603,6 +9837,7 @@
   {
     "id": "file-media-kern-pitch-deck-8-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9637,6 +9872,7 @@
   {
     "id": "file-media-kern-pitch-deck-9-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9671,6 +9907,7 @@
   {
     "id": "file-media-kern-pitch-deck-project-kern-high-concept-1-0-pdf",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "text-window",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9682,12 +9919,11 @@
       {
         "id": "project-kern-high-concept-1-0-open",
         "type": "link",
-        "variant": "external-card",
         "width": "full",
         "heading": "KERN HIGH CONCEPT",
         "body": "",
         "source": "",
-        "mediaRef": "",
+        "mediaRef": "media-kern-pitch-deck-project-kern-high-concept-1-0-pdf",
         "href": "https://drive.google.com/file/d/1tMx0zhFlLu8bCI2OJvy9vV8ew3_BSYiG/view?usp=drive_link",
         "label": "KERN HIGH CONCEPT",
         "projectId": "",
@@ -9721,6 +9957,7 @@
   {
     "id": "file-media-kern-prototype-fotosketcher-image-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9755,6 +9992,7 @@
   {
     "id": "file-media-kern-prototype-fotosketcher-image2-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9789,6 +10027,7 @@
   {
     "id": "file-media-kern-prototype-fotosketcher-image3-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9823,6 +10062,7 @@
   {
     "id": "file-media-kern-prototype-fotosketcher-image6-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9857,6 +10097,7 @@
   {
     "id": "file-media-kern-prototype-fotosketcher-image8-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9891,6 +10132,7 @@
   {
     "id": "file-media-kern-prototype-gamescreenshot-png",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9925,6 +10167,7 @@
   {
     "id": "file-media-kern-prototype-kern-event-sound-test-mp4",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9959,6 +10202,7 @@
   {
     "id": "file-media-kern-prototype-kern-gameplay-test-mp4",
     "parentId": "kern-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -9993,6 +10237,7 @@
   {
     "id": "fell-out-gamejam-archive",
     "parentId": "fell-out-gamejam",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10027,6 +10272,7 @@
   {
     "id": "file-media-lightkeeper-gamejam-fell-out-game-jam-gameplay-mp4",
     "parentId": "fell-out-gamejam-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10061,6 +10307,7 @@
   {
     "id": "fell-out-concept-archive",
     "parentId": "fell-out-concept",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10095,6 +10342,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-1-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10129,6 +10377,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-10-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10163,6 +10412,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-11-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10197,6 +10447,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-12-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10231,6 +10482,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-13-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10265,6 +10517,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-14-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10299,6 +10552,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-15-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10333,6 +10587,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-2-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10367,6 +10622,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-3-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10401,6 +10657,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-4-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10435,6 +10692,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-5-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10469,6 +10727,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-6-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10503,6 +10762,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-7-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10537,6 +10797,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-8-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10571,6 +10832,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-9-png",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10605,6 +10867,7 @@
   {
     "id": "file-media-lightkeeper-highconcept-pitchdeck-fell-out-high-concept-1-0-pdf",
     "parentId": "fell-out-concept-archive",
+    "showOnRoot": false,
     "layout": "text-window",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10616,7 +10879,6 @@
       {
         "id": "fell-out-high-concept-1-0-open",
         "type": "link",
-        "variant": "external-card",
         "width": "full",
         "heading": "FELL OUT HIGH CONCEPT",
         "body": "",
@@ -10655,6 +10917,7 @@
   {
     "id": "lightkeeper-technical-test-archive",
     "parentId": "lightkeeper-technical-test",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10689,6 +10952,7 @@
   {
     "id": "file-media-lightkeeper-technicaltest-lightkeeper-bird-flight-canyon-test-mp4",
     "parentId": "lightkeeper-technical-test-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10723,6 +10987,7 @@
   {
     "id": "file-media-lightkeeper-technicaltest-lightkeeper-bird-flight-village-test-mp4",
     "parentId": "lightkeeper-technical-test-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10757,6 +11022,7 @@
   {
     "id": "file-media-lightkeeper-technicaltest-lightkeeper-level-layout-overview-mp4",
     "parentId": "lightkeeper-technical-test-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10791,6 +11057,7 @@
   {
     "id": "file-media-lightkeeper-technicaltest-lightkeeper-night-flight-test-mp4",
     "parentId": "lightkeeper-technical-test-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10825,6 +11092,7 @@
   {
     "id": "file-media-lightkeeper-technicaltest-lightkeeper-world-layout-planning-mp4",
     "parentId": "lightkeeper-technical-test-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10859,6 +11127,7 @@
   {
     "id": "file-media-lightkeeper-technicaltest-lightkeeper-techtest-beginning-mp4",
     "parentId": "lightkeeper-technical-test-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10893,6 +11162,7 @@
   {
     "id": "file-media-lightkeeper-technicaltest-lightkeeper-techtest-direction-mp4",
     "parentId": "lightkeeper-technical-test-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10927,6 +11197,7 @@
   {
     "id": "file-media-lightkeeper-technicaltest-lightkeeper-techtest-gathering-concept-rive-mp4",
     "parentId": "lightkeeper-technical-test-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10961,6 +11232,7 @@
   {
     "id": "file-media-lightkeeper-technicaltest-lightkeeper-techtest-outtake-mp4",
     "parentId": "lightkeeper-technical-test-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -10995,6 +11267,7 @@
   {
     "id": "file-media-lightkeeper-technicaltest-lightkeeper-techtest-timelapse-mp4",
     "parentId": "lightkeeper-technical-test-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11029,6 +11302,7 @@
   {
     "id": "vertical-slice-2026-archive",
     "parentId": "vertical-slice-2026",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11063,6 +11337,7 @@
   {
     "id": "file-media-lightkeeper-ui-inventory-png",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11097,6 +11372,7 @@
   {
     "id": "file-media-lightkeeper-ui-lightkeeper-player-menu-design-board-png",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11131,6 +11407,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-15s-still-graphics-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11165,6 +11442,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-atmosphere-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11199,6 +11477,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-camera-director-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11233,6 +11512,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-character-interactions-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11267,6 +11547,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-climbing-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11301,6 +11582,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-custom-terain-tools-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11335,6 +11617,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-early-graphics-test-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11369,6 +11652,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-interiors-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11403,6 +11687,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-outtake-1-funnynpcs-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11437,6 +11722,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-progression-tool-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11471,6 +11757,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-shadow-clouds-tech-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11505,6 +11792,7 @@
   {
     "id": "file-media-lightkeeper-verticalslice-lightkeeper-vertical-slice-menu-mp4",
     "parentId": "vertical-slice-2026-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11539,6 +11827,7 @@
   {
     "id": "fox-stories-archive",
     "parentId": "fox-stories",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11573,6 +11862,7 @@
   {
     "id": "file-media-prototypes-foxstories-christmasdemowith-fireworks-mp4",
     "parentId": "fox-stories-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11607,6 +11897,7 @@
   {
     "id": "kcd-combat-archive",
     "parentId": "kcd-combat",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11641,6 +11932,7 @@
   {
     "id": "file-media-prototypes-kcd-combat-kcd-combat-prototype-gameplay-mp4",
     "parentId": "kcd-combat-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11675,6 +11967,7 @@
   {
     "id": "level-design-archive",
     "parentId": "level-design",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11709,6 +12002,7 @@
   {
     "id": "file-media-prototypes-leveldesign-first-person-graybox-level-test-mp4",
     "parentId": "level-design-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11743,6 +12037,7 @@
   {
     "id": "mattercraft-archive",
     "parentId": "mattercraft",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11777,6 +12072,7 @@
   {
     "id": "file-media-prototypes-mattercraft-mattercraft-gameplay-mp4",
     "parentId": "mattercraft-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11811,6 +12107,7 @@
   {
     "id": "mighty-pebble-archive",
     "parentId": "mighty-pebble",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11845,6 +12142,7 @@
   {
     "id": "file-media-prototypes-mightypebble-mighty-pebble-building-system-test-mp4",
     "parentId": "mighty-pebble-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11879,6 +12177,7 @@
   {
     "id": "file-media-prototypes-mightypebble-mighty-pebble-night-resource-test-mp4",
     "parentId": "mighty-pebble-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11913,6 +12212,7 @@
   {
     "id": "project-hypno-archive",
     "parentId": "project-hypno",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11947,6 +12247,7 @@
   {
     "id": "file-media-prototypes-projecthypno-aesthetics-10k-mp4",
     "parentId": "project-hypno-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -11981,6 +12282,7 @@
   {
     "id": "file-media-prototypes-projecthypno-project-hypno-gondolla-atnight-mp4",
     "parentId": "project-hypno-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12015,6 +12317,7 @@
   {
     "id": "file-media-prototypes-projecthypno-project-hypno-intro-mp4",
     "parentId": "project-hypno-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12049,6 +12352,7 @@
   {
     "id": "file-media-prototypes-projecthypno-project-hypno-sound-desing-mp4",
     "parentId": "project-hypno-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12083,6 +12387,7 @@
   {
     "id": "file-media-prototypes-projecthypno-project-hypno-spacial-anomaly-mp4",
     "parentId": "project-hypno-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12117,6 +12422,7 @@
   {
     "id": "file-media-prototypes-projecthypno-project-hypno-thumb-mp4",
     "parentId": "project-hypno-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12151,6 +12457,7 @@
   {
     "id": "project-sunshine-archive",
     "parentId": "project-sunshine",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12185,6 +12492,7 @@
   {
     "id": "file-media-prototypes-projectsunshine-project-sunshine-trailer-mockup-mp4",
     "parentId": "project-sunshine-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12219,6 +12527,7 @@
   {
     "id": "spacekeeper-archive",
     "parentId": "spacekeeper",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12253,6 +12562,7 @@
   {
     "id": "file-media-prototypes-spacekeeper-spacekeeper-week1progress-mp4",
     "parentId": "spacekeeper-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12287,6 +12597,7 @@
   {
     "id": "swamp-fellas-archive",
     "parentId": "swamp-fellas",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12321,6 +12632,7 @@
   {
     "id": "file-media-prototypes-swampfellas-frogathon-mp4",
     "parentId": "swamp-fellas-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12355,6 +12667,7 @@
   {
     "id": "file-media-prototypes-swampfellas-ilove-mp4",
     "parentId": "swamp-fellas-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12389,6 +12702,7 @@
   {
     "id": "file-media-prototypes-swampfellas-swamp-fellas-camera-crew-scene-mp4",
     "parentId": "swamp-fellas-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12423,6 +12737,7 @@
   {
     "id": "file-media-prototypes-swampfellas-swamp-fellas-fishing-scene-mp4",
     "parentId": "swamp-fellas-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12457,6 +12772,7 @@
   {
     "id": "file-media-prototypes-swampfellas-swamp-fellas-frog-character-test-mp4",
     "parentId": "swamp-fellas-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12491,6 +12807,7 @@
   {
     "id": "file-media-prototypes-swampfellas-swamp-fellas-terrain-shader-breakdown-mp4",
     "parentId": "swamp-fellas-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12525,6 +12842,7 @@
   {
     "id": "file-media-prototypes-swampfellas-trailer-socials-mp4",
     "parentId": "swamp-fellas-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12559,6 +12877,7 @@
   {
     "id": "file-media-prototypes-swampfellas-trailer-wishlist-mp4",
     "parentId": "swamp-fellas-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12593,6 +12912,7 @@
   {
     "id": "rise-above-disorder-archive",
     "parentId": "rise-above-disorder",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12627,6 +12947,7 @@
   {
     "id": "file-media-ux-riseabovedisorder-rise-above-disorder-about-page-webp",
     "parentId": "rise-above-disorder-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12661,6 +12982,7 @@
   {
     "id": "file-media-ux-riseabovedisorder-rise-above-disorder-volunteer-page-webp",
     "parentId": "rise-above-disorder-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12695,6 +13017,7 @@
   {
     "id": "userwise-archive",
     "parentId": "userwise",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12729,6 +13052,7 @@
   {
     "id": "file-media-ux-userwise-userwise-content-builder-webp",
     "parentId": "userwise-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12763,6 +13087,7 @@
   {
     "id": "file-media-ux-userwise-userwise-design-exploration-webp",
     "parentId": "userwise-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12797,6 +13122,7 @@
   {
     "id": "file-media-ux-userwise-userwise-implementation-workflows-webp",
     "parentId": "userwise-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12831,6 +13157,7 @@
   {
     "id": "file-media-ux-userwise-userwise-original-design-webp",
     "parentId": "userwise-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12865,6 +13192,7 @@
   {
     "id": "file-media-ux-userwise-userwise-research-comprehension-webp",
     "parentId": "userwise-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12899,6 +13227,7 @@
   {
     "id": "void-overdrive-archive",
     "parentId": "void-overdrive",
+    "showOnRoot": false,
     "layout": "folder",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12933,6 +13262,7 @@
   {
     "id": "file-media-voidoverdrive-cantgetout-mp4",
     "parentId": "void-overdrive-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -12967,6 +13297,7 @@
   {
     "id": "file-media-voidoverdrive-void-overdrive-cliff-descent-mp4",
     "parentId": "void-overdrive-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -13001,6 +13332,7 @@
   {
     "id": "file-media-voidoverdrive-void-overdrive-desert-outpost-jpg",
     "parentId": "void-overdrive-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -13035,6 +13367,7 @@
   {
     "id": "file-media-voidoverdrive-void-overdrive-desert-pillar-run-jpg",
     "parentId": "void-overdrive-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -13069,6 +13402,7 @@
   {
     "id": "file-media-voidoverdrive-voidoverdrive-sfx-test-mp4",
     "parentId": "void-overdrive-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -13103,6 +13437,7 @@
   {
     "id": "file-media-voidoverdrive-voidoverdrive-sfx-test-2-mp4",
     "parentId": "void-overdrive-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -13137,6 +13472,7 @@
   {
     "id": "file-media-voidoverdrive-vo-character-test-mp4",
     "parentId": "void-overdrive-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -13171,6 +13507,7 @@
   {
     "id": "file-media-voidoverdrive-vo-thumbnail-mp4",
     "parentId": "void-overdrive-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -13205,6 +13542,7 @@
   {
     "id": "file-media-voidoverdrive-vo-unreal-testing-hoverbike-mp4",
     "parentId": "void-overdrive-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",
@@ -13239,6 +13577,7 @@
   {
     "id": "file-media-voidoverdrive-vo-visualization-test-mp4",
     "parentId": "void-overdrive-archive",
+    "showOnRoot": false,
     "layout": "media-fullscreen",
     "windowWidth": "748px",
     "windowHeight": "506px",

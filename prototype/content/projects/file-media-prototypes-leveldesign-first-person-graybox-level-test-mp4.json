@@ -1,6 +1,7 @@
 {
   "id": "file-media-prototypes-leveldesign-first-person-graybox-level-test-mp4",
   "parentId": "level-design-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

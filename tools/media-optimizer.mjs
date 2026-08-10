@@ -45,8 +45,12 @@ export async function optimizeMediaFile(sourcePath, outputDirectory, options = {
     if (VIDEO_EXTENSIONS.has(extension)) {
       duration = probeDuration(sourcePath);
       const maxDuration = Number(options.maxDuration || 18);
-      clipped = duration > 30;
-      const args = ["-hide_banner", "-loglevel", "error", "-i", sourcePath];
+      const startTime = Math.max(0, Number(options.startTime || 0));
+      const availableDuration = Math.max(0, duration - startTime);
+      clipped = availableDuration > 30;
+      const args = ["-hide_banner", "-loglevel", "error"];
+      if (startTime > 0) args.push("-ss", String(startTime));
+      args.push("-i", sourcePath);
       if (clipped) args.push("-t", String(maxDuration));
       args.push(
         "-an",
@@ -85,7 +89,9 @@ export async function optimizeMediaFile(sourcePath, outputDirectory, options = {
     outputPath,
     fileSize: info.size,
     duration,
-    outputDuration: clipped ? Number(options.maxDuration || 18) : duration,
+    outputDuration: clipped
+      ? Number(options.maxDuration || 18)
+      : Math.max(0, duration - Math.max(0, Number(options.startTime || 0))),
     clipped,
   };
 }

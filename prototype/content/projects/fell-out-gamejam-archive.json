@@ -1,6 +1,7 @@
 {
   "id": "fell-out-gamejam-archive",
   "parentId": "fell-out-gamejam",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

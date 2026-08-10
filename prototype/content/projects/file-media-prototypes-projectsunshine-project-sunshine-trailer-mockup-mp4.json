@@ -1,6 +1,7 @@
 {
   "id": "file-media-prototypes-projectsunshine-project-sunshine-trailer-mockup-mp4",
   "parentId": "project-sunshine-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

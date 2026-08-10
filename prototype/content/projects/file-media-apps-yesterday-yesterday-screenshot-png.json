@@ -1,6 +1,7 @@
 {
   "id": "file-media-apps-yesterday-yesterday-screenshot-png",
   "parentId": "yesterday-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

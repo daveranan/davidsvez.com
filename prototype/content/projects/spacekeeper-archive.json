@@ -1,6 +1,7 @@
 {
   "id": "spacekeeper-archive",
   "parentId": "spacekeeper",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

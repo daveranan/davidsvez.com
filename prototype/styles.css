@@ -3451,7 +3451,18 @@ body[data-view="grid"] .project-tile__meta {
 
 body[data-view="grid"] .window--monitor {
   --grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: auto auto;
   grid-row: 3;
+  align-self: start;
+  min-height: 0;
+  height: max-content !important;
+  max-height: none;
+}
+
+body[data-view="grid"] .window--monitor .homepage-window__body {
+  min-height: 0;
+  overflow: visible;
 }
 
 body[data-view="grid"] .window--media {
@@ -3660,7 +3671,7 @@ body[data-view="list"] .window__body {
   }
 
   body[data-view="grid"] .window--monitor {
-    display: flex;
+    display: grid;
     order: 5;
   }
 

@@ -128,7 +128,7 @@ let contactData = {
   location: "OKLAHOMA / REMOTE",
 };
 let homepageData = {
-  title: "ABOUT_ME/",
+  title: "INNDER_CHILD_UNLOCKED.TXT",
   status: "04 PLACES / 27 PHOTOS",
   about: {
     name: "David Svezhintsev",
@@ -3190,15 +3190,76 @@ function targetRectsForBoot() {
 
 async function setBootProgress(value, label, duration = 180) {
   const progressElement = $("#boot-progress");
-  const bar = $("#boot-bar");
-  const labelElement = $("#boot-label");
   const from = Number(progressElement.value) / 100;
-  labelElement.textContent = label;
   await animateValue(from, value, duration, (current) => {
-    progressElement.value = Math.round(current * 100);
-    progressElement.textContent = `${Math.round(current * 100)}%`;
-    bar.textContent = renderGlyphBar(current, 25);
+    renderBootProgress(current, label);
   });
+}
+
+function renderBootProgress(value, label) {
+  const progressElement = $("#boot-progress");
+  const percent = Math.round(value * 100);
+  progressElement.value = percent;
+  progressElement.textContent = `${percent}%`;
+  $("#boot-bar").textContent = renderGlyphBar(value, 25);
+  $("#boot-label").textContent = label;
+}
+
+function preloadThumbnailAsset({ source, type }) {
+  return new Promise((resolve) => {
+    const media = document.createElement(type === "video" ? "video" : "img");
+    const readyEvent = type === "video" ? "loadeddata" : "load";
+    let settled = false;
+    const finish = async (loaded) => {
+      if (settled) return;
+      settled = true;
+      media.removeEventListener(readyEvent, onReady);
+      media.removeEventListener("error", onError);
+      if (loaded && media instanceof HTMLImageElement && media.decode) {
+        await media.decode().catch(() => {});
+      }
+      resolve({ source, loaded });
+    };
+    const onReady = () => finish(true);
+    const onError = () => finish(false);
+
+    media.addEventListener(readyEvent, onReady, { once: true });
+    media.addEventListener("error", onError, { once: true });
+    if (media instanceof HTMLVideoElement) {
+      media.muted = true;
+      media.preload = "auto";
+    } else {
+      media.decoding = "async";
+    }
+    media.src = source;
+    if (media instanceof HTMLVideoElement) media.load();
+  });
+}
+
+async function preloadProjectThumbnails(fromProgress = 0.31, toProgress = 0.58) {
+  const uniqueAssets = new Map();
+  projectChildren(null).forEach((project) => {
+    const usesPoster = project.thumbnailType === "video" && project.posterFrame;
+    const source = usesPoster ? project.posterFrame : project.thumbnail;
+    if (!source) return;
+    const type = usesPoster ? "image" : project.thumbnailType;
+    uniqueAssets.set(`${type}:${source}`, { source, type });
+  });
+
+  const assets = [...uniqueAssets.values()];
+  if (!assets.length) return [];
+  let settled = 0;
+  renderBootProgress(fromProgress, `LOADING PROJECT THUMBNAILS 0/${assets.length}`);
+  const results = await Promise.all(assets.map(async (asset) => {
+    const result = await preloadThumbnailAsset(asset);
+    settled += 1;
+    const progress = fromProgress + (toProgress - fromProgress) * (settled / assets.length);
+    renderBootProgress(progress, `LOADING PROJECT THUMBNAILS ${settled}/${assets.length}`);
+    return result;
+  }));
+  const failures = results.filter((result) => !result.loaded);
+  if (failures.length) console.warn("Some project thumbnails failed to preload.", failures.map(({ source }) => source));
+  return results;
 }
 
 async function dismissBootPanel(panel, reducedMotion = false) {
@@ -3373,6 +3434,9 @@ async function runBoot() {
   await document.fonts.load('22px "Departure Mono"');
   if (runId !== state.bootRun) return;
   await setBootProgress(0.31, "MEASURING CHARACTER LATTICE", reducedMotion ? 0 : 40);
+
+  await preloadProjectThumbnails();
+  if (runId !== state.bootRun) return;
 
   if (!still.complete) await waitForEvent(still, "load", 2500);
   if (still.decode) await still.decode().catch(() => {});
@@ -4053,7 +4117,7 @@ function renderHomepage() {
   const container = $("[data-homepage-blocks]");
   if (!container) return;
 
-  if (title) title.textContent = homepageData.title || "ABOUT_ME/";
+  if (title) title.textContent = homepageData.title || "INNDER_CHILD_UNLOCKED.TXT";
   if (status) status.textContent = homepageData.status || "";
   if (homepageData.about) {
     renderAboutHomepage(container, homepageData.about);

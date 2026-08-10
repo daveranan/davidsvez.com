@@ -1,6 +1,7 @@
 {
   "id": "mountain-graphs-archive",
   "parentId": "mountain-graphs",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

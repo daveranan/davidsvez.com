@@ -1,6 +1,7 @@
 {
   "id": "file-media-lightkeeper-highconcept-pitchdeck-fell-out-high-concept-1-0-pdf",
   "parentId": "fell-out-concept-archive",
+  "showOnRoot": false,
   "layout": "text-window",
   "windowWidth": "748px",
   "windowHeight": "506px",
@@ -12,7 +13,6 @@
     {
       "id": "fell-out-high-concept-1-0-open",
       "type": "link",
-      "variant": "external-card",
       "width": "full",
       "heading": "FELL OUT HIGH CONCEPT",
       "body": "",

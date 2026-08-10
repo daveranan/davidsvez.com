@@ -1,6 +1,7 @@
 {
   "id": "file-media-prototypes-projecthypno-aesthetics-10k-mp4",
   "parentId": "project-hypno-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

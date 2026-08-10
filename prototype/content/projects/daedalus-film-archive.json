@@ -1,6 +1,7 @@
 {
   "id": "daedalus-film-archive",
   "parentId": "daedalus-film",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

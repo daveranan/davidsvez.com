@@ -1,6 +1,7 @@
 {
   "id": "file-media-lightkeeper-highconcept-pitchdeck-12-png",
   "parentId": "fell-out-concept-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

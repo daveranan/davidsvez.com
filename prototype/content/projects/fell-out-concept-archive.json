@@ -1,6 +1,7 @@
 {
   "id": "fell-out-concept-archive",
   "parentId": "fell-out-concept",
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

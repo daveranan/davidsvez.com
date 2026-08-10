@@ -1,6 +1,7 @@
 {
   "id": "file-media-prototypes-foxstories-christmasdemowith-fireworks-mp4",
   "parentId": "fox-stories-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

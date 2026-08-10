@@ -1,6 +1,7 @@
 {
   "id": "file-media-daedalus-comic-daedalus-comic-timelapse-short-mp4",
   "parentId": "daedalus-comic-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

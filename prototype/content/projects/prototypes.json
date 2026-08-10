@@ -1,6 +1,7 @@
 {
   "id": "prototypes",
   "parentId": null,
+  "showOnRoot": false,
   "layout": "folder",
   "windowWidth": "748px",
   "windowHeight": "506px",

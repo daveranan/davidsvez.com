@@ -1,6 +1,7 @@
 {
   "id": "file-media-dronies-metaversebunker-droniessizzlereel-01-bumps-mp4",
   "parentId": "dronies-bunker-archive",
+  "showOnRoot": false,
   "layout": "media-fullscreen",
   "windowWidth": "748px",
   "windowHeight": "506px",

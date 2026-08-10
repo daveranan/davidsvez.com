@@ -14,6 +14,9 @@ const contentFiles = ["site.json", "projects.json", "media.json"].map((name) => 
 const publicPrefix = "assets/media/Projects/";
 const optimizedPrefix = "assets/media/optimized/Projects/";
 const originalPrefix = "assets/media/og-library/Projects/";
+const sourceStartTimes = new Map([
+  ["KERN/prototype/kern_event_sound_test.mp4", 3.2],
+]);
 
 function normalized(value) {
   return String(value || "").replaceAll("\\", "/");
@@ -65,6 +68,7 @@ for (const source of [...sources].sort()) {
   const result = await optimizeMediaFile(originalPath, dirname(join(optimizedRoot, ...optimizedRelative.split("/"))), {
     fileName: optimizedRelative.split("/").at(-1),
     maxDuration: 18,
+    startTime: sourceStartTimes.get(sourceRelative) || 0,
   });
   const optimizedSource = `${optimizedPrefix}${optimizedRelative}`;
   mapping.set(source, optimizedSource);

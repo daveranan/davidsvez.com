@@ -11,9 +11,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-apps-gamedesigner-gamedesigneroverview-sub-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Apps/GameDesigner/GameDesignerOverview_sub.mp4",
     "fullscreenEligible": true,
     "fileSize": 2105622,
-    "originalSourcePath": "assets/media/og-library/Projects/Apps/GameDesigner/GameDesignerOverview_sub.mp4",
     "duration": 18
   },
   {
@@ -28,9 +28,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-apps-midiclipbuilder-midi-clip-builder-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Apps/MidiClipBuilder/midi_clip_builder.mp4",
     "fullscreenEligible": true,
     "fileSize": 1624763,
-    "originalSourcePath": "assets/media/og-library/Projects/Apps/MidiClipBuilder/midi_clip_builder.mp4",
     "duration": 18
   },
   {
@@ -45,9 +45,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Apps/Sonilabs/sonilabs-sound-library-and-assembler.png",
     "fullscreenEligible": true,
     "fileSize": 182474,
-    "originalSourcePath": "assets/media/og-library/Projects/Apps/Sonilabs/sonilabs-sound-library-and-assembler.png"
+    "duration": 0
   },
   {
     "id": "media-apps-yesterday-yesterday-daily-planner-overview-png",
@@ -61,9 +62,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Apps/Yesterday/yesterday-daily-planner-overview.png",
     "fullscreenEligible": true,
     "fileSize": 72422,
-    "originalSourcePath": "assets/media/og-library/Projects/Apps/Yesterday/yesterday-daily-planner-overview.png"
+    "duration": 0
   },
   {
     "id": "media-apps-yesterday-yesterday-screenshot-png",
@@ -77,9 +79,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Apps/Yesterday/yesterday-screenshot.png",
     "fullscreenEligible": true,
     "fileSize": 76700,
-    "originalSourcePath": "assets/media/og-library/Projects/Apps/Yesterday/yesterday-screenshot.png"
+    "duration": 0
   },
   {
     "id": "media-apps-yesterday-yesterday-settings-panel-png",
@@ -93,9 +96,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Apps/Yesterday/yesterday-settings-panel.png",
     "fullscreenEligible": true,
     "fileSize": 52178,
-    "originalSourcePath": "assets/media/og-library/Projects/Apps/Yesterday/yesterday-settings-panel.png"
+    "duration": 0
   },
   {
     "id": "media-daedalus-brand-dribbble-test-maze-mp4",
@@ -109,9 +113,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-brand-dribbble-test-maze-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Brand/dribbble-test-maze.mp4",
     "fullscreenEligible": true,
     "fileSize": 4239161,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Brand/dribbble-test-maze.mp4",
     "duration": 10.01
   },
   {
@@ -126,9 +130,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-brand-merch-2-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Brand/merch-2.mp4",
     "fullscreenEligible": true,
     "fileSize": 246870,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Brand/merch-2.mp4",
     "duration": 4.44
   },
   {
@@ -143,9 +147,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-brand-merch-vid-1-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Brand/merch-vid-1.mp4",
     "fullscreenEligible": true,
     "fileSize": 306008,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Brand/merch-vid-1.mp4",
     "duration": 2.08
   },
   {
@@ -160,9 +164,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-comic-daedalus-comic-panel-three-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_panel_three.mp4",
     "fullscreenEligible": true,
     "fileSize": 497378,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_panel_three.mp4",
     "duration": 3.32
   },
   {
@@ -177,9 +181,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-comic-daedalus-comic-project-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_project.mp4",
     "fullscreenEligible": true,
     "fileSize": 7384986,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_project.mp4",
     "duration": 24.583333
   },
   {
@@ -194,9 +198,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-comic-daedalus-comic-timelapse-full-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_timelapse_full.mp4",
     "fullscreenEligible": true,
     "fileSize": 5382739,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_timelapse_full.mp4",
     "duration": 18
   },
   {
@@ -211,9 +215,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-comic-daedalus-comic-timelapse-short-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_timelapse_short.mp4",
     "fullscreenEligible": true,
     "fileSize": 4580175,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_timelapse_short.mp4",
     "duration": 13.266667
   },
   {
@@ -228,9 +232,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-comic-daedalus-comic-trailer-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_trailer.mp4",
     "fullscreenEligible": true,
     "fileSize": 2363059,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_trailer.mp4",
     "duration": 18
   },
   {
@@ -245,9 +249,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-comic-daedalus-comic-vo-page3-1-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_VO_Page3-1.mp4",
     "fullscreenEligible": true,
     "fileSize": 3188178,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_VO_Page3-1.mp4",
     "duration": 18
   },
   {
@@ -262,9 +266,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-comic-daedalus-comic-vo-panel1-1-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_VO_panel1-1.mp4",
     "fullscreenEligible": true,
     "fileSize": 2428200,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_VO_panel1-1.mp4",
     "duration": 12.48
   },
   {
@@ -279,9 +283,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-comic-daedalus-comic-website-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_website.mp4",
     "fullscreenEligible": true,
     "fileSize": 1038058,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Comic/daedalus_comic_website.mp4",
     "duration": 7.2
   },
   {
@@ -296,9 +300,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-daedalus-film-intro-daedalus-concept-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Film/Intro-daedalus-concept.mp4",
     "fullscreenEligible": true,
     "fileSize": 2481861,
-    "originalSourcePath": "assets/media/og-library/Projects/Daedalus/Film/Intro-daedalus-concept.mp4",
     "duration": 24.033333
   },
   {
@@ -313,9 +317,10 @@
     "sectionId": "archive",
     "credits": "Creative by Phil Goodwin for Unfold.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/corvusos-boot-sequence.png",
     "fullscreenEligible": true,
     "fileSize": 20956,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/corvusos-boot-sequence.png"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-corvusos-component-library-png",
@@ -329,9 +334,10 @@
     "sectionId": "archive",
     "credits": "Creative by HebaH for Heyo.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/corvusos-component-library.png",
     "fullscreenEligible": true,
     "fileSize": 85314,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/corvusos-component-library.png"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronie-deconstructed-tee-png",
@@ -345,9 +351,10 @@
     "sectionId": "archive",
     "credits": "Creative by Phil Goodwin for Unfold.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronie-deconstructed-tee.png",
     "fullscreenEligible": true,
     "fileSize": 136494,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronie-deconstructed-tee.png"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronies-corvusos-png",
@@ -361,9 +368,10 @@
     "sectionId": "archive",
     "credits": "Creative by HebaH for Heyo.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-corvusos.png",
     "fullscreenEligible": true,
     "fileSize": 101824,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-corvusos.png"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronies-eyes-jpg",
@@ -377,9 +385,10 @@
     "sectionId": "archive",
     "credits": "Creative by Eddie Lobanovskiy for Unfold.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-eyes.jpg",
     "fullscreenEligible": true,
     "fileSize": 213130,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-eyes.jpg"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronies-hoodie-concept-png",
@@ -393,9 +402,10 @@
     "sectionId": "archive",
     "credits": "Creative by HebaH for Heyo.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-hoodie-concept.png",
     "fullscreenEligible": true,
     "fileSize": 295166,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-hoodie-concept.png"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronies-merch-png",
@@ -409,9 +419,10 @@
     "sectionId": "archive",
     "credits": "Creative by Santi Jaramillo for Heyo.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-merch.png",
     "fullscreenEligible": true,
     "fileSize": 148960,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-merch.png"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronies-nft-website-jpg",
@@ -425,9 +436,10 @@
     "sectionId": "archive",
     "credits": "Creative by Eicher for Heyo, in collaboration with the Web and Product teams.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-nft-website.jpg",
     "fullscreenEligible": true,
     "fileSize": 345328,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-nft-website.jpg"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronies-roadmap-jpg",
@@ -441,9 +453,10 @@
     "sectionId": "archive",
     "credits": "Creative by Courtney Askew for Heyo.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-roadmap.jpg",
     "fullscreenEligible": true,
     "fileSize": 258324,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-roadmap.jpg"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronies-stickers-jpg",
@@ -457,9 +470,10 @@
     "sectionId": "archive",
     "credits": "Creative by Courtney Askew for Heyo. “Always Watching” sketch by Vic.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-stickers.jpg",
     "fullscreenEligible": true,
     "fileSize": 131688,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-stickers.jpg"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronies-web-design-2022-png",
@@ -473,9 +487,10 @@
     "sectionId": "archive",
     "credits": "Creative by Benten Woodring for Heyo.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-web-design-2022.png",
     "fullscreenEligible": true,
     "fileSize": 140966,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-web-design-2022.png"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronies-web-hero-png",
@@ -489,9 +504,10 @@
     "sectionId": "archive",
     "credits": "Creative by Benjamin Oberemok.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-web-hero.png",
     "fullscreenEligible": true,
     "fileSize": 65734,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-web-hero.png"
+    "duration": 0
   },
   {
     "id": "media-dronies-creatives-dronies-web-layout-png",
@@ -505,9 +521,10 @@
     "sectionId": "archive",
     "credits": "Creative by Benjamin Oberemok.",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-web-layout.png",
     "fullscreenEligible": true,
     "fileSize": 93174,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/Creatives/dronies-web-layout.png"
+    "duration": 0
   },
   {
     "id": "media-dronies-dronies-graphic-mp4",
@@ -521,9 +538,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-dronies-dronies-graphic-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/dronies_graphic.mp4",
     "fullscreenEligible": true,
     "fileSize": 2823581,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/dronies_graphic.mp4",
     "duration": 10.0078
   },
   {
@@ -538,9 +555,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-dronies-metaversebunker-droniesbunker-flat-1-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/MetaverseBunker/droniesbunker-flat-1.mp4",
     "fullscreenEligible": true,
     "fileSize": 6494857,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/MetaverseBunker/droniesbunker-flat-1.mp4",
     "duration": 18
   },
   {
@@ -555,9 +572,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-dronies-metaversebunker-droniessizzlereel-01-bumps-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/MetaverseBunker/DroniesSizzleReel-01-bumps.mp4",
     "fullscreenEligible": true,
     "fileSize": 3900251,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/MetaverseBunker/DroniesSizzleReel-01-bumps.mp4",
     "duration": 18
   },
   {
@@ -572,9 +589,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-dronies-project-breakdown-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Dronies/project_breakdown.mp4",
     "fullscreenEligible": true,
     "fileSize": 544160,
-    "originalSourcePath": "assets/media/og-library/Projects/Dronies/project_breakdown.mp4",
     "duration": 18
   },
   {
@@ -589,9 +606,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-flax-flax-blockout-transform-workflow-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-blockout-transform-workflow.mp4",
     "fullscreenEligible": true,
     "fileSize": 1473590,
-    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-blockout-transform-workflow.mp4",
     "duration": 18
   },
   {
@@ -606,9 +623,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-flax-flax-colored-block-transform-demo-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-colored-block-transform-demo.mp4",
     "fullscreenEligible": true,
     "fileSize": 5510501,
-    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-colored-block-transform-demo.mp4",
     "duration": 16.013991
   },
   {
@@ -623,9 +640,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-flax-flax-content-browser-column-resizing-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-content-browser-column-resizing.mp4",
     "fullscreenEligible": true,
     "fileSize": 103395,
-    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-content-browser-column-resizing.mp4",
     "duration": 4.602993
   },
   {
@@ -640,9 +657,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-flax-flax-panel-docking-layout-demo-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-panel-docking-layout-demo.mp4",
     "fullscreenEligible": true,
     "fileSize": 1376194,
-    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-panel-docking-layout-demo.mp4",
     "duration": 13.572993
   },
   {
@@ -657,9 +674,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-flax-flax-properties-panel-navigation-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-properties-panel-navigation.mp4",
     "fullscreenEligible": true,
     "fileSize": 1028447,
-    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-properties-panel-navigation.mp4",
     "duration": 18
   },
   {
@@ -674,9 +691,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-flax-flax-scene-hierarchy-navigation-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-scene-hierarchy-navigation.mp4",
     "fullscreenEligible": true,
     "fileSize": 277752,
-    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-scene-hierarchy-navigation.mp4",
     "duration": 11.333333
   },
   {
@@ -691,9 +708,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-flax-flax-transform-gizmo-axis-demo-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-transform-gizmo-axis-demo.mp4",
     "fullscreenEligible": true,
     "fileSize": 999662,
-    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-transform-gizmo-axis-demo.mp4",
     "duration": 11.433333
   },
   {
@@ -708,9 +725,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-flax-flax-transform-mode-switching-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-transform-mode-switching.mp4",
     "fullscreenEligible": true,
     "fileSize": 3156833,
-    "originalSourcePath": "assets/media/og-library/Projects/Flax/flax-transform-mode-switching.mp4",
     "duration": 19.648005
   },
   {
@@ -725,9 +742,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Flax/FlaxEditorScreenshot.png",
     "fullscreenEligible": true,
     "fileSize": 106572,
-    "originalSourcePath": "assets/media/og-library/Projects/Flax/FlaxEditorScreenshot.png"
+    "duration": 0
   },
   {
     "id": "media-graphics-3dpractice-fujifilm-timelapse-100x-mp4",
@@ -741,9 +759,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-3dpractice-fujifilm-timelapse-100x-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/fujifilm-timelapse-100x.mp4",
     "fullscreenEligible": true,
     "fileSize": 10218737,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/fujifilm-timelapse-100x.mp4",
     "duration": 29.633333
   },
   {
@@ -758,9 +776,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/movingonexpress.webp",
     "fullscreenEligible": true,
     "fileSize": 179428,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/movingonexpress.webp"
+    "duration": 0
   },
   {
     "id": "media-graphics-3dpractice-sony-ps-f5-turntable-blender-webp",
@@ -774,9 +793,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/Sony_PS-F5_Turntable/Blender.webp",
     "fullscreenEligible": true,
     "fileSize": 143026,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/Sony_PS-F5_Turntable/Blender.webp"
+    "duration": 0
   },
   {
     "id": "media-graphics-3dpractice-sony-ps-f5-turntable-final-webp",
@@ -790,9 +810,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/Sony_PS-F5_Turntable/Final.webp",
     "fullscreenEligible": true,
     "fileSize": 24382,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/Sony_PS-F5_Turntable/Final.webp"
+    "duration": 0
   },
   {
     "id": "media-graphics-3dpractice-street-art-jfif",
@@ -806,9 +827,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/street_art.jfif",
     "fullscreenEligible": true,
     "fileSize": 35754,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/street_art.jfif"
+    "duration": 0
   },
   {
     "id": "media-graphics-3dpractice-street-artfullproc-mp4",
@@ -822,9 +844,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-3dpractice-street-artfullproc-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/Street_artfullproc.mp4",
     "fullscreenEligible": true,
     "fileSize": 1035145,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/3DPractice/Street_artfullproc.mp4",
     "duration": 7.104
   },
   {
@@ -839,9 +861,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-acid-wave-animation-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/acid-wave-animation.mp4",
     "fullscreenEligible": true,
     "fileSize": 1372810,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/acid-wave-animation.mp4",
     "duration": 9
   },
   {
@@ -856,9 +878,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Brand/EarthWallet_logo.webp",
     "fullscreenEligible": true,
     "fileSize": 30504,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Brand/EarthWallet_logo.webp"
+    "duration": 0
   },
   {
     "id": "media-graphics-brand-wanderstar-logo-webp",
@@ -872,9 +895,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Brand/wanderstar_logo.webp",
     "fullscreenEligible": true,
     "fileSize": 63760,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Brand/wanderstar_logo.webp"
+    "duration": 0
   },
   {
     "id": "media-graphics-earthwallet-brand-webp",
@@ -888,9 +912,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/EarthWallet_Brand.webp",
     "fullscreenEligible": true,
     "fileSize": 30504,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/EarthWallet_Brand.webp"
+    "duration": 0
   },
   {
     "id": "media-graphics-estafossuraya-zine-webp",
@@ -904,9 +929,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/EstafosSuraya_Zine.webp",
     "fullscreenEligible": true,
     "fileSize": 152124,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/EstafosSuraya_Zine.webp"
+    "duration": 0
   },
   {
     "id": "media-graphics-figmagram-experience-more-promo-mp4",
@@ -920,9 +946,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-figmagram-experience-more-promo-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/figmagram-experience-more-promo.mp4",
     "fullscreenEligible": true,
     "fileSize": 1465531,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/figmagram-experience-more-promo.mp4",
     "duration": 11.75
   },
   {
@@ -937,9 +963,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-marathon-glyph-only-mov.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/glyph-only.mov",
     "fullscreenEligible": true,
     "fileSize": 942570,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/glyph-only.mov",
     "duration": 1.25
   },
   {
@@ -954,9 +980,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-marathon-marathon-dither-experiment-02-1080p-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/marathon-dither-experiment-02-1080p.mp4",
     "fullscreenEligible": true,
     "fileSize": 804066,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/marathon-dither-experiment-02-1080p.mp4",
     "duration": 1.557333
   },
   {
@@ -971,9 +997,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-marathon-marathon-dither-experiment-02-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/marathon-dither-experiment-02.mp4",
     "fullscreenEligible": true,
     "fileSize": 2075186,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/marathon-dither-experiment-02.mp4",
     "duration": 3.093333
   },
   {
@@ -988,9 +1014,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-marathon-marathon-dither-experiment-03-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/marathon-dither-experiment-03.mp4",
     "fullscreenEligible": true,
     "fileSize": 440072,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/marathon-dither-experiment-03.mp4",
     "duration": 1.834667
   },
   {
@@ -1005,9 +1031,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-marathon-marathon-glyph-dithering-analogue-damage-test-mov.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/marathon-glyph-dithering-analogue-damage-test.mov",
     "fullscreenEligible": true,
     "fileSize": 2068541,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/marathon-glyph-dithering-analogue-damage-test.mov",
     "duration": 2.291667
   },
   {
@@ -1022,9 +1048,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/marathon-green-dither-pattern-study.png",
     "fullscreenEligible": true,
     "fileSize": 910128,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Marathon/marathon-green-dither-pattern-study.png"
+    "duration": 0
   },
   {
     "id": "media-graphics-mountaingraphs-beginning-01-mp4",
@@ -1038,9 +1065,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-mountaingraphs-beginning-01-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/mountaingraphs_beginning_01.mp4",
     "fullscreenEligible": true,
     "fileSize": 2529098,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/mountaingraphs_beginning_01.mp4",
     "duration": 4.433333
   },
   {
@@ -1055,9 +1082,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-mountaingraphs-beginning-02-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/mountaingraphs_beginning_02.mp4",
     "fullscreenEligible": true,
     "fileSize": 954464,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/mountaingraphs_beginning_02.mp4",
     "duration": 7.533333
   },
   {
@@ -1072,9 +1099,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-mountaingraphs-final-03-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/mountaingraphs_final_03.mp4",
     "fullscreenEligible": true,
     "fileSize": 1736440,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/mountaingraphs_final_03.mp4",
     "duration": 9.636281
   },
   {
@@ -1089,9 +1116,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-mountaingraphs-final-1-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/mountaingraphs_final_1.mp4",
     "fullscreenEligible": true,
     "fileSize": 110527,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/mountaingraphs_final_1.mp4",
     "duration": 1.184218
   },
   {
@@ -1106,9 +1133,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-mountaingraphs-final-2-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/mountaingraphs_final_2.mp4",
     "fullscreenEligible": true,
     "fileSize": 4547027,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/mountaingraphs_final_2.mp4",
     "duration": 20.062041
   },
   {
@@ -1123,9 +1150,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-pill-button-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/pill_button.mp4",
     "fullscreenEligible": true,
     "fileSize": 210108,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/pill_button.mp4",
     "duration": 13.033333
   },
   {
@@ -1140,9 +1167,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/pill_button.png",
     "fullscreenEligible": true,
     "fileSize": 4204,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/pill_button.png"
+    "duration": 0
   },
   {
     "id": "media-graphics-vrx-iiv-virtual-realitymeta-spaces-mp4",
@@ -1156,9 +1184,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-vrx-iiv-virtual-realitymeta-spaces-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/VRX_IIV_Virtual RealityMeta Spaces.mp4",
     "fullscreenEligible": true,
     "fileSize": 1595799,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/VRX_IIV_Virtual RealityMeta Spaces.mp4",
     "duration": 9.966667
   },
   {
@@ -1173,9 +1201,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-graphics-worlds-apart-inc-transdimensionalarchitecturefirm-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Worlds_Apart_Inc_TransdimensionalArchitectureFirm.mp4",
     "fullscreenEligible": true,
     "fileSize": 940612,
-    "originalSourcePath": "assets/media/og-library/Projects/Graphics/Worlds_Apart_Inc_TransdimensionalArchitectureFirm.mp4",
     "duration": 9.7
   },
   {
@@ -1190,9 +1218,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-brand-elements-sheet.png",
     "fullscreenEligible": true,
     "fileSize": 29266,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-brand-elements-sheet.png"
+    "duration": 0
   },
   {
     "id": "media-kern-branding-kern-government-research-seal-png",
@@ -1206,9 +1235,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-government-research-seal.png",
     "fullscreenEligible": true,
     "fileSize": 56136,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-government-research-seal.png"
+    "duration": 0
   },
   {
     "id": "media-kern-branding-kern-logo-eye-globe-png",
@@ -1222,9 +1252,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-eye-globe.png",
     "fullscreenEligible": true,
     "fileSize": 25786,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-eye-globe.png"
+    "duration": 0
   },
   {
     "id": "media-kern-branding-kern-logo-globe-eye-lockup-png",
@@ -1238,9 +1269,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-globe-eye-lockup.png",
     "fullscreenEligible": true,
     "fileSize": 22590,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-globe-eye-lockup.png"
+    "duration": 0
   },
   {
     "id": "media-kern-branding-kern-logo-globe-figure-png",
@@ -1254,9 +1286,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-globe-figure.png",
     "fullscreenEligible": true,
     "fileSize": 19162,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-globe-figure.png"
+    "duration": 0
   },
   {
     "id": "media-kern-branding-kern-logo-ground-unit-globe-png",
@@ -1270,9 +1303,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-ground-unit-globe.png",
     "fullscreenEligible": true,
     "fileSize": 20292,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-ground-unit-globe.png"
+    "duration": 0
   },
   {
     "id": "media-kern-branding-kern-logo-spire-arch-png",
@@ -1286,9 +1320,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-spire-arch.png",
     "fullscreenEligible": true,
     "fileSize": 20960,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-spire-arch.png"
+    "duration": 0
   },
   {
     "id": "media-kern-branding-kern-logo-stacked-eye-png",
@@ -1302,9 +1337,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-stacked-eye.png",
     "fullscreenEligible": true,
     "fileSize": 23270,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-logo-stacked-eye.png"
+    "duration": 0
   },
   {
     "id": "media-kern-branding-kern-wordmark-eye-stacked-png",
@@ -1318,9 +1354,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-wordmark-eye-stacked.png",
     "fullscreenEligible": true,
     "fileSize": 17054,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-wordmark-eye-stacked.png"
+    "duration": 0
   },
   {
     "id": "media-kern-branding-kern-wordmark-split-layout-png",
@@ -1334,9 +1371,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-wordmark-split-layout.png",
     "fullscreenEligible": true,
     "fileSize": 14050,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Branding/kern-wordmark-split-layout.png"
+    "duration": 0
   },
   {
     "id": "media-kern-graphics-family-detained-png",
@@ -1350,9 +1388,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/family_detained.png",
     "fullscreenEligible": true,
     "fileSize": 232450,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/family_detained.png"
+    "duration": 0
   },
   {
     "id": "media-kern-graphics-kern-callnumber-poster-jpg",
@@ -1366,9 +1405,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/kern_callnumber_poster.jpg",
     "fullscreenEligible": true,
     "fileSize": 352848,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/kern_callnumber_poster.jpg"
+    "duration": 0
   },
   {
     "id": "media-kern-graphics-kern-groundcorp-poster-jpg",
@@ -1382,9 +1422,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/kern_groundcorp_poster.jpg",
     "fullscreenEligible": true,
     "fileSize": 377388,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/kern_groundcorp_poster.jpg"
+    "duration": 0
   },
   {
     "id": "media-kern-graphics-kern-hanginthere-poster-jpg",
@@ -1398,9 +1439,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/kern_hanginthere_poster.jpg",
     "fullscreenEligible": true,
     "fileSize": 911964,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/kern_hanginthere_poster.jpg"
+    "duration": 0
   },
   {
     "id": "media-kern-graphics-patrols-png",
@@ -1414,9 +1456,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/Patrols.png",
     "fullscreenEligible": true,
     "fileSize": 142470,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/Patrols.png"
+    "duration": 0
   },
   {
     "id": "media-kern-graphics-psycho-hazard-poster-jpg",
@@ -1430,9 +1473,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/Psycho_Hazard_Poster.jpg",
     "fullscreenEligible": true,
     "fileSize": 776326,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/Psycho_Hazard_Poster.jpg"
+    "duration": 0
   },
   {
     "id": "media-kern-graphics-stalkers-detained-png",
@@ -1446,9 +1490,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/stalkers_detained.png",
     "fullscreenEligible": true,
     "fileSize": 150170,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/Graphics/stalkers_detained.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-1-png",
@@ -1462,9 +1507,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/1.png",
     "fullscreenEligible": true,
     "fileSize": 415212,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/1.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-10-png",
@@ -1478,9 +1524,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/10.png",
     "fullscreenEligible": true,
     "fileSize": 574952,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/10.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-11-png",
@@ -1494,9 +1541,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/11.png",
     "fullscreenEligible": true,
     "fileSize": 563152,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/11.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-2-png",
@@ -1510,9 +1558,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/2.png",
     "fullscreenEligible": true,
     "fileSize": 527440,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/2.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-3-png",
@@ -1526,9 +1575,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/3.png",
     "fullscreenEligible": true,
     "fileSize": 526120,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/3.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-4-png",
@@ -1542,9 +1592,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/4.png",
     "fullscreenEligible": true,
     "fileSize": 582418,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/4.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-5-png",
@@ -1558,9 +1609,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/5.png",
     "fullscreenEligible": true,
     "fileSize": 604376,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/5.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-6-png",
@@ -1574,9 +1626,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/6.png",
     "fullscreenEligible": true,
     "fileSize": 446980,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/6.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-7-png",
@@ -1590,9 +1643,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/7.png",
     "fullscreenEligible": true,
     "fileSize": 475580,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/7.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-8-png",
@@ -1606,9 +1660,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/8.png",
     "fullscreenEligible": true,
     "fileSize": 608504,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/8.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-9-png",
@@ -1622,9 +1677,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/9.png",
     "fullscreenEligible": true,
     "fileSize": 590636,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/pitch_deck/9.png"
+    "duration": 0
   },
   {
     "id": "media-kern-pitch-deck-project-kern-high-concept-1-0-pdf",
@@ -1638,9 +1694,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
     "fileSize": 0,
-    "originalSourcePath": ""
+    "duration": 0
   },
   {
     "id": "media-kern-prototype-fotosketcher-image-png",
@@ -1654,9 +1711,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/FotoSketcher_image.png",
     "fullscreenEligible": true,
     "fileSize": 142054,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/FotoSketcher_image.png"
+    "duration": 0
   },
   {
     "id": "media-kern-prototype-fotosketcher-image2-png",
@@ -1670,9 +1728,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/FotoSketcher_image2.png",
     "fullscreenEligible": true,
     "fileSize": 128784,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/FotoSketcher_image2.png"
+    "duration": 0
   },
   {
     "id": "media-kern-prototype-fotosketcher-image3-png",
@@ -1686,9 +1745,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/FotoSketcher_image3.png",
     "fullscreenEligible": true,
     "fileSize": 285948,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/FotoSketcher_image3.png"
+    "duration": 0
   },
   {
     "id": "media-kern-prototype-fotosketcher-image6-png",
@@ -1702,9 +1762,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/FotoSketcher_image6.png",
     "fullscreenEligible": true,
     "fileSize": 367116,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/FotoSketcher_image6.png"
+    "duration": 0
   },
   {
     "id": "media-kern-prototype-fotosketcher-image8-png",
@@ -1718,9 +1779,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/FotoSketcher_image8.png",
     "fullscreenEligible": true,
     "fileSize": 339490,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/FotoSketcher_image8.png"
+    "duration": 0
   },
   {
     "id": "media-kern-prototype-gamescreenshot-png",
@@ -1734,9 +1796,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/GameScreenshot.png",
     "fullscreenEligible": true,
     "fileSize": 78040,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/GameScreenshot.png"
+    "duration": 0
   },
   {
     "id": "media-kern-prototype-kern-event-sound-test-mp4",
@@ -1750,9 +1813,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-kern-prototype-kern-event-sound-test-mp4.jpg",
-    "fullscreenEligible": true,
-    "fileSize": 5068240,
     "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/kern_event_sound_test.mp4",
+    "fullscreenEligible": true,
+    "fileSize": 5128067,
     "duration": 18
   },
   {
@@ -1767,9 +1830,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-kern-prototype-kern-gameplay-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/kern_gameplay_test.mp4",
     "fullscreenEligible": true,
     "fileSize": 9193079,
-    "originalSourcePath": "assets/media/og-library/Projects/KERN/prototype/kern_gameplay_test.mp4",
     "duration": 18
   },
   {
@@ -1784,9 +1847,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-gamejam-fell-out-game-jam-gameplay-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/GameJam/fell-out-game-jam-gameplay.mp4",
     "fullscreenEligible": true,
     "fileSize": 3548503,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/GameJam/fell-out-game-jam-gameplay.mp4",
     "duration": 10.28
   },
   {
@@ -1801,9 +1864,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/1.png",
     "fullscreenEligible": true,
     "fileSize": 81098,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/1.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-10-png",
@@ -1817,9 +1881,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/10.png",
     "fullscreenEligible": true,
     "fileSize": 69916,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/10.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-11-png",
@@ -1833,9 +1898,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/11.png",
     "fullscreenEligible": true,
     "fileSize": 77626,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/11.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-12-png",
@@ -1849,9 +1915,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/12.png",
     "fullscreenEligible": true,
     "fileSize": 147912,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/12.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-13-png",
@@ -1865,9 +1932,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/13.png",
     "fullscreenEligible": true,
     "fileSize": 110100,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/13.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-14-png",
@@ -1881,9 +1949,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/14.png",
     "fullscreenEligible": true,
     "fileSize": 100330,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/14.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-15-png",
@@ -1897,9 +1966,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/15.png",
     "fullscreenEligible": true,
     "fileSize": 96646,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/15.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-2-png",
@@ -1913,9 +1983,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/2.png",
     "fullscreenEligible": true,
     "fileSize": 104706,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/2.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-3-png",
@@ -1929,9 +2000,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/3.png",
     "fullscreenEligible": true,
     "fileSize": 210202,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/3.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-4-png",
@@ -1945,9 +2017,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/4.png",
     "fullscreenEligible": true,
     "fileSize": 113706,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/4.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-5-png",
@@ -1961,9 +2034,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/5.png",
     "fullscreenEligible": true,
     "fileSize": 247120,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/5.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-6-png",
@@ -1977,9 +2051,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/6.png",
     "fullscreenEligible": true,
     "fileSize": 115650,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/6.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-7-png",
@@ -1993,9 +2068,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/7.png",
     "fullscreenEligible": true,
     "fileSize": 205016,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/7.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-8-png",
@@ -2009,9 +2085,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/8.png",
     "fullscreenEligible": true,
     "fileSize": 165284,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/8.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-9-png",
@@ -2025,9 +2102,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/9.png",
     "fullscreenEligible": true,
     "fileSize": 156960,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/HighConcept_Pitchdeck/9.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-highconcept-pitchdeck-fell-out-high-concept-1-0-pdf",
@@ -2041,9 +2119,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
     "fileSize": 0,
-    "originalSourcePath": ""
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-technicaltest-lightkeeper-bird-flight-canyon-test-mp4",
@@ -2057,9 +2136,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-technicaltest-lightkeeper-bird-flight-canyon-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper-bird-flight-canyon-test.mp4",
     "fullscreenEligible": true,
     "fileSize": 6249971,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper-bird-flight-canyon-test.mp4",
     "duration": 29.717
   },
   {
@@ -2074,9 +2153,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-technicaltest-lightkeeper-bird-flight-village-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper-bird-flight-village-test.mp4",
     "fullscreenEligible": true,
     "fileSize": 7079704,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper-bird-flight-village-test.mp4",
     "duration": 18
   },
   {
@@ -2091,9 +2170,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-technicaltest-lightkeeper-level-layout-overview-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper-level-layout-overview.mp4",
     "fullscreenEligible": true,
     "fileSize": 3338251,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper-level-layout-overview.mp4",
     "duration": 15.36
   },
   {
@@ -2108,9 +2187,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-technicaltest-lightkeeper-night-flight-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper-night-flight-test.mp4",
     "fullscreenEligible": true,
     "fileSize": 4091112,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper-night-flight-test.mp4",
     "duration": 18
   },
   {
@@ -2125,9 +2204,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-technicaltest-lightkeeper-world-layout-planning-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper-world-layout-planning.mp4",
     "fullscreenEligible": true,
     "fileSize": 7054156,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper-world-layout-planning.mp4",
     "duration": 18
   },
   {
@@ -2142,9 +2221,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-technicaltest-lightkeeper-techtest-beginning-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper_techtest_beginning.mp4",
     "fullscreenEligible": true,
     "fileSize": 2880281,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper_techtest_beginning.mp4",
     "duration": 18
   },
   {
@@ -2159,9 +2238,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
     "fileSize": 0,
-    "originalSourcePath": ""
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-technicaltest-lightkeeper-techtest-gathering-concept-rive-mp4",
@@ -2175,9 +2255,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-technicaltest-lightkeeper-techtest-gathering-concept-rive-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper_techtest_gathering_concept_rive.mp4",
     "fullscreenEligible": true,
     "fileSize": 558319,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper_techtest_gathering_concept_rive.mp4",
     "duration": 6.44
   },
   {
@@ -2192,9 +2272,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-technicaltest-lightkeeper-techtest-outtake-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper_techtest_outtake.mp4",
     "fullscreenEligible": true,
     "fileSize": 1246895,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/TechnicalTest/lightkeeper_techtest_outtake.mp4",
     "duration": 11.04
   },
   {
@@ -2209,9 +2289,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
     "fileSize": 0,
-    "originalSourcePath": ""
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-ui-inventory-png",
@@ -2225,9 +2306,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/UI/Inventory.png",
     "fullscreenEligible": true,
     "fileSize": 113110,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/UI/Inventory.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-ui-lightkeeper-player-menu-design-board-png",
@@ -2241,9 +2323,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/UI/lightkeeper-player-menu-design-board.png",
     "fullscreenEligible": true,
     "fileSize": 54938,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/UI/lightkeeper-player-menu-design-board.png"
+    "duration": 0
   },
   {
     "id": "media-lightkeeper-verticalslice-lightkeeper-15s-still-graphics-mp4",
@@ -2257,9 +2340,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-15s-still-graphics-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_15s_still_graphics.mp4",
     "fullscreenEligible": true,
     "fileSize": 7722353,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_15s_still_graphics.mp4",
     "duration": 15.533333
   },
   {
@@ -2274,9 +2357,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-atmosphere-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_atmosphere.mp4",
     "fullscreenEligible": true,
     "fileSize": 8123712,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_atmosphere.mp4",
     "duration": 18
   },
   {
@@ -2291,9 +2374,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-camera-director-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_camera_director.mp4",
     "fullscreenEligible": true,
     "fileSize": 6468868,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_camera_director.mp4",
     "duration": 22.633333
   },
   {
@@ -2308,9 +2391,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-character-interactions-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_character_interactions.mp4",
     "fullscreenEligible": true,
     "fileSize": 5400690,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_character_interactions.mp4",
     "duration": 13.166667
   },
   {
@@ -2325,9 +2408,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-climbing-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_climbing.mp4",
     "fullscreenEligible": true,
     "fileSize": 2926443,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_climbing.mp4",
     "duration": 18
   },
   {
@@ -2342,9 +2425,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-custom-terain-tools-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_custom_terain_tools.mp4",
     "fullscreenEligible": true,
     "fileSize": 2980426,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_custom_terain_tools.mp4",
     "duration": 18
   },
   {
@@ -2359,9 +2442,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-early-graphics-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_early_graphics_test.mp4",
     "fullscreenEligible": true,
     "fileSize": 6901843,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_early_graphics_test.mp4",
     "duration": 18
   },
   {
@@ -2376,9 +2459,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-interiors-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_interiors.mp4",
     "fullscreenEligible": true,
     "fileSize": 2803796,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_interiors.mp4",
     "duration": 18.202993
   },
   {
@@ -2393,9 +2476,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-outtake-1-funnynpcs-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_outtake_1_funnynpcs.mp4",
     "fullscreenEligible": true,
     "fileSize": 4074605,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/lightkeeper_outtake_1_funnynpcs.mp4",
     "duration": 21.582993
   },
   {
@@ -2410,9 +2493,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-progression-tool-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/Lightkeeper_progression_tool.mp4",
     "fullscreenEligible": true,
     "fileSize": 1847846,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/Lightkeeper_progression_tool.mp4",
     "duration": 18
   },
   {
@@ -2427,9 +2510,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-shadow-clouds-tech-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/Lightkeeper_shadow_clouds_tech.mp4",
     "fullscreenEligible": true,
     "fileSize": 5951591,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/Lightkeeper_shadow_clouds_tech.mp4",
     "duration": 18
   },
   {
@@ -2444,9 +2527,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-lightkeeper-verticalslice-lightkeeper-vertical-slice-menu-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/Lightkeeper_vertical_Slice_Menu.mp4",
     "fullscreenEligible": true,
     "fileSize": 5052066,
-    "originalSourcePath": "assets/media/og-library/Projects/Lightkeeper/VerticalSlice/Lightkeeper_vertical_Slice_Menu.mp4",
     "duration": 18
   },
   {
@@ -2461,9 +2544,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
     "fileSize": 0,
-    "originalSourcePath": ""
+    "duration": 0
   },
   {
     "id": "media-prototypes-kcd-combat-kcd-combat-prototype-gameplay-mp4",
@@ -2477,9 +2561,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-kcd-combat-kcd-combat-prototype-gameplay-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/KCD_Combat/kcd-combat-prototype-gameplay.mp4",
     "fullscreenEligible": true,
     "fileSize": 5674551,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/KCD_Combat/kcd-combat-prototype-gameplay.mp4",
     "duration": 18
   },
   {
@@ -2494,9 +2578,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-leveldesign-first-person-graybox-level-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/LevelDesign/first-person-graybox-level-test.mp4",
     "fullscreenEligible": true,
     "fileSize": 1897886,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/LevelDesign/first-person-graybox-level-test.mp4",
     "duration": 18
   },
   {
@@ -2511,9 +2595,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
     "fileSize": 0,
-    "originalSourcePath": ""
+    "duration": 0
   },
   {
     "id": "media-prototypes-mightypebble-mighty-pebble-building-system-test-mp4",
@@ -2527,9 +2612,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
     "fileSize": 0,
-    "originalSourcePath": ""
+    "duration": 0
   },
   {
     "id": "media-prototypes-mightypebble-mighty-pebble-night-resource-test-mp4",
@@ -2543,9 +2629,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-mightypebble-mighty-pebble-night-resource-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/MightyPebble/mighty-pebble-night-resource-test.mp4",
     "fullscreenEligible": true,
     "fileSize": 1220244,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/MightyPebble/mighty-pebble-night-resource-test.mp4",
     "duration": 18
   },
   {
@@ -2560,9 +2646,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-projecthypno-aesthetics-10k-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/aesthetics-10k.mp4",
     "fullscreenEligible": true,
     "fileSize": 2369411,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/aesthetics-10k.mp4",
     "duration": 18
   },
   {
@@ -2577,9 +2663,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-projecthypno-project-hypno-gondolla-atnight-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/project_hypno_gondolla_atnight.mp4",
     "fullscreenEligible": true,
     "fileSize": 1030356,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/project_hypno_gondolla_atnight.mp4",
     "duration": 18
   },
   {
@@ -2594,9 +2680,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-projecthypno-project-hypno-intro-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/project_hypno_intro.mp4",
     "fullscreenEligible": true,
     "fileSize": 1915155,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/project_hypno_intro.mp4",
     "duration": 18
   },
   {
@@ -2611,9 +2697,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-projecthypno-project-hypno-sound-desing-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/project_hypno_sound_desing.mp4",
     "fullscreenEligible": true,
     "fileSize": 2477366,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/project_hypno_sound_desing.mp4",
     "duration": 18
   },
   {
@@ -2628,9 +2714,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-projecthypno-project-hypno-spacial-anomaly-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/project_hypno_spacial_anomaly.mp4",
     "fullscreenEligible": true,
     "fileSize": 2724821,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/project_hypno_spacial_anomaly.mp4",
     "duration": 17.633008
   },
   {
@@ -2645,9 +2731,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-projecthypno-project-hypno-thumb-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/project_hypno_thumb.mp4",
     "fullscreenEligible": true,
     "fileSize": 1267810,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectHypno/project_hypno_thumb.mp4",
     "duration": 10.5
   },
   {
@@ -2662,9 +2748,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-projectsunshine-project-sunshine-trailer-mockup-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectSunshine/project_sunshine_trailer_mockup.mp4",
     "fullscreenEligible": true,
     "fileSize": 5779258,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/ProjectSunshine/project_sunshine_trailer_mockup.mp4",
     "duration": 18
   },
   {
@@ -2679,9 +2765,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
     "fileSize": 0,
-    "originalSourcePath": ""
+    "duration": 0
   },
   {
     "id": "media-prototypes-swampfellas-frogathon-mp4",
@@ -2695,9 +2782,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-swampfellas-frogathon-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/Frogathon.mp4",
     "fullscreenEligible": true,
     "fileSize": 3981499,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/Frogathon.mp4",
     "duration": 9.344
   },
   {
@@ -2712,9 +2799,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-swampfellas-ilove-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/ilove.mp4",
     "fullscreenEligible": true,
     "fileSize": 5717680,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/ilove.mp4",
     "duration": 18.368
   },
   {
@@ -2729,9 +2816,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-swampfellas-swamp-fellas-camera-crew-scene-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/swamp-fellas-camera-crew-scene.mp4",
     "fullscreenEligible": true,
     "fileSize": 7076059,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/swamp-fellas-camera-crew-scene.mp4",
     "duration": 29.205333
   },
   {
@@ -2746,9 +2833,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-swampfellas-swamp-fellas-fishing-scene-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/swamp-fellas-fishing-scene.mp4",
     "fullscreenEligible": true,
     "fileSize": 5740738,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/swamp-fellas-fishing-scene.mp4",
     "duration": 29.546667
   },
   {
@@ -2763,9 +2850,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-swampfellas-swamp-fellas-frog-character-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/swamp-fellas-frog-character-test.mp4",
     "fullscreenEligible": true,
     "fileSize": 1405365,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/swamp-fellas-frog-character-test.mp4",
     "duration": 8.533008
   },
   {
@@ -2780,9 +2867,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-swampfellas-swamp-fellas-terrain-shader-breakdown-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/swamp-fellas-terrain-shader-breakdown.mp4",
     "fullscreenEligible": true,
     "fileSize": 7429079,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/swamp-fellas-terrain-shader-breakdown.mp4",
     "duration": 18
   },
   {
@@ -2797,9 +2884,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-swampfellas-trailer-socials-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/trailer-socials.mp4",
     "fullscreenEligible": true,
     "fileSize": 8777584,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/trailer-socials.mp4",
     "duration": 18
   },
   {
@@ -2814,9 +2901,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-prototypes-swampfellas-trailer-wishlist-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/trailer-wishlist.mp4",
     "fullscreenEligible": true,
     "fileSize": 5592295,
-    "originalSourcePath": "assets/media/og-library/Projects/Prototypes/SwampFellas/trailer-wishlist.mp4",
     "duration": 18
   },
   {
@@ -2831,9 +2918,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/UX/RiseAboveDisorder/rise-above-disorder-about-page.webp",
     "fullscreenEligible": true,
     "fileSize": 157668,
-    "originalSourcePath": "assets/media/og-library/Projects/UX/RiseAboveDisorder/rise-above-disorder-about-page.webp"
+    "duration": 0
   },
   {
     "id": "media-ux-riseabovedisorder-rise-above-disorder-volunteer-page-webp",
@@ -2847,9 +2935,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/UX/RiseAboveDisorder/rise-above-disorder-volunteer-page.webp",
     "fullscreenEligible": true,
     "fileSize": 140730,
-    "originalSourcePath": "assets/media/og-library/Projects/UX/RiseAboveDisorder/rise-above-disorder-volunteer-page.webp"
+    "duration": 0
   },
   {
     "id": "media-ux-userwise-userwise-content-builder-webp",
@@ -2863,9 +2952,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/UX/UserWise/userwise-content-builder.webp",
     "fullscreenEligible": true,
     "fileSize": 47216,
-    "originalSourcePath": "assets/media/og-library/Projects/UX/UserWise/userwise-content-builder.webp"
+    "duration": 0
   },
   {
     "id": "media-ux-userwise-userwise-design-exploration-webp",
@@ -2879,9 +2969,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/UX/UserWise/userwise-design-exploration.webp",
     "fullscreenEligible": true,
     "fileSize": 105362,
-    "originalSourcePath": "assets/media/og-library/Projects/UX/UserWise/userwise-design-exploration.webp"
+    "duration": 0
   },
   {
     "id": "media-ux-userwise-userwise-implementation-workflows-webp",
@@ -2895,9 +2986,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/UX/UserWise/userwise-implementation-workflows.webp",
     "fullscreenEligible": true,
     "fileSize": 45984,
-    "originalSourcePath": "assets/media/og-library/Projects/UX/UserWise/userwise-implementation-workflows.webp"
+    "duration": 0
   },
   {
     "id": "media-ux-userwise-userwise-original-design-webp",
@@ -2911,9 +3003,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/UX/UserWise/userwise-original-design.webp",
     "fullscreenEligible": true,
     "fileSize": 81202,
-    "originalSourcePath": "assets/media/og-library/Projects/UX/UserWise/userwise-original-design.webp"
+    "duration": 0
   },
   {
     "id": "media-ux-userwise-userwise-research-comprehension-webp",
@@ -2927,9 +3020,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/UX/UserWise/userwise-research-comprehension.webp",
     "fullscreenEligible": true,
     "fileSize": 53644,
-    "originalSourcePath": "assets/media/og-library/Projects/UX/UserWise/userwise-research-comprehension.webp"
+    "duration": 0
   },
   {
     "id": "media-voidoverdrive-cantgetout-mp4",
@@ -2943,9 +3037,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-voidoverdrive-cantgetout-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/cantgetout.mp4",
     "fullscreenEligible": true,
     "fileSize": 5767253,
-    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/cantgetout.mp4",
     "duration": 16.633333
   },
   {
@@ -2960,9 +3054,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-voidoverdrive-void-overdrive-cliff-descent-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/void-overdrive-cliff-descent.mp4",
     "fullscreenEligible": true,
     "fileSize": 5613830,
-    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/void-overdrive-cliff-descent.mp4",
     "duration": 29.291667
   },
   {
@@ -2977,9 +3071,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/void-overdrive-desert-outpost.jpg",
     "fullscreenEligible": true,
     "fileSize": 106290,
-    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/void-overdrive-desert-outpost.jpg"
+    "duration": 0
   },
   {
     "id": "media-voidoverdrive-void-overdrive-desert-pillar-run-jpg",
@@ -2993,9 +3088,10 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/void-overdrive-desert-pillar-run.jpg",
     "fullscreenEligible": true,
     "fileSize": 66590,
-    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/void-overdrive-desert-pillar-run.jpg"
+    "duration": 0
   },
   {
     "id": "media-voidoverdrive-voidoverdrive-sfx-test-mp4",
@@ -3009,9 +3105,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-voidoverdrive-voidoverdrive-sfx-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/voidoverdrive-sfx-test.mp4",
     "fullscreenEligible": true,
     "fileSize": 2371895,
-    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/voidoverdrive-sfx-test.mp4",
     "duration": 9.5
   },
   {
@@ -3026,9 +3122,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-voidoverdrive-voidoverdrive-sfx-test-2-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/voidoverdrive_sfx_test_2.mp4",
     "fullscreenEligible": true,
     "fileSize": 1832822,
-    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/voidoverdrive_sfx_test_2.mp4",
     "duration": 9.5
   },
   {
@@ -3043,9 +3139,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-voidoverdrive-vo-character-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/VO_character_test.mp4",
     "fullscreenEligible": true,
     "fileSize": 2601819,
-    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/VO_character_test.mp4",
     "duration": 7.633333
   },
   {
@@ -3060,9 +3156,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-voidoverdrive-vo-thumbnail-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/VO_Thumbnail.mp4",
     "fullscreenEligible": true,
     "fileSize": 1405494,
-    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/VO_Thumbnail.mp4",
     "duration": 9.04
   },
   {
@@ -3077,9 +3173,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-voidoverdrive-vo-unreal-testing-hoverbike-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/VO_Unreal_testing-hoverbike.mp4",
     "fullscreenEligible": true,
     "fileSize": 6284571,
-    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/VO_Unreal_testing-hoverbike.mp4",
     "duration": 14.96
   },
   {
@@ -3094,9 +3190,9 @@
     "sectionId": "archive",
     "credits": "",
     "posterFrame": "assets/media/posters/media-voidoverdrive-vo-visualization-test-mp4.jpg",
+    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/vo_visualization_test.mp4",
     "fullscreenEligible": true,
     "fileSize": 4089737,
-    "originalSourcePath": "assets/media/og-library/Projects/VoidOverdrive/vo_visualization_test.mp4",
     "duration": 18
   },
   {
@@ -3111,8 +3207,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "youtube-moving-on-express",
@@ -3126,8 +3224,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "youtube-worlds-apart",
@@ -3141,8 +3241,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "youtube-dronies-interview",
@@ -3156,8 +3258,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "youtube-daedalus-alpha-bts",
@@ -3171,8 +3275,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "youtube-daedalus-alpha-film",
@@ -3186,8 +3292,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "youtube-fell-out-walkthrough",
@@ -3201,8 +3309,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "youtube-lightkeeper-technical-test",
@@ -3216,8 +3326,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "vimeo-project-sunshine",
@@ -3231,8 +3343,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "youtube-project-hypno",
@@ -3246,8 +3360,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "youtube-lightkeeper-vertical-slice",
@@ -3261,8 +3377,10 @@
     "sectionId": "external",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": true,
-    "fileSize": 0
+    "fileSize": 0,
+    "duration": 0
   },
   {
     "id": "preview-lightkeeper",
@@ -3276,8 +3394,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-lightkeeper.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1496426
+    "fileSize": 147455,
+    "duration": 0
   },
   {
     "id": "preview-kern",
@@ -3291,8 +3411,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-kern.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1563662
+    "fileSize": 368459,
+    "duration": 0
   },
   {
     "id": "preview-dronies",
@@ -3306,8 +3428,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-dronies.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1449496
+    "fileSize": 311705,
+    "duration": 0
   },
   {
     "id": "preview-flax-editor",
@@ -3321,8 +3445,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-flax-editor.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1721783
+    "fileSize": 384771,
+    "duration": 0
   },
   {
     "id": "preview-daedalus",
@@ -3336,23 +3462,27 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-daedalus.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1711360
+    "fileSize": 62563,
+    "duration": 0
   },
   {
     "id": "preview-userwise",
-    "type": "video",
-    "title": "USERWISE.PRODUCT preview",
-    "caption": "Five-second silent project preview.",
+    "type": "image",
+    "title": "USERWISE.PRODUCT thumbnail",
+    "caption": "Lightweight project thumbnail.",
     "alt": "USERWISE preview",
-    "sourcePath": "assets/media/project-previews/userwise.mp4",
+    "sourcePath": "assets/media/project-thumbnails/userwise.webp",
     "externalUrl": "",
     "projectId": "userwise",
     "sectionId": "thumbnail",
     "credits": "",
-    "posterFrame": "assets/media/posters/preview-userwise.jpg",
+    "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443257
+    "fileSize": 19530,
+    "duration": 0
   },
   {
     "id": "preview-marathon-tau-ceti",
@@ -3366,8 +3496,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-marathon-tau-ceti.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1666024
+    "fileSize": 906874,
+    "duration": 0
   },
   {
     "id": "preview-swamp-fellas",
@@ -3381,8 +3513,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-swamp-fellas.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1705041
+    "fileSize": 436214,
+    "duration": 0
   },
   {
     "id": "preview-bolt-icons",
@@ -3396,8 +3530,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-bolt-icons.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443329
+    "fileSize": 16847,
+    "duration": 0
   },
   {
     "id": "preview-lazaris",
@@ -3411,8 +3547,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-lazaris.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443329
+    "fileSize": 19322,
+    "duration": 0
   },
   {
     "id": "preview-prototypes",
@@ -3426,8 +3564,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-prototypes.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1526037
+    "fileSize": 186255,
+    "duration": 0
   },
   {
     "id": "preview-game-jams",
@@ -3441,8 +3581,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-game-jams.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1615678
+    "fileSize": 651064,
+    "duration": 0
   },
   {
     "id": "preview-apps",
@@ -3456,8 +3598,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-apps.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1431650
+    "fileSize": 81736,
+    "duration": 0
   },
   {
     "id": "preview-client-work",
@@ -3471,8 +3615,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-client-work.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443236
+    "fileSize": 140420,
+    "duration": 0
   },
   {
     "id": "preview-visual-lab",
@@ -3486,8 +3632,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-visual-lab.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1568337
+    "fileSize": 365685,
+    "duration": 0
   },
   {
     "id": "preview-vertical-slice-2026",
@@ -3501,8 +3649,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-vertical-slice-2026.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1484370
+    "fileSize": 147455,
+    "duration": 0
   },
   {
     "id": "preview-lightkeeper-technical-test",
@@ -3516,8 +3666,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-lightkeeper-technical-test.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1690446
+    "fileSize": 194285,
+    "duration": 0
   },
   {
     "id": "preview-fell-out-concept",
@@ -3531,8 +3683,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-fell-out-concept.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443217
+    "fileSize": 119723,
+    "duration": 0
   },
   {
     "id": "preview-fell-out-gamejam",
@@ -3546,8 +3700,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-fell-out-gamejam.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443321
+    "fileSize": 118211,
+    "duration": 0
   },
   {
     "id": "preview-dronies-creatives",
@@ -3561,8 +3717,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-dronies-creatives.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443236
+    "fileSize": 54679,
+    "duration": 0
   },
   {
     "id": "preview-dronies-bunker",
@@ -3576,8 +3734,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-dronies-bunker.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1521770
+    "fileSize": 427505,
+    "duration": 0
   },
   {
     "id": "preview-daedalus-origin",
@@ -3591,8 +3751,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-daedalus-origin.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443249
+    "fileSize": 177946,
+    "duration": 0
   },
   {
     "id": "preview-daedalus-comic",
@@ -3606,8 +3768,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-daedalus-comic.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1501168
+    "fileSize": 224808,
+    "duration": 0
   },
   {
     "id": "preview-daedalus-brand",
@@ -3621,8 +3785,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-daedalus-brand.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1513830
+    "fileSize": 361511,
+    "duration": 0
   },
   {
     "id": "preview-daedalus-film",
@@ -3636,8 +3802,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-daedalus-film.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1716694
+    "fileSize": 62563,
+    "duration": 0
   },
   {
     "id": "preview-daedalus-bts",
@@ -3651,8 +3819,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-daedalus-bts.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1707880
+    "fileSize": 242048,
+    "duration": 0
   },
   {
     "id": "preview-void-overdrive",
@@ -3666,8 +3836,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-void-overdrive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1529696
+    "fileSize": 186255,
+    "duration": 0
   },
   {
     "id": "preview-project-hypno",
@@ -3681,8 +3853,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-project-hypno.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443277
+    "fileSize": 185773,
+    "duration": 0
   },
   {
     "id": "preview-project-sunshine",
@@ -3696,8 +3870,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-project-sunshine.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1464878
+    "fileSize": 445477,
+    "duration": 0
   },
   {
     "id": "preview-mighty-pebble",
@@ -3711,8 +3887,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-mighty-pebble.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443341
+    "fileSize": 105436,
+    "duration": 0
   },
   {
     "id": "preview-mattercraft",
@@ -3726,8 +3904,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-mattercraft.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443323
+    "fileSize": 68883,
+    "duration": 0
   },
   {
     "id": "preview-spacekeeper",
@@ -3741,8 +3921,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-spacekeeper.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1461721
+    "fileSize": 252442,
+    "duration": 0
   },
   {
     "id": "preview-fox-stories",
@@ -3756,8 +3938,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-fox-stories.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1715818
+    "fileSize": 1172640,
+    "duration": 0
   },
   {
     "id": "preview-kcd-combat",
@@ -3771,8 +3955,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-kcd-combat.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1468836
+    "fileSize": 291585,
+    "duration": 0
   },
   {
     "id": "preview-level-design",
@@ -3786,8 +3972,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-level-design.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1518173
+    "fileSize": 189114,
+    "duration": 0
   },
   {
     "id": "preview-moving-on-express",
@@ -3801,8 +3989,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-moving-on-express.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443243
+    "fileSize": 245255,
+    "duration": 0
   },
   {
     "id": "preview-loooop",
@@ -3816,8 +4006,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-loooop.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443329
+    "fileSize": 16314,
+    "duration": 0
   },
   {
     "id": "preview-fell-out-shortcut",
@@ -3831,8 +4023,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-fell-out-shortcut.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1611702
+    "fileSize": 651064,
+    "duration": 0
   },
   {
     "id": "preview-game-designer",
@@ -3846,8 +4040,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-game-designer.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1431678
+    "fileSize": 81736,
+    "duration": 0
   },
   {
     "id": "preview-yesterday",
@@ -3861,8 +4057,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-yesterday.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443201
+    "fileSize": 96305,
+    "duration": 0
   },
   {
     "id": "preview-midi-clip-builder",
@@ -3876,8 +4074,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-midi-clip-builder.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443352
+    "fileSize": 84827,
+    "duration": 0
   },
   {
     "id": "preview-sonilabs",
@@ -3891,8 +4091,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-sonilabs.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443214
+    "fileSize": 160164,
+    "duration": 0
   },
   {
     "id": "preview-rise-above-disorder",
@@ -3906,8 +4108,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-rise-above-disorder.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443237
+    "fileSize": 140420,
+    "duration": 0
   },
   {
     "id": "preview-earthwallet",
@@ -3921,8 +4125,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-earthwallet.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443258
+    "fileSize": 76946,
+    "duration": 0
   },
   {
     "id": "preview-yogajoint",
@@ -3936,8 +4142,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-yogajoint.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443329
+    "fileSize": 17630,
+    "duration": 0
   },
   {
     "id": "preview-userwise-shortcut",
@@ -3951,8 +4159,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-userwise-shortcut.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443257
+    "fileSize": 91078,
+    "duration": 0
   },
   {
     "id": "preview-lazaris-shortcut",
@@ -3966,8 +4176,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-lazaris-shortcut.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443329
+    "fileSize": 15858,
+    "duration": 0
   },
   {
     "id": "preview-visual-3d-practice",
@@ -3981,8 +4193,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-visual-3d-practice.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1571179
+    "fileSize": 365685,
+    "duration": 0
   },
   {
     "id": "preview-mountain-graphs",
@@ -3996,8 +4210,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-mountain-graphs.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1480914
+    "fileSize": 193680,
+    "duration": 0
   },
   {
     "id": "preview-vrx-iiv",
@@ -4011,8 +4227,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-vrx-iiv.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1482380
+    "fileSize": 188984,
+    "duration": 0
   },
   {
     "id": "preview-worlds-apart",
@@ -4026,8 +4244,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-worlds-apart.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1709208
+    "fileSize": 98200,
+    "duration": 0
   },
   {
     "id": "preview-figmagram",
@@ -4041,8 +4261,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-figmagram.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1548774
+    "fileSize": 180520,
+    "duration": 0
   },
   {
     "id": "preview-acid-wave",
@@ -4056,8 +4278,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-acid-wave.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1487588
+    "fileSize": 230878,
+    "duration": 0
   },
   {
     "id": "preview-pill-button",
@@ -4071,8 +4295,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-pill-button.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443284
+    "fileSize": 36532,
+    "duration": 0
   },
   {
     "id": "preview-brand-bits",
@@ -4086,8 +4312,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-brand-bits.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443266
+    "fileSize": 72884,
+    "duration": 0
   },
   {
     "id": "preview-game-designer-archive",
@@ -4101,8 +4329,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-game-designer-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1431748
+    "fileSize": 120957,
+    "duration": 0
   },
   {
     "id": "preview-midi-clip-builder-archive",
@@ -4116,8 +4346,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-midi-clip-builder-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443352
+    "fileSize": 89150,
+    "duration": 0
   },
   {
     "id": "preview-sonilabs-archive",
@@ -4131,8 +4363,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-sonilabs-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443214
+    "fileSize": 168079,
+    "duration": 0
   },
   {
     "id": "preview-yesterday-archive",
@@ -4146,8 +4380,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-yesterday-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443201
+    "fileSize": 102071,
+    "duration": 0
   },
   {
     "id": "preview-daedalus-brand-archive",
@@ -4161,8 +4397,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-daedalus-brand-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1505316
+    "fileSize": 418877,
+    "duration": 0
   },
   {
     "id": "preview-daedalus-comic-archive",
@@ -4176,8 +4414,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-daedalus-comic-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1505578
+    "fileSize": 200553,
+    "duration": 0
   },
   {
     "id": "preview-daedalus-film-archive",
@@ -4191,8 +4431,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-daedalus-film-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1489263
+    "fileSize": 144636,
+    "duration": 0
   },
   {
     "id": "preview-dronies-creatives-archive",
@@ -4206,8 +4448,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-dronies-creatives-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443236
+    "fileSize": 50307,
+    "duration": 0
   },
   {
     "id": "preview-dronies-archive",
@@ -4221,8 +4465,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-dronies-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1619923
+    "fileSize": 419946,
+    "duration": 0
   },
   {
     "id": "preview-dronies-bunker-archive",
@@ -4236,8 +4482,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-dronies-bunker-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1517380
+    "fileSize": 451217,
+    "duration": 0
   },
   {
     "id": "preview-flax-editor-archive",
@@ -4251,8 +4499,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-flax-editor-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1517981
+    "fileSize": 117990,
+    "duration": 0
   },
   {
     "id": "preview-visual-3d-practice-archive",
@@ -4266,8 +4516,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-visual-3d-practice-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1567930
+    "fileSize": 395351,
+    "duration": 0
   },
   {
     "id": "preview-moving-on-express-archive",
@@ -4281,8 +4533,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-moving-on-express-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443243
+    "fileSize": 259358,
+    "duration": 0
   },
   {
     "id": "preview-acid-wave-archive",
@@ -4296,8 +4550,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-acid-wave-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1486383
+    "fileSize": 250847,
+    "duration": 0
   },
   {
     "id": "preview-earthwallet-archive",
@@ -4311,8 +4567,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-earthwallet-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443257
+    "fileSize": 80801,
+    "duration": 0
   },
   {
     "id": "preview-brand-bits-archive",
@@ -4326,8 +4584,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-brand-bits-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443267
+    "fileSize": 72210,
+    "duration": 0
   },
   {
     "id": "preview-daedalus-origin-archive",
@@ -4341,8 +4601,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-daedalus-origin-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443249
+    "fileSize": 183800,
+    "duration": 0
   },
   {
     "id": "preview-figmagram-archive",
@@ -4356,8 +4618,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-figmagram-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1524806
+    "fileSize": 187612,
+    "duration": 0
   },
   {
     "id": "preview-marathon-tau-ceti-archive",
@@ -4371,8 +4635,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-marathon-tau-ceti-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443642
+    "fileSize": 1023213,
+    "duration": 0
   },
   {
     "id": "preview-mountain-graphs-archive",
@@ -4386,8 +4652,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-mountain-graphs-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443243
+    "fileSize": 489406,
+    "duration": 0
   },
   {
     "id": "preview-pill-button-archive",
@@ -4401,8 +4669,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-pill-button-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443284
+    "fileSize": 35035,
+    "duration": 0
   },
   {
     "id": "preview-vrx-iiv-archive",
@@ -4416,8 +4686,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-vrx-iiv-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1472304
+    "fileSize": 203401,
+    "duration": 0
   },
   {
     "id": "preview-worlds-apart-archive",
@@ -4431,8 +4703,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-worlds-apart-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1719209
+    "fileSize": 97178,
+    "duration": 0
   },
   {
     "id": "preview-kern-archive",
@@ -4446,8 +4720,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-kern-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1551239
+    "fileSize": 284013,
+    "duration": 0
   },
   {
     "id": "preview-fell-out-gamejam-archive",
@@ -4461,8 +4737,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-fell-out-gamejam-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1613492
+    "fileSize": 651034,
+    "duration": 0
   },
   {
     "id": "preview-fell-out-concept-archive",
@@ -4476,8 +4754,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-fell-out-concept-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443217
+    "fileSize": 126630,
+    "duration": 0
   },
   {
     "id": "preview-lightkeeper-technical-test-archive",
@@ -4491,8 +4771,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-lightkeeper-technical-test-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1491029
+    "fileSize": 487475,
+    "duration": 0
   },
   {
     "id": "preview-vertical-slice-2026-archive",
@@ -4506,8 +4788,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-vertical-slice-2026-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1582136
+    "fileSize": 415066,
+    "duration": 0
   },
   {
     "id": "preview-fox-stories-archive",
@@ -4521,8 +4805,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-fox-stories-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1704348
+    "fileSize": 1043470,
+    "duration": 0
   },
   {
     "id": "preview-kcd-combat-archive",
@@ -4536,8 +4822,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-kcd-combat-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1471496
+    "fileSize": 546758,
+    "duration": 0
   },
   {
     "id": "preview-level-design-archive",
@@ -4551,8 +4839,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-level-design-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1516261
+    "fileSize": 201995,
+    "duration": 0
   },
   {
     "id": "preview-mattercraft-archive",
@@ -4566,8 +4856,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-mattercraft-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443323
+    "fileSize": 68921,
+    "duration": 0
   },
   {
     "id": "preview-mighty-pebble-archive",
@@ -4581,8 +4873,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-mighty-pebble-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443341
+    "fileSize": 58549,
+    "duration": 0
   },
   {
     "id": "preview-project-hypno-archive",
@@ -4596,8 +4890,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-project-hypno-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1506852
+    "fileSize": 123013,
+    "duration": 0
   },
   {
     "id": "preview-project-sunshine-archive",
@@ -4611,8 +4907,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-project-sunshine-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1510680
+    "fileSize": 335902,
+    "duration": 0
   },
   {
     "id": "preview-spacekeeper-archive",
@@ -4626,8 +4924,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-spacekeeper-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1459876
+    "fileSize": 243850,
+    "duration": 0
   },
   {
     "id": "preview-swamp-fellas-archive",
@@ -4641,8 +4941,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-swamp-fellas-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1483390
+    "fileSize": 450286,
+    "duration": 0
   },
   {
     "id": "preview-rise-above-disorder-archive",
@@ -4656,8 +4958,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-rise-above-disorder-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443237
+    "fileSize": 146890,
+    "duration": 0
   },
   {
     "id": "preview-userwise-archive",
@@ -4671,8 +4975,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-userwise-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443257
+    "fileSize": 97188,
+    "duration": 0
   },
   {
     "id": "preview-void-overdrive-archive",
@@ -4686,8 +4992,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-void-overdrive-archive.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1486577
+    "fileSize": 467575,
+    "duration": 0
   },
   {
     "id": "preview-file-media-apps-gamedesigner-gamedesigneroverview-sub-mp4",
@@ -4701,8 +5009,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-apps-gamedesigner-gamedesigneroverview-sub-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1431785
+    "fileSize": 120570,
+    "duration": 0
   },
   {
     "id": "preview-file-media-apps-midiclipbuilder-midi-clip-builder-mp4",
@@ -4716,8 +5026,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-apps-midiclipbuilder-midi-clip-builder-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443352
+    "fileSize": 89150,
+    "duration": 0
   },
   {
     "id": "preview-file-media-apps-sonilabs-sonilabs-sound-library-and-assembler-png",
@@ -4731,8 +5043,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 23630
+    "fileSize": 23630,
+    "duration": 0
   },
   {
     "id": "preview-file-media-apps-yesterday-yesterday-daily-planner-overview-png",
@@ -4746,8 +5060,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 12630
+    "fileSize": 12630,
+    "duration": 0
   },
   {
     "id": "preview-file-media-apps-yesterday-yesterday-screenshot-png",
@@ -4761,8 +5077,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 18204
+    "fileSize": 18204,
+    "duration": 0
   },
   {
     "id": "preview-file-media-apps-yesterday-yesterday-settings-panel-png",
@@ -4776,8 +5094,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 7216
+    "fileSize": 7216,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-brand-dribbble-test-maze-mp4",
@@ -4791,8 +5111,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-brand-dribbble-test-maze-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1506255
+    "fileSize": 417502,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-brand-merch-2-mp4",
@@ -4806,8 +5128,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-brand-merch-2-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1523462
+    "fileSize": 54432,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-brand-merch-vid-1-mp4",
@@ -4821,8 +5145,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-brand-merch-vid-1-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1469435
+    "fileSize": 174341,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-comic-daedalus-comic-panel-three-mp4",
@@ -4836,8 +5162,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-comic-daedalus-comic-panel-three-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1501294
+    "fileSize": 201574,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-comic-daedalus-comic-project-mp4",
@@ -4851,8 +5179,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-comic-daedalus-comic-project-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1529917
+    "fileSize": 289525,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-comic-daedalus-comic-timelapse-full-mp4",
@@ -4866,8 +5196,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-comic-daedalus-comic-timelapse-full-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1482490
+    "fileSize": 490791,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-comic-daedalus-comic-timelapse-short-mp4",
@@ -4881,8 +5213,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-comic-daedalus-comic-timelapse-short-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1528778
+    "fileSize": 473805,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-comic-daedalus-comic-trailer-mp4",
@@ -4896,8 +5230,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-comic-daedalus-comic-trailer-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443092
+    "fileSize": 236027,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-comic-daedalus-comic-vo-page3-1-mp4",
@@ -4911,8 +5247,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-comic-daedalus-comic-vo-page3-1-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1507931
+    "fileSize": 111747,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-comic-daedalus-comic-vo-panel1-1-mp4",
@@ -4926,8 +5264,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-comic-daedalus-comic-vo-panel1-1-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1456632
+    "fileSize": 230679,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-comic-daedalus-comic-website-mp4",
@@ -4941,8 +5281,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-comic-daedalus-comic-website-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1487239
+    "fileSize": 176598,
+    "duration": 0
   },
   {
     "id": "preview-file-media-daedalus-film-intro-daedalus-concept-mp4",
@@ -4956,8 +5298,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-daedalus-film-intro-daedalus-concept-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1489409
+    "fileSize": 144572,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-corvusos-boot-sequence-png",
@@ -4971,8 +5315,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 3318
+    "fileSize": 3318,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-corvusos-component-library-png",
@@ -4986,8 +5332,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 19878
+    "fileSize": 19878,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronie-deconstructed-tee-png",
@@ -5001,8 +5349,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 28526
+    "fileSize": 28526,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronies-corvusos-png",
@@ -5016,8 +5366,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 15234
+    "fileSize": 15234,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronies-eyes-jpg",
@@ -5031,8 +5383,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 37364
+    "fileSize": 37364,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronies-hoodie-concept-png",
@@ -5046,8 +5400,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 36270
+    "fileSize": 36270,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronies-merch-png",
@@ -5061,8 +5417,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 30210
+    "fileSize": 30210,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronies-nft-website-jpg",
@@ -5076,8 +5434,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 24908
+    "fileSize": 24908,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronies-roadmap-jpg",
@@ -5091,8 +5451,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 49330
+    "fileSize": 49330,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronies-stickers-jpg",
@@ -5106,8 +5468,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 37206
+    "fileSize": 37206,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronies-web-design-2022-png",
@@ -5121,8 +5485,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 23520
+    "fileSize": 23520,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronies-web-hero-png",
@@ -5136,8 +5502,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 19578
+    "fileSize": 19578,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-creatives-dronies-web-layout-png",
@@ -5151,8 +5519,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 27892
+    "fileSize": 27892,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-dronies-graphic-mp4",
@@ -5166,8 +5536,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-dronies-dronies-graphic-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1619421
+    "fileSize": 420132,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-project-breakdown-mp4",
@@ -5181,8 +5553,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-dronies-project-breakdown-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443429
+    "fileSize": 75218,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-metaversebunker-droniesbunker-flat-1-mp4",
@@ -5196,8 +5570,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-dronies-metaversebunker-droniesbunker-flat-1-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1520975
+    "fileSize": 448799,
+    "duration": 0
   },
   {
     "id": "preview-file-media-dronies-metaversebunker-droniessizzlereel-01-bumps-mp4",
@@ -5211,8 +5587,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-dronies-metaversebunker-droniessizzlereel-01-bumps-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1507949
+    "fileSize": 364613,
+    "duration": 0
   },
   {
     "id": "preview-file-media-flax-flax-blockout-transform-workflow-mp4",
@@ -5226,8 +5604,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-flax-flax-blockout-transform-workflow-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1513354
+    "fileSize": 118816,
+    "duration": 0
   },
   {
     "id": "preview-file-media-flax-flax-colored-block-transform-demo-mp4",
@@ -5241,8 +5621,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-flax-flax-colored-block-transform-demo-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1716154
+    "fileSize": 395021,
+    "duration": 0
   },
   {
     "id": "preview-file-media-flax-flax-content-browser-column-resizing-mp4",
@@ -5256,8 +5638,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-flax-flax-content-browser-column-resizing-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443200
+    "fileSize": 89856,
+    "duration": 0
   },
   {
     "id": "preview-file-media-flax-flax-panel-docking-layout-demo-mp4",
@@ -5271,8 +5655,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-flax-flax-panel-docking-layout-demo-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1493505
+    "fileSize": 85295,
+    "duration": 0
   },
   {
     "id": "preview-file-media-flax-flax-properties-panel-navigation-mp4",
@@ -5286,8 +5672,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-flax-flax-properties-panel-navigation-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443290
+    "fileSize": 74590,
+    "duration": 0
   },
   {
     "id": "preview-file-media-flax-flax-scene-hierarchy-navigation-mp4",
@@ -5301,8 +5689,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-flax-flax-scene-hierarchy-navigation-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1430721
+    "fileSize": 77257,
+    "duration": 0
   },
   {
     "id": "preview-file-media-flax-flax-transform-gizmo-axis-demo-mp4",
@@ -5316,8 +5706,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-flax-flax-transform-gizmo-axis-demo-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1545231
+    "fileSize": 220537,
+    "duration": 0
   },
   {
     "id": "preview-file-media-flax-flax-transform-mode-switching-mp4",
@@ -5331,8 +5723,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-flax-flax-transform-mode-switching-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1509620
+    "fileSize": 152896,
+    "duration": 0
   },
   {
     "id": "preview-file-media-flax-flaxeditorscreenshot-png",
@@ -5346,8 +5740,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 20336
+    "fileSize": 20336,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-3dpractice-fujifilm-timelapse-100x-mp4",
@@ -5361,8 +5757,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-3dpractice-fujifilm-timelapse-100x-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1567405
+    "fileSize": 394455,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-3dpractice-sony-ps-f5-turntable-blender-webp",
@@ -5376,8 +5774,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 16490
+    "fileSize": 16490,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-3dpractice-sony-ps-f5-turntable-final-webp",
@@ -5391,8 +5791,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 5026
+    "fileSize": 5026,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-3dpractice-street-art-jfif",
@@ -5406,8 +5808,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 17728
+    "fileSize": 17728,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-3dpractice-street-artfullproc-mp4",
@@ -5421,8 +5825,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-3dpractice-street-artfullproc-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443740
+    "fileSize": 244668,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-3dpractice-movingonexpress-webp",
@@ -5436,8 +5842,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 42174
+    "fileSize": 42174,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-acid-wave-animation-mp4",
@@ -5451,8 +5859,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-acid-wave-animation-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1484688
+    "fileSize": 252766,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-brand-earthwallet-logo-webp",
@@ -5466,8 +5876,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 7592
+    "fileSize": 7592,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-earthwallet-brand-webp",
@@ -5481,8 +5893,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 7592
+    "fileSize": 7592,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-brand-wanderstar-logo-webp",
@@ -5496,8 +5910,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 19230
+    "fileSize": 19230,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-estafossuraya-zine-webp",
@@ -5511,8 +5927,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 22688
+    "fileSize": 22688,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-figmagram-experience-more-promo-mp4",
@@ -5526,8 +5944,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-figmagram-experience-more-promo-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1542375
+    "fileSize": 188750,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-marathon-glyph-only-mov",
@@ -5541,8 +5961,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-marathon-glyph-only-mov.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443642
+    "fileSize": 1021240,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-marathon-marathon-dither-experiment-02-1080p-mp4",
@@ -5556,8 +5978,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-marathon-marathon-dither-experiment-02-1080p-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1662058
+    "fileSize": 891124,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-marathon-marathon-dither-experiment-02-mp4",
@@ -5571,8 +5995,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-marathon-marathon-dither-experiment-02-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1533232
+    "fileSize": 959561,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-marathon-marathon-dither-experiment-03-mp4",
@@ -5586,8 +6012,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-marathon-marathon-dither-experiment-03-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1553016
+    "fileSize": 397483,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-marathon-marathon-glyph-dithering-analogue-damage-test-mov",
@@ -5601,8 +6029,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-marathon-marathon-glyph-dithering-analogue-damage-test-mov.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1491720
+    "fileSize": 1540471,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-marathon-marathon-green-dither-pattern-study-png",
@@ -5616,8 +6046,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 106122
+    "fileSize": 106122,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-mountaingraphs-beginning-01-mp4",
@@ -5631,8 +6063,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-mountaingraphs-beginning-01-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443243
+    "fileSize": 488625,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-mountaingraphs-beginning-02-mp4",
@@ -5646,8 +6080,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-mountaingraphs-beginning-02-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1707711
+    "fileSize": 155326,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-mountaingraphs-final-03-mp4",
@@ -5661,8 +6097,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-mountaingraphs-final-03-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1476872
+    "fileSize": 209603,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-mountaingraphs-final-1-mp4",
@@ -5676,8 +6114,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-mountaingraphs-final-1-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1512320
+    "fileSize": 116960,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-mountaingraphs-final-2-mp4",
@@ -5691,8 +6131,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-mountaingraphs-final-2-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1481533
+    "fileSize": 304903,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-pill-button-mp4",
@@ -5706,8 +6148,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-pill-button-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443284
+    "fileSize": 35240,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-pill-button-png",
@@ -5721,8 +6165,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 2834
+    "fileSize": 2834,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-vrx-iiv-virtual-realitymeta-spaces-mp4",
@@ -5736,8 +6182,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-vrx-iiv-virtual-realitymeta-spaces-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1475466
+    "fileSize": 204669,
+    "duration": 0
   },
   {
     "id": "preview-file-media-graphics-worlds-apart-inc-transdimensionalarchitecturefirm-mp4",
@@ -5751,8 +6199,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-graphics-worlds-apart-inc-transdimensionalarchitecturefirm-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1731862
+    "fileSize": 96512,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-branding-kern-brand-elements-sheet-png",
@@ -5766,8 +6216,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 10816
+    "fileSize": 10816,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-branding-kern-government-research-seal-png",
@@ -5781,8 +6233,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 16090
+    "fileSize": 16090,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-branding-kern-logo-eye-globe-png",
@@ -5796,8 +6250,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 8828
+    "fileSize": 8828,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-branding-kern-logo-globe-eye-lockup-png",
@@ -5811,8 +6267,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 6452
+    "fileSize": 6452,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-branding-kern-logo-globe-figure-png",
@@ -5826,8 +6284,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 6214
+    "fileSize": 6214,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-branding-kern-logo-ground-unit-globe-png",
@@ -5841,8 +6301,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 6182
+    "fileSize": 6182,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-branding-kern-logo-spire-arch-png",
@@ -5856,8 +6318,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 6680
+    "fileSize": 6680,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-branding-kern-logo-stacked-eye-png",
@@ -5871,8 +6335,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 9012
+    "fileSize": 9012,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-branding-kern-wordmark-eye-stacked-png",
@@ -5886,8 +6352,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 6080
+    "fileSize": 6080,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-branding-kern-wordmark-split-layout-png",
@@ -5901,8 +6369,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 4756
+    "fileSize": 4756,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-graphics-family-detained-png",
@@ -5916,8 +6386,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 42602
+    "fileSize": 42602,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-graphics-kern-callnumber-poster-jpg",
@@ -5931,8 +6403,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 32868
+    "fileSize": 32868,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-graphics-kern-groundcorp-poster-jpg",
@@ -5946,8 +6420,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 22324
+    "fileSize": 22324,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-graphics-kern-hanginthere-poster-jpg",
@@ -5961,8 +6437,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 36034
+    "fileSize": 36034,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-graphics-patrols-png",
@@ -5976,8 +6454,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 75466
+    "fileSize": 75466,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-graphics-psycho-hazard-poster-jpg",
@@ -5991,8 +6471,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 33608
+    "fileSize": 33608,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-graphics-stalkers-detained-png",
@@ -6006,8 +6488,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 75414
+    "fileSize": 75414,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-1-png",
@@ -6021,8 +6505,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 33056
+    "fileSize": 33056,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-10-png",
@@ -6036,8 +6522,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 35512
+    "fileSize": 35512,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-11-png",
@@ -6051,8 +6539,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 39186
+    "fileSize": 39186,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-2-png",
@@ -6066,8 +6556,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 34432
+    "fileSize": 34432,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-3-png",
@@ -6081,8 +6573,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 37820
+    "fileSize": 37820,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-4-png",
@@ -6096,8 +6590,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 36762
+    "fileSize": 36762,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-5-png",
@@ -6111,8 +6607,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 33438
+    "fileSize": 33438,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-6-png",
@@ -6126,8 +6624,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 42238
+    "fileSize": 42238,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-7-png",
@@ -6141,8 +6641,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 33568
+    "fileSize": 33568,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-8-png",
@@ -6156,8 +6658,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 41514
+    "fileSize": 41514,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-9-png",
@@ -6171,8 +6675,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 35170
+    "fileSize": 35170,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-pitch-deck-project-kern-high-concept-1-0-pdf",
@@ -6186,8 +6692,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-kern-pitch-deck-project-kern-high-concept-1-0-pdf.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443329
+    "fileSize": 21167,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-prototype-fotosketcher-image-png",
@@ -6201,8 +6709,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 17786
+    "fileSize": 17786,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-prototype-fotosketcher-image2-png",
@@ -6216,8 +6726,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 14136
+    "fileSize": 14136,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-prototype-fotosketcher-image3-png",
@@ -6231,8 +6743,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 12330
+    "fileSize": 12330,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-prototype-fotosketcher-image6-png",
@@ -6246,8 +6760,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 29682
+    "fileSize": 29682,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-prototype-fotosketcher-image8-png",
@@ -6261,8 +6777,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 14526
+    "fileSize": 14526,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-prototype-gamescreenshot-png",
@@ -6276,8 +6794,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 13676
+    "fileSize": 13676,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-prototype-kern-event-sound-test-mp4",
@@ -6291,8 +6811,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-kern-prototype-kern-event-sound-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1563662
+    "fileSize": 382289,
+    "duration": 0
   },
   {
     "id": "preview-file-media-kern-prototype-kern-gameplay-test-mp4",
@@ -6306,8 +6828,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-kern-prototype-kern-gameplay-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1568297
+    "fileSize": 568753,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-gamejam-fell-out-game-jam-gameplay-mp4",
@@ -6321,8 +6845,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-gamejam-fell-out-game-jam-gameplay-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1616253
+    "fileSize": 663236,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-1-png",
@@ -6336,8 +6862,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 15098
+    "fileSize": 15098,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-10-png",
@@ -6351,8 +6879,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 13158
+    "fileSize": 13158,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-11-png",
@@ -6366,8 +6896,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 13196
+    "fileSize": 13196,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-12-png",
@@ -6381,8 +6913,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 17766
+    "fileSize": 17766,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-13-png",
@@ -6396,8 +6930,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 19362
+    "fileSize": 19362,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-14-png",
@@ -6411,8 +6947,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 19148
+    "fileSize": 19148,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-15-png",
@@ -6426,8 +6964,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 21002
+    "fileSize": 21002,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-2-png",
@@ -6441,8 +6981,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 22604
+    "fileSize": 22604,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-3-png",
@@ -6456,8 +6998,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 26168
+    "fileSize": 26168,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-4-png",
@@ -6471,8 +7015,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 18118
+    "fileSize": 18118,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-5-png",
@@ -6486,8 +7032,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 27548
+    "fileSize": 27548,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-6-png",
@@ -6501,8 +7049,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 26028
+    "fileSize": 26028,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-7-png",
@@ -6516,8 +7066,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 23998
+    "fileSize": 23998,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-8-png",
@@ -6531,8 +7083,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 27874
+    "fileSize": 27874,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-9-png",
@@ -6546,8 +7100,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 25270
+    "fileSize": 25270,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-highconcept-pitchdeck-fell-out-high-concept-1-0-pdf",
@@ -6561,8 +7117,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-highconcept-pitchdeck-fell-out-high-concept-1-0-pdf.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443329
+    "fileSize": 19363,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-technicaltest-lightkeeper-bird-flight-canyon-test-mp4",
@@ -6576,8 +7134,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-technicaltest-lightkeeper-bird-flight-canyon-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1492863
+    "fileSize": 485598,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-technicaltest-lightkeeper-bird-flight-village-test-mp4",
@@ -6591,8 +7151,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-technicaltest-lightkeeper-bird-flight-village-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1547305
+    "fileSize": 570982,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-technicaltest-lightkeeper-level-layout-overview-mp4",
@@ -6606,8 +7168,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-technicaltest-lightkeeper-level-layout-overview-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1548689
+    "fileSize": 624887,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-technicaltest-lightkeeper-night-flight-test-mp4",
@@ -6621,8 +7185,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-technicaltest-lightkeeper-night-flight-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1477064
+    "fileSize": 270883,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-technicaltest-lightkeeper-world-layout-planning-mp4",
@@ -6636,8 +7202,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-technicaltest-lightkeeper-world-layout-planning-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1507714
+    "fileSize": 511882,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-technicaltest-lightkeeper-techtest-beginning-mp4",
@@ -6651,8 +7219,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-technicaltest-lightkeeper-techtest-beginning-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1481616
+    "fileSize": 172857,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-technicaltest-lightkeeper-techtest-direction-mp4",
@@ -6666,8 +7236,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-technicaltest-lightkeeper-techtest-direction-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1483196
+    "fileSize": 415856,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-technicaltest-lightkeeper-techtest-gathering-concept-rive-mp4",
@@ -6681,8 +7253,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-technicaltest-lightkeeper-techtest-gathering-concept-rive-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1460988
+    "fileSize": 104747,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-technicaltest-lightkeeper-techtest-outtake-mp4",
@@ -6696,8 +7270,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-technicaltest-lightkeeper-techtest-outtake-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1475537
+    "fileSize": 207562,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-technicaltest-lightkeeper-techtest-timelapse-mp4",
@@ -6711,8 +7287,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-technicaltest-lightkeeper-techtest-timelapse-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1559377
+    "fileSize": 256090,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-ui-inventory-png",
@@ -6726,8 +7304,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 24198
+    "fileSize": 24198,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-ui-lightkeeper-player-menu-design-board-png",
@@ -6741,8 +7321,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 11124
+    "fileSize": 11124,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-15s-still-graphics-mp4",
@@ -6756,8 +7338,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-15s-still-graphics-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1587751
+    "fileSize": 417044,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-atmosphere-mp4",
@@ -6771,8 +7355,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-atmosphere-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1578261
+    "fileSize": 463385,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-camera-director-mp4",
@@ -6786,8 +7372,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-camera-director-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1469672
+    "fileSize": 295202,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-character-interactions-mp4",
@@ -6801,8 +7389,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-character-interactions-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1687784
+    "fileSize": 434824,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-climbing-mp4",
@@ -6816,8 +7406,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-climbing-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1487986
+    "fileSize": 187421,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-custom-terain-tools-mp4",
@@ -6831,8 +7423,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-custom-terain-tools-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443280
+    "fileSize": 125468,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-early-graphics-test-mp4",
@@ -6846,8 +7440,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-early-graphics-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1523314
+    "fileSize": 539307,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-interiors-mp4",
@@ -6861,8 +7457,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-interiors-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1548892
+    "fileSize": 177200,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-outtake-1-funnynpcs-mp4",
@@ -6876,8 +7474,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-outtake-1-funnynpcs-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1511533
+    "fileSize": 297151,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-progression-tool-mp4",
@@ -6891,8 +7491,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-progression-tool-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443195
+    "fileSize": 134513,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-shadow-clouds-tech-mp4",
@@ -6906,8 +7508,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-shadow-clouds-tech-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1668641
+    "fileSize": 509333,
+    "duration": 0
   },
   {
     "id": "preview-file-media-lightkeeper-verticalslice-lightkeeper-vertical-slice-menu-mp4",
@@ -6921,8 +7525,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-lightkeeper-verticalslice-lightkeeper-vertical-slice-menu-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1512301
+    "fileSize": 415696,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-foxstories-christmasdemowith-fireworks-mp4",
@@ -6936,8 +7542,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-foxstories-christmasdemowith-fireworks-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1713312
+    "fileSize": 1052890,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-kcd-combat-kcd-combat-prototype-gameplay-mp4",
@@ -6951,8 +7559,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-kcd-combat-kcd-combat-prototype-gameplay-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1470565
+    "fileSize": 548304,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-leveldesign-first-person-graybox-level-test-mp4",
@@ -6966,8 +7576,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-leveldesign-first-person-graybox-level-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1520001
+    "fileSize": 202734,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-mattercraft-mattercraft-gameplay-mp4",
@@ -6981,8 +7593,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-mattercraft-mattercraft-gameplay-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443323
+    "fileSize": 68921,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-mightypebble-mighty-pebble-building-system-test-mp4",
@@ -6996,8 +7610,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-mightypebble-mighty-pebble-building-system-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443341
+    "fileSize": 58550,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-mightypebble-mighty-pebble-night-resource-test-mp4",
@@ -7011,8 +7627,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-mightypebble-mighty-pebble-night-resource-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1510866
+    "fileSize": 91661,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-projecthypno-aesthetics-10k-mp4",
@@ -7026,8 +7644,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-projecthypno-aesthetics-10k-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1506184
+    "fileSize": 123673,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-projecthypno-project-hypno-gondolla-atnight-mp4",
@@ -7041,8 +7661,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-projecthypno-project-hypno-gondolla-atnight-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443269
+    "fileSize": 73315,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-projecthypno-project-hypno-intro-mp4",
@@ -7056,8 +7678,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-projecthypno-project-hypno-intro-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1484330
+    "fileSize": 131342,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-projecthypno-project-hypno-sound-desing-mp4",
@@ -7071,8 +7695,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-projecthypno-project-hypno-sound-desing-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1522140
+    "fileSize": 255848,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-projecthypno-project-hypno-spacial-anomaly-mp4",
@@ -7086,8 +7712,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-projecthypno-project-hypno-spacial-anomaly-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1649545
+    "fileSize": 194953,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-projecthypno-project-hypno-thumb-mp4",
@@ -7101,8 +7729,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-projecthypno-project-hypno-thumb-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1529652
+    "fileSize": 114817,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-projectsunshine-project-sunshine-trailer-mockup-mp4",
@@ -7116,8 +7746,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-projectsunshine-project-sunshine-trailer-mockup-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1508069
+    "fileSize": 339086,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-spacekeeper-spacekeeper-week1progress-mp4",
@@ -7131,8 +7763,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-spacekeeper-spacekeeper-week1progress-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1464799
+    "fileSize": 243506,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-swampfellas-frogathon-mp4",
@@ -7146,8 +7780,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-swampfellas-frogathon-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1478240
+    "fileSize": 453532,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-swampfellas-ilove-mp4",
@@ -7161,8 +7797,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-swampfellas-ilove-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1512744
+    "fileSize": 368323,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-swampfellas-swamp-fellas-camera-crew-scene-mp4",
@@ -7176,8 +7814,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-swampfellas-swamp-fellas-camera-crew-scene-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1443641
+    "fileSize": 282794,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-swampfellas-swamp-fellas-fishing-scene-mp4",
@@ -7191,8 +7831,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-swampfellas-swamp-fellas-fishing-scene-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1459679
+    "fileSize": 361572,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-swampfellas-swamp-fellas-frog-character-test-mp4",
@@ -7206,8 +7848,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-swampfellas-swamp-fellas-frog-character-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1699054
+    "fileSize": 159158,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-swampfellas-swamp-fellas-terrain-shader-breakdown-mp4",
@@ -7221,8 +7865,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-swampfellas-swamp-fellas-terrain-shader-breakdown-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1679617
+    "fileSize": 190848,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-swampfellas-trailer-socials-mp4",
@@ -7236,8 +7882,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-swampfellas-trailer-socials-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1702836
+    "fileSize": 505211,
+    "duration": 0
   },
   {
     "id": "preview-file-media-prototypes-swampfellas-trailer-wishlist-mp4",
@@ -7251,8 +7899,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-prototypes-swampfellas-trailer-wishlist-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1596484
+    "fileSize": 571793,
+    "duration": 0
   },
   {
     "id": "preview-file-media-ux-riseabovedisorder-rise-above-disorder-about-page-webp",
@@ -7266,8 +7916,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 21806
+    "fileSize": 21806,
+    "duration": 0
   },
   {
     "id": "preview-file-media-ux-riseabovedisorder-rise-above-disorder-volunteer-page-webp",
@@ -7281,8 +7933,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 16496
+    "fileSize": 16496,
+    "duration": 0
   },
   {
     "id": "preview-file-media-ux-userwise-userwise-content-builder-webp",
@@ -7296,8 +7950,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 10412
+    "fileSize": 10412,
+    "duration": 0
   },
   {
     "id": "preview-file-media-ux-userwise-userwise-design-exploration-webp",
@@ -7311,8 +7967,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 19530
+    "fileSize": 19530,
+    "duration": 0
   },
   {
     "id": "preview-file-media-ux-userwise-userwise-implementation-workflows-webp",
@@ -7326,8 +7984,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 10088
+    "fileSize": 10088,
+    "duration": 0
   },
   {
     "id": "preview-file-media-ux-userwise-userwise-original-design-webp",
@@ -7341,8 +8001,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 16688
+    "fileSize": 16688,
+    "duration": 0
   },
   {
     "id": "preview-file-media-ux-userwise-userwise-research-comprehension-webp",
@@ -7356,8 +8018,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 11774
+    "fileSize": 11774,
+    "duration": 0
   },
   {
     "id": "preview-file-media-voidoverdrive-cantgetout-mp4",
@@ -7371,8 +8035,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-voidoverdrive-cantgetout-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1489253
+    "fileSize": 466552,
+    "duration": 0
   },
   {
     "id": "preview-file-media-voidoverdrive-void-overdrive-cliff-descent-mp4",
@@ -7386,8 +8052,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-voidoverdrive-void-overdrive-cliff-descent-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1571959
+    "fileSize": 272931,
+    "duration": 0
   },
   {
     "id": "preview-file-media-voidoverdrive-void-overdrive-desert-outpost-jpg",
@@ -7401,8 +8069,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 20232
+    "fileSize": 20232,
+    "duration": 0
   },
   {
     "id": "preview-file-media-voidoverdrive-void-overdrive-desert-pillar-run-jpg",
@@ -7416,8 +8086,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 12792
+    "fileSize": 12792,
+    "duration": 0
   },
   {
     "id": "preview-file-media-voidoverdrive-voidoverdrive-sfx-test-mp4",
@@ -7431,8 +8103,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-voidoverdrive-voidoverdrive-sfx-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1648295
+    "fileSize": 281575,
+    "duration": 0
   },
   {
     "id": "preview-file-media-voidoverdrive-voidoverdrive-sfx-test-2-mp4",
@@ -7446,8 +8120,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-voidoverdrive-voidoverdrive-sfx-test-2-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1533062
+    "fileSize": 211930,
+    "duration": 0
   },
   {
     "id": "preview-file-media-voidoverdrive-vo-character-test-mp4",
@@ -7461,8 +8137,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-voidoverdrive-vo-character-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1666497
+    "fileSize": 513251,
+    "duration": 0
   },
   {
     "id": "preview-file-media-voidoverdrive-vo-thumbnail-mp4",
@@ -7476,8 +8154,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-voidoverdrive-vo-thumbnail-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1525612
+    "fileSize": 190491,
+    "duration": 0
   },
   {
     "id": "preview-file-media-voidoverdrive-vo-unreal-testing-hoverbike-mp4",
@@ -7491,8 +8171,10 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-voidoverdrive-vo-unreal-testing-hoverbike-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1581000
+    "fileSize": 552138,
+    "duration": 0
   },
   {
     "id": "preview-file-media-voidoverdrive-vo-visualization-test-mp4",
@@ -7506,7 +8188,9 @@
     "sectionId": "thumbnail",
     "credits": "",
     "posterFrame": "assets/media/posters/preview-file-media-voidoverdrive-vo-visualization-test-mp4.jpg",
+    "originalSourcePath": "",
     "fullscreenEligible": false,
-    "fileSize": 1576270
+    "fileSize": 269425,
+    "duration": 0
   }
 ]
