@@ -1054,6 +1054,7 @@ function installBackgroundAudioPlayer() {
 function renderProjectNavigation() {
   const projects = projectChildren(null);
   const directoryCount = projects.filter((project) => projectDirectoryIds.has(project.id)).length;
+  const portfolioProjectCount = projects.length - directoryCount;
   const index = $("#project-index-list");
   const tree = $("#project-tree-list");
   const shortcuts = $("#shortcut-rack");
@@ -1098,7 +1099,14 @@ function renderProjectNavigation() {
     const overlayMeta = document.createElement("small");
     overlayMeta.className = "project-tile__meta";
     overlayMeta.textContent = [project.category, project.period].filter(Boolean).join(" / ");
-    overlay.append(overlayIcon, overlayName, overlayMeta);
+    if (isDirectory) {
+      const overlayDetails = document.createElement("span");
+      overlayDetails.className = "project-tile__details";
+      overlayDetails.append(overlayName, overlayMeta);
+      overlay.append(overlayIcon, overlayDetails);
+    } else {
+      overlay.append(overlayIcon, overlayName, overlayMeta);
+    }
     row.append(tileIcon, heading, overlay);
     if (tileIcon instanceof HTMLVideoElement) {
       const playThumbnail = () => {
@@ -1170,7 +1178,7 @@ function renderProjectNavigation() {
   installDeferredMedia(shortcuts);
 
   const count = $(".window--index .window__status");
-  if (count) count.textContent = `${String(projects.length).padStart(2, "0")} ITEMS`;
+  if (count) count.textContent = `${portfolioProjectCount} PROJECTS / ${directoryCount} DIRS`;
 }
 
 function renderProjectTree(container) {
@@ -1344,8 +1352,8 @@ const scrambleSelector = [
   ".window__titlebar > span",
   ".file-row span",
   ".file-row strong",
-  ".project-tile span",
-  ".project-tile strong",
+  ".project-tile .control-label",
+  ".project-tile .project-tile__meta",
   ".child-project span",
   ".child-project strong",
   ".project-tree__root",
@@ -4103,26 +4111,24 @@ function renderContentBlocks(container, config, { suppressHeadings = [] } = {}) 
       if (target) {
         const launch = document.createElement("button");
         launch.type = "button";
-        launch.className = "content-block__project-launch";
+        launch.className = "content-block__project-launch content-block__source-link content-block__source-link--external-card";
         launch.dataset.openProject = block.projectId;
         launch.setAttribute("aria-label", `Open ${target.title || block.label || block.projectId}`);
 
         const icon = document.createElement("span");
-        icon.className = "content-block__project-launch-icon project-pixel";
+        icon.className = "content-block__external-arrow content-block__project-launch-icon project-pixel";
         icon.setAttribute("aria-hidden", "true");
         icon.append(createPixelIcon(target.icon || "video"));
 
         const copy = document.createElement("span");
-        copy.className = "content-block__project-launch-copy";
+        copy.className = "content-block__external-copy";
         const label = document.createElement("strong");
         label.className = "control-label";
         label.textContent = block.label || target.shortcutLabel || target.title;
         copy.append(label);
-        if (block.body) {
-          const detail = document.createElement("small");
-          detail.textContent = block.body;
-          copy.append(detail);
-        }
+        const detail = document.createElement("small");
+        detail.textContent = block.body || "OPENS PROJECT";
+        copy.append(detail);
         launch.append(icon, copy);
         article.append(launch);
       }
@@ -5066,8 +5072,13 @@ function applyView(view) {
   syncOsWindowVisibility(view);
   const projectCount = $(".window--index .window__status");
   if (projectCount) {
-    const count = view === "list" ? Object.keys(projectData).length : projectChildren(null).length;
-    projectCount.textContent = `${String(count).padStart(2, "0")} ITEMS`;
+    if (view === "list") {
+      projectCount.textContent = `${String(Object.keys(projectData).length).padStart(2, "0")} ITEMS`;
+    } else {
+      const rootProjects = projectChildren(null);
+      const directoryCount = rootProjects.filter((project) => projectDirectoryIds.has(project.id)).length;
+      projectCount.textContent = `${rootProjects.length - directoryCount} PROJECTS / ${directoryCount} DIRS`;
+    }
   }
   $$('[data-view-button]').forEach((button) => {
     button.setAttribute("aria-pressed", String(button.dataset.viewButton === view));
@@ -5126,6 +5137,18 @@ async function transitionPage(page, historyMode = "push") {
   }
   document.body.classList.remove("is-view-switching");
   state.viewTransitioning = false;
+}
+
+async function openProjectFromTrigger(trigger) {
+  const projectId = trigger?.dataset.openProject;
+  if (!projectId) return;
+  if (state.page !== "home") {
+    await transitionPage("home", "push");
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    await openProject(projectId, null, { historyMode: "replace" });
+    return;
+  }
+  await openProject(projectId, trigger);
 }
 
 async function transitionView(view) {
@@ -5369,14 +5392,17 @@ async function initialize() {
       return;
     }
     const projectButton = event.target.closest("[data-open-project]");
-    if (projectButton) openProject(projectButton.dataset.openProject, projectButton);
+    if (projectButton) {
+      event.preventDefault();
+      openProjectFromTrigger(projectButton).catch((error) => console.warn("Could not open project.", error));
+    }
   });
 
   document.addEventListener("keydown", (event) => {
     const projectTrigger = event.target.closest?.("[data-open-project]");
     if (projectTrigger && (event.key === "Enter" || event.key === " ")) {
       event.preventDefault();
-      openProject(projectTrigger.dataset.openProject, projectTrigger);
+      openProjectFromTrigger(projectTrigger).catch((error) => console.warn("Could not open project.", error));
       return;
     }
     const fullscreenDirection = event.target.closest?.("[data-fullscreen-direction]");
