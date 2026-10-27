@@ -79,3 +79,11 @@ html[data-enhanced-cursor=true] :is(input,textarea,select,[contenteditable=true]
 @media(prefers-reduced-motion:reduce){.navigation :is(a,button),.identity,.audio-toggle,#page-location,.dialog-toolbar>#close{transition:none!important;transform:none!important}.site-cursor{display:none!important}}
 
 .brand-home:hover,.brand-home:focus-visible{background:rgb(0 0 0 / .1);box-shadow:none}.brand-home:focus-visible{opacity:.7}
+
+@media(max-width:700px),(pointer:coarse) and (max-width:1190px){
+ .dialog-toolbar{position:absolute;inset:0 0 auto;transform:translate3d(0,0,0);opacity:1;transition:transform .28s cubic-bezier(.2,.8,.2,1),opacity .2s;will-change:transform}
+ #page-content{padding-top:calc(var(--page-toolbar-height,188px) + 28px);scroll-padding-top:calc(var(--page-toolbar-height,188px) + 12px)}
+ #page-dialog[data-mobile-nav-hidden=true] .dialog-toolbar{transform:translate3d(0,calc(-100% - 12px),0);opacity:0;pointer-events:none}
+ #page-dialog[data-mobile-nav-hidden=true] #page-content{scroll-padding-top:20px}
+}
+@media(prefers-reduced-motion:reduce){.dialog-toolbar{transition:none!important}}

@@ -3,6 +3,26 @@ export function installNavigationEffects(){
   const motion=matchMedia('(min-width:701px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference)');
   function measure(){document.documentElement.style.setProperty('--world-nav-bottom',Math.ceil(header.getBoundingClientRect().bottom)+'px');}
   new ResizeObserver(measure).observe(header);window.addEventListener('resize',measure);measure();
+  const toolbar=dialog.querySelector('.dialog-toolbar'),content=dialog.querySelector('#page-content');
+  const compactReading=matchMedia('(max-width:700px), (pointer:coarse) and (max-width:1190px)');
+  let lastScroll=0,scrollDirection=0,scrollTravel=0;
+  function measureToolbar(){if(toolbar.offsetHeight)dialog.style.setProperty('--page-toolbar-height',toolbar.offsetHeight+'px');}
+  function showNavigation(){delete dialog.dataset.mobileNavHidden;scrollDirection=0;scrollTravel=0;lastScroll=content.scrollTop;}
+  new ResizeObserver(measureToolbar).observe(toolbar);measureToolbar();
+  content.addEventListener('scroll',()=>{
+    const current=Math.max(0,Math.min(content.scrollTop,content.scrollHeight-content.clientHeight)),delta=current-lastScroll;lastScroll=current;
+    if(!compactReading.matches||!dialog.open)return;
+    if(current<20){showNavigation();return;}
+    if(Math.abs(delta)<.5)return;
+    const direction=Math.sign(delta);if(direction!==scrollDirection){scrollDirection=direction;scrollTravel=0;}scrollTravel+=Math.abs(delta);
+    if(direction>0&&current>80&&scrollTravel>18)dialog.dataset.mobileNavHidden='true';
+    else if(direction<0&&scrollTravel>12)showNavigation();
+  },{passive:true});
+  toolbar.addEventListener('focusin',showNavigation);
+  document.addEventListener('keydown',event=>{if(event.key==='Tab'&&dialog.open)showNavigation();});
+  new MutationObserver(()=>{showNavigation();measureToolbar();}).observe(dialog,{attributes:true,attributeFilter:['open']});
+  new MutationObserver(()=>{if(content.getAttribute('aria-busy')==='true')showNavigation();}).observe(content,{attributes:true,attributeFilter:['aria-busy']});
+  compactReading.addEventListener('change',()=>{showNavigation();measureToolbar();});
   document.querySelectorAll('.navigation a').forEach(link=>{
     link.addEventListener('pointermove',event=>{if(!motion.matches||event.pointerType!=='mouse')return;const r=link.getBoundingClientRect(),x=Math.max(0,Math.min(1,(event.clientX-r.left)/r.width)),y=Math.max(0,Math.min(1,(event.clientY-r.top)/r.height));link.style.setProperty('--shine-x',x*100+'%');link.style.setProperty('--shine-y',y*100+'%');});
   });
