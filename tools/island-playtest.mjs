@@ -113,7 +113,8 @@ try{
   const mobile=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true,hasTouch:true,reducedMotion:'reduce'});observe(mobile);
   await mobile.goto(origin);await ready(mobile);assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   await mobile.screenshot({path:resolve(output,'mobile-final.png')});
-  const mobileCard=(await mobile.evaluate(()=>fieldTrip.destinations())).find(card=>card.id==='product');await mobile.touchscreen.tap(mobileCard.center.x,mobileCard.center.y);await settled(mobile);assert.equal(await mobile.locator('#page-title').textContent(),'Product design');
+  assert.equal(await mobile.evaluate(()=>fieldTrip.getState().camera.span),14,'Mobile exploration camera stays close');
+  await mobile.locator('.masthead [data-page=product]').tap();await settled(mobile);assert.equal(await mobile.locator('#page-title').textContent(),'Product design');
   await mobile.locator('[data-project=userwise]').tap();await settled(mobile);assert.equal(await mobile.locator('#page-title').textContent(),'UserWise');await mobile.screenshot({path:resolve(output,'mobile-case-final.png')});await mobile.close();
   assert.deepEqual(errors,[],'No browser runtime errors');assert.deepEqual(missing,[],'No missing local assets');
   console.log('PASS: native rendering, bounded draw calls, authored joint pivots, nearest approaches, calm hover, physical page opening, independent static URLs/reload/history, lazy content/world loading, on-screen autoplay/pause, compact Lightkeeper/guide, all main content, guarded contact, bench/ball/fire/NPC interactions, mobile touch and reduced motion.');

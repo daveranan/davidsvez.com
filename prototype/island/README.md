@@ -49,6 +49,11 @@ one column on narrow screens. Touch checks use an emulated 390×844 mobile devic
 at device scale 2; they are not a physical-device performance measurement.
 Content panels are centered and capped at 1920px; HOME returns to the island.
 Portrait pages occupy separated rows with walking gaps instead of overlapping.
+The portrait camera is now twice as close (14-unit span) and follows more tightly.
+Quick click/tap keeps the existing destination or interaction action. Holding or
+dragging on the landscape steers continuously; release, cancellation, or leaving
+the window stops that movement. Held input routes around pages without opening
+them and pauses steering over navigation controls.
 The guide's opening uses ten calm variations, exhausted before repeats; progress
 is retained across reloads in the same browser tab. The terraces have no trees
 rooted on their climbable footprint.

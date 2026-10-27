@@ -4,6 +4,7 @@ import { createGround, createWater } from './terrain.js';
 import { createFoliage } from './foliage.js';
 import { createProgression } from './progression.js';
 import { createPathfinder } from './pathfinding.js';
+import { createPointControls } from './point-controls.js';
 import { createArrival } from './arrival.js';
 import { createBoundaryForest, limitToClearing } from './looklab.js';
 import { createActivities } from './activities.js';
@@ -39,7 +40,7 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
   const pointer = new THREE.Vector2(), cursorWorld = new THREE.Vector3(0, 0, 8), scratch = new THREE.Vector3();
   const raycaster = new THREE.Raycaster(), target = new THREE.Vector3(0, 0, 3);
   const state = { intro:0,airborne:false,gliding:false,conversing:false, reduced, phase: 'idle', pending: null, hovered: null, paused: false, ready: false, speed: 0 };
-  let baseSpan=20.2,currentSpan=0,verticalVelocity=0,jumpWanted=false;
+  let baseSpan=20.2,currentSpan=0,verticalVelocity=0,jumpWanted=false,followSharpness=2.4;
   const arrivalOffset=new THREE.Vector3(4,52,10),normalOffset=new THREE.Vector3(12,23,27);
   let pathfinder,routeQueue=[],forcedDialogue=null,greeted=false,barkUntil=0;const goal=new THREE.Vector3(0,0,3);
   const speechSprings={you:{position:0,velocity:0,next:0},guide:{position:0,velocity:0,next:0}};
@@ -109,12 +110,12 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
   const locomotion = createLocomotion(bird,{onStep:position=>{if(state.speed>.6&&!state.airborne)audio?.play('step',position);}});
   let activityArrival=null;
   function groundHeight(x,z){return Math.max(progression?.getGroundHeight(x,z)||0,x>8.58&&x<14.3&&z>9.1&&z<10.3?.23:0);}
-  function moveTo(point,callback=null){
+  function moveTo(point,callback=null,{continuous=false}={}){
     goal.set(point.x,0,point.z);limitToClearing(goal);activityArrival=callback;
     routeQueue=pathfinder.route(bird.position,goal);state.phase='walking';
-    if(!routeQueue.length){state.speed=0;marker.visible=false;return;}
+    if(!routeQueue.length){target.set(bird.position.x,0,bird.position.z);state.speed=0;state.phase='idle';state.pending=null;activityArrival=null;marker.visible=false;return;}
     const first=routeQueue.shift();target.set(first.x,0,first.z);marker.position.set(goal.x,groundHeight(goal.x,goal.z)+.07,goal.z);marker.visible=true;
-    if(state.reduced){const last=routeQueue.length?routeQueue[routeQueue.length-1]:first;bird.position.set(last.x,groundHeight(last.x,last.z)+.025,last.z);target.set(last.x,0,last.z);routeQueue=[];activityArrival=null;updateCamera(0,true);callback?.();marker.visible=false;}
+    if(state.reduced&&!continuous){const last=routeQueue.length?routeQueue[routeQueue.length-1]:first;bird.position.set(last.x,groundHeight(last.x,last.z)+.025,last.z);target.set(last.x,0,last.z);routeQueue=[];activityArrival=null;updateCamera(0,true);callback?.();marker.visible=false;}
   }
   const activities=createActivities(scene,{THREE,flatMaterial,characterTemplate:characterAsset.scene,onSound:(name,position)=>audio?.play(name,position),onBark:(text,speaker='guide')=>{barkUntil=performance.now()/1000+4.2;onBark?.(text,speaker);},onDialogue:topic=>{const value=forcedDialogue||topic;forcedDialogue=null;onDialogue?.(value);},onNavigate,onMove:moveTo});
   const progression=createProgression(scene,{THREE,flatMaterial,onMove:moveTo,onDialogue:topic=>onDialogue?.(topic==='shop'?'need-shovel':topic),onNavigate,onChange:()=>{},onSound:(name,position)=>audio?.play(name,position)});
@@ -181,7 +182,8 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
     cards.push({def,baseDef:{...def},group,face,slab,shadow,lift:0});
   }
   function resize() {
-    const aspect=innerWidth/innerHeight, span=aspect<.85?28:20.2;
+    const aspect=innerWidth/innerHeight,mobileZoom=aspect<.85||matchMedia('(pointer:coarse) and (max-width:1190px)').matches,span=mobileZoom?14:20.2;
+    followSharpness=mobileZoom?5.5:2.4;
     const compact=aspect<.85;
     // Separate paper footprints and their projected portrait bounding boxes.
     // Shear the north row left so both main choices retain tappable centers.
@@ -193,7 +195,7 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
   function updateCamera(dt, snap=false) {
     const lookAhead=state.speed>.3?.65:0;
     cameraGoal.set(bird.position.x+Math.sin(yaw)*lookAhead,Math.max(0,bird.position.y-.025)*.5,bird.position.z+Math.cos(yaw)*lookAhead);
-    if(snap||state.reduced)cameraFocus.copy(cameraGoal);else cameraFocus.lerp(cameraGoal,1-Math.exp(-2.4*dt));
+    if(snap||state.reduced)cameraFocus.copy(cameraGoal);else cameraFocus.lerp(cameraGoal,1-Math.exp(-followSharpness*dt));
     const span=baseSpan*(2.1-1.1*state.intro),aspect=innerWidth/innerHeight;if(Math.abs(currentSpan-span)>.0001){currentSpan=span;camera.left=-span*aspect/2;camera.right=span*aspect/2;camera.top=span/2;camera.bottom=-span/2;camera.updateProjectionMatrix();}cameraOffset.copy(arrivalOffset).lerp(normalOffset,state.intro);camera.position.copy(cameraFocus).add(cameraOffset);camera.lookAt(cameraFocus.x,cameraFocus.y+.2,cameraFocus.z-1.1);camera.updateMatrixWorld();
   }
   function updatePointer(event) {
@@ -203,8 +205,8 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
   function setHover(id) { if(state.hovered===id)return;state.hovered=id;renderer.domElement.style.cursor=id?'pointer':'default';onHover?.(id); }
   function approach(id){const def=destinations.find(d=>d.id===id);if(!def)return;cancelActivities();state.pending=id;liftTime=0;const edge=pageApproach(bird.position,def);moveTo(edge);if(state.reduced){state.pending=null;onSelect(id);}}
   function stop(){target.set(bird.position.x,0,bird.position.z);goal.copy(target);routeQueue=[];state.pending=null;state.speed=0;state.phase='idle';state.hovered=null;marker.visible=false;}
-  function pointerMove(event){if(state.paused)return;updatePointer(event);pointerInside=!event.target.closest?.('.masthead');setHover(pointerInside?hitPage():null);}
-  function pointerDown(event){
+  function pointerMove(event){if(state.paused)return;updatePointer(event);pointerInside=!event.target.closest?.('.masthead');setHover(pointerInside&&!pointControls.getState().holding?hitPage():null);}
+  function performTap(event){
     if(event.button!==0||state.paused)return;
     if(state.intro<1){const act=state.intro>.7;arrival.skip();state.intro=1;updateCamera(0,true);if(!act)return;}
     updatePointer(event);if(state.airborne)jump();
@@ -227,14 +229,33 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
     if(jumpWanted&&Math.hypot(point.x-bird.position.x,point.z-bird.position.z)<4)jump();
     moveTo(point);
   }
+  let lastSteer=0,lastSteerX=NaN,lastSteerZ=NaN,steeringBlocked=false;
+  const pointControls=createPointControls(renderer.domElement,{
+    isEnabled:()=>!state.paused&&!document.hidden,
+    onPress:()=>{if(state.pending||activityArrival){cancelActivities();stop();}},
+    onTap:performTap,
+    onHoldStart:()=>{if(state.intro<1){arrival.skip();state.intro=1;updateCamera(0,true);}if(state.conversing){state.conversing=false;onDismissDialogue?.();}cancelActivities();state.pending=null;state.phase='walking';setHover(null);lastSteer=-Infinity;lastSteerX=lastSteerZ=NaN;steeringBlocked=false;},
+    onHoldMove:point=>{
+      const surface=document.elementFromPoint(point.clientX,point.clientY);
+      if(surface!==renderer.domElement){if(!steeringBlocked)stop();steeringBlocked=true;return;}
+      updatePointer(point);const now=performance.now();
+      const elevated=mountain?raycaster.intersectObject(mountain,false)[0]:null,destination=elevated?.point||cursorWorld;
+      if(steeringBlocked||now-lastSteer>=160&&(!Number.isFinite(lastSteerX)||Math.hypot(destination.x-lastSteerX,destination.z-lastSteerZ)>.35)){
+        steeringBlocked=false;lastSteer=now;lastSteerX=destination.x;lastSteerZ=destination.z;
+        if(Math.hypot(destination.x-bird.position.x,destination.z-bird.position.z)<.25){stop();return;}
+        activities.notifyMoveIntent(destination);moveTo(destination,null,{continuous:true});marker.visible=false;
+      }
+    },
+    onHoldEnd:()=>stop(),
+  });
   window.addEventListener('pointermove',pointerMove);
   renderer.domElement.addEventListener('pointerleave',()=>{pointerInside=false;setHover(null);});
-  renderer.domElement.addEventListener('pointerdown',pointerDown);
   window.addEventListener('resize',resize);
   resize();updateCamera(0,true);state.ready=true;
   function tick(time) {
     frame=requestAnimationFrame(tick);const dt=Math.min((time-lastTime)/1000,.06)||0;lastTime=time;if(document.hidden||state.paused)return;
     state.intro=arrival.progress(time);
+    pointControls.update();
     const t=time/1000,dx=target.x-bird.position.x,dz=target.z-bird.position.z,dist=Math.hypot(dx,dz);
     updateSpeech(dt);
     const walking=!state.paused&&state.phase!=='lifting'&&dist>.035;
@@ -281,7 +302,7 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
     if(marker.visible)marker.scale.setScalar(state.reduced?1:1+Math.sin(t*5)*.12);
     if(!state.paused){
       updateCamera(dt);
-      if(pointerInside){raycaster.setFromCamera(pointer,camera);if(raycaster.ray.intersectPlane(ground,scratch))cursorWorld.copy(scratch);setHover(hitPage());}
+      if(pointerInside){raycaster.setFromCamera(pointer,camera);if(raycaster.ray.intersectPlane(ground,scratch))cursorWorld.copy(scratch);setHover(pointControls.getState().holding?null:hitPage());}
 
     }
     const ball=activities.getState().ball.position;treeRendering.update(dt,t,state.reduced,{camera,targets:[bird.position.clone().add(new THREE.Vector3(0,1.2,0)),new THREE.Vector3(ball.x,ball.y,ball.z)]});water.update(t,state.reduced);audio?.update(dt,{character:bird.position,fireLit:activities.getState().fireLit});
@@ -297,9 +318,9 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
   return {
     approach, pageRect,
     converse(value){state.conversing=value;if(value){cancelActivities();stop();}} ,
-    pause(value){if(state.paused===value)return;state.paused=value;progression.setVisible(!value);activities.setVisible?.(!value);audio?.setWorldActive(!value);if(value){cancelAnimationFrame(frame);cancelActivities();stop();}else{lastTime=0;frame=requestAnimationFrame(tick);}},
+    pause(value){if(state.paused===value)return;state.paused=value;progression.setVisible(!value);activities.setVisible?.(!value);audio?.setWorldActive(!value);if(value){pointControls.cancel();cancelAnimationFrame(frame);cancelActivities();stop();}else{lastTime=0;frame=requestAnimationFrame(tick);}},
     setReduced(value){state.reduced=value;},
-    getState:()=>({intro:state.intro,conversing:state.conversing,airborne:state.airborne,gliding:state.gliding,goal:{x:goal.x,z:goal.z},waypoints:routeQueue.length,progression:progression.getState(),phase:state.phase,pending:state.pending,hovered:state.hovered,character:{x:bird.position.x,y:bird.position.y,z:bird.position.z,headYaw:head.rotation.y,screen:projectPoint(bird.position.clone().add(new THREE.Vector3(0,1,0)))},target:{x:target.x,z:target.z},camera:{x:cameraFocus.x,z:cameraFocus.z,span:camera.top-camera.bottom},reduced:state.reduced,audio:audio?.getState(),legs:locomotion.getState(),activities:activities.getState(),trees:treeRendering.getState(),hoverLifts:cards.map(c=>({id:c.def.id,lift:c.lift})),render:{frame:renderer.info.render.frame,calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,width:renderer.domElement.width,height:renderer.domElement.height}}),
+    getState:()=>({intro:state.intro,controls:pointControls.getState(),conversing:state.conversing,airborne:state.airborne,gliding:state.gliding,goal:{x:goal.x,z:goal.z},waypoints:routeQueue.length,progression:progression.getState(),phase:state.phase,pending:state.pending,hovered:state.hovered,character:{x:bird.position.x,y:bird.position.y,z:bird.position.z,headYaw:head.rotation.y,screen:projectPoint(bird.position.clone().add(new THREE.Vector3(0,1,0)))},target:{x:target.x,z:target.z},camera:{x:cameraFocus.x,z:cameraFocus.z,span:camera.top-camera.bottom},reduced:state.reduced,audio:audio?.getState(),legs:locomotion.getState(),activities:activities.getState(),trees:treeRendering.getState(),hoverLifts:cards.map(c=>({id:c.def.id,lift:c.lift})),render:{frame:renderer.info.render.frame,calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,width:renderer.domElement.width,height:renderer.domElement.height}}),
     destinations:()=>cards.map(c=>({id:c.def.id,...pageRect(c.def.id),center:projectPoint(c.group.position),world:{x:c.def.x,z:c.def.z,w:c.def.w,h:c.def.h}})),
     trees:()=>trees.map(tree=>({id:tree.id,height:tree.height,world:{x:tree.x,z:tree.z},...projectPoint(new THREE.Vector3(tree.x,tree.height*.55,tree.z))})),
     activities:()=>activities.getState().objects.map(object=>{const height=object.id==='ball'?activities.getState().ball.position.y:{bench:.7,ball:.35,campfire:.6,npc:1.25,signpost:1.3,fishing:.52}[object.id]||.6;const offset=object.id==='fishing'?{x:.19,z:.94}:{x:0,z:0};return{...object,world:{x:object.x,z:object.z},...projectPoint(new THREE.Vector3(object.x+offset.x,height,object.z+offset.z))};}),
@@ -308,6 +329,6 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
     getSpeechAnchor:(speaker='guide')=>{const actor=speaker==='you'?{x:bird.position.x,z:bird.position.z,height:bird.position.y+2.15}:speaker==='sign'?{x:-2,z:1,height:1.8}:{...activities.getState().objects.find(o=>o.id==='npc'),height:2.35};return projectPoint(new THREE.Vector3(actor.x,actor.height,actor.z));},
     terrainPoint:(x,z)=>projectPoint(new THREE.Vector3(x,groundHeight(x,z),z)),
     groundPoint:(x,z)=>projectPoint(new THREE.Vector3(x,0,z)),
-    destroy(){arrival.dispose();progression.dispose();water.dispose();treeRendering.dispose();document.removeEventListener('portfolio-letter',speechLetter);document.removeEventListener('keydown',jumpKey);document.removeEventListener('pointerdown',unlockAudio,true);document.removeEventListener('keydown',unlockAudio,true);document.removeEventListener('portfolio-audio',audioChanged);activities.dispose();window.removeEventListener('pointermove',pointerMove);cancelAnimationFrame(frame);window.removeEventListener('resize',resize);videos.forEach(v=>v.pause());renderer.dispose();renderer.domElement.remove();},
+    destroy(){pointControls.destroy();arrival.dispose();progression.dispose();water.dispose();treeRendering.dispose();document.removeEventListener('portfolio-letter',speechLetter);document.removeEventListener('keydown',jumpKey);document.removeEventListener('pointerdown',unlockAudio,true);document.removeEventListener('keydown',unlockAudio,true);document.removeEventListener('portfolio-audio',audioChanged);activities.dispose();window.removeEventListener('pointermove',pointerMove);cancelAnimationFrame(frame);window.removeEventListener('resize',resize);videos.forEach(v=>v.pause());renderer.dispose();renderer.domElement.remove();},
   };
 }
