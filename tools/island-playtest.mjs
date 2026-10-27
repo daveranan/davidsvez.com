@@ -76,8 +76,10 @@ try{
   await page.waitForFunction(()=>fieldTrip.getState().activities.kickoff,null,{timeout:6000});
   const kickoff=await page.evaluate(()=>fieldTrip.getState().activities.ball.position);
   assert(Math.hypot(kickoff.x+9.5,kickoff.z+14.5)<.01,'Goals reset the ball to center');
+  assert(kickoff.y>2.5,'Kickoff ball waits in the air');
+  await page.waitForFunction(()=>!fieldTrip.getState().activities.kickoff,null,{timeout:20000});
   const defender=await page.evaluate(()=>fieldTrip.getState().activities.npc);
-  assert(Math.hypot(defender.x+15.2,defender.z+14.5)<.01,'Dave resets in front of his goal');
+  assert(Math.hypot(defender.x-defender.returnTarget.x,defender.z-defender.returnTarget.z)<.5,'Dave walks back in front of his goal before play resumes');
   await page.locator('.masthead [data-page=product]').click();await settled(page);
   assert.equal(await page.locator('.soccer-score').isVisible(),false);
   assert(await page.evaluate(()=>fieldTrip.getState().audio.playing),'Music continues while reading');

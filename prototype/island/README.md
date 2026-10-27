@@ -33,8 +33,10 @@ Dave joins football only after a ball-directed click. Goal and sideline chatter
 use separate eight-variant bags, with occasional player replies. Fully crossing
 the touchline resets play; goal detection runs first. Goal sound uses the supplied
 party blower, and kicks use the supplied football recording with varied pitch.
-At kickoff, Dave returns to the front of his defending goal with the ball reset.
-An active conversation finishes before that reset proceeds. Clicking Dave's
+Dave walks back to the front of his defending goal during the reset. The ball
+hovers at center with a visible 3–2–1 countdown, then drops under gravity and
+Dave immediately resumes play. It cannot be pushed or kicked during the countdown.
+An active conversation pauses the return and countdown. Clicking Dave's
 character during a conversation advances or completes the current line; clicking
 the ground closes the conversation and walks normally.
 Walking elsewhere exits seating or fishing. A nearby NPC gives a nonblocking

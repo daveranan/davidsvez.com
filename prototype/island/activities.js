@@ -58,7 +58,7 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
   const targets = [], geometries = new Set(), materials = new Set(), textures = new Set(), palette = new Map();
   const up = new THREE.Vector3(0, 1, 0), currentCharacter = new THREE.Vector3(0, 0, 3);
   const previousCharacter = currentCharacter.clone(), actorVelocity = new THREE.Vector3(), stepCharacter = new THREE.Vector3();
-  const state = { active: null, seated: false, fireLit: true, fishing: 'idle', catches: 0, pushes: 0, pageCollisions: 0, goals:0, soccerIntent:false, score:{you:0,dave:0},resetting:false,resetReason:null,kickoff:false,npcPlaying:false, npcKicks:0 };
+  const state = { active: null, seated: false, fireLit: true, fishing: 'idle', catches: 0, pushes: 0, pageCollisions: 0, goals:0, soccerIntent:false, score:{you:0,dave:0},resetting:false,resetReason:null,kickoff:false,kickoffCountdown:0,npcPlaying:false, npcKicks:0 };
   let pageColliders=[],intentEntered=false;
   let pose = null, revision = 0, disposed = false, currentYaw = 0, characterInitialized = false, ballContact = false;
   let soundClock=0;
@@ -73,7 +73,7 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
   const scoreNumbers={};
   for(const [key,label]of[['you','You'],['dave','Dave']]){if(key==='dave'){const divider=document.createElement('span');divider.className='soccer-score-separator';divider.textContent=' : ';scoreElement.append(divider);}const team=document.createElement('span');team.className='soccer-score-team';team.append(document.createTextNode(label+' '));const value=document.createElement('strong');value.textContent='0';team.append(value);scoreElement.append(team);scoreNumbers[key]=value;}
   document.body.append(scoreElement);
-  let scoreAllowed=true,latestPaused=false,resetRemaining=0,kickoffGrace=0;
+  let scoreAllowed=true,latestPaused=false,resetRemaining=0,kickoffGrace=0,countdownStarted=false;
   function sound(name,position,spacing=.15){
     if(soundClock-(lastSound.get(name)??-100)<spacing)return;
     lastSound.set(name,soundClock);onSound?.(name,{x:position.x,y:position.y||0,z:position.z});
@@ -184,7 +184,6 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
     const net=new THREE.LineSegments(goal.geometry,goal.material);net.frustumCulled=false;group.add(net);return goal;
   }
   const goals=[buildGoal('Left',-16.3,-17.45,'you'),buildGoal('Right',-2.7,-1.55,'dave')],goal=goals[0],attackGoal=goals[1];
-  let goalBreak=0;
   const celebrationMaterial=material('#ffffff',{transparent:true,opacity:.85,depthWrite:false}),celebration=new THREE.InstancedMesh(new THREE.PlaneGeometry(1,1),celebrationMaterial,36);geometries.add(celebration.geometry);celebration.frustumCulled=false;celebration.visible=false;celebration.raycast=()=>{};root.add(celebration);
   const celebrationParts=Array.from({length:36},(_,i)=>({position:new THREE.Vector3(),velocity:new THREE.Vector3(),spin:i*.71,size:.05+(i%4)*.017})),celebrationMatrix=new THREE.Object3D();let celebrationAge=10;
   function burst(scoredGoal){
@@ -193,7 +192,9 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
   }
   function updateScoreboard(paused=latestPaused){scoreElement.hidden=!scoreAllowed||paused||Math.hypot(currentCharacter.x-fieldCenter.x,currentCharacter.z-fieldCenter.z)>9;}
   function beginReset(reason){
-    clearReply();goals.forEach(value=>value.armed=false);resetRemaining=2.5;state.resetting=true;state.resetReason=reason;goalBreak=4;ballVelocity.set(0,0,0);
+    clearReply();goals.forEach(value=>value.armed=false);resetRemaining=2.5;state.resetting=true;state.resetReason=reason;state.kickoff=false;state.kickoffCountdown=0;countdownStarted=false;kickoffGrace=0;ballVelocity.set(0,0,0);
+    npcKickoff.set(goal.front+1.1,0,fieldCenter.z);
+    if(Math.hypot(currentCharacter.x-npcKickoff.x,currentCharacter.z-npcKickoff.z)<1)npcKickoff.z+=currentCharacter.z<=fieldCenter.z?1.05:-1.05;
     if(reason==='out'){const exchange=footballBarks.sideline();onBark?.(exchange.guide,'guide');if(exchange.reply)pendingReply={text:exchange.reply,remaining:1.4};}
   }
   function scoreGoal(scoredGoal){
@@ -211,6 +212,18 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
   }
   mergeParts(ball); tag(ball, 'ball', 'Kick the ball');
   const ballVelocity = new THREE.Vector3(), kickDirection = new THREE.Vector3(0, 0, 1);
+  const countdownCanvas=document.createElement('canvas');countdownCanvas.width=countdownCanvas.height=128;
+  const countdownContext=countdownCanvas.getContext('2d'),countdownTexture=new THREE.CanvasTexture(countdownCanvas);countdownTexture.colorSpace=THREE.SRGBColorSpace;textures.add(countdownTexture);
+  const countdownMaterial=new THREE.SpriteMaterial({map:countdownTexture,transparent:true,depthTest:false,depthWrite:false});materials.add(countdownMaterial);
+  const countdownLabel=new THREE.Sprite(countdownMaterial);countdownLabel.scale.set(1.05,1.05,1);countdownLabel.visible=false;countdownLabel.renderOrder=8;countdownLabel.raycast=()=>{};root.add(countdownLabel);let countdownDigit=0;
+  function showCountdown(digit){
+    state.kickoffCountdown=digit;countdownLabel.visible=scoreAllowed&&!latestPaused&&digit>0;
+    countdownLabel.position.copy(ball.position);countdownLabel.position.y+=.95;
+    if(!digit||digit===countdownDigit)return;countdownDigit=digit;
+    countdownContext.clearRect(0,0,128,128);countdownContext.fillStyle='#f5f1dd';countdownContext.beginPath();countdownContext.arc(64,64,48,0,Math.PI*2);countdownContext.fill();
+    countdownContext.fillStyle='#354f43';countdownContext.font='700 64px Arial';countdownContext.textAlign='center';countdownContext.textBaseline='middle';countdownContext.fillText(String(digit),64,67);countdownTexture.needsUpdate=true;
+    sound('interaction',ball.position,.5);
+  }
 
   // Campfire: a visible, reversible action with particles attached to its source.
   const camp = group('Campfire', -2, -10);
@@ -250,11 +263,6 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
   const npcBody = npc.getObjectByName('body_pivot');
   const npcBodyRest = npcBody?.position.clone();
   const npcLocomotion=npc.getObjectByName('left_hip')?createLocomotion(npc):null;
-  function resetDaveForKickoff(){
-    npc.position.copy(npcKickoff);npc.rotation.y=Math.PI/2;
-    previousNPC.copy(npc.position);npcTarget.copy(npc.position);npcVelocity.set(0,0,0);
-    npcSpeed=0;npcKickCooldown=.6;npcKickVisual=0;npcHold=0;npcLocomotion?.reset();
-  }
   const npcEyes = []; npcModel?.traverse(child => { if (child.isMesh && /eye/i.test(child.name)) npcEyes.push({ object: child, y: child.scale.y }); });
   // A small speech mark makes the NPC's function legible without unsolicited text.
   const speechMark = new THREE.Group(); speechMark.position.set(0, 2.35, 0); speechMark.rotation.y = .42; npc.add(speechMark);
@@ -416,13 +424,14 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
       collideNetBox(minX,maxX,value.height-.015,value.height+.015,value.left,value.right,value);
     }
   }
-  function updateNPCMovement(dt,{talking,digging,reduced}){
-    previousNPC.copy(npc.position);npcKickCooldown=Math.max(0,npcKickCooldown-dt);npcKickVisual=Math.max(0,npcKickVisual-dt);npcHold=Math.max(0,npcHold-dt);goalBreak=Math.max(0,goalBreak-dt);
-    const blocked=talking||digging||state.active==='npc'||npcHold>0||reduced||state.resetting||state.kickoff;
+  function updateNPCMovement(dt,{dialogueActive,digging}){
+    previousNPC.copy(npc.position);npcKickCooldown=Math.max(0,npcKickCooldown-dt);npcKickVisual=Math.max(0,npcKickVisual-dt);npcHold=Math.max(0,npcHold-dt);
+    const returning=state.resetting||state.kickoff;
+    const blocked=dialogueActive||digging||state.active==='npc'||npcHold>0;
     const nearField=Math.hypot(currentCharacter.x-fieldCenter.x,currentCharacter.z-fieldCenter.z)<9.5;
     const ballInPlay=Math.abs(ball.position.x-fieldCenter.x)<fieldWidth/2+2&&Math.abs(ball.position.z-fieldCenter.z)<fieldDepth/2+2;
-    state.npcPlaying=state.soccerIntent&&nearField&&ballInPlay&&!blocked;
-    npcTarget.copy(npcHome);
+    state.npcPlaying=state.soccerIntent&&nearField&&ballInPlay&&!blocked&&!returning;
+    npcTarget.copy(returning?npcKickoff:npcHome);
     if(state.npcPlaying){
       npcTarget.copy(ball.position).addScaledVector(ballVelocity,.16);npcTarget.y=0;
       attackDirection.set(attackGoal.front+attackGoal.direction*.8-npcTarget.x,0,fieldCenter.z-npcTarget.z).normalize();
@@ -433,33 +442,39 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
         npcTarget.copy(ball.position).addScaledVector(attackDirection,-.8);npcTarget.x+=attackDirection.z*side*1.05;npcTarget.z-=attackDirection.x*side*1.05;
       }
       if(npcTarget.z>goal.left-.45&&npcTarget.z<goal.right+.45)npcTarget.x=Math.max(goal.front+.4,Math.min(attackGoal.front-.4,npcTarget.x));
-      if(goalBreak>0)npcTarget.copy(npcKickoff);
     }
     if(blocked){npcSpeed=0;npcVelocity.set(0,0,0);return;}
     const dx=npcTarget.x-npc.position.x,dz=npcTarget.z-npc.position.z,distance=Math.hypot(dx,dz);
     const visitorOnBall=Math.hypot(currentCharacter.x-ball.position.x,currentCharacter.z-ball.position.z)<1.05&&actorVelocity.lengthSq()>.2;
-    const desiredSpeed=distance>.12?Math.min(state.npcPlaying?(visitorOnBall?1.2:2.35):1.55,distance*4):0;
+    const desiredSpeed=distance>.12?Math.min(returning?3.2:state.npcPlaying?(visitorOnBall?1.2:2.35):1.55,distance*4):0;
     npcSpeed+=(desiredSpeed-npcSpeed)*(1-Math.exp(-8*dt));
     if(distance>.02&&npcSpeed>.02){npc.position.x+=dx/distance*Math.min(distance,npcSpeed*dt);npc.position.z+=dz/distance*Math.min(distance,npcSpeed*dt);const desiredYaw=Math.atan2(dx,dz);npc.rotation.y+=Math.atan2(Math.sin(desiredYaw-npc.rotation.y),Math.cos(desiredYaw-npc.rotation.y))*(1-Math.exp(-8*dt));}
     // Give the visitor space rather than running directly through them.
     const sx=npc.position.x-currentCharacter.x,sz=npc.position.z-currentCharacter.z,separation=Math.hypot(sx,sz);
     if(separation<.68&&separation>.001){npc.position.x=currentCharacter.x+sx/separation*.68;npc.position.z=currentCharacter.z+sz/separation*.68;}
     npcVelocity.subVectors(npc.position,previousNPC).multiplyScalar(dt>.00001?1/dt:0);npcVelocity.y=0;
-    if(state.npcPlaying&&npcKickCooldown===0&&goalBreak===0){
+    if(state.npcPlaying&&npcKickCooldown===0){
       const toBall=npcToBall.set(ball.position.x-npc.position.x,0,ball.position.z-npc.position.z),distanceToBall=toBall.length();
       attackDirection.set(attackGoal.front+attackGoal.direction*.35-ball.position.x,0,fieldCenter.z-ball.position.z).normalize();
       if(!visitorOnBall&&distanceToBall<.80&&distanceToBall>.01&&toBall.normalize().dot(attackDirection)>.5){ballVelocity.copy(attackDirection).multiplyScalar(4.7);ballVelocity.y=.9;npcKickCooldown=1.2;npcKickVisual=.28;state.npcKicks++;sound('kick',ball.position,.22);}
     }
   }
-  function updateBall(dt,{dialogueActive=false}={}) {
+  function updateBall(dt,{dialogueActive=false,reduced=false}={}) {
     // Finish the current conversation before moving Dave back across the pitch.
     if(dialogueActive&&(resetRemaining>0||kickoffGrace>0))return;
     if(resetRemaining>0){
       resetRemaining=Math.max(0,resetRemaining-dt);ballVelocity.set(0,0,0);
-      if(resetRemaining===0){ball.position.set(fieldCenter.x,.35,fieldCenter.z);resetDaveForKickoff();state.resetting=false;state.resetReason=null;kickoffGrace=1;state.kickoff=true;ballContact=false;goals.forEach(value=>value.armed=false);}
+      if(resetRemaining===0){ball.position.set(fieldCenter.x,2.6,fieldCenter.z);state.resetting=false;state.resetReason=null;kickoffGrace=3;state.kickoff=true;ballContact=false;countdownDigit=0;showCountdown(3);goals.forEach(value=>value.armed=false);}
       return;
     }
-    if(kickoffGrace>0){kickoffGrace=Math.max(0,kickoffGrace-dt);state.kickoff=kickoffGrace>0;ballVelocity.set(0,0,0);return;}
+    if(state.kickoff){
+      ball.position.set(fieldCenter.x,2.6+(reduced?0:Math.sin(soundClock*2)*.045),fieldCenter.z);ballVelocity.set(0,0,0);
+      if(Math.hypot(npc.position.x-npcKickoff.x,npc.position.z-npcKickoff.z)<.8)countdownStarted=true;
+      if(countdownStarted)kickoffGrace=Math.max(0,kickoffGrace-dt);
+      showCountdown(Math.max(1,Math.ceil(kickoffGrace)));countdownLabel.position.copy(ball.position);countdownLabel.position.y+=.95;
+      if(kickoffGrace===0){state.kickoff=false;showCountdown(0);ballVelocity.y=-.15;npcKickCooldown=0;npcHold=0;state.npcPlaying=state.soccerIntent&&Math.hypot(currentCharacter.x-fieldCenter.x,currentCharacter.z-fieldCenter.z)<9.5;}
+      return;
+    }
     const steps = Math.max(1, Math.ceil(dt / .012)), h = dt / steps;
     let touching=false;
     for (let i = 0; i < steps; i++) {
@@ -578,10 +593,10 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
     else actorVelocity.subVectors(currentCharacter,previousCharacter).multiplyScalar(dt>.00001?1/dt:0);
     actorVelocity.y=0;
     if(currentCharacter.distanceToSquared(previousCharacter)>4||actorVelocity.lengthSq()>144){previousCharacter.copy(currentCharacter);actorVelocity.set(0,0,0);}
-    updateNPCMovement(dt,{talking,digging,reduced});updateBall(dt,{dialogueActive}); updateFishing(dt, time, reduced);
+    updateNPCMovement(dt,{dialogueActive,digging});updateBall(dt,{dialogueActive,reduced}); updateFishing(dt, time, reduced);
     previousCharacter.copy(currentCharacter);
     const turn = Math.atan2(currentCharacter.x - npc.position.x, currentCharacter.z - npc.position.z);
-    if(talking||!state.npcPlaying&&currentCharacter.distanceTo(npc.position)<5)npc.rotation.y+=Math.atan2(Math.sin(turn-npc.rotation.y),Math.cos(turn-npc.rotation.y))*(1-Math.exp(-3*dt));
+    if((talking&&npcSpeed<.15)||!state.npcPlaying&&npcSpeed<.15&&currentCharacter.distanceTo(npc.position)<5)npc.rotation.y+=Math.atan2(Math.sin(turn-npc.rotation.y),Math.cos(turn-npc.rotation.y))*(1-Math.exp(-3*dt));
     const head=npc.getObjectByName('head_pivot');
     if(head){
       const gaze=talking?{x:currentCharacter.x,y:currentCharacter.y+1.35,z:currentCharacter.z}:cursor||currentCharacter;
@@ -627,9 +642,9 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
   }
   return {
     targets, activate, update, cancel,notifyMoveIntent,
-    setVisible(visible){scoreAllowed=!!visible;if(!visible)clearReply();updateScoreboard();},
+    setVisible(visible){scoreAllowed=!!visible;if(!visible){clearReply();countdownLabel.visible=false;}updateScoreboard();},
     getPose: () => pose ? { kind: pose.kind, position: { ...pose.position }, yaw: pose.yaw, phase:state.fishing } : null,
-    getState: () => ({ ...state,score:{...state.score}, field:{x:fieldCenter.x,z:fieldCenter.z,width:fieldWidth,height:fieldDepth,goalAxis:'x',goalX:goal.front,goalLeft:goal.left,goalRight:goal.right,netPulse:Math.max(...goals.map(value=>value.pulse)),goals:goals.map(value=>({team:value.team,axis:'x',x:value.front,z:fieldCenter.z,back:value.back,lower:value.left,upper:value.right}))},npc:{x:npc.position.x,z:npc.position.z,speed:npcSpeed,headYaw:npc.getObjectByName('head_pivot')?.rotation.y||0}, ball: { position: { x: ball.position.x, y: ball.position.y, z: ball.position.z }, velocity: ballVelocity.length() }, rod:{held:rodHeldBlend,tip:{x:rodTip.x+fishing.position.x,y:rodTip.y,z:rodTip.z+fishing.position.z}}, objects: targets.map(target => ({ id: target.userData.activityId, label: target.userData.label, x: target.position.x, z: target.position.z })) }),
+    getState: () => ({ ...state,score:{...state.score}, field:{x:fieldCenter.x,z:fieldCenter.z,width:fieldWidth,height:fieldDepth,goalAxis:'x',goalX:goal.front,goalLeft:goal.left,goalRight:goal.right,netPulse:Math.max(...goals.map(value=>value.pulse)),goals:goals.map(value=>({team:value.team,axis:'x',x:value.front,z:fieldCenter.z,back:value.back,lower:value.left,upper:value.right}))},npc:{x:npc.position.x,z:npc.position.z,speed:npcSpeed,returning:state.resetting||state.kickoff,returnTarget:{x:npcKickoff.x,z:npcKickoff.z},headYaw:npc.getObjectByName('head_pivot')?.rotation.y||0}, ball: { position: { x: ball.position.x, y: ball.position.y, z: ball.position.z }, velocity: ballVelocity.length() }, rod:{held:rodHeldBlend,tip:{x:rodTip.x+fishing.position.x,y:rodTip.y,z:rodTip.z+fishing.position.z}}, objects: targets.map(target => ({ id: target.userData.activityId, label: target.userData.label, x: target.position.x, z: target.position.z })) }),
     dispose() { if (disposed) return; disposed = true; cancel();document.removeEventListener('visibilitychange',visibilityChanged);scoreElement.remove(); root.removeFromParent(); geometries.forEach(geometry => geometry.dispose()); materials.forEach(mat => mat.dispose()); textures.forEach(texture => texture.dispose()); targets.length = 0; },
   };
 }
