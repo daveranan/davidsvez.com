@@ -17,7 +17,7 @@ const ground = new THREE.Plane(UP, 0);
 const deltaAngle = (a, b) => Math.atan2(Math.sin(b - a), Math.cos(b - a));
 const damp = (a, b, speed, dt) => THREE.MathUtils.lerp(a, b, 1 - Math.exp(-speed * dt));
 
-export async function createLandscape(container, portfolio, { reduced, onSelect, onHover, onDialogue, onNavigate, audio, onFrame, onBark }) {
+export async function createLandscape(container, portfolio, { reduced, onSelect, onHover, onDialogue, onAdvanceDialogue, onDismissDialogue, onNavigate, audio, onFrame, onBark }) {
   const destinations=sourceDestinations.map(def=>({...def}));
   const arrival=createArrival();
   const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
@@ -210,6 +210,10 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
     const elevated=mountain?raycaster.intersectObject(mountain,false)[0]:null;
     const candidates=[...(elevated?[{...elevated,kind:'terrain'}]:[]),...raycaster.intersectObjects(cards.flatMap(c=>[c.face,c.slab]),false).map(hit=>({...hit,kind:'page'})),...raycaster.intersectObjects(treeRendering.targets,false).map(hit=>({...hit,kind:'tree'})),...raycaster.intersectObjects(activities.targets,true).map(hit=>({...hit,kind:'activity'})),...raycaster.intersectObjects(progression.targets,true).map(hit=>({...hit,kind:'progression'}))].sort((a,b)=>a.distance-b.distance);
     const hit=candidates[0];
+    if(state.conversing){
+      if(hit?.kind==='activity'&&hit.object.userData.activityId==='npc'){onAdvanceDialogue?.();return;}
+      state.conversing=false;onDismissDialogue?.();
+    }
     if(hit?.kind==='page'){activities.notifyMoveIntent?.(null);approach(hit.object.userData.page);return;}
     if(hit?.kind==='tree'){treeRendering.activate(hit,state.reduced);audio?.play('tree',hit.point);cancelActivities();state.pending=null;const point=elevated?.point||cursorWorld;activities.notifyMoveIntent?.(point);moveTo(point);return;}
     if(hit?.kind==='activity'){if(hit.object.userData.activityId!=='ball')activities.notifyMoveIntent?.(null);const continuing=hit.object.userData.activityId==='fishing'&&activities.getState().fishing!=='idle';if(!continuing)cancelActivities();state.pending=null;activities.activate(hit.object,hit.point);return;}

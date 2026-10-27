@@ -76,6 +76,8 @@ try{
   await page.waitForFunction(()=>fieldTrip.getState().activities.kickoff,null,{timeout:6000});
   const kickoff=await page.evaluate(()=>fieldTrip.getState().activities.ball.position);
   assert(Math.hypot(kickoff.x+9.5,kickoff.z+14.5)<.01,'Goals reset the ball to center');
+  const defender=await page.evaluate(()=>fieldTrip.getState().activities.npc);
+  assert(Math.hypot(defender.x+15.2,defender.z+14.5)<.01,'Dave resets in front of his goal');
   await page.locator('.masthead [data-page=product]').click();await settled(page);
   assert.equal(await page.locator('.soccer-score').isVisible(),false);
   assert(await page.evaluate(()=>fieldTrip.getState().audio.playing),'Music continues while reading');
@@ -87,6 +89,11 @@ try{
   await clickActivity(page,'npc');await page.locator('.npc-conversation').waitFor({state:'visible',timeout:15000});
   await page.waitForFunction(before=>fieldTrip.getState().audio.counts.voice>before+1,beforeSpeech);
   assert(await page.evaluate(()=>fieldTrip.getState().audio.counts.step>0),'IK footsteps play while walking');
+  await page.waitForFunction(()=>!document.querySelector('.npc-conversation .npc-advance').hidden);
+  const beforeModelClick=await page.locator('.npc-conversation .npc-line-reserve').textContent();
+  await clickActivity(page,'npc');
+  await page.waitForFunction(before=>document.querySelector('.npc-conversation .npc-line-reserve')?.textContent!==before,beforeModelClick);
+  assert(await page.evaluate(()=>fieldTrip.getState().conversing),'Clicking Dave advances the open conversation');
   await page.locator('.npc-conversation .npc-close').click();
   await page.waitForFunction(()=>!document.querySelector('.npc-conversation').open);
   await page.screenshot({path:resolve(output,'clearing-final.png')});

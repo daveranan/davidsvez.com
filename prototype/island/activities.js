@@ -234,6 +234,7 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
 
   // The guide is the same authored character family, with a distinct green tunic.
   const npcHome=new THREE.Vector3(-13,0,-13.4),npc=group('Clearing guide',npcHome.x,npcHome.z);
+  const npcKickoff=new THREE.Vector3(goal.front+1.1,0,fieldCenter.z);
   const previousNPC=npc.position.clone(),npcVelocity=new THREE.Vector3(),stepNPC=new THREE.Vector3(),npcTarget=new THREE.Vector3(),attackDirection=new THREE.Vector3();
   let npcHold=0,npcKickCooldown=0,npcKickVisual=0,npcSpeed=0;
   let npcModel = null;
@@ -249,6 +250,11 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
   const npcBody = npc.getObjectByName('body_pivot');
   const npcBodyRest = npcBody?.position.clone();
   const npcLocomotion=npc.getObjectByName('left_hip')?createLocomotion(npc):null;
+  function resetDaveForKickoff(){
+    npc.position.copy(npcKickoff);npc.rotation.y=Math.PI/2;
+    previousNPC.copy(npc.position);npcTarget.copy(npc.position);npcVelocity.set(0,0,0);
+    npcSpeed=0;npcKickCooldown=.6;npcKickVisual=0;npcHold=0;npcLocomotion?.reset();
+  }
   const npcEyes = []; npcModel?.traverse(child => { if (child.isMesh && /eye/i.test(child.name)) npcEyes.push({ object: child, y: child.scale.y }); });
   // A small speech mark makes the NPC's function legible without unsolicited text.
   const speechMark = new THREE.Group(); speechMark.position.set(0, 2.35, 0); speechMark.rotation.y = .42; npc.add(speechMark);
@@ -427,7 +433,7 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
         npcTarget.copy(ball.position).addScaledVector(attackDirection,-.8);npcTarget.x+=attackDirection.z*side*1.05;npcTarget.z-=attackDirection.x*side*1.05;
       }
       if(npcTarget.z>goal.left-.45&&npcTarget.z<goal.right+.45)npcTarget.x=Math.max(goal.front+.4,Math.min(attackGoal.front-.4,npcTarget.x));
-      if(goalBreak>0)npcTarget.set(fieldCenter.x-.8,0,fieldCenter.z+.7);
+      if(goalBreak>0)npcTarget.copy(npcKickoff);
     }
     if(blocked){npcSpeed=0;npcVelocity.set(0,0,0);return;}
     const dx=npcTarget.x-npc.position.x,dz=npcTarget.z-npc.position.z,distance=Math.hypot(dx,dz);
@@ -445,10 +451,12 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
       if(!visitorOnBall&&distanceToBall<.80&&distanceToBall>.01&&toBall.normalize().dot(attackDirection)>.5){ballVelocity.copy(attackDirection).multiplyScalar(4.7);ballVelocity.y=.9;npcKickCooldown=1.2;npcKickVisual=.28;state.npcKicks++;sound('kick',ball.position,.22);}
     }
   }
-  function updateBall(dt) {
+  function updateBall(dt,{dialogueActive=false}={}) {
+    // Finish the current conversation before moving Dave back across the pitch.
+    if(dialogueActive&&(resetRemaining>0||kickoffGrace>0))return;
     if(resetRemaining>0){
       resetRemaining=Math.max(0,resetRemaining-dt);ballVelocity.set(0,0,0);
-      if(resetRemaining===0){ball.position.set(fieldCenter.x,.35,fieldCenter.z);state.resetting=false;state.resetReason=null;kickoffGrace=1;state.kickoff=true;ballContact=false;goals.forEach(value=>value.armed=false);}
+      if(resetRemaining===0){ball.position.set(fieldCenter.x,.35,fieldCenter.z);resetDaveForKickoff();state.resetting=false;state.resetReason=null;kickoffGrace=1;state.kickoff=true;ballContact=false;goals.forEach(value=>value.armed=false);}
       return;
     }
     if(kickoffGrace>0){kickoffGrace=Math.max(0,kickoffGrace-dt);state.kickoff=kickoffGrace>0;ballVelocity.set(0,0,0);return;}
@@ -570,7 +578,7 @@ export function createActivities(scene, { THREE, flatMaterial, characterTemplate
     else actorVelocity.subVectors(currentCharacter,previousCharacter).multiplyScalar(dt>.00001?1/dt:0);
     actorVelocity.y=0;
     if(currentCharacter.distanceToSquared(previousCharacter)>4||actorVelocity.lengthSq()>144){previousCharacter.copy(currentCharacter);actorVelocity.set(0,0,0);}
-    updateNPCMovement(dt,{talking,digging,reduced});updateBall(dt); updateFishing(dt, time, reduced);
+    updateNPCMovement(dt,{talking,digging,reduced});updateBall(dt,{dialogueActive}); updateFishing(dt, time, reduced);
     previousCharacter.copy(currentCharacter);
     const turn = Math.atan2(currentCharacter.x - npc.position.x, currentCharacter.z - npc.position.z);
     if(talking||!state.npcPlaying&&currentCharacter.distanceTo(npc.position)<5)npc.rotation.y+=Math.atan2(Math.sin(turn-npc.rotation.y),Math.cos(turn-npc.rotation.y))*(1-Math.exp(-3*dt));

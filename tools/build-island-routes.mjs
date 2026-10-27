@@ -1,6 +1,7 @@
 import { mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { dirname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { applySeoToHtml, canonicalUrl, SITE_ORIGIN } from '../prototype/island/seo.js';
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const collections = {
@@ -91,10 +92,8 @@ function escapeHtml(value = '') {
   return String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 }
 
-function routeHtml(shell, title, description) {
-  return shell
-    .replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(title)} — David Svezhintsev</title>`)
-    .replace(/<meta\s+name=["']description["']\s+content=["'][^"']*["']\s*\/?\s*>/i, `<meta name="description" content="${escapeHtml(description)}">`)
+function routeHtml(shell, title, description, options) {
+  return applySeoToHtml(shell, { title, description, ...options })
     .replace(/\b(src|href)=(['"])\.\//g, '$1=$2/island/')
     .replace(/\bhref=(['"])\.\.\//g, 'href=$1/');
 }
@@ -167,14 +166,16 @@ export async function buildIslandRoutes({ root = repositoryRoot } = {}) {
     if (id === 'contact') value.contact = publicCopy(site.contact || {});
     if (id === 'blog') value.posts = postMetadata;
     files.set(`data/${id}.json`, json(value));
-    files.set(`${collection.path}/index.html`, routeHtml(shell, collection.title, id === 'contact' ? site.contact?.intro || collection.description : collection.description));
+    files.set(`${collection.path}/index.html`, routeHtml(shell, collection.title, id === 'contact' ? site.contact?.intro || collection.description : collection.description, {
+      path:`/island/${collection.path}/`, kind:id==='resume'?'profile':id==='contact'?'contact':id==='blog'?'blog':'collection', items:value.projects,
+    }));
     routeMap[id] = `/island/${collection.path}/`;
   }
   files.set('data/world.json', json({ projects: worldIds.map(requiredMetadata), posts:postMetadata.slice(0,3) }));
   for(const post of posts){
     const value={...post,blocks:(post.blocks||[]).map(block=>resolveItem(block,mediaById)),related:postMetadata.filter(other=>other.id!==post.id).slice(0,2)};
     files.set(`data/blog/${post.id}.json`,json(value));
-    files.set(`blog/${post.id}/index.html`,routeHtml(shell,post.title,post.summary));
+    files.set(`blog/${post.id}/index.html`,routeHtml(shell,post.title,post.summary,{path:`/island/blog/${post.id}/`,kind:'article',datePublished:post.date}));
   }
   for (const project of projects) {
     const meta = requiredMetadata(project.id);
@@ -190,7 +191,7 @@ export async function buildIslandRoutes({ root = repositoryRoot } = {}) {
       children: projects.filter(child => child.parentId === project.id).map(child => requiredMetadata(child.id)),
     };
     files.set(`data/projects/${project.id}.json`, json(value));
-    files.set(`project/${project.id}/index.html`, routeHtml(shell, project.heading || project.title || project.id, project.description));
+    files.set(`project/${project.id}/index.html`, routeHtml(shell, project.heading || project.title || project.id, project.description, {path:`/island/project/${project.id}/`,kind:'page'}));
   }
   const manifestPath = join(dataDirectory, '.route-manifest.json');
   let previous = [];
@@ -210,7 +211,12 @@ export async function buildIslandRoutes({ root = repositoryRoot } = {}) {
     await writeFile(target, content, 'utf8');
   }
   await writeFile(manifestPath, json([...files.keys()].sort()), 'utf8');
-  return { routes: routeMap, projectRoutes: projects.length, blogRoutes:posts.length, files: files.size, dataDirectory: relative(root, dataDirectory) };
+  await writeFile(join(island,'index.html'),applySeoToHtml(shell,{path:'/',kind:'home'}),'utf8');
+  const urls=[...new Set([canonicalUrl('/'),...Object.values(routeMap).map(canonicalUrl),...projects.map(project=>canonicalUrl(`/island/project/${project.id}/`)),...posts.map(post=>canonicalUrl(`/island/blog/${post.id}/`))])].sort();
+  const sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(url=>`  <url><loc>${escapeHtml(url)}</loc></url>`).join('\n')+'\n</urlset>\n';
+  await writeFile(join(prototype,'sitemap.xml'),sitemap,'utf8');
+  await writeFile(join(prototype,'robots.txt'),`User-agent: *\nAllow: /\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\n`,'utf8');
+  return { routes: routeMap, projectRoutes: projects.length, blogRoutes:posts.length, sitemapUrls:urls.length, files: files.size, dataDirectory: relative(root, dataDirectory) };
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

@@ -1,5 +1,6 @@
 import {createAmbientAudio} from './ambient-audio.js';
 import { destinations, element, loadPortfolio } from './portfolio.js';
+import { updateDocumentSeo } from './seo.js';
 
 const $=selector=>document.querySelector(selector);
 const dialog=$('#page-dialog'),content=$('#page-content');
@@ -44,7 +45,7 @@ async function ensureWorld(){
   if(worldPromise)return worldPromise;
   worldPromise=(async()=>{
     await portfolio.prepareWorld();const {createLandscape}=await import('./scene.js');
-    landscape=await createLandscape($('#world'),portfolio,{audio,onBark:greet,onFrame:()=>dialogueSystem?.reposition(),reduced:reducedQuery.matches,onSelect:id=>navigate(id,{fromScene:true}),onDialogue:talk,onNavigate:token=>navigate(token)});
+    landscape=await createLandscape($('#world'),portfolio,{audio,onBark:greet,onFrame:()=>dialogueSystem?.reposition(),reduced:reducedQuery.matches,onSelect:id=>navigate(id,{fromScene:true}),onDialogue:talk,onAdvanceDialogue:()=>dialogueSystem?.advance(),onDismissDialogue:()=>dialogueSystem?.close(),onNavigate:token=>navigate(token)});
     if(dialog.open)landscape.pause(true);else audio.setWorldActive(true);return landscape;
   })().catch(error=>{document.querySelectorAll('.arrival-clouds').forEach(node=>node.remove());console.warn('3D scene unavailable:',error.message);const notice=element('p','error-message','The 3D scene is unavailable. Use the navigation to view the portfolio.');$('#world').append(notice);});
   return worldPromise;
@@ -81,7 +82,7 @@ async function closePage({updateUrl=true}={}){
   if(updateUrl)history.pushState({token:''},'',BASE);
   await ensureWorld();
 }
-dialog.addEventListener('close',()=>{landscape?.pause(false);updateNavigation(null);document.title='David Svezhintsev — Design & Development';if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});});
+dialog.addEventListener('close',()=>{landscape?.pause(false);updateNavigation(null);updateDocumentSeo({path:'/',kind:'home'});if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});});
 document.addEventListener('close',event=>{if(event.target.matches?.('.npc-conversation')&&!dialog.open)landscape?.converse(false);},true);
 dialog.addEventListener('cancel',event=>{event.preventDefault();closePage();});
 dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)closePage();});
@@ -94,7 +95,8 @@ window.addEventListener('popstate',()=>openRoute(tokenFromLocation()));
 async function init(){
   portfolio=await loadPortfolio(content,(projectId,title,project)=>{
     if(projectId)openId=sectionFor(projectId,project);
-    dialog.dataset.page=openId;updateNavigation(openId);document.title=title+' — David Svezhintsev';
+    dialog.dataset.page=openId;updateNavigation(openId);
+    updateDocumentSeo({path:location.pathname,title,description:project?.description,kind:project?.seoKind||'page',datePublished:project?.date,items:project?.items||[]});
   },{onNavigate:token=>navigate(token),getActions:()=>landscape?.getActions()||[],onAction:async id=>{await ensureWorld();return landscape?.performAction(id);}});
   window.fieldTrip={getState:()=>({...landscape?.getState(),dialogOpen:dialog.open,openPage:openId,route:currentToken,reduced:reducedQuery.matches}),destinations:()=>landscape?.destinations()||[],groundPoint:(x,z)=>landscape?.groundPoint(x,z),activities:()=>landscape?.activities?.()||[],trees:()=>landscape?.trees?.()||[],groundHeight:(x,z)=>landscape?.groundHeight(x,z)||0,terrainPoint:(x,z)=>landscape?.terrainPoint(x,z)};
   const legacy=location.hash.slice(1),query=new URLSearchParams(location.search),legacyProject=query.get('project'),legacyPost=query.get('post'),legacyPage=query.get('page');

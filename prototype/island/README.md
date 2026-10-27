@@ -1,8 +1,11 @@
 # Interactive portfolio prototype
 
 Run `npm run island`, then open **http://127.0.0.1:4175/island/**.
-The original entry point at `/` and its Netlify configuration remain in place.
-The shared portfolio copy has been rewritten and independently reviewed.
+Production `npm run build` writes `dist/` with the island at `/` and each case
+and article at its own static URL. Netlify builds and publishes this output
+from the `main` branch. Local reference captures, source models, and the lossless
+media library are excluded. The shared portfolio copy has been rewritten and
+independently reviewed.
 
 ## Experience
 
@@ -30,6 +33,10 @@ Dave joins football only after a ball-directed click. Goal and sideline chatter
 use separate eight-variant bags, with occasional player replies. Fully crossing
 the touchline resets play; goal detection runs first. Goal sound uses the supplied
 party blower, and kicks use the supplied football recording with varied pitch.
+At kickoff, Dave returns to the front of his defending goal with the ball reset.
+An active conversation finishes before that reset proceeds. Clicking Dave's
+character during a conversation advances or completes the current line; clicking
+the ground closes the conversation and walks normally.
 Walking elsewhere exits seating or fishing. A nearby NPC gives a nonblocking
 overhead greeting; a click starts the branching conversation. Dialogue and the
 opt-in case guide use Lightkeeper-style mint bubbles and keyboard dismissal.

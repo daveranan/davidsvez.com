@@ -129,7 +129,7 @@ export function createDialogueSystem({onNavigate,onGuideSection,getAnchor,onActi
     view=makeConversationView({conversations,onNavigate,onGuideSection,onAction,getActions,onClose:close,onLayout:()=>requestAnimationFrame(position)});root.setAttribute('aria-labelledby',view.titleId);root.append(view.bubble);document.body.append(root);
   }
   function escape(event){if(root?.open&&(event.code==='Space'||event.key==='Enter')&&!/BUTTON|INPUT|TEXTAREA|SELECT/.test(event.target.tagName)){event.preventDefault();event.stopPropagation();view.advance();return;}if(event.key==='Escape'&&root?.open){event.preventDefault();event.stopPropagation();close();}}
-  function outside(event){if(root?.open&&!root.contains(event.target))close();}
+  function outside(event){if(root?.open&&!root.contains(event.target)&&!event.target.matches?.('#world canvas'))close();}
   document.addEventListener('keydown',escape,true);document.addEventListener('pointerdown',outside,true);window.addEventListener('resize',position);
   return{
     async bark(text='hey. come here for a second.',speaker='guide'){

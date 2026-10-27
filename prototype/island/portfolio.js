@@ -182,7 +182,7 @@ export async function loadPortfolio(container, onProjectChange, options = {}) {
     const back=element('a','blog-back','← All essays');back.href=new URL('./blog/',import.meta.url).href;
     back.addEventListener('click',event=>{if(event.button||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();navigateBlog();});
     container.querySelector('.collection-heading').prepend(back);
-    onProjectChange(null,post.title,{sectionId:'blog'});
+    onProjectChange(null,post.title,{sectionId:'blog',description:post.summary,date:post.date,seoKind:'article'});
     appendBlocks(post.blocks||[],post);
     if(post.related?.length){const related=element('section','blog-related');related.append(element('h2','','More essays'),blogList(post.related));container.append(related);}
     observeMedia();
@@ -195,7 +195,7 @@ export async function loadPortfolio(container, onProjectChange, options = {}) {
     else if(id==='contact')contact();
     else if(id==='blog'){blogIndex=data.posts||[];heading(`${String(blogIndex.length).padStart(2,'0')} essays`,def.title,def.intro);container.dataset.content='blog-index';container.append(blogList(blogIndex));}
     else{heading(`${String(def.projects.length).padStart(2,'0')} projects`,def.title,def.intro);addGrid(def.projects);}
-    onProjectChange(null,def.label);
+    onProjectChange(null,def.title,{sectionId:id,description:id==='contact'?data.contact?.intro:def.intro,seoKind:id==='resume'?'profile':id==='contact'?'contact':id==='blog'?'blog':'collection',items:data.projects||[]});
   }
   function appendBlocks(blocks,p) {
     const stream = element('div', 'block-stream');
