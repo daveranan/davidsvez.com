@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "DAVID SVEZHINTSEV",
-    "status": "INTERFACE EXPOSED"
+    "status": "PORTFOLIO"
   },
   "transmissions": {
     "header": [
@@ -112,11 +112,14 @@
     "heading": "CONTACT",
     "intro": "Tell me what you are making, breaking, or trying to understand.",
     "availability": "AVAILABLE FOR SELECT PROJECTS",
-    "location": "OKLAHOMA / REMOTE"
+    "location": "OKLAHOMA / REMOTE",
+    "email": "daveranan@gmail.com",
+    "phone": "+1 (918) 852-5497",
+    "website": "https://davidsvez.com"
   },
   "homepage": {
-    "title": "INNER_CHILD_UNLOCKED.TXT",
-    "status": "04 PLACES / 28 PHOTOS",
+    "title": "About David",
+    "status": "DESIGN / DEVELOPMENT / CREATIVE DIRECTION",
     "blocks": []
   },
   "blog": [
@@ -124,7 +127,7 @@
       "id": "the-pitch-deck-that-got-us-20000-and-what-it-got-wrong",
       "title": "The pitch deck that got us €20,000—and what it got wrong",
       "date": "2026-08-07",
-      "summary": "A slide-by-slide look at the back half of Fell Out’s first high-concept pitch deck: the market research that helped secure €20,000, the assumptions that did not survive development, and what I would prioritize now.",
+      "summary": "How Fell Out’s pitch helped secure EUR 20,000 in concept funding, which assumptions changed during development, and what I would do differently.",
       "published": true,
       "blocks": [
         {
@@ -304,7 +307,7 @@
           "source": "",
           "mediaRef": "",
           "href": "",
-          "label": "OPEN FELL_OUT.CONCEPT",
+          "label": "View FELL OUT",
           "projectId": "fell-out-concept",
           "alt": "",
           "fit": "cover"
@@ -318,7 +321,7 @@
           "source": "",
           "mediaRef": "",
           "href": "https://drive.google.com/file/d/1v1T2iJzYy3qntfPzrKwxJN_ynxz6MoO1/view?usp=drive_link",
-          "label": "OPEN FELL OUT HIGH CONCEPT 1.0",
+          "label": "View FELL OUT HIGH CONCEPT 1.0",
           "projectId": "",
           "alt": "",
           "fit": "cover"
@@ -332,7 +335,7 @@
           "source": "",
           "mediaRef": "",
           "href": "https://x.com/daveranan/status/2085817977723560202",
-          "label": "READ THE ORIGINAL THREAD",
+          "label": "Read THE ORIGINAL THREAD",
           "projectId": "",
           "alt": "",
           "fit": "cover"
@@ -341,9 +344,9 @@
     },
     {
       "id": "everything-we-learned-about-making-games-as-of-2024",
-      "title": "Everything we learned about making games as of 2024",
+      "title": "What five years of prototyping taught us",
       "date": "2024-10-21",
-      "summary": "Making games is incredibly hard. After five years of wrestling with analysis paralysis and constant doubt, this is the process we learned for turning an idea into a game worth making.",
+      "summary": "The process we developed for moving from an uncertain idea to a focused prototype: define the player’s role, test the loop, and find a visual direction we can produce.",
       "published": true,
       "blocks": [
         {
@@ -351,7 +354,7 @@
           "type": "text",
           "width": "full",
           "heading": "Start with the right question",
-          "body": "There is no roadmap that can show you exactly how to make your unique game—or how to become a game developer. We spent five years figuring out a process that helped us move past analysis paralysis and constant doubt. This is everything we learned so far.\n\nA disclaimer before we begin: this article focuses on the earliest stages of making a game, especially for people struggling to find a strong concept. We are still learning the later stages of development ourselves, and other industry professionals will have more to add there.",
+          "body": "We spent five years developing a process that helped us move past analysis paralysis and test our game ideas. These lessons focus on the earliest stages: finding a concept, defining its core experience, and building a prototype.\n\nThey come from our experience rather than a complete roadmap. We were still learning the later stages of development when I wrote them.",
           "source": "",
           "mediaRef": "",
           "href": "",
@@ -365,7 +368,7 @@
           "type": "text",
           "width": "full",
           "heading": "Begin with a high concept",
-          "body": "Before writing code or drawing concept art, create a high concept for the game. Every concept needs a vision statement: the big idea—the big what—in one or two sentences. Write it from the perspective of a profession or role the player will embody.\n\nFor example: You are making a cult. You are a scientist searching for signals from outer space. You create and maintain a farm. You repair power lines. You watch over a forest. Whatever the premise is, it needs to be dead simple.\n\nReducing your ideas, story, and mechanics to this level can make the concept feel dull, boring, or too simple. Remember that it has never just been about the idea. What matters is the implementation: the part of the equation shaped by your unique talents and skills. Cult of the Lamb, Farming Simulator, Voices of the Void, and Firewatch can all be described simply. Their identities come from how they execute and twist those premises.",
+          "body": "Before writing code or drawing concept art, create a high concept for the game. I start with a vision statement: the premise in one or two sentences. Write it from the perspective of a profession or role the player will embody.\n\nFor example: You are making a cult. You are a scientist searching for signals from outer space. You create and maintain a farm. You repair power lines. You watch over a forest. Whatever the premise is, I try to keep it simple.\n\nReducing your ideas, story, and mechanics to this level can make the concept feel dull, boring, or too simple. Remember that it has never just been about the idea. What matters is the implementation: the part of the equation shaped by your unique talents and skills. Cult of the Lamb, Farming Simulator, Voices of the Void, and Firewatch can all be described simply. Their identities come from how they execute and twist those premises.",
           "source": "",
           "mediaRef": "",
           "href": "",
@@ -421,7 +424,7 @@
           "type": "text",
           "width": "full",
           "heading": "Prototype the experience, not the entire game",
-          "body": "There are many ways to prototype, but digital game prototypes should test the experience through a computer interface. The method is up to you: quickly modify a template in Construct 3, simulate a duel in a spreadsheet, or use whatever lets you reach the question fastest.\n\nOne technique I love is recontextualizing mechanics in a two-dimensional view. Prototype one part of the system, not the entire system. Find ways to cheat, approximate a complicated mechanic in 2D, and build its most basic version.\n\nNeed a resource-spawning system? Write a timer that enables deactivated objects over time. Do not sink time into implementation details or get distracted by how the final mechanic should work. The goal is to capture its essence. Almost any game can be recontextualized in 2D—not one-to-one, but closely enough to preserve the part of the core experience that could entertain someone for 30 minutes.\n\nApproximate that experience as cheaply as possible. If the prototype is fun for 30 minutes and people return to replay it, that is an excellent sign that you should build a more solid version closer to the original concept.",
+          "body": "There are many ways to prototype, but digital game prototypes should test the experience through a computer interface. The method is up to you: quickly modify a template in Construct 3, simulate a duel in a spreadsheet, or use whatever lets you reach the question fastest.\n\nOne technique I love is recontextualizing mechanics in a two-dimensional view. Prototype one part of the system, not the entire system. Find ways to cheat, approximate a complicated mechanic in 2D, and build its most basic version.\n\nNeed a resource-spawning system? Write a timer that enables deactivated objects over time. Do not sink time into implementation details or get distracted by how the final mechanic should work. The goal is to capture its essence. A 2D approximation can be enough to test an important part of the experience.\n\nApproximate that experience as cheaply as possible. If people stay engaged and return to replay it, I treat that as a reason to investigate further, not proof that the full game will work.",
           "source": "",
           "mediaRef": "",
           "href": "",
@@ -435,7 +438,7 @@
           "type": "text",
           "width": "full",
           "heading": "Test early and experiment freely",
-          "body": "Get the prototype into people’s hands as soon as possible. Gather feedback. Make changes. Add something experimental, try new things, and flip the script. At this stage, you can experiment without worrying that every change demands a refactor. Fork the prototype, remove the player’s health, and see what happens.\n\nAnd a reminder: use Git. If you do not yet have a client you like, SourceTree is one approachable option.",
+          "body": "Put the prototype in people’s hands early, gather feedback, and change it freely. Fork an experiment, remove a constraint, and test what happens before committing to a larger implementation. Keep the work under version control so those experiments are reversible.",
           "source": "",
           "mediaRef": "",
           "href": "",
@@ -477,7 +480,7 @@
           "type": "text",
           "width": "full",
           "heading": "Keep the context in mind",
-          "body": "These suggestions assume you are considering a long-term commercial project, not something you are making purely for fun or as a first learning exercise. If you are making something for fun, many of these steps can still help you understand what you want to create.\n\nI may be wrong about all of this. These lessons come from GDC talks, YouTube videos, books, and our personal experience over the previous four years. I originally wrote them down as a short, expanded index—a place to capture the process and point toward deeper resources in the future.\n\nI hope it helps.",
+          "body": "These suggestions concern a long-term commercial project. A first learning exercise or a game made for fun may need a different process.\n\nThe lessons combine talks, videos, books, and our own development experience. They are a working process, not a guarantee that a concept will succeed.",
           "source": "",
           "mediaRef": "",
           "href": "",
@@ -495,7 +498,7 @@
           "source": "",
           "mediaRef": "",
           "href": "https://bsky.app/profile/daveranan.bsky.social/post/3l72kissoig2r",
-          "label": "READ THE ORIGINAL THREAD",
+          "label": "Read THE ORIGINAL THREAD",
           "projectId": "",
           "alt": "",
           "fit": "cover"
@@ -506,7 +509,7 @@
       "id": "what-building-daedalus-taught-us-about-ai-and-creative-work",
       "title": "What building Daedalus taught us about AI and creative work",
       "date": "2022-10-25",
-      "summary": "Daedalus began as an experiment in AI-assisted production and became a comic, a brand, merchandise, a game prototype, and a lesson in where creative tools end and human intent begins.",
+      "summary": "What building Daedalus taught me about turning generated source imagery into a finished comic, interactive reader, and wider narrative project.",
       "published": true,
       "blocks": [
         {
@@ -542,7 +545,7 @@
           "type": "image",
           "width": "full",
           "heading": "From generated source material to a physical object",
-          "body": "The finished first Daedalus zine made the experiment tangible: not a prompt or an isolated output, but a designed, edited, printed work someone could hold.",
+          "body": "The first Daedalus zine turned the source material into a designed, edited, and printed work.",
           "source": "assets/media/blog/daedalus-zine-one.webp",
           "mediaRef": "",
           "href": "",
@@ -556,7 +559,7 @@
           "type": "text",
           "width": "full",
           "heading": "AI changed the scale, not the need for craft",
-          "body": "At the time, the most exciting possibility was production leverage. Work that might once have required a team of more than 20 people across six months could suddenly be attempted by three people in two months—even when those people were only working after their day jobs and on weekends.\n\nThat did not mean the machine completed the project for us. It meant a small team could explore at a scale that had previously been inaccessible. Generation accelerated ideation and supplied raw visual material. Everything that made those materials belong to Daedalus still had to be built: the story, selection, art direction, cleanup, consistency, page composition, typography, brand, animation, interaction design, code, sound, production, and the thousands of decisions that connected one artifact to the next.",
+          "body": "Generative tools let our small team explore more source material while working evenings and weekends. That increased what we could attempt; it did not complete the project for us.\n\nThe story, selection, art direction, cleanup, consistency, page composition, typography, brand, animation, interaction, code, sound, and production still depended on people making decisions and carrying them through.",
           "source": "",
           "mediaRef": "",
           "href": "",
@@ -570,7 +573,7 @@
           "type": "image",
           "width": "full",
           "heading": "The raw production field",
-          "body": "The folder looked less like a finished artwork and more like a search space: hundreds of attempts, variations, failures, near-misses, and fragments waiting for a human decision.",
+          "body": "The production folder contained hundreds of attempts and variations. Selection, cleanup, and composition determined which became part of the work.",
           "source": "assets/media/blog/daedalus-generation-output-grid.webp",
           "mediaRef": "",
           "href": "",
@@ -584,7 +587,7 @@
           "type": "text",
           "width": "full",
           "heading": "An image is not automatically an artwork",
-          "body": "In the original thread, I argued that AI does not produce art on its own. It produces an image: patterned noise that our eyes can read as something coherent. The wording was deliberately blunt, but the distinction still matters to me. A usable output is not the same thing as a finished expression.\n\nA tool can widen what a person is able to attempt, but it does not supply purpose, taste, accountability, or a reason for the work to exist. Daedalus only became a project when people imposed intent on the material and carried that intent across many different forms.\n\nAI could not replace that work. People may still try to use it as a reason to replace creative workers, but removing the people also removes the judgment that turns possibility into something meaningful. Daedalus made that boundary clearer to me, not less important.",
+          "body": "In the original thread, I argued that a usable generated image is not the same as a finished expression. That distinction still matters to me.\n\nThe tools did not supply the project’s purpose or take responsibility for its choices. Daedalus became a coherent work through the judgment and labor of the people who wrote, designed, edited, animated, and produced it.",
           "source": "",
           "mediaRef": "",
           "href": "",
@@ -626,7 +629,7 @@
           "type": "text",
           "width": "full",
           "heading": "The project made me appreciate artists more",
-          "body": "If there was one personal lesson underneath all of this, it was how difficult it is to draw intent. An artist does not merely make a coherent image. They make deliberate choices about form, composition, gesture, light, character, continuity, and meaning—and they can repeat those choices when the work demands it. That takes an extraordinary amount of knowledge and skill.\n\nWorking with generative tools did not make me value artists less. It made me want to learn how to draw, understand the craft more deeply, and create future projects with talented human artists whenever I could. The tools revealed how much control I did not have.",
+          "body": "Working with generated imagery made me more aware of the control I lacked. Deliberate choices about form, gesture, light, continuity, and meaning require craft. The project made me want to learn more of that craft and work with skilled artists on future projects.",
           "source": "",
           "mediaRef": "",
           "href": "",
@@ -640,7 +643,7 @@
           "type": "text",
           "width": "full",
           "heading": "The people behind the work",
-          "body": "I did not build Daedalus alone. Alex Lazaris and Ethan Blaney helped shape the brand and apparel. Roman Zhu spearheaded game development. Throwing Snow created the soundtrack. Their work turned a visual experiment into a project with breadth, identity, and a life beyond any single medium.\n\nIf the project created an opportunity, we wanted some of that value to return to the creative community. We began planning educational material for other small teams who wanted to attempt something similar. The important part was never the novelty of a tool. It was the chance to do ambitious work together—the kind of work we had wanted to make for our entire lives.",
+          "body": "Alex Lazaris and Ethan Blaney helped shape the brand and apparel. Roman Zhu spearheaded game development. Throwing Snow created the soundtrack. Their contributions gave the project its range across different media.\n\nWe also began planning educational material for small teams attempting similar work. The goal was to share what we learned from making the project together.",
           "source": "",
           "mediaRef": "",
           "href": "",
@@ -658,7 +661,7 @@
           "source": "",
           "mediaRef": "",
           "href": "",
-          "label": "OPEN DAEDALUS.PROJECT",
+          "label": "View DAEDALUS",
           "projectId": "daedalus",
           "alt": "",
           "fit": "cover"
@@ -672,12 +675,49 @@
           "source": "",
           "mediaRef": "",
           "href": "https://daedalus.am/comic",
-          "label": "OPEN THE INTERACTIVE DAEDALUS COMIC",
+          "label": "View THE INTERACTIVE DAEDALUS COMIC",
           "projectId": "",
           "alt": "",
           "fit": "cover"
         }
       ]
     }
-  ]
+  ],
+  "profile": {
+    "name": "David Svezhintsev",
+    "headline": "Product Designer / Design Engineer",
+    "summary": "Product designer and hands-on builder with 10+ years across digital products, creative technology, and games. I work from early concepts through prototypes and launch, focusing on interaction, usability, and practical iteration. My experience combines multidisciplinary leadership with designing and implementing product behavior directly.",
+    "clients": [
+      "Unity",
+      "Toyota",
+      "Merck",
+      "Facebook",
+      "JB Hunt",
+      "Walmart",
+      "Bushnell",
+      "Chick-fil-A",
+      "Remington",
+      "Bushmaster",
+      "Fidelity Bank",
+      "Icon Hyperconnect",
+      "Christie Cookies Co",
+      "Archer Hotel New York",
+      "Carhartt Company Gear",
+      "Stillwater Medical Center"
+    ],
+    "community": [
+      {
+        "title": "Tulsa UX",
+        "description": "Co-organizer and speaker."
+      },
+      {
+        "title": "Figma for Beginners",
+        "description": "Created a beginner Figma course."
+      },
+      {
+        "title": "Adobe XD Live",
+        "description": "Created courses for Adobe XD Live."
+      }
+    ]
+  }
 }

@@ -11,7 +11,7 @@
   "showFolderActions": false,
   "blocks": [],
   "title": "CORVUSOS_COMPONENT_LIBRARY.IMAGE",
-  "heading": "CORVUSOS COMPONENT LIBRARY.IMAGE",
+  "heading": "CorvusOS component library",
   "shortcutLabel": "CORVUSOS_COMPONENT_LIBRARY.IMAGE",
   "kind": "MEDIA / FULLSCREEN",
   "description": "Creative by HebaH for Heyo.",
@@ -24,7 +24,7 @@
   "source": "assets/media/optimized/Projects/Dronies/Creatives/corvusos-component-library.webp",
   "mediaRef": "media-dronies-creatives-corvusos-component-library-png",
   "role": "DESIGN / DEVELOPMENT",
-  "state": "ARCHIVE READY",
+  "state": "ARCHIVE",
   "route": "/PROJECT/FILE-MEDIA-DRONIES-CREATIVES-CORVUSOS-COMPONENT-LIBRARY-PNG",
   "status": [
     "MOUNTING PROJECT",

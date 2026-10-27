@@ -11,7 +11,7 @@
   "showFolderActions": false,
   "blocks": [],
   "title": "DRONIES_MERCH.IMAGE",
-  "heading": "DRONIES MERCH.IMAGE",
+  "heading": "Dronies merch",
   "shortcutLabel": "DRONIES_MERCH.IMAGE",
   "kind": "MEDIA / FULLSCREEN",
   "description": "Creative by Santi Jaramillo for Heyo.",
@@ -24,7 +24,7 @@
   "source": "assets/media/optimized/Projects/Dronies/Creatives/dronies-merch.webp",
   "mediaRef": "media-dronies-creatives-dronies-merch-png",
   "role": "DESIGN / DEVELOPMENT",
-  "state": "ARCHIVE READY",
+  "state": "ARCHIVE",
   "route": "/PROJECT/FILE-MEDIA-DRONIES-CREATIVES-DRONIES-MERCH-PNG",
   "status": [
     "MOUNTING PROJECT",

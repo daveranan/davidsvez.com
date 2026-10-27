@@ -1,0 +1,21 @@
+{
+  "treasure": "SFX/Items/Pickup/CoinPickup_002.wav",
+  "land": "Characters/Karl/Jump/landing.ogg",
+  "reel": "Characters/Karl/Swimming/splashes_002.ogg",
+  "goal": "User supplied: partyblower.ogg",
+  "jump": "Characters/Karl/Jump/Jump.ogg",
+  "bite": "Characters/Karl/Swimming/splashes_001.ogg",
+  "cast": "SFX/Items/Interaction/ItemEquip_002.ogg",
+  "kick": "User supplied: 37_-_football_kick_ball_.ogg (Sonilabs export)",
+  "purchase": "SFX/Items/Pickup/ItemPickup_003.ogg",
+  "interaction": "SFX/UI/UI_Click_01.ogg",
+  "dig": "SFX/Items/Crafting/Crafting_Progress.ogg",
+  "glide": "Characters/Karl/Air/GliderOpen.ogg",
+  "page": "SFX/UI/UI_Click_02.wav",
+  "tree": "SFX/Environment/Harvesting/Foliage/Leaves_Rustle_Short_02.ogg",
+  "bounce": "Characters/Karl/Footsteps/KarlFootsteps_004.ogg",
+  "step2": "Characters/Karl/Footsteps/KarlFootsteps_002.ogg",
+  "firetoggle": "SFX/Environment/FireLit/20_-_fire__burst_small_burst_of_flames_in_wood_stove_.ogg",
+  "step1": "Characters/Karl/Footsteps/KarlFootsteps_001.ogg",
+  "footstepVariants": "Characters/Karl/Footsteps/KarlFootsteps_001.ogg through KarlFootsteps_006.ogg"
+}

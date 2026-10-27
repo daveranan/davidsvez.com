@@ -1,5 +1,6 @@
 [build]
-  publish = "prototype"
+  command = "npm run build"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
@@ -7,6 +8,6 @@
   status = 200
 
 [[headers]]
-  for = "/content/*"
+  for = "/island/data/*"
   [headers.values]
     Cache-Control = "no-cache, no-store, must-revalidate"

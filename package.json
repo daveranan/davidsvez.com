@@ -3,6 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node tools/build-content-bundles.mjs && node tools/build-island-routes.mjs && node tools/package-island-site.mjs",
+    "island": "node tools/island-server.mjs",
+    "island:routes": "node tools/build-island-routes.mjs",
+    "island:test": "node tools/island-playtest.mjs",
     "content:build": "node tools/build-content-bundles.mjs",
     "media:optimize": "node tools/optimize-media-library.mjs",
     "studio": "node tools/studio/server.mjs"

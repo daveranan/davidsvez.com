@@ -1,0 +1,112 @@
+import assert from 'node:assert/strict';
+import { createRequire } from 'node:module';
+import { mkdir,readFile } from 'node:fs/promises';
+import { dirname,resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import {pageApproach,distanceToPage} from '../prototype/island/navigation-geometry.js';
+const {chromium}=createRequire(import.meta.url)('playwright');
+const output=resolve(dirname(fileURLToPath(import.meta.url)),'../prototype/island/.playtest');await mkdir(output,{recursive:true});
+const origin=process.env.ISLAND_URL||'http://127.0.0.1:4175/island/';
+const browser=await chromium.launch({headless:true,...(process.env.PLAYTEST_BROWSER?{executablePath:process.env.PLAYTEST_BROWSER}:{}),args:['--use-angle=swiftshader','--enable-webgl']});
+const errors=[],missing=[];
+function observe(page){page.on('pageerror',error=>errors.push(error.message));page.on('response',response=>{if(response.status()>=400&&response.url().startsWith(new URL(origin).origin))missing.push(response.status()+' '+response.url());});}
+async function ready(page){await page.waitForFunction(()=>window.fieldTrip?.destinations().length===6&&fieldTrip.getState().intro===1);}
+async function settled(page){await page.waitForFunction(()=>document.querySelector('#page-dialog').open&&document.querySelector('#page-dialog').getAnimations().length===0&&document.querySelector('#page-content').getAnimations().length===0&&document.querySelector('#page-content').getAttribute('aria-busy')!=='true');}
+async function clickActivity(page,id){const item=(await page.evaluate(()=>fieldTrip.activities())).find(item=>item.id===id);assert(item,'Missing activity '+id);assert(item.x>0&&item.x<1600&&item.y>84&&item.y<1000,'Activity must be visible: '+id);await page.mouse.click(item.x,item.y);}
+async function walk(page,x,z){const p=await page.evaluate(({x,z})=>fieldTrip.groundPoint(x,z),{x,z});assert(p.x>0&&p.x<1600&&p.y>84&&p.y<1000,'Walk target visible');await page.mouse.click(p.x,p.y);await page.waitForFunction(({x,z})=>{const s=fieldTrip.getState();return !s.dialogOpen&&Math.hypot(s.character.x-x,s.character.z-z)<.15;},{x,z},{timeout:20000});}
+try{
+  // Nearest boundary is correct from every side and from inside the paper.
+  const rectangle={x:0,z:0,w:8,h:4};
+  for(const point of [{x:-10,z:0},{x:10,z:0},{x:0,z:-10},{x:0,z:10},{x:0,z:0}]){const edge=pageApproach(point,rectangle);assert(Math.abs(distanceToPage(edge,rectangle)-.6)<.001);}
+  const page=await browser.newPage({viewport:{width:1600,height:1000}});observe(page);
+  const requested=[];page.on('request',request=>requested.push(new URL(request.url()).pathname));
+  await page.goto(origin);await ready(page);
+  assert.equal(await page.locator('.masthead [data-page]').count(),6);
+  assert.equal(await page.locator('.intro,#status,footer,#pixels,#motion,#home,#hover-label').count(),0);
+  const state=await page.evaluate(()=>fieldTrip.getState());
+  assert.equal(state.render.width,1600,'Native-resolution rendering');assert(state.render.calls<180,'Scenery draw calls stay bounded');
+  assert(Math.abs(state.legs[0].x-state.legs[1].x)>.2,'Correct separate foot pivots');
+  assert(!requested.some(path=>path.endsWith('/content/projects.json')||path.endsWith('/content/media.json')),'World must not request the full content archive');
+  assert(await page.evaluate(()=>fieldTrip.trees().every(tree=>fieldTrip.groundHeight(tree.world.x,tree.world.z)<.1)),'Climbable hills are clear of tree trunks');
+  await page.screenshot({path:resolve(output,'desktop-final.png')});
+  const product=(await page.evaluate(()=>fieldTrip.destinations())).find(card=>card.id==='product');
+  await page.mouse.move(product.center.x,product.center.y);await page.waitForFunction(()=>fieldTrip.getState().hoverLifts.find(p=>p.id==='product').lift>.09);
+  assert((await page.evaluate(()=>fieldTrip.getState().hoverLifts.find(p=>p.id==='product').lift))<.16,'Hover is restrained');
+  await page.mouse.click(product.center.x,product.center.y);
+  await page.waitForURL('**/island/product-design/');await settled(page);
+  assert.equal(await page.locator('#page-title').textContent(),'Product design');
+  assert.equal(await page.locator('#page-location').textContent(),'HOME');
+  const char=await page.evaluate(()=>fieldTrip.getState().character);assert(distanceToPage(char,{x:-7.5,z:-3.5,w:9.2,h:6.2})>.4,'Character stops outside the page');
+  await page.locator('[data-project=userwise]').click();await page.waitForURL('**/project/userwise/');await settled(page);
+  assert.equal(await page.locator('#page-title').textContent(),'UserWise');assert(await page.locator('.content-block img').count()>=3);
+  await page.locator('#page-dialog [data-page=games]').click();await settled(page);
+  await page.locator('[data-project=lightkeeper]').click();await page.waitForURL('**/project/lightkeeper/');await settled(page);
+  assert.equal(await page.locator('#page-title').textContent(),'LIGHTKEEPER');assert.equal(await page.locator('.content-block').count(),11);
+  assert.equal(await page.locator('.case-guide-panel:visible').count(),0,'Guide is opt-in');
+  await page.waitForFunction(()=>{const v=document.querySelector('.content-block video');return v?.readyState>=2&&!v.paused&&v.muted;});
+  await page.screenshot({path:resolve(output,'lightkeeper-final.png')});
+  const pausedFrame=await page.evaluate(()=>fieldTrip.getState().render.frame);await page.evaluate(async()=>{for(let i=0;i<8;i++)await new Promise(resolve=>requestAnimationFrame(resolve));});assert.equal(await page.evaluate(()=>fieldTrip.getState().render.frame),pausedFrame,'World rendering stops while reading');
+  await page.locator('.case-guide-trigger').click();await page.locator('.case-guide-panel').waitFor({state:'visible'});
+  await page.keyboard.press('Escape');assert(await page.locator('#page-dialog').evaluate(d=>d.open),'Guide Escape keeps the case open');
+  await page.locator('#page-content').evaluate(el=>el.scrollTop=el.scrollHeight);
+  await page.waitForFunction(()=>document.querySelector('.content-block video').paused);
+  await page.locator('#page-dialog [data-page=resume]').click();await settled(page);
+  assert.equal(await page.locator('#page-title').textContent(),'Résumé');assert.equal(await page.locator('.resume-row').count(),6);assert.equal(await page.locator('.resume-downloads a').count(),2);
+  await page.locator('#page-dialog [data-page=blog]').click();await settled(page);
+  assert.equal(await page.locator('#page-title').textContent(),'Blog');assert.equal(await page.locator('.blog-entry').count(),3);
+  await page.locator('.blog-link').first().click();await settled(page);assert.match(await page.locator('#page-title').textContent(),/pitch deck/i);
+  assert.equal(await page.locator('#page-dialog').getAttribute('data-page'),'blog');
+  await page.locator('#page-dialog [data-page=archive]').click();await settled(page);assert.equal(await page.locator('.project-card').count(),6);
+  await page.locator('#page-dialog [data-page=contact]').click();await settled(page);
+  await page.locator('input[name=name]').fill('Local playtest');await page.locator('input[name=email]').fill('test@example.com');await page.locator('select[name="project-type"]').selectOption('GAME');await page.locator('textarea').fill('Local verification only.');await page.locator('.contact-form button[type=submit]').click();assert.match(await page.locator('.contact-form [role=status]').textContent(),/not sent from the local preview/);
+  await page.goBack();await settled(page);assert.equal(await page.locator('#page-title').textContent(),'Other case studies');
+  await page.keyboard.press('Escape');await page.waitForFunction(()=>!fieldTrip.getState().dialogOpen);
+  await page.goto(origin);await ready(page);
+  await clickActivity(page,'bench');await page.waitForFunction(()=>fieldTrip.getState().activities.seated,null,{timeout:20000});
+  await page.screenshot({path:resolve(output,'bench-final.png')});
+  await walk(page,-7,1);assert.equal(await page.evaluate(()=>fieldTrip.getState().activities.seated),false);
+  await walk(page,-1.5,-5);await walk(page,-12.5,-12);
+  assert.equal(await page.evaluate(()=>fieldTrip.getState().activities.npcKicks),0,'Dave waits for ball intent');
+  await clickActivity(page,'ball');
+  await page.waitForFunction(()=>fieldTrip.getState().activities.goals>0,null,{timeout:30000});
+  await page.waitForFunction(()=>fieldTrip.getState().audio.counts.goal>0);
+  assert((await page.evaluate(()=>fieldTrip.getState().audio.lastSounds.goal.url)).endsWith('goal-partyblower.ogg'));
+  assert((await page.evaluate(()=>fieldTrip.getState().audio.lastSounds.kick.url)).endsWith('football-kick.ogg'));
+  assert(await page.locator('.soccer-score').isVisible(),'Nearby scoreboard is visible');
+  await page.waitForFunction(()=>fieldTrip.getState().activities.kickoff,null,{timeout:6000});
+  const kickoff=await page.evaluate(()=>fieldTrip.getState().activities.ball.position);
+  assert(Math.hypot(kickoff.x+9.5,kickoff.z+14.5)<.01,'Goals reset the ball to center');
+  await page.locator('.masthead [data-page=product]').click();await settled(page);
+  assert.equal(await page.locator('.soccer-score').isVisible(),false);
+  assert(await page.evaluate(()=>fieldTrip.getState().audio.playing),'Music continues while reading');
+  await page.locator('#close').click();
+  await page.waitForFunction(()=>!fieldTrip.getState().dialogOpen);
+  await walk(page,-1.2,-4);await clickActivity(page,'campfire');await page.waitForFunction(()=>!fieldTrip.getState().activities.fireLit,null,{timeout:15000});
+  await walk(page,-12.5,-12);
+  const beforeSpeech=await page.evaluate(()=>fieldTrip.getState().audio.counts.voice||0);
+  await clickActivity(page,'npc');await page.locator('.npc-conversation').waitFor({state:'visible',timeout:15000});
+  await page.waitForFunction(before=>fieldTrip.getState().audio.counts.voice>before+1,beforeSpeech);
+  assert(await page.evaluate(()=>fieldTrip.getState().audio.counts.step>0),'IK footsteps play while walking');
+  await page.locator('.npc-conversation .npc-close').click();
+  await page.waitForFunction(()=>!document.querySelector('.npc-conversation').open);
+  await page.screenshot({path:resolve(output,'clearing-final.png')});
+  await page.goto(origin);await ready(page);
+  await clickActivity(page,'fishing');await page.waitForFunction(()=>fieldTrip.getState().activities.fishing==='bite',null,{timeout:20000});
+  await clickActivity(page,'fishing');await page.waitForFunction(()=>fieldTrip.getState().activities.catches===1,null,{timeout:10000});
+  await page.screenshot({path:resolve(output,'pond-final.png')});
+  await page.close();
+  // A direct case URL loads only its data and media, not the 3D landscape.
+  const direct=await browser.newPage({viewport:{width:1440,height:900}});observe(direct);const directRequests=[];direct.on('request',r=>directRequests.push(new URL(r.url()).pathname));
+  const response=await direct.goto(new URL('project/lightkeeper/',origin).href);assert.equal(response.status(),200);await settled(direct);
+  assert(!directRequests.some(path=>/scene\.js|three\.module|character\.glb|data\/world\.json/.test(path)),'Direct case route must not load world assets');
+  await direct.reload();await settled(direct);assert.equal(await direct.locator('#page-title').textContent(),'LIGHTKEEPER');
+  await direct.close();
+  const mobile=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true,hasTouch:true,reducedMotion:'reduce'});observe(mobile);
+  await mobile.goto(origin);await ready(mobile);assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+  await mobile.screenshot({path:resolve(output,'mobile-final.png')});
+  const mobileCard=(await mobile.evaluate(()=>fieldTrip.destinations())).find(card=>card.id==='product');await mobile.touchscreen.tap(mobileCard.center.x,mobileCard.center.y);await settled(mobile);assert.equal(await mobile.locator('#page-title').textContent(),'Product design');
+  await mobile.locator('[data-project=userwise]').tap();await settled(mobile);assert.equal(await mobile.locator('#page-title').textContent(),'UserWise');await mobile.screenshot({path:resolve(output,'mobile-case-final.png')});await mobile.close();
+  assert.deepEqual(errors,[],'No browser runtime errors');assert.deepEqual(missing,[],'No missing local assets');
+  console.log('PASS: native rendering, bounded draw calls, authored joint pivots, nearest approaches, calm hover, physical page opening, independent static URLs/reload/history, lazy content/world loading, on-screen autoplay/pause, compact Lightkeeper/guide, all main content, guarded contact, bench/ball/fire/NPC interactions, mobile touch and reduced motion.');
+  console.log('Evidence: '+output);
+}finally{await browser.close();}

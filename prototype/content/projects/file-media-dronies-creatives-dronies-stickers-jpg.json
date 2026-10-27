@@ -11,7 +11,7 @@
   "showFolderActions": false,
   "blocks": [],
   "title": "DRONIES_STICKERS.IMAGE",
-  "heading": "DRONIES STICKERS.IMAGE",
+  "heading": "Dronies stickers",
   "shortcutLabel": "DRONIES_STICKERS.IMAGE",
   "kind": "MEDIA / FULLSCREEN",
   "description": "Creative by Courtney Askew for Heyo. “Always Watching” sketch by Vic.",
@@ -24,7 +24,7 @@
   "source": "assets/media/optimized/Projects/Dronies/Creatives/dronies-stickers.webp",
   "mediaRef": "media-dronies-creatives-dronies-stickers-jpg",
   "role": "DESIGN / DEVELOPMENT",
-  "state": "ARCHIVE READY",
+  "state": "ARCHIVE",
   "route": "/PROJECT/FILE-MEDIA-DRONIES-CREATIVES-DRONIES-STICKERS-JPG",
   "status": [
     "MOUNTING PROJECT",

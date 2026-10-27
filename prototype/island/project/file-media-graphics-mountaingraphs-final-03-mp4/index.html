@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d6d2b3">
+  <title>Mountain Graphs — final study 3 — David Svezhintsev</title>
+  <meta name="description" content="From Mountain Graphs.">
+  <link rel="stylesheet" href="/island/island.css">
+</head>
+<body>
+  <div id="world" aria-label="Interactive portfolio landscape"></div>
+  <header class="masthead">
+    <a class="identity" href="/island/" aria-label="David Svezhintsev — home">David Svezhintsev</a>
+    <nav class="navigation" aria-label="Main navigation">
+      <a data-page="product" href="/island/product-design/">Product design</a>
+      <a data-page="games" href="/island/technical-design/">Technical design</a>
+      <a data-page="resume" href="/island/resume/">Résumé</a>
+      <a data-page="archive" href="/island/case-studies/">Other case studies</a>
+      <a data-page="blog" href="/island/blog/">Blog</a>
+      <a data-page="contact" href="/island/contact/">Contact</a>
+    </nav>
+  </header>
+  <div class="scene-frame" aria-hidden="true"></div>
+  <p id="announcement" class="sr-only" role="status"></p>
+  <dialog id="page-dialog" aria-labelledby="page-title">
+    <div class="dialog-toolbar">
+      <a id="page-location" href="/island/" aria-label="Home, return to the island">HOME</a>
+      <nav class="navigation" aria-label="Page navigation">
+        <a data-page="product" href="/island/product-design/">Product design</a>
+        <a data-page="games" href="/island/technical-design/">Technical design</a>
+        <a data-page="resume" href="/island/resume/">Résumé</a>
+        <a data-page="archive" href="/island/case-studies/">Other case studies</a>
+        <a data-page="blog" href="/island/blog/">Blog</a>
+        <a data-page="contact" href="/island/contact/">Contact</a>
+      </nav>
+      <button id="close" aria-label="Close page">×</button>
+    </div>
+    <div id="page-content"></div>
+  </dialog>
+  <noscript><p class="error-message">JavaScript is required for the interactive portfolio. <a href="/">Open the original portfolio.</a></p></noscript>
+  <script type="module" src="/island/island.js"></script>
+</body>
+</html>

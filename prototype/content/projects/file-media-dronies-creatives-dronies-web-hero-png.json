@@ -11,7 +11,7 @@
   "showFolderActions": false,
   "blocks": [],
   "title": "DRONIES_WEB_HERO.IMAGE",
-  "heading": "DRONIES WEB HERO.IMAGE",
+  "heading": "Dronies web hero",
   "shortcutLabel": "DRONIES_WEB_HERO.IMAGE",
   "kind": "MEDIA / FULLSCREEN",
   "description": "Creative by Benjamin Oberemok.",
@@ -24,7 +24,7 @@
   "source": "assets/media/optimized/Projects/Dronies/Creatives/dronies-web-hero.webp",
   "mediaRef": "media-dronies-creatives-dronies-web-hero-png",
   "role": "DESIGN / DEVELOPMENT",
-  "state": "ARCHIVE READY",
+  "state": "ARCHIVE",
   "route": "/PROJECT/FILE-MEDIA-DRONIES-CREATIVES-DRONIES-WEB-HERO-PNG",
   "status": [
     "MOUNTING PROJECT",

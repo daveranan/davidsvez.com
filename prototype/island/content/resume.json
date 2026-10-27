@@ -1,0 +1,370 @@
+{
+  "name": "David Svezhintsev",
+  "headline": "Product Designer / Design Engineer",
+  "summary": "Product designer and hands-on builder with 10+ years across digital products, creative technology, and games. I work from early concepts through prototypes and launch, focusing on interaction, usability, and practical iteration. My experience combines multidisciplinary leadership with designing and implementing product behavior directly.",
+  "contact": {
+    "website": "https://davidsvez.com",
+    "alternateWebsite": "https://davidsvezhintsev.com",
+    "email": "daveranan@gmail.com",
+    "phone": "+1 (918) 852-5497"
+  },
+  "versions": [
+    {
+      "id": "product",
+      "title": "Product Designer / Design Engineer",
+      "sourceLabel": "Product-design résumé",
+      "summary": "Digital products, interaction design, prototyping, implementation, and multidisciplinary leadership.",
+      "download": "/island/assets/resumes/product-design.pdf",
+      "experienceIds": [
+        "wanderstar",
+        "unfold",
+        "bad-jupiter",
+        "idea-ranch"
+      ]
+    },
+    {
+      "id": "game",
+      "title": "Game Designer / Creative Generalist",
+      "sourceLabel": "Game and creative résumé, 2025",
+      "summary": "Game design, writing, world building, film direction, creative production, and interactive storytelling.",
+      "download": "/island/assets/resumes/game-design-2025.pdf",
+      "experienceIds": [
+        "wanderstar",
+        "unfold",
+        "bolt",
+        "daedalus",
+        "bad-jupiter",
+        "idea-ranch"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "wanderstar",
+      "organization": "Wanderstar UG",
+      "role": "Game Director / Designer",
+      "period": "May 2023 – Present",
+      "sourceIds": [
+        "product",
+        "game"
+      ],
+      "dateVariants": [
+        {
+          "sourceId": "product",
+          "period": "May 2023 – Present"
+        },
+        {
+          "sourceId": "game",
+          "period": "May 2023 – Now"
+        }
+      ],
+      "roleVariants": [
+        {
+          "sourceId": "product",
+          "role": "Game Director / Designer"
+        },
+        {
+          "sourceId": "game",
+          "role": "Game Designer, Film Director, Writer, Artist"
+        }
+      ],
+      "projectIds": [
+        "lightkeeper",
+        "kern",
+        "flax-editor",
+        "daedalus-film"
+      ],
+      "bullets": [
+        "Led Lightkeeper from concepts and pitching through funded high-concept and prototype stages to a playable vertical slice, shaping game design, UI/UX, progression, level design, prototyping, and production.",
+        "Created pitch-deck and game-design documentation; worked on writing, world building, map layouts, content creation, and marketing for the vertical slice.",
+        "Design and prototype KERN’s investigative gameplay systems, tools, and interfaces directly in-engine, iterating interaction details through hands-on use.",
+        "Redesign and implement Flax editor workflows, UI, and interface feedback, with selected changes contributed upstream.",
+        "Wrote, directed, produced, and edited Daedalus Alpha, coordinating a 12-person film production from planning and pitching through the shoot and final delivery."
+      ]
+    },
+    {
+      "id": "daedalus",
+      "organization": "Daedalus / daedalus.am",
+      "role": "Product Designer / Owner",
+      "period": "Sep 2022 – Aug 2023",
+      "sourceIds": [
+        "game"
+      ],
+      "dateVariants": [
+        {
+          "sourceId": "game",
+          "period": "Sep 2022 – Aug 2023"
+        }
+      ],
+      "projectIds": [
+        "daedalus",
+        "daedalus-comic",
+        "daedalus-brand",
+        "daedalus-film"
+      ],
+      "bullets": [
+        "Wrote the story and built the world for an interactive science-fiction comic.",
+        "Generated 9,000 source images and edited the material into a coherent narrative.",
+        "Animated 12 panels in Rive and built the web reading experience with a licensed soundtrack.",
+        "Developed the brand and merchandise product line with collaborators.",
+        "Directed, pitched, produced, and edited Daedalus Alpha."
+      ]
+    },
+    {
+      "id": "unfold",
+      "organization": "Unfold",
+      "role": "Project Director / Product Designer",
+      "period": "Jun 2020 – May 2023",
+      "sourceIds": [
+        "product",
+        "game"
+      ],
+      "dateVariants": [
+        {
+          "sourceId": "product",
+          "period": "2020 – 2023"
+        },
+        {
+          "sourceId": "game",
+          "period": "June 2020 – May 2023"
+        }
+      ],
+      "roleVariants": [
+        {
+          "sourceId": "product",
+          "role": "Project Director / Product Designer"
+        },
+        {
+          "sourceId": "game",
+          "role": "Product Owner & Designer"
+        }
+      ],
+      "projectIds": [
+        "dronies",
+        "userwise",
+        "merck",
+        "earthwallet",
+        "yogajoint",
+        "rise-above-disorder"
+      ],
+      "bullets": [
+        "Led day-to-day production on Dronies across nine design and development teams, involving roughly 30 contributors.",
+        "Coordinated priorities and delivery with Solana Labs, and developed the plan for a marketing campaign. The project generated approximately US$3M in sales.",
+        "Developed product strategy, UX concepts, interaction design, and design systems for technology and healthcare clients, including UserWise and Merck."
+      ]
+    },
+    {
+      "id": "bolt",
+      "organization": "Bolt Visual Scripting",
+      "role": "UX / UI Designer",
+      "period": "Nov 2019 – Jan 2020",
+      "sourceIds": [
+        "game"
+      ],
+      "dateVariants": [
+        {
+          "sourceId": "game",
+          "period": "Nov 2019 – Jan 2020"
+        }
+      ],
+      "projectIds": [
+        "bolt-icons"
+      ],
+      "bullets": [
+        "Led UI/UX redesign work for Bolt 2.0, producing UX documentation and high-fidelity mockups.",
+        "Created 278 icons for Unity API functions, exported them into the engine, and iterated on their appearance in context.",
+        "The commissioned Bolt work later became part of Unity Visual Scripting after Unity acquired Bolt from Ludiq."
+      ]
+    },
+    {
+      "id": "bad-jupiter",
+      "organization": "Bad Jupiter",
+      "role": "Product / UX / UI Designer",
+      "period": "May 2018 – May 2019",
+      "sourceIds": [
+        "product",
+        "game"
+      ],
+      "dateVariants": [
+        {
+          "sourceId": "product",
+          "period": "May 2018 – May 2019"
+        },
+        {
+          "sourceId": "game",
+          "period": "May 2018 – May 2019"
+        }
+      ],
+      "roleVariants": [
+        {
+          "sourceId": "product",
+          "role": "Product / UI Designer"
+        },
+        {
+          "sourceId": "game",
+          "role": "UX / UI Designer"
+        }
+      ],
+      "projectIds": [
+        "bad-jupiter"
+      ],
+      "bullets": [
+        "Designed chatbot and web-app experiences, including onboarding and interaction flows, and supported a Product Hunt launch.",
+        "Researched users, developed personas, and produced wireframes, user flows, and high-fidelity UI mockups.",
+        "Prototyped interactions in Figma and Framer."
+      ]
+    },
+    {
+      "id": "idea-ranch",
+      "organization": "Idea Ranch",
+      "role": "Designer / Web Developer",
+      "period": "2015 – 2017",
+      "sourceIds": [
+        "product",
+        "game"
+      ],
+      "dateVariants": [
+        {
+          "sourceId": "product",
+          "period": "Nov 2015 – Jan 2017"
+        },
+        {
+          "sourceId": "game",
+          "period": "Nov 2015 – Apr 2017"
+        }
+      ],
+      "roleVariants": [
+        {
+          "sourceId": "product",
+          "role": "Designer / Web Developer"
+        },
+        {
+          "sourceId": "game",
+          "role": "Web Developer and Designer"
+        }
+      ],
+      "projectIds": [
+        "idea-ranch"
+      ],
+      "bullets": [
+        "Designed and developed brand websites, translating requirements into information architecture, interaction flows, visual design, and web implementation.",
+        "Worked on websites for brands including Toyota, Remington, Christie Cookies Co, and Carhartt.",
+        "Produced wireframes and designs in Sketch and Photoshop, with UX documentation and information-architecture documents for design and development teams."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "label": "Design and prototyping",
+      "items": [
+        "Figma",
+        "Framer",
+        "Rive",
+        "Sketch",
+        "Photoshop",
+        "Illustrator",
+        "User research",
+        "Personas",
+        "Information architecture",
+        "User flows",
+        "Wireframes",
+        "Interaction design",
+        "Design systems",
+        "High-fidelity UI",
+        "User-interface prototyping"
+      ]
+    },
+    {
+      "label": "Implementation and engines",
+      "items": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "C#",
+        "C++",
+        "Flax Engine",
+        "Unity",
+        "Unreal Engine"
+      ]
+    },
+    {
+      "label": "Game and creative production",
+      "items": [
+        "Game design",
+        "Prototyping",
+        "Progression",
+        "Level design",
+        "World building",
+        "Writing",
+        "Pitch decks",
+        "Game-design documentation",
+        "Content creation",
+        "Marketing",
+        "Film direction",
+        "Production",
+        "Editing"
+      ]
+    }
+  ],
+  "community": [
+    {
+      "title": "Tulsa UX",
+      "description": "Co-organizer and speaker."
+    },
+    {
+      "title": "Figma for Beginners",
+      "description": "Created a beginner Figma course."
+    },
+    {
+      "title": "Adobe XD Live",
+      "description": "Created courses for Adobe XD Live."
+    }
+  ],
+  "clients": [
+    "Unity",
+    "Toyota",
+    "Merck",
+    "Facebook",
+    "JB Hunt",
+    "Walmart",
+    "Bushnell",
+    "Chick-fil-A",
+    "Remington",
+    "Bushmaster",
+    "Fidelity Bank",
+    "Icon Hyperconnect",
+    "Christie Cookies Co",
+    "Archer Hotel New York",
+    "Carhartt Company Gear",
+    "Stillwater Medical Center"
+  ],
+  "clientsNote": "Client and brand experience includes work delivered through agency teams.",
+  "education": [],
+  "languages": [],
+  "sourceNotes": [
+    {
+      "topic": "Idea Ranch dates",
+      "note": "The product résumé ends this role in Jan 2017; the 2025 game résumé ends it in Apr 2017. The consolidated public date is 2015–2017 and the exact source dates are retained in dateVariants."
+    },
+    {
+      "topic": "Dronies financial wording",
+      "note": "The product résumé reports approximately US$3M in sales. The older game résumé uses the word profited. Public copy uses the sales wording and does not claim profit."
+    },
+    {
+      "topic": "Bolt organization",
+      "note": "The game résumé labels the engagement Unity - Bolt Visual Scripting. The portfolio preserves the existing distinction between commissioned Bolt work and its later inclusion in Unity Visual Scripting."
+    },
+    {
+      "topic": "Unquantified scope and outcomes",
+      "note": "The older source mentions multi-million client accounts/websites and an uptick in Bad Jupiter sign-ups without defining the basis or a measured change. Public copy keeps the documented work, clients, and launch contribution without inventing revenue, budgets, or a quantified conversion result."
+    },
+    {
+      "topic": "Contact versions",
+      "note": "The older game résumé lists davidsvez.com on page one and davidsvezhintsev.com on page two. Both are retained, with davidsvez.com as the primary website."
+    },
+    {
+      "topic": "Education and languages",
+      "note": "Neither supplied résumé includes education or language-proficiency details. No entries have been inferred."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+.soccer-score{position:fixed;z-index:6;top:100px;right:24px;display:flex;align-items:center;gap:15px;min-height:42px;padding:8px 15px;border:1px solid #566c4430;border-radius:22px;background:#f5f1dded;color:#354f43;font-family:Arial,Helvetica,sans-serif;box-shadow:0 3px 12px #203b2410;pointer-events:none}
+.soccer-score[hidden]{display:none!important}
+.soccer-score-team{display:flex;align-items:baseline;gap:9px;font-size:11px}
+.soccer-score-team strong{font-size:19px;font-weight:500;line-height:1;min-width:12px;text-align:center;font-variant-numeric:tabular-nums}
+.soccer-score-separator{font-size:12px;color:#809077}
+@media(max-width:700px){.soccer-score{top:120px;right:14px;gap:12px;min-height:38px;padding:8px 12px}.soccer-score-team{gap:7px;font-size:10px}.soccer-score-team strong{font-size:17px}}

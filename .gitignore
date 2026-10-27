@@ -19,3 +19,8 @@ $RECYCLE.BIN/
 # launch repository.
 /docs/
 /personalsiteOLD/
+
+# Local interaction-prototype evidence.
+/prototype/island/.playtest/
+/prototype/island/.server.*.log
+/dist/

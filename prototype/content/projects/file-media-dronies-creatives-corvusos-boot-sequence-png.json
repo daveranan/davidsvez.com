@@ -11,7 +11,7 @@
   "showFolderActions": false,
   "blocks": [],
   "title": "CORVUSOS_BOOT_SEQUENCE.IMAGE",
-  "heading": "CORVUSOS BOOT SEQUENCE.IMAGE",
+  "heading": "CorvusOS boot sequence",
   "shortcutLabel": "CORVUSOS_BOOT_SEQUENCE.IMAGE",
   "kind": "MEDIA / FULLSCREEN",
   "description": "Creative by Phil Goodwin for Unfold.",
@@ -24,7 +24,7 @@
   "source": "assets/media/optimized/Projects/Dronies/Creatives/corvusos-boot-sequence.webp",
   "mediaRef": "media-dronies-creatives-corvusos-boot-sequence-png",
   "role": "DESIGN / DEVELOPMENT",
-  "state": "ARCHIVE READY",
+  "state": "ARCHIVE",
   "route": "/PROJECT/FILE-MEDIA-DRONIES-CREATIVES-CORVUSOS-BOOT-SEQUENCE-PNG",
   "status": [
     "MOUNTING PROJECT",
