@@ -4,7 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#d6d2b3">
+  <link rel="preload" href="/island/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/island/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/island/typography-fonts.css">
   <link rel="stylesheet" href="/island/island.css">
+  <link rel="stylesheet" href="/island/typography.css">
+  <link rel="stylesheet" href="/island/navigation.css">
   <!-- site-seo:start -->
   <title data-site-seo="title">Daedalus identity and merchandise — David Svezhintsev</title>
   <meta data-site-seo="description" name="description" content="Identity, apparel, and print work extending Daedalus beyond the comic and film, created with credited collaborators.">
@@ -34,7 +39,10 @@
 <body>
   <div id="world" aria-label="Interactive portfolio landscape"></div>
   <header class="masthead">
-    <a class="identity" href="/island/" aria-label="David Svezhintsev — home">David Svezhintsev</a>
+    <div class="brand-lockup">
+      <a class="brand-home" href="/island/" aria-label="David Svezhintsev logo — home"><img class="brand-logo" src="/assets/media/logo.svg" width="36" height="28" alt=""></a>
+      <a class="identity" href="/island/" aria-label="David Svezhintsev — home"><span>David Svezhintsev</span></a>
+    </div>
     <nav class="navigation" aria-label="Main navigation">
       <a data-page="product" href="/island/product-design/">Product design</a>
       <a data-page="games" href="/island/technical-design/">Technical design</a>
@@ -48,7 +56,7 @@
   <p id="announcement" class="sr-only" role="status"></p>
   <dialog id="page-dialog" aria-labelledby="page-title">
     <div class="dialog-toolbar">
-      <a id="page-location" href="/island/" aria-label="Home, return to the island">HOME</a>
+      <a id="page-location" href="/island/" aria-label="Home, return to the island"><img class="brand-logo" src="/assets/media/logo.svg" width="24" height="19" alt=""><span>HOME</span></a>
       <nav class="navigation" aria-label="Page navigation">
         <a data-page="product" href="/island/product-design/">Product design</a>
         <a data-page="games" href="/island/technical-design/">Technical design</a>

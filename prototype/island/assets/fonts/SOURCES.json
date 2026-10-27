@@ -1,0 +1,68 @@
+[
+  {
+    "file": "geist-cyrillic-ext.woff2",
+    "subset": "cyrillic-ext",
+    "family": "Geist",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2"
+  },
+  {
+    "file": "geist-cyrillic.woff2",
+    "subset": "cyrillic",
+    "family": "Geist",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2"
+  },
+  {
+    "file": "geist-vietnamese.woff2",
+    "subset": "vietnamese",
+    "family": "Geist",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2"
+  },
+  {
+    "file": "geist-latin-ext.woff2",
+    "subset": "latin-ext",
+    "family": "Geist",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2"
+  },
+  {
+    "file": "geist-latin.woff2",
+    "subset": "latin",
+    "family": "Geist",
+    "source": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2"
+  },
+  {
+    "file": "manrope-cyrillic-ext.woff2",
+    "subset": "cyrillic-ext",
+    "family": "Manrope",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2"
+  },
+  {
+    "file": "manrope-cyrillic.woff2",
+    "subset": "cyrillic",
+    "family": "Manrope",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2"
+  },
+  {
+    "file": "manrope-greek.woff2",
+    "subset": "greek",
+    "family": "Manrope",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2"
+  },
+  {
+    "file": "manrope-vietnamese.woff2",
+    "subset": "vietnamese",
+    "family": "Manrope",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2"
+  },
+  {
+    "file": "manrope-latin-ext.woff2",
+    "subset": "latin-ext",
+    "family": "Manrope",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2"
+  },
+  {
+    "file": "manrope-latin.woff2",
+    "subset": "latin",
+    "family": "Manrope",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2"
+  }
+]

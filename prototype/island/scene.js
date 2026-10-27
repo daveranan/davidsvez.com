@@ -143,31 +143,32 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
   }
   async function pageTexture(def) {
     const canvas=document.createElement('canvas');canvas.width=1536;canvas.height=Math.round(1536*def.h/def.w);const ctx=canvas.getContext('2d'),w=canvas.width,h=canvas.height;
-    ctx.fillStyle=def.color;ctx.fillRect(0,0,w,h);ctx.fillStyle=def.ink;ctx.font='18px Arial';ctx.fillText('DAVID SVEZHINTSEV',60,52);ctx.textAlign='right';ctx.fillText(def.number, w-60,52);ctx.textAlign='left';
+    ctx.fillStyle=def.color;ctx.fillRect(0,0,w,h);ctx.fillStyle=def.ink;ctx.font='18px Geist';ctx.fillText('DAVID SVEZHINTSEV',60,52);ctx.textAlign='right';ctx.fillText(def.number, w-60,52);ctx.textAlign='left';
     ctx.strokeStyle=def.ink+'38';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(60,78);ctx.lineTo(w-60,78);ctx.stroke();
-    ctx.font='500 108px Arial';ctx.letterSpacing='-5px';
+    ctx.font='500 108px Manrope';ctx.letterSpacing='-5px';
     if(def.id==='games'){ctx.fillText('Technical',60,209);ctx.fillText('game design',60,315);}else if(def.id==='archive'){ctx.fillText('Other case studies',60,218);}else ctx.fillText(def.title,60,218);
     ctx.letterSpacing='0px';
     if(def.projects.length){
       const y=def.id==='games'?365:280, imageH=h-y-115;
       const ids=def.projects.slice(0,def.id==='archive'?3:2),gap=22,previewWidth=(w-120-gap*(ids.length-1))/ids.length;
-      for(let i=0;i<ids.length;i++){const p=portfolio.findProject(ids[i]),image=await getImage(portfolio.posterFor(p));imageCover(ctx,image,60+i*(previewWidth+gap),y,previewWidth,imageH);ctx.fillStyle=def.ink;ctx.font='22px Arial';ctx.fillText(p?.heading||ids[i],60+i*(previewWidth+gap),h-65);}
+      for(let i=0;i<ids.length;i++){const p=portfolio.findProject(ids[i]),image=await getImage(portfolio.posterFor(p));imageCover(ctx,image,60+i*(previewWidth+gap),y,previewWidth,imageH);ctx.fillStyle=def.ink;ctx.font='22px Geist';ctx.fillText(p?.heading||ids[i],60+i*(previewWidth+gap),h-65);}
     }else if(def.id==='blog'){
       let y=300;
       for(const post of portfolio.blogPosts().slice(0,3)){
-        ctx.fillStyle=def.ink;ctx.font='20px Arial';ctx.fillText(post.date,60,y);y+=50;
-        ctx.font='38px Arial';let line='';
+        ctx.fillStyle=def.ink;ctx.font='20px Geist';ctx.fillText(post.date,60,y);y+=50;
+        ctx.font='38px Geist';let line='';
         for(const word of post.title.split(' ')){const next=line?line+' '+word:word;if(ctx.measureText(next).width>w-120){ctx.fillText(line,60,y);line=word;y+=48;}else line=next;}
         if(line){ctx.fillText(line,60,y);y+=48;}y+=42;
       }
-      ctx.font='22px Arial';ctx.fillText('GAME DEVELOPMENT / CREATIVE PRODUCTION',60,h-65);
+      ctx.font='22px Geist';ctx.fillText('GAME DEVELOPMENT / CREATIVE PRODUCTION',60,h-65);
     }else if(def.id==='resume'){
-      ctx.font='30px Arial';ctx.fillText('Design / Development / Creative direction',60,310);ctx.font='24px Arial';ctx.fillText('KERN',60,410);ctx.fillText('2026 —',w-245,410);ctx.fillText('LIGHTKEEPER',60,473);ctx.fillText('2023 — 2026',w-245,473);ctx.fillText('DRONIES',60,536);ctx.fillText('2021 — 2023',w-245,536);ctx.fillText('Oklahoma / Remote',60,h-70);
+      ctx.font='30px Geist';ctx.fillText('Design / Development / Creative direction',60,310);ctx.font='24px Geist';ctx.fillText('KERN',60,410);ctx.fillText('2026 —',w-245,410);ctx.fillText('LIGHTKEEPER',60,473);ctx.fillText('2023 — 2026',w-245,473);ctx.fillText('DRONIES',60,536);ctx.fillText('2021 — 2023',w-245,536);ctx.fillText('Oklahoma / Remote',60,h-70);
     }else{
-      ctx.font='28px Arial';const lines=['Tell me what you are making,','breaking, or trying to understand.'];lines.forEach((line,i)=>ctx.fillText(line,60,310+i*40));ctx.font='160px Arial';ctx.fillText('↗',w-240,h-85);ctx.font='22px Arial';ctx.fillText('AVAILABLE FOR SELECT PROJECTS',60,h-70);
+      ctx.font='28px Geist';const lines=['Tell me what you are making,','breaking, or trying to understand.'];lines.forEach((line,i)=>ctx.fillText(line,60,310+i*40));ctx.font='160px Geist';ctx.fillText('↗',w-240,h-85);ctx.font='22px Geist';ctx.fillText('AVAILABLE FOR SELECT PROJECTS',60,h-70);
     }
     const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=renderer.capabilities.getMaxAnisotropy();return texture;
   }
+  await Promise.all([document.fonts.load('500 108px Manrope'),document.fonts.load('400 18px Geist')]);
   for(const def of destinations){
     const group=new THREE.Group();group.position.set(def.x,.18,def.z);scene.add(group);
     const shape=roundedShape(def.w,def.h,.16);
@@ -202,7 +203,7 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
   function setHover(id) { if(state.hovered===id)return;state.hovered=id;renderer.domElement.style.cursor=id?'pointer':'default';onHover?.(id); }
   function approach(id){const def=destinations.find(d=>d.id===id);if(!def)return;cancelActivities();state.pending=id;liftTime=0;const edge=pageApproach(bird.position,def);moveTo(edge);if(state.reduced){state.pending=null;onSelect(id);}}
   function stop(){target.set(bird.position.x,0,bird.position.z);goal.copy(target);routeQueue=[];state.pending=null;state.speed=0;state.phase='idle';state.hovered=null;marker.visible=false;}
-  function pointerMove(event){if(state.paused)return;pointerInside=true;updatePointer(event);setHover(hitPage());}
+  function pointerMove(event){if(state.paused)return;updatePointer(event);pointerInside=!event.target.closest?.('.masthead');setHover(pointerInside?hitPage():null);}
   function pointerDown(event){
     if(event.button!==0||state.paused)return;
     if(state.intro<1){const act=state.intro>.7;arrival.skip();state.intro=1;updateCamera(0,true);if(!act)return;}

@@ -1,0 +1,7 @@
+:root{--font-ui:'Geist',Arial,sans-serif;--font-display:'Manrope','Geist',sans-serif;font-family:var(--font-ui);font-kerning:normal;text-rendering:optimizeLegibility}
+#page-title,.project-card h3,.resume-row h3,.blog-link h2,.content-block h2,.resume-headline,.identity{font-family:var(--font-display)}
+#page-title{font-weight:500;letter-spacing:-.06em}
+.project-card h3,.resume-row h3{letter-spacing:-.04em}
+.page-meta,.blog-date,.resume-row>small{font-variant-numeric:tabular-nums}
+.project-card small{font-size:10px}
+body .soccer-score{font-family:var(--font-ui)}

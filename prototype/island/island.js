@@ -1,11 +1,13 @@
 import {createAmbientAudio} from './ambient-audio.js';
 import { destinations, element, loadPortfolio } from './portfolio.js';
 import { updateDocumentSeo } from './seo.js';
+import { installNavigationEffects } from './navigation-effects.js';
 
 const $=selector=>document.querySelector(selector);
 const dialog=$('#page-dialog'),content=$('#page-content');
 const reducedQuery=matchMedia('(prefers-reduced-motion: reduce)');
 const audio=createAmbientAudio();
+installNavigationEffects();
 const BASE=new URL('.',import.meta.url).pathname;
 const slugs={product:'product-design',games:'technical-design',resume:'resume',archive:'case-studies',contact:'contact',blog:'blog'};
 let landscape=null,worldPromise=null,portfolio=null,openId=null,currentToken='',returnFocus=null,closing=false,routeVersion=0;
@@ -63,7 +65,7 @@ async function openRoute(token,{fromScene=false}={}){
   try{
     if(postId)await portfolio.showPost(postId);else if(projectId)await portfolio.showProject(projectId);else await portfolio.showDestination(token);
     if(version!==routeVersion)return;
-    if(wasOpen&&!reducedQuery.matches)content.animate([{opacity:.35,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:200});
+    if(wasOpen&&!reducedQuery.matches)content.animate([{opacity:.35},{opacity:1}],{duration:180});
     $('#announcement').textContent=(projectId||postId?$('#page-title').textContent:destinations.find(d=>d.id===token)?.label)+' opened';
   }catch(error){
     if(version!==routeVersion)return;content.replaceChildren(element('h1','','This page could not load.'));content.querySelector('h1').id='page-title';const retry=element('button','text-link','Try again');retry.addEventListener('click',()=>openRoute(token));content.append(retry);console.warn(error.message);
@@ -89,7 +91,7 @@ dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=
 $('#close').addEventListener('click',()=>closePage());
 $('#page-location').addEventListener('click',event=>{if(event.button||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();closePage();});
 document.querySelectorAll('[data-page]').forEach(link=>{link.href=hrefFor(link.dataset.page);link.addEventListener('click',event=>{if(event.button||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();navigate(link.dataset.page);});});
-$('.identity').href=BASE;$('.identity').addEventListener('click',event=>{if(event.button||event.metaKey||event.ctrlKey)return;event.preventDefault();navigate('');});
+document.querySelectorAll('.identity,.brand-home').forEach(link=>{link.href=BASE;link.addEventListener('click',event=>{if(event.button||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();navigate('');});});
 reducedQuery.addEventListener('change',event=>landscape?.setReduced(event.matches));
 window.addEventListener('popstate',()=>openRoute(tokenFromLocation()));
 async function init(){
