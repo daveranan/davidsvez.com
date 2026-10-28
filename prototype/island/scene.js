@@ -18,7 +18,7 @@ const ground = new THREE.Plane(UP, 0);
 const deltaAngle = (a, b) => Math.atan2(Math.sin(b - a), Math.cos(b - a));
 const damp = (a, b, speed, dt) => THREE.MathUtils.lerp(a, b, 1 - Math.exp(-speed * dt));
 
-export async function createLandscape(container, portfolio, { reduced, onSelect, onHover, onDialogue, onAdvanceDialogue, onDismissDialogue, onNavigate, audio, onFrame, onBark }) {
+export async function createLandscape(container, portfolio, { reduced, onSelect, onHover, onDialogue, onAdvanceDialogue, onDismissDialogue, onNavigate, audio, onFrame, onBark, onLoadStage, onReady }) {
   const destinations=sourceDestinations.map(def=>({...def}));
   const arrival=createArrival();
   const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
@@ -33,6 +33,7 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
   scene.fog = new THREE.Fog('#c6d3bd', 45, 100);
   const loader = new GLTFLoader();
   const [characterAsset, greenTree, orangeTree] = await Promise.all(['character.glb','lightkeeper-tree.glb','lightkeeper-bushy.glb'].map(file => loader.loadAsync(new URL('./assets/' + file, import.meta.url).href)));
+  onLoadStage?.(3,'Preparing the landscape');
   const camera = new THREE.OrthographicCamera(-20, 20, 15, -15, .1, 180);
   const cameraOffset = new THREE.Vector3(12, 23, 27);
   const cameraFocus = new THREE.Vector3(0, 0, 2.3);
@@ -308,6 +309,9 @@ export async function createLandscape(container, portfolio, { reduced, onSelect,
     const ball=activities.getState().ball.position;treeRendering.update(dt,t,state.reduced,{camera,targets:[bird.position.clone().add(new THREE.Vector3(0,1.2,0)),new THREE.Vector3(ball.x,ball.y,ball.z)]});water.update(t,state.reduced);audio?.update(dt,{character:bird.position,fireLit:activities.getState().fireLit});
     onFrame?.();renderer.render(scene,camera);
   }
+  onLoadStage?.(4,'Rendering the island');
+  renderer.render(scene,camera);
+  await onReady?.();
   frame=requestAnimationFrame(tick);
   function projectPoint(vector) { const point=vector.clone().project(camera);return{x:(point.x+1)*innerWidth/2,y:(1-point.y)*innerHeight/2}; }
   function pageRect(id) {

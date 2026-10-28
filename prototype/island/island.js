@@ -2,11 +2,14 @@ import {createAmbientAudio} from './ambient-audio.js';
 import { destinations, element, loadPortfolio } from './portfolio.js';
 import { updateDocumentSeo } from './seo.js';
 import { installNavigationEffects } from './navigation-effects.js';
+import { createSiteLoader } from './loading.js';
 
 const $=selector=>document.querySelector(selector);
 const dialog=$('#page-dialog'),content=$('#page-content');
 const reducedQuery=matchMedia('(prefers-reduced-motion: reduce)');
 const audio=createAmbientAudio();
+const loading=createSiteLoader();
+loading.stage(1,'Loading portfolio');
 installNavigationEffects();
 const BASE=new URL('.',import.meta.url).pathname;
 const slugs={product:'product-design',games:'technical-design',resume:'resume',archive:'case-studies',contact:'contact',blog:'blog'};
@@ -46,10 +49,10 @@ async function greet(text='hey. come here for a second.',speaker='guide'){if(dia
 async function ensureWorld(){
   if(worldPromise)return worldPromise;
   worldPromise=(async()=>{
-    await portfolio.prepareWorld();const {createLandscape}=await import('./scene.js');
-    landscape=await createLandscape($('#world'),portfolio,{audio,onBark:greet,onFrame:()=>dialogueSystem?.reposition(),reduced:reducedQuery.matches,onSelect:id=>navigate(id,{fromScene:true}),onDialogue:talk,onAdvanceDialogue:()=>dialogueSystem?.advance(),onDismissDialogue:()=>dialogueSystem?.close(),onNavigate:token=>navigate(token)});
+    loading.stage(2,'Loading the island');await portfolio.prepareWorld();const {createLandscape}=await import('./scene.js');
+    landscape=await createLandscape($('#world'),portfolio,{audio,onLoadStage:(n,text)=>loading.stage(n,text),onReady:()=>loading.finish(),onBark:greet,onFrame:()=>dialogueSystem?.reposition(),reduced:reducedQuery.matches,onSelect:id=>navigate(id,{fromScene:true}),onDialogue:talk,onAdvanceDialogue:()=>dialogueSystem?.advance(),onDismissDialogue:()=>dialogueSystem?.close(),onNavigate:token=>navigate(token)});
     if(dialog.open)landscape.pause(true);else audio.setWorldActive(true);return landscape;
-  })().catch(error=>{document.querySelectorAll('.arrival-clouds').forEach(node=>node.remove());console.warn('3D scene unavailable:',error.message);const notice=element('p','error-message','The 3D scene is unavailable. Use the navigation to view the portfolio.');$('#world').append(notice);});
+  })().catch(error=>{document.querySelectorAll('.arrival-clouds').forEach(node=>node.remove());loading.finish();console.warn('3D scene unavailable:',error.message);const notice=element('p','error-message','The 3D scene is unavailable. Use the navigation to view the portfolio.');$('#world').append(notice);});
   return worldPromise;
 }
 async function openRoute(token,{fromScene=false}={}){
@@ -105,6 +108,6 @@ async function init(){
   const queryToken=legacyProject&&/^[a-z0-9-]+$/.test(legacyProject)?'project/'+legacyProject:legacyPost&&/^[a-z0-9-]+$/.test(legacyPost)?'blog/'+legacyPost:slugs[legacyPage]?legacyPage:'';
   const initial=tokenFromLocation()||queryToken||(destinations.some(d=>d.id===legacy)?legacy:'');
   if((legacy||queryToken)&&initial)history.replaceState({token:initial},'',hrefFor(initial));
-  if(initial)await openRoute(initial);else await ensureWorld();
+  if(initial){loading.stage(2,'Loading page');await openRoute(initial);await loading.finish();}else await ensureWorld();
 }
-init().catch(error=>{console.error(error);const notice=element('p','error-message','Portfolio content could not load. ');const link=element('a','','Open the original portfolio.');link.href='/';notice.append(link);$('#world').append(notice);});
+init().catch(error=>{loading.finish();console.error(error);const notice=element('p','error-message','Portfolio content could not load. ');const link=element('a','','Open the original portfolio.');link.href='/';notice.append(link);$('#world').append(notice);});
