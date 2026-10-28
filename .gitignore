@@ -24,3 +24,6 @@ $RECYCLE.BIN/
 /prototype/island/.playtest/
 /prototype/island/.server.*.log
 /dist/
+
+# Local browser verification evidence.
+/.playtest/

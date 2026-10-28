@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/island/island.css">
   <link rel="stylesheet" href="/island/typography.css">
   <link rel="stylesheet" href="/island/navigation.css">
+  <link rel="stylesheet" href="/island/loading.css">
   <!-- site-seo:start -->
   <title data-site-seo="title">KERN logo stacked eye — David Svezhintsev</title>
   <meta data-site-seo="description" name="description" content="From KERN.">
@@ -37,6 +38,12 @@
   <!-- site-seo:end -->
 </head>
 <body>
+  <div class="site-loader" role="status" aria-live="polite" aria-label="Loading portfolio">
+    <div class="loader-heading"><span>DAVID SVEZHINTSEV</span><span>PORTFOLIO</span></div>
+    <div class="loader-art" aria-hidden="true"><span class="loader-orbit"></span><span class="loader-orbit"></span><img class="loader-mark" src="/assets/media/logo.svg" width="300" height="240" alt=""></div>
+    <div class="loader-bottom"><div class="loader-track" aria-hidden="true"><div class="loader-progress"></div></div><div class="loader-footer"><span data-loading-label>Loading portfolio</span><span data-loading-step aria-hidden="true">00 / 04</span></div></div>
+  </div>
+  <noscript><style>.site-loader{display:none}</style></noscript>
   <div id="world" aria-label="Interactive portfolio landscape"></div>
   <header class="masthead">
     <div class="brand-lockup">
